@@ -1,0 +1,64 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:about",
+	"windowMinWidth": 256,
+	"windowMinHeight": 256,
+	"width": 335,
+	"height": 255,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Image1": {
+					"type": "picture",
+					"top": 0,
+					"left": 0,
+					"width": 339,
+					"height": 259,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/logo.svg"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 15,
+					"left": 9,
+					"width": 112,
+					"height": 13,
+					"dataSource": "SVG_Get_version ",
+					"stroke": "#FFFFFF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"events": [
+						"onDataChange"
+					],
+					"contextMenu": "none",
+					"showSelection": false,
+					"visibility": "visible",
+					"focusable": false,
+					"dropping": "none"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}

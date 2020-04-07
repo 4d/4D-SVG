@@ -1,0 +1,241 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:colorPaletteTitle",
+	"windowSizingX": "fixed",
+	"windowMinHeight": 300,
+	"width": 263,
+	"height": 544,
+	"markerHeader": 3840,
+	"markerBody": -14336,
+	"markerBreak": -9216,
+	"markerFooter": -4096,
+	"events": [
+		"onLoad",
+		"onOutsideCall",
+		"onActivate",
+		"onMenuSelect",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onResize"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt",
+		"scale": 25600
+	},
+	"pages": [
+		{
+			"objects": {
+				"Zone de défilement": {
+					"type": "listbox",
+					"top": 0,
+					"left": 0,
+					"width": 263,
+					"height": 522,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "<>tBoo_listbox",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "30px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"selectionMode": "none",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"stroke": "#AAAAAA",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"borderStyle": "none",
+					"method": "ObjectMethods/Zone de défilement.4dm",
+					"events": [
+						"onClick",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "Colonne1",
+							"dataSource": "<>tPic_Colors",
+							"dataSourceTypeHint": "picture",
+							"width": 248,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#AAAAAA",
+							"fontFamily": "System Font",
+							"fontSize": 11,
+							"fontWeight": "bold",
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête1",
+								"text": "Entête1",
+								"stroke": "#AAAAAA",
+								"fontFamily": "System Font",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#AAAAAA",
+								"fontFamily": "System Font",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						},
+						{
+							"name": "Colonne2",
+							"dataSource": "<>tTxt_colorNames",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#AAAAAA",
+							"fontFamily": "System Font",
+							"fontSize": 11,
+							"events": [
+								"onDataChange"
+							],
+							"header": {
+								"name": "Entête2",
+								"text": "Entête2",
+								"stroke": "#AAAAAA",
+								"fontFamily": "System Font",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#AAAAAA",
+								"fontFamily": "System Font",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							}
+						}
+					]
+				},
+				"OffScreen_Bouton_3": {
+					"type": "button",
+					"top": 5,
+					"left": 285,
+					"width": 95,
+					"height": 20,
+					"sizingX": "move",
+					"shortcutKey": "[Enter]",
+					"text": "Enter",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#FF6600",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"OffScreen_Bouton_4": {
+					"type": "button",
+					"top": 30,
+					"left": 285,
+					"width": 95,
+					"height": 20,
+					"sizingX": "move",
+					"shortcutKey": "[Esc]",
+					"text": "Escape",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"stroke": "#FF6600",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"bUtil6": {
+					"type": "button",
+					"top": 521,
+					"left": 31,
+					"width": 32,
+					"height": 23,
+					"sizingY": "move",
+					"tooltip": ":xliff:TipString",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Splitter.Vertical.Shadow": {
+					"type": "line",
+					"top": 40,
+					"left": 264,
+					"width": 1,
+					"height": 504,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA"
+				},
+				"Règle": {
+					"type": "ruler",
+					"top": 526,
+					"left": 68,
+					"width": 128,
+					"height": 14,
+					"sizingY": "move",
+					"dataSource": "<>Lon_opacity",
+					"continuousExecution": false,
+					"max": 100,
+					"graduationStep": 10,
+					"step": 10,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"method": "ObjectMethods/Règle.4dm",
+					"events": [
+						"onClick",
+						"onDataChange"
+					]
+				},
+				"Texte7": {
+					"type": "text",
+					"top": 526,
+					"left": 3,
+					"width": 54,
+					"height": 13,
+					"sizingY": "move",
+					"stroke": "#808080",
+					"textAlign": "right",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"text": ":xliff:colorOpacity"
+				},
+				"Texte": {
+					"type": "text",
+					"top": 526,
+					"left": 202,
+					"width": 47,
+					"height": 13,
+					"sizingY": "move",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"text": "<<>Lon_Opacity>%"
+				}
+			}
+		},
+		null
+	]
+}

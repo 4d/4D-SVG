@@ -1,0 +1,339 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:viewerTitle",
+	"windowMinWidth": 550,
+	"windowMinHeight": 150,
+	"width": 843,
+	"height": 593,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onActivate",
+		"onMenuSelect",
+		"onCloseBox",
+		"onUnload",
+		"onTimer",
+		"onResize",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"tabs": {
+					"type": "input",
+					"top": 0,
+					"left": 0,
+					"width": 843,
+					"height": 30,
+					"sizingX": "grow",
+					"dataSource": "<>Pic_viewerTab",
+					"dataSourceTypeHint": "picture",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"pictureFormat": "tiled",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/tabs.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"_back": {
+					"type": "rectangle",
+					"top": 39,
+					"left": 10,
+					"width": 823,
+					"height": 507,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "automatic"
+				},
+				"viewerPicture": {
+					"type": "input",
+					"top": 40,
+					"left": 10,
+					"width": 821,
+					"height": 505,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>SVG_viewerPicture",
+					"dataSourceTypeHint": "picture",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "custom",
+					"dropping": "custom",
+					"method": "ObjectMethods/viewerPicture.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove",
+						"onBeginDragOver"
+					]
+				},
+				"Texte": {
+					"type": "text",
+					"top": 561,
+					"left": 653,
+					"width": 80,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"text": "x = <MouseX>"
+				},
+				"Texte1": {
+					"type": "text",
+					"top": 561,
+					"left": 753,
+					"width": 80,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "center",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"text": "y = <MouseY>"
+				},
+				"Image1": {
+					"type": "picture",
+					"top": 562,
+					"left": 10,
+					"width": 18,
+					"height": 11,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/HorzOriginPinned.png"
+				},
+				"Image2": {
+					"type": "picture",
+					"top": 558,
+					"left": 99,
+					"width": 11,
+					"height": 18,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/VertOriginPinned.png"
+				},
+				"Image3": {
+					"type": "picture",
+					"top": 560,
+					"left": 191,
+					"width": 14,
+					"height": 14,
+					"sizingY": "move",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/IBInfoTemplate.png"
+				},
+				"id": {
+					"type": "input",
+					"top": 561,
+					"left": 532,
+					"width": 101,
+					"height": 13,
+					"sizingX": "move",
+					"sizingY": "move",
+					"textAlign": "right",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"width": {
+					"type": "input",
+					"top": 561,
+					"left": 36,
+					"width": 53,
+					"height": 13,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"height": {
+					"type": "input",
+					"top": 561,
+					"left": 116,
+					"width": 55,
+					"height": 13,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"size": {
+					"type": "input",
+					"top": 561,
+					"left": 211,
+					"width": 70,
+					"height": 13,
+					"sizingY": "move",
+					"textAlign": "left",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"zoom": {
+					"type": "input",
+					"top": 562,
+					"left": 301,
+					"width": 70,
+					"height": 13,
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"numberFormat": "### ##0,##%",
+					"dragging": "none",
+					"dropping": "none"
+				},
+				"_grigri": {
+					"type": "picture",
+					"top": 69,
+					"left": 36,
+					"width": 70,
+					"height": 52,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/grigri.gif"
+				}
+			}
+		},
+		{
+			"objects": {
+				"xml": {
+					"type": "input",
+					"top": 40,
+					"left": 12,
+					"width": 804,
+					"height": 505,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>SVG_viewerSource",
+					"stroke": "#808080",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"hideFocusRing": true,
+					"styledText": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "automatic",
+					"method": "ObjectMethods/xml.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"_grigri1": {
+					"type": "picture",
+					"top": 69,
+					"left": 36,
+					"width": 70,
+					"height": 52,
+					"sizingX": "fixed",
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/grigri.gif"
+				},
+				"fontSize": {
+					"type": "ruler",
+					"top": 562,
+					"left": 633,
+					"width": 154,
+					"height": 17,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSourceTypeHint": "number",
+					"min": 8,
+					"max": 96,
+					"graduationStep": 1,
+					"fontFamily": ".SF NS Text",
+					"fontSize": 12,
+					"method": "ObjectMethods/fontSize.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Texte2": {
+					"type": "text",
+					"top": 559,
+					"left": 613,
+					"width": 9,
+					"height": 12,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fontFamily": "Courier",
+					"fontSize": 12,
+					"text": "A"
+				},
+				"Texte3": {
+					"type": "text",
+					"top": 556,
+					"left": 799,
+					"width": 14,
+					"height": 19,
+					"sizingX": "move",
+					"sizingY": "move",
+					"fontFamily": "Courier",
+					"fontSize": 18,
+					"text": "A"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"memorizeGeometry": false
+}

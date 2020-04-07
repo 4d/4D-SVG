@@ -1,0 +1,344 @@
+﻿{
+	"00_DEV": {
+		"methods": [
+			"_TEST_Macros",
+			"0_Notes",
+			"0_TestCallbackMethod",
+			"00_",
+			"00_beaucoup",
+			"00_ColorPalette",
+			"00_RepairConstants",
+			"00_test",
+			"00_toDoList",
+			"ACI0075561",
+			"ACI0087022",
+			"ACI0087082",
+			"COMPILER_TEMPO",
+			"Compiler_test",
+			"COMPILER_TESTS",
+			"draw_picture",
+			"MaMethode",
+			"Méthode 262",
+			"OPTIMIZATION",
+			"TEST PAGES",
+			"test_ACI0092966",
+			"test_ACI0094904",
+			"test_filter_colorMatrix",
+			"Test_Get_named_color_value"
+		],
+		"forms": [
+			"color",
+			"Form1",
+			"Form2",
+			"tool_METHOD"
+		]
+	},
+	"00_IN_WORKS": {
+		"methods": [
+			"SVG_Get_styled_text"
+		]
+	},
+	"1 - Documents": {
+		"methods": [
+			"SVG_CLEAR",
+			"SVG_Copy",
+			"SVG_Export_to_picture",
+			"SVG_Export_to_XML",
+			"SVG_New",
+			"SVG_Open_file",
+			"SVG_Open_picture",
+			"SVG_SAVE_AS_PICTURE",
+			"SVG_SAVE_AS_TEXT",
+			"SVG_Validate_file"
+		]
+	},
+	"2 - Drawing": {
+		"methods": [
+			"SVG_Add_object",
+			"SVG_ADD_POINT",
+			"SVG_New_arc",
+			"SVG_New_circle",
+			"SVG_New_ellipse",
+			"SVG_New_ellipse_bounded",
+			"SVG_New_embedded_image",
+			"SVG_New_image",
+			"SVG_New_line",
+			"SVG_New_path",
+			"SVG_New_polygon",
+			"SVG_New_polygon_by_arrays",
+			"SVG_New_polyline",
+			"SVG_New_polyline_by_arrays",
+			"SVG_New_rect",
+			"SVG_New_regular_polygon",
+			"SVG_PATH_ARC",
+			"SVG_PATH_CLOSE",
+			"SVG_PATH_CURVE",
+			"SVG_PATH_LINE_TO",
+			"SVG_PATH_MOVE_TO",
+			"SVG_PATH_QCURVE",
+			"SVG_Use"
+		]
+	},
+	"3 - Text": {
+		"methods": [
+			"SVG_APPEND_TEXT_TO_TEXTAREA",
+			"SVG_Get_text",
+			"SVG_New_text",
+			"SVG_New_textArea",
+			"SVG_New_tspan",
+			"SVG_New_vertical_text",
+			"SVG_SET_FONT_COLOR",
+			"SVG_SET_FONT_FAMILY",
+			"SVG_SET_FONT_SIZE",
+			"SVG_SET_FONT_STYLE",
+			"SVG_SET_TEXT_ANCHOR",
+			"SVG_SET_TEXT_KERNING",
+			"SVG_SET_TEXT_LETTER_SPACING",
+			"SVG_SET_TEXT_RENDERING",
+			"SVG_SET_TEXT_WRITING_MODE",
+			"SVG_SET_TEXTAREA_TEXT"
+		]
+	},
+	"4 - Structure & definition": {
+		"methods": [
+			"SVG_ADD_NAMESPACE",
+			"SVG_Define_clip_Path",
+			"SVG_Define_filter",
+			"SVG_Define_gradient_l_by_arrays",
+			"SVG_Define_gradient_r_by_arrays",
+			"SVG_Define_image",
+			"SVG_Define_linear_gradient",
+			"SVG_Define_marker",
+			"SVG_Define_pattern",
+			"SVG_Define_radial_gradient",
+			"SVG_Define_shadow",
+			"SVG_Define_solidColor",
+			"SVG_Define_style",
+			"SVG_DEFINE_STYLE_WITH_ARRAYS",
+			"SVG_Define_symbol",
+			"SVG_Define_symbol_from_file",
+			"SVG_DELETE_OBJECT",
+			"SVG_Get_default_encoding",
+			"SVG_Get_root_reference",
+			"SVG_New_group",
+			"SVG_Post_comment",
+			"SVG_SET_DEFAULT_ENCODING",
+			"SVG_Set_description",
+			"SVG_SET_PATTERN_CONTENT_UNITS",
+			"SVG_SET_PATTERN_UNITS",
+			"SVG_Set_title"
+		]
+	},
+	"4DPop": {
+		"methods": [
+			"Color_main",
+			"SVGTool_Display_colors",
+			"SVGTool_Display_syntax",
+			"SVGTool_Display_viewer",
+			"syntax_EXPAND",
+			"Syntax_help",
+			"syntax_List",
+			"Syntax_main",
+			"Syntax_objectMethod",
+			"Viewer_main"
+		],
+		"forms": [
+			"colorPalette",
+			"syntaxPalette",
+			"viewer"
+		]
+	},
+	"5 - Attributes": {
+		"groups": [
+			"Getter",
+			"Setter"
+		]
+	},
+	"6 - Colors & gradients": {
+		"methods": [
+			"SVG_Color_from_index",
+			"SVG_Color_grey",
+			"SVG_Color_RGB_from_CMYK",
+			"SVG_Color_RGB_from_HLS",
+			"SVG_Color_RGB_from_long",
+			"SVG_FADE_TO_GREY_SCALE",
+			"SVG_GET_COLORS_ARRAY",
+			"SVG_GET_DEFAULT_BRUSHES",
+			"SVG_Get_named_color_value",
+			"SVG_SET_BRIGHTNESS",
+			"SVG_SET_DEFAULT_BRUSHES",
+			"SVG_SET_HUE",
+			"SVG_SET_SATURATION"
+		]
+	},
+	"7-  Filters": {
+		"methods": [
+			"SVG_Filter_Blend",
+			"SVG_Filter_Blur",
+			"SVG_Filter_ColorMatrix",
+			"SVG_Filter_Composite",
+			"SVG_Filter_Merge",
+			"SVG_Filter_MergeNode",
+			"SVG_Filter_Offset"
+		]
+	},
+	"8 - Utilities": {
+		"methods": [
+			"SVG_Count_elements",
+			"SVG_ELEMENTS_TO_ARRAYS",
+			"SVG_Estimate_weight",
+			"SVG_Find_ID",
+			"SVG_Get_options",
+			"SVG_Get_version",
+			"SVG_Is_reference_valid",
+			"SVG_Read_element_type",
+			"SVG_Read_last_error",
+			"SVG_References_array",
+			"SVG_SET_DOCUMENT_VARIABLE",
+			"SVG_Set_error_handler",
+			"SVG_SET_OPTIONS"
+		]
+	},
+	"9 - MISCELLANEOUS": {
+		"methods": [
+			"SVG_ROTATION_CENTERED",
+			"SVG_SCALING_CENTERED"
+		]
+	},
+	"Component": {
+		"groups": [
+			"4DPop",
+			"Interface (THREAD-SAFE)",
+			"NOT THREAD SAFE",
+			"Private"
+		],
+		"methods": [
+			"Compiler_SVG",
+			"Compiler_SVG_Private",
+			"Compiler_SVG_Public"
+		]
+	},
+	"Getter": {
+		"methods": [
+			"SVG_GET_ATTRIBUTES",
+			"SVG_Get_class",
+			"SVG_Get_fill_brush",
+			"SVG_Get_ID"
+		]
+	},
+	"Interface (THREAD-SAFE)": {
+		"groups": [
+			"1 - Documents",
+			"2 - Drawing",
+			"3 - Text",
+			"4 - Structure & definition",
+			"5 - Attributes",
+			"6 - Colors & gradients",
+			"7-  Filters",
+			"8 - Utilities",
+			"9 - MISCELLANEOUS"
+		]
+	},
+	"lib": {
+		"groups": [
+			"Rgx",
+			"xml"
+		]
+	},
+	"NOT THREAD SAFE": {
+		"methods": [
+			"COMPILER_Not_Thread_Safe",
+			"fallBack_Not_thread_safe",
+			"SVG_ABOUT",
+			"SVGTool_SET_VIEWER_CALLBACK",
+			"SVGTool_SHOW_IN_VIEWER",
+			"viewer_sources",
+			"xToolBox_tabCreate",
+			"xToolBox_tabHandler"
+		]
+	},
+	"Private": {
+		"methods": [
+			"Component_about",
+			"Component_defaultOptions",
+			"Component_errorHandler",
+			"Component_init",
+			"Component_putError",
+			"fontReplaceArial",
+			"PREFERENCES",
+			"str_styledText",
+			"SVG_Get_string_width",
+			"svg_relativeURL",
+			"url_decode",
+			"url_encode",
+			"xToolBox_BytesToString",
+			"xToolbox_GetLastItemFromPath",
+			"xToolBox_NO_ERROR",
+			"xToolBox_RELEASE_MENU"
+		],
+		"forms": [
+			"About"
+		]
+	},
+	"Rgx": {
+		"methods": [
+			"COMPILER_Rgx",
+			"Rgx_ExtractText",
+			"Rgx_Get_Pattern",
+			"Rgx_MatchText",
+			"rgx_NO_ERROR",
+			"rgx_Options",
+			"Rgx_SplitText",
+			"Rgx_SubstituteText"
+		]
+	},
+	"Setter": {
+		"methods": [
+			"SVG_SET_ATTRIBUTES",
+			"SVG_SET_ATTRIBUTES_BY_ARRAYS",
+			"SVG_SET_CLASS",
+			"SVG_SET_CLIP_PATH",
+			"SVG_SET_DIMENSIONS",
+			"SVG_SET_FILL_BRUSH",
+			"SVG_SET_FILL_RULE",
+			"SVG_SET_FILTER",
+			"SVG_SET_ID",
+			"SVG_SET_MARKER",
+			"SVG_SET_OPACITY",
+			"SVG_SET_ROUNDING_RECT",
+			"SVG_SET_SHAPE_RENDERING",
+			"SVG_SET_STROKE_BRUSH",
+			"SVG_SET_STROKE_DASHARRAY",
+			"SVG_SET_STROKE_LINECAP",
+			"SVG_SET_STROKE_LINEJOIN",
+			"SVG_SET_STROKE_MITERLIMIT",
+			"SVG_SET_STROKE_VECTOR_EFFECT",
+			"SVG_SET_STROKE_WIDTH",
+			"SVG_SET_TRANSFORM_FLIP",
+			"SVG_SET_TRANSFORM_MATRIX",
+			"SVG_SET_TRANSFORM_ROTATE",
+			"SVG_SET_TRANSFORM_SCALE",
+			"SVG_SET_TRANSFORM_SKEW",
+			"SVG_SET_TRANSFORM_TRANSLATE",
+			"SVG_SET_VIEWBOX",
+			"SVG_SET_VIEWPORT_FILL",
+			"SVG_SET_VISIBILITY",
+			"SVG_SET_XY"
+		]
+	},
+	"xml": {
+		"methods": [
+			"COMPILER_xml",
+			"xml_COPY_ELEMENT",
+			"xml_Duplicate_element",
+			"xml_Escape_characters",
+			"xml_findInfoPListKey",
+			"xml_getInfoPListKey",
+			"xml_noError",
+			"xml_referenceValid",
+			"xml_remove_attribute",
+			"xmlColoredSyntax"
+		]
+	},
+	"trash": {}
+}

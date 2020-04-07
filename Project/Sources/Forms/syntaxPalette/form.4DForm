@@ -1,0 +1,152 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": ":xliff:syntaxPaletteTitle",
+	"memorizeGeometry": true,
+	"width": 263,
+	"height": 544,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onCloseBox",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 264,
+					"height": 521,
+					"sizingY": "grow",
+					"fill": "automatic"
+				},
+				"commands.list": {
+					"type": "list",
+					"top": 0,
+					"left": 0,
+					"width": 263,
+					"height": 520,
+					"sizingY": "grow",
+					"dataSource": "<>lst_syntax",
+					"enterable": false,
+					"hideFocusRing": true,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"dragging": "custom",
+					"fill": "#E7EFF6",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"borderStyle": "none",
+					"method": "ObjectMethods/commands.list.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onBeginDragOver"
+					]
+				},
+				"help": {
+					"type": "webArea",
+					"top": 0,
+					"left": 264,
+					"width": 836,
+					"height": 544,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"webEngine": "embedded",
+					"contextMenu": "none",
+					"borderStyle": "none"
+				},
+				"bUtil6": {
+					"type": "button",
+					"top": 521,
+					"left": 31,
+					"width": 32,
+					"height": 23,
+					"sizingY": "move",
+					"tooltip": ":xliff:TipString",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"iconFrames": 4,
+					"textPlacement": "center",
+					"style": "custom",
+					"events": [
+						"onClick"
+					]
+				},
+				"Ligne2": {
+					"type": "line",
+					"top": 521,
+					"left": 0,
+					"width": 263,
+					"sizingX": "grow",
+					"sizingY": "move",
+					"stroke": "#A5A5A5",
+					"height": 0,
+					"startPoint": "topLeft"
+				},
+				"Bouton1": {
+					"type": "button",
+					"top": 521,
+					"left": 0,
+					"width": 33,
+					"height": 23,
+					"sizingY": "move",
+					"dataSource": "<>bDocumentation",
+					"fontFamily": "System Font",
+					"fontSize": 11,
+					"icon": "/RESOURCES/Images/palette/www.png",
+					"iconFrames": 4,
+					"style": "bevel",
+					"events": [
+						"onClick"
+					],
+					"method": "Syntax_objectMethod"
+				},
+				"Line": {
+					"type": "line",
+					"top": 1,
+					"left": 263,
+					"height": 543,
+					"sizingY": "grow",
+					"stroke": "#AAAAAA",
+					"width": 0,
+					"startPoint": "topLeft"
+				},
+				"collapse_expand": {
+					"type": "checkbox",
+					"top": 523,
+					"left": 235,
+					"width": 24,
+					"height": 19,
+					"sizingY": "move",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"style": "disclosure",
+					"events": [
+						"onClick"
+					],
+					"memorizeValue": true,
+					"method": "syntax_EXPAND",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	}
+}
