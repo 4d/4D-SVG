@@ -100,22 +100,31 @@ If ($Lon_parameters>=1)
 			
 			If (OK=1)
 				
-				  //Set the id {
-				If (Storage:C1525.svg.options ?? 1)
+				  //Set the id 
+				  //#ACI0097608 [
+				  //If (Storage.svg.options ?? 1)
+				  //DOM SET XML ATTRIBUTE($Dom_svgReference;\
+					"id";$Dom_svgReference)
+				  //Else 
+				  //If (Length($Txt_ID)>0)
+				  //DOM SET XML ATTRIBUTE($Dom_svgReference;\
+					"id";$Txt_ID)
+				  //End if 
+				  //End if 
+				If (Length:C16($Txt_ID)>0)
 					
 					DOM SET XML ATTRIBUTE:C866($Dom_svgReference;\
-						"id";$Dom_svgReference)
-					
+						"id";$Txt_ID)
 				Else 
 					
-					If (Length:C16($Txt_ID)>0)
+					If (Storage:C1525.svg.options ?? 1)
 						
 						DOM SET XML ATTRIBUTE:C866($Dom_svgReference;\
-							"id";$Txt_ID)
+							"id";$Dom_svgReference)
 						
 					End if 
 				End if 
-				  //}
+				  //]
 				
 				If (OK=1)
 					

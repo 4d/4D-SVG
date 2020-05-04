@@ -1,0 +1,9 @@
+<!-- <span style="font-family:sans-serif;color:gray;">style := <span style="font-family:sans-serif;color:gray;font-weight:bold;font-style:italic">SVG_DEFINE_STYLE_WITH_ARRAYS</span> ( svgObject ; attributes ; values ; class ; type ; media ; title ) -&gt; svgObject (Text) -&gt; attributes (Pointer) -&gt; values (Pointer) -&gt; class (Text) -&gt; type (Text) -&gt; media (Text) -&gt; title (Text) &lt;- style (Text)</span>-->## Description **SVG\_Define\_style\_with\_arrays** (svgObject; namesArrayPointer; valuesArrayPointer {; className {; type {; media {; title }}}}) -&gt; svgReferenceAllows style definition with 2 arrays: attribute's names and attribute's values.If the svgObjectReference is the root, the style is defined as a style element in the def section (Internal Style Sheet). In this case the className parameter is mandatory (error if not)The line "**SVG\_Define\_style\_with\_arrays** ($Root->; $tTxt\_attributeNames; ->$tTxt\_attributeValue; "title")" will give:
+```xml
+<defs id="4D">	<style type="text/css" .title{fill:black;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;}/></defs>```
+The style will then be assigned to an element with **SVG\_SET\_CLASS** ( $elementRef ; "title")If the svgObjectReference is an element, the style is defined as a style attribute for this element (Inline Style). The line " **SVG\_Define\_style\_with\_arrays** ($elementRef; ->;$tTxt\_attributeNames ; ->$tTxt\_attributeValues )" will give:
+```xml
+<element style="fill:black;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;">
+…
+</element>
+```

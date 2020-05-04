@@ -1,0 +1,1 @@
+﻿<!-- svgReference := SVG_Set_description ( svgObject ; description ) -> svgObject (Text) -> description (Text) <- svgReference (Text)-->## Description **SVG\_Set\_description** ( parentSVGObject ; description ) -&gt; Function result 

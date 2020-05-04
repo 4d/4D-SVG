@@ -1,0 +1,1 @@
+﻿<!-- style := SVG_Define_style ( svgObject ; style ; Param_3 ; Param_4 ; title ) -> svgObject (Text) -> style (Text) -> Param_3 (Text) -> Param_4 (Text) -> title (Text) <- style (Text)-->## Description **SVG\_Define\_style** ( parentSVGObject ; styleDefinition | filePath | URL { ; content-type {; media  {; title}}} ) -&gt; Function result

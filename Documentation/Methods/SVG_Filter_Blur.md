@@ -1,0 +1,1 @@
+﻿<!-- nodeReference := SVG_Filter_Blur ( parentReference ; stdDeviation ; in ; result ) -> parentReference (Text) -> stdDeviation (Long Integer) -> in (Text) -> result (Text) <- nodeReference (Text)-->## Description **SVG\_Filter\_Blur** ( filterRef ; deviation {; input {; name}} ) -&gt; Function result 

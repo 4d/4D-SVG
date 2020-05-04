@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_TEXTAREA_TEXT ( svgObject ; text ) -> svgObject (Text) -> text (Text) - String to write-->## Description

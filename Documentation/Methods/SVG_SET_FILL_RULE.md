@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_FILL_RULE ( element ; fileRule ) -> element (Text) -> fileRule (Text)-->## Description **SVG\_SET\_FILL\_RULE** ( svgObject ; fillRule )

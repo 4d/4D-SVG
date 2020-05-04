@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_DEFAULT_ENCODING ( encoding ) -> encoding (Text)-->## Description

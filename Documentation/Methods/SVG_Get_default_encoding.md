@@ -1,0 +1,1 @@
+﻿<!-- Text := SVG_Get_default_encoding-->## Description

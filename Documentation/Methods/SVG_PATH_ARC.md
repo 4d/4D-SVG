@@ -1,0 +1,1 @@
+﻿<!-- SVG_PATH_ARC ( parentReference ; Param_2 ; Param_3 ; Param_4 ; Param_5 ; Param_6 ; Param_7 ) -> parentReference (Text) -> Param_2 (Real) -> Param_3 (Real) -> Param_4 (Real) -> Param_5 (Real) -> Param_6 (Real) -> Param_7 (Long Integer)-->## Description **SVG\_PATH\_ARC** ( parentSVGObject ; xRadius ; yRadius ; x ; y {; rotation {; arcpath}} ) 

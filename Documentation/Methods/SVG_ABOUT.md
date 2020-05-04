@@ -1,0 +1,1 @@
+﻿<!-- SVG_ABOUT -->## Description<br/>The **SVG\_ABOUT** command displays a dialog with the 4D SVG logo indicating the version number of the component:

@@ -1,0 +1,1 @@
+﻿<!-- SVG_PATH_CURVE ( parentReference ; Param_2 ; Param_3 ; Param_4 ; Param_5 ; Param_6 ; Param_7 ) -> parentReference (Text) -> Param_2 (Real) -> Param_3 (Real) -> Param_4 (Real) -> Param_5 (Real) -> Param_6 (Real) -> Param_7 (Real)-->## Description **SVG\_PATH\_CURVE** ( parentSVGObject {; controlStartX ; controlStartY} ; controlEndX ; controlEndY ; x ; y ) 

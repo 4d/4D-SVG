@@ -1,0 +1,1 @@
+﻿<!-- color := SVG_Get_named_color_value ( colorName ; what ) -> colorName (Text) -  svg color name -> what (Text) - {what value} "r" or "g" or "v" or "b" for the color component, else long color <- color (Long Integer)-->## Description

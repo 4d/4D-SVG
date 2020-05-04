@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_TRANSFORM_MATRIX ( objectID ; Param_2 ; Param_3 ; Param_4 ; Param_5 ; Param_6 ; Param_7 ) -> objectID (Text) -> Param_2 (Real) -> Param_3 (Real) -> Param_4 (Real) -> Param_5 (Real) -> Param_6 (Real) -> Param_7 (Real)-->## Description **SVG\_SET\_TRANSFORM\_MATRIX** ( svgObject ; a ; b {; c ; d {; e ; f}} )

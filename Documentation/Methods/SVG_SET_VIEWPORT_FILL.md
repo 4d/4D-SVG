@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_VIEWPORT_FILL ( objectID ; color ; opacity ) -> objectID (Text) -> color (Text) -> opacity (Long Integer)-->## Description **SVG\_SET\_VIEWPORT\_FILL** ( svgObject {; color {; opacity}} ) 

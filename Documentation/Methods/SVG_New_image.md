@@ -1,0 +1,1 @@
+﻿<!-- nodeReference := SVG_New_image ( parentReference ; URL ; left ; top ; width ; height ) -> parentReference (Text) -> URL (Text) -> left (Real) -> top (Real) -> width (Real) -> height (Real) <- nodeReference (Text)-->## Description **SVG\_New\_image** ( parentSVGObject ; url {; x ; y {; width ; height}} ) -&gt; Function result 

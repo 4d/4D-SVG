@@ -1,0 +1,1 @@
+﻿<!-- nodeReference := SVG_New_embedded_image ( parentReference ; image ; left ; top ; codec ) -> parentReference (Text) -> image (Picture) -> left (Real) - default is 0 -> top (Real) - default is 0 -> codec (Text) - default is .png <- nodeReference (Text)-->## Description **SVG\_New\_embedded\_image** ( parentSVGObject ; picture {; x {; y}} ) -&gt; Function result 

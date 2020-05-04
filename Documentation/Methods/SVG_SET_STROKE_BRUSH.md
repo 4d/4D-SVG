@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_STROKE_BRUSH ( objectID ; color ; opacity ) -> objectID (Text) -> color (Text) -> opacity (Long Integer)-->## Description **SVG\_SET\_STROKE\_BRUSH** ( svgObject ; color )

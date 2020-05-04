@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true}
   // ----------------------------------------------------
   // Method :  0_TestCallbackMethod
   // Created 21/06/10 by Vincent de Lachaux

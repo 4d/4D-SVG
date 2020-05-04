@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_FONT_COLOR ( svgObject ; fillColor ; strokeColor ) -> svgObject (Text) -> fillColor (Text) -> strokeColor (Text)-->## Description<br/>

@@ -1,0 +1,1 @@
+﻿<!-- isSVG := SVG_Validate_file ( pathname ) -> pathname (Text) <- isSVG (Boolean) - true if the file is a svg-->## Description **SVG\_Validate\_file** ( path ) -&gt; Function result 

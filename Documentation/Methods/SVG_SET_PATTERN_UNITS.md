@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_PATTERN_UNITS ( svgObject ; patternUnit ) -> svgObject (Text) -> patternUnit (Text)-->## Description **SVG\_SET\_PATTERN\_UNITS** ( patternObject ; patternUnits )

@@ -1,0 +1,1 @@
+﻿<!-- rootReference := SVG_Open_file ( path ; validate ) -> path (Text) -> validate (Boolean) <- rootReference (Text)-->## Description<br/>The **SVG\_Open\_file** command parses (and validates with the DTD) the SVG document found at the location designated by the path parameter <br/>and returns an SVG reference (16-character string) for this document.

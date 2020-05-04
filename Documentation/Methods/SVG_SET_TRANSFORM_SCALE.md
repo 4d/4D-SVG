@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_TRANSFORM_SCALE ( objectID ; sx ; sy ) -> objectID (Text) -> sx (Real) -> sy (Real)-->## Description **SVG\_SET\_TRANSFORM\_SCALE** ( svgObject ; scaleX {; scaleY} )

@@ -1,0 +1,1 @@
+﻿<!-- symbolID := SVG_Define_symbol ( svgObject ; ID ; x ; y ; width ; height ; preserveAspectRatio ) -> svgObject (Text) -> ID (Text) -> x (Real) -> y (Real) -> width (Real) -> height (Real) -> preserveAspectRatio (Text) <- symbolID (Text)-->## Description **SVG\_Define\_symbol** ( parentSVGObject ; id {; x {; y {; width {; height {; mode}}}}} ) -&gt; Function result 

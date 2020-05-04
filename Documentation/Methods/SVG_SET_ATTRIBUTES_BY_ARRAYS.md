@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_ATTRIBUTES_BY_ARRAYS ( objectID ; Param_2 ; Param_3 ) -> objectID (Text) -> Param_2 (Pointer) -> Param_3 (Pointer)-->## Description **SVG\_SET\_ATTRIBUTES\_BY\_ARRAYS** ( svgObject ; namesArrayPointer ; valuesArrayPointer ) 

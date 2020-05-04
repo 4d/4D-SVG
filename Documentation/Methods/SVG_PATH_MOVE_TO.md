@@ -1,0 +1,1 @@
+﻿<!-- SVG_PATH_MOVE_TO ( parentReference ; Param_2 ; Param_3 ) -> parentReference (Text) -> Param_2 (Real) -> Param_3 (Real)-->## Description **SVG\_PATH\_MOVE\_TO** ( parentSVGObject ; x ; y ) 

@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_TEXT_RENDERING ( svgObject ; rendering ) -> svgObject (Text) -> rendering (Text)-->## Description

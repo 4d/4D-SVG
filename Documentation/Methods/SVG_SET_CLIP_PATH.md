@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_CLIP_PATH ( root ; ID ) -> root (Text) -> ID (Text)-->## Description **SVG\_SET\_CLIP\_PATH** ( svgObject ; clipPathID )

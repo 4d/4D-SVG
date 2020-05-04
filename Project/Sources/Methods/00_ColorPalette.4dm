@@ -42,7 +42,7 @@ For ($Lon_ii;0;15;1)
 	
 End for 
 
-  //SVGTool_SHOW_IN_VIEWER ($Dom_svg)
+SVGTool_SHOW_IN_VIEWER ($Dom_svg)
 SVG_CLEAR ($Dom_svg)
 
-ALERT:C41(String:C10(Milliseconds:C459-$Lon_start))
+  //ALERT(String(Milliseconds-$Lon_start))

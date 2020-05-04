@@ -1,0 +1,1 @@
+﻿<!-- SVG_Define_gradient_l_by_arrays ( svgObject ; gradientName ; x1 ; y1 ; x2 ; y2 ; Param_7 ; … ; N ) -> svgObject (Text) -> gradientName (Text) -> x1 (Long Integer) -> y1 (Long Integer) -> x2 (Long Integer) -> y2 (Long Integer) -> Param_7 ; … ; N (Text)-->## Description

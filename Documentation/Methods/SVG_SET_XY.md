@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_XY ( objectID ; x ; y ) -> objectID (Text) -> x (Real) -> y (Real)-->## Description **SVG\_SET\_XY** ( svgObject ; x {; y} ) 

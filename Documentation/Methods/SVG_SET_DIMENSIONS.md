@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_DIMENSIONS ( objectID ; width ; height ; unit ) -> objectID (Text) -> width (Real) -> height (Real) -> unit (Text)-->## Description **SVG\_SET\_DIMENSIONS** ( svgObject ; width {; height {; unit}} ) 

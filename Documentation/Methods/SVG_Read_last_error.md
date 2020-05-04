@@ -1,0 +1,1 @@
+﻿<!-- Long Integer := SVG_Read_last_error-->## Description **SVG\_Read\_last\_error** -&gt; Function result

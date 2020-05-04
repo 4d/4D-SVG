@@ -1,0 +1,1 @@
+﻿<!-- class := SVG_Get_class ( svgObject ; classesNamesArray ) -> svgObject (Text) -> classesNamesArray (Pointer) - {array text} will be populated with all class names <- class (Text) - class attribute-->## Description

@@ -1,0 +1,1 @@
+﻿<!-- node := SVG_New_path ( parent ; Param_2 ; Param_3 ; strokeColor ; fillColor ; strokeWidth ) -> parent (Text) -> Param_2 (Real) -> Param_3 (Real) -> strokeColor (Text) -> fillColor (Text) -> strokeWidth (Real) <- node (Text)-->## Description **SVG\_New\_path** ( parentSVGObject ; x ; y {; foregroundColor {; backgroundColor {; strokeWidth}}} ) -&gt; Function result 

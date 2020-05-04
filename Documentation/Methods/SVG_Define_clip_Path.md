@@ -1,0 +1,1 @@
+﻿<!-- Text := SVG_Define_clip_Path ( svgObject ; ID ) -> svgObject (Text) -> ID (Text)-->## Description **SVG\_Define\_clip\_Path** ( parentSVGObject ; id ) -&gt; Function result

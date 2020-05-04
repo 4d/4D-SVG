@@ -1,0 +1,1 @@
+﻿<!-- SVG_PATH_LINE_TO ( parentReference ; Param_2 ; Param_3 ; Param_4 ; … ; N ) -> parentReference (Text) -> Param_2 (Real) -> Param_3 (Real) -> Param_4 ; … ; N (Real)-->## Description **SVG\_PATH\_LINE\_TO** ( parentSVGObject ; x {; y}{; x2 ; y2 ; ... ; xN ; yN} ) 

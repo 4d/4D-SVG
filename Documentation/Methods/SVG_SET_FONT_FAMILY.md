@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_FONT_FAMILY ( svgObject ; Param_2 ; … ; N ) -> svgObject (Text) -> Param_2 ; … ; N (Text)-->## Description

@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_TRANSFORM_TRANSLATE ( objectID ; Param_2 ; Param_3 ) -> objectID (Text) -> Param_2 (Real) -> Param_3 (Real)-->## Description **SVG\_SET\_TRANSFORM\_TRANSLATE** ( svgObject ; x {; y} )

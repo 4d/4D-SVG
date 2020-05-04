@@ -1,0 +1,1 @@
+﻿<!-- SVG_CLEAR ( svgObject ) -> svgObject (Text)-->## DescriptionThe **SVG\_CLEAR** command frees the memory taken up by the SVG object designated by svgObject.

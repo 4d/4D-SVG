@@ -1,0 +1,1 @@
+﻿<!-- symbolID := SVG_Define_symbol_from_file ( svgObject ; ID ; Path ; x ; y ; width ; height ; preserveAspectRatio ) -> svgObject (Text) -> ID (Text) -> Path (Text) -> x (Real) -> y (Real) -> width (Real) -> height (Real) -> preserveAspectRatio (Text) <- symbolID (Text)-->## Description

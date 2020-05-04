@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_FILTER ( parentReference ; URL ) -> parentReference (Text) -> URL (Text)-->## Description **SVG\_SET\_FILTER** ( svgObject ; url ) 

@@ -1,0 +1,1 @@
+﻿<!-- rootReference := SVG_Open_picture ( picture ) -> picture (Picture) <- rootReference (Text)-->## Description **SVG\_Open\_picture** ( picture ) -&gt; Function result <br/><br/>The **SVG\_Open\_picture** command analyzes an SVG picture and returns an SVG reference for this picture. If picture does not contain an SVG picture, the command returns an empty string.

@@ -1,0 +1,1 @@
+﻿<!-- SVG_FADE_TO_GREY_SCALE ( svgObject ; grey ) -> svgObject (Text) -> grey (Real) - {grey value}-->## Description

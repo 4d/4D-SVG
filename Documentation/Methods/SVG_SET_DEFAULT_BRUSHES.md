@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_DEFAULT_BRUSHES ( strokeColor ; fillColor ) -> strokeColor (Text) -> fillColor (Text)-->## Description

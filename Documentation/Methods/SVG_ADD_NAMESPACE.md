@@ -1,0 +1,3 @@
+<!-- SVG_ADD_NAMESPACE ( svgObject ; prefix ; URI ) -> svgObject (Text) -> prefix (Text) -> URI (Text)-->## Description **SVG\_ADD\_NAME\_SPACE** ( svg\_ref ; prefix {; URI })Adds xmlns attribute to the root of the DOM tree (xmlns:prefix="URI")If **svg\_ref** is not the reference of an element "svg" the attribute is added to the root of the tree.Prefix could be a constant :
+* svgNS for the standard SVG namespace. * xlinkNS for the standard XLink namespace.
+<br/>If prefix is not a constant, URI is mandatory otherwise an error is generated

@@ -1,0 +1,1 @@
+﻿<!-- SVG_PATH_QCURVE ( parentReference ; Param_2 ; Param_3 ; Param_4 ; Param_5 ) -> parentReference (Text) -> Param_2 (Real) -> Param_3 (Real) -> Param_4 (Real) -> Param_5 (Real)-->## Description **SVG\_PATH\_QCURVE** ( parentSVGObject {; controlX ; controlY} ; x ; y ) 

@@ -1,0 +1,1 @@
+﻿<!-- Text := SVG_Post_comment ( svgObject ; comment ) -> svgObject (Text) -> comment (Text)-->## Description<br/>This command adds the text parameter as a comment

@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_TEXT_KERNING ( svgObject ; kerning ; unitIdentifier ) -> svgObject (Text) -> kerning (Real) -> unitIdentifier (Text)-->## Description

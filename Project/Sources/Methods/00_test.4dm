@@ -28,6 +28,16 @@ $Dom_svg:=SVG_New
 Case of 
 		
 		  //________________________________________
+	: (True:C214)  //#ACI0097608
+		
+		SVG_SET_OPTIONS (SVG_Get_options  ?+ 1)  // Enable the auto ID
+		
+		$Dom_g:=SVG_New_group ($Dom_svg;"GroupID")  // This group should have the id of "GroupID", but it gets an auto id
+		
+		$Dom_g:=SVG_New_group ($Dom_svg)
+		SVG_SET_ID ($Dom_g;"NewGroupID")  // this group correctly gets the id "NewGroupID"
+		
+		  //________________________________________
 	: (True:C214)
 		
 		$Lon_x:=200

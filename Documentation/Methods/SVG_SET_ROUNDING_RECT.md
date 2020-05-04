@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_ROUNDING_RECT ( objectID ; rx ; ry ) -> objectID (Text) -> rx (Real) -> ry (Real)-->## Description **SVG\_SET\_ROUNDING\_RECT** ( svgObject ; roundedX {; roundedY} ) 

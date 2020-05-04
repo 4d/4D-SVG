@@ -1,0 +1,1 @@
+﻿<!-- Text := SVG_Set_error_handler ( Param_1 ) -> Param_1 (Text)-->## Description **SVG\_Set\_error\_handler** {( method )} -&gt; Function result 

@@ -1,0 +1,1 @@
+﻿<!-- SVG_GET_COLORS_ARRAY ( colorNamesArray ) -> colorNamesArray (Pointer)-->## Description

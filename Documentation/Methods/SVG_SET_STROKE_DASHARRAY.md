@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_STROKE_DASHARRAY ( object ; Param_2 ; Param_3 ; … ; N ) -> object (Text) -> Param_2 (Real) -> Param_3 ; … ; N (Long Integer)-->## Description **SVG\_SET\_STROKE\_DASHARRAY** ( svgObject ; value {; value1 {; … {; valueN}}})

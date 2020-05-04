@@ -1,0 +1,1 @@
+﻿<!-- SVG_SET_VIEWBOX ( objectID ; x ; y ; width ; height ; preserveAspectRatio ) -> objectID (Text) -> x (Real) -> y (Real) -> width (Real) -> height (Real) -> preserveAspectRatio (Text)-->## Description **SVG\_SET\_VIEWBOX** ( svgObject ; x ; y ; width ; height {; mode} )

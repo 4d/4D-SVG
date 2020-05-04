@@ -1,0 +1,1 @@
+﻿<!-- SVG_SAVE_AS_PICTURE ( svgObject ; pathname ; codec ) -> svgObject (Text) -> pathname (Text) -> codec (Text)-->## Description **SVG\_SAVE\_AS\_PICTURE** ( svgObject ; document {; codec} )

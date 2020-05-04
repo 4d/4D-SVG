@@ -1,0 +1,1 @@
+﻿<!-- Text := SVG_Color_grey ( Grey ) -> Grey (Long Integer) - 0 -> 100-->## Description<br/>The **SVG\_Color\_grey** command returns a string expressing a gray color having a percentage intensity. <br/>The string returned is in "RGB(red, green, blue)" form where the 3 values are equal, the syntax recognized by SVG rendering engines.

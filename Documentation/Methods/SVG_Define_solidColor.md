@@ -1,0 +1,1 @@
+﻿<!-- nodeReference := SVG_Define_solidColor ( svgObject ; ID ; color ; Param_4 ) -> svgObject (Text) -> ID (Text) -> color (Text) -> Param_4 (Long Integer) <- nodeReference (Text)-->## Description **SVG\_Define\_solidColor** ( parentSVGObject ; id ; color {; opacity} ) -&gt; Function result 

@@ -1,0 +1,1 @@
+﻿<!-- nodeReference := SVG_Filter_Blend ( parentReference ; in ; in2 ; mode ; result ) -> parentReference (Text) -> in (Text) -> in2 (Text) -> mode (Text) -> result (Text) <- nodeReference (Text)-->## Description **SVG\_Filter\_Blend** ( filterRef ; picture ; backgroundPict {; mode {; name}} ) -&gt; Function result 

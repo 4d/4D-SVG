@@ -1,0 +1,1 @@
+﻿<!-- SVG_GET_DEFAULT_BRUSHES ( strokeColor ; fillColor ) -> strokeColor (Pointer) -> fillColor (Pointer)-->## Description

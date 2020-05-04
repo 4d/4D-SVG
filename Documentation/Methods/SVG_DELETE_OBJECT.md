@@ -1,0 +1,1 @@
+﻿<!-- SVG_DELETE_OBJECT ( svgObject ) -> svgObject (Text)-->## Description **SVG\_DELETE\_OBJECT** (svgObject)
