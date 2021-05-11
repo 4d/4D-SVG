@@ -26,6 +26,31 @@ SVG_SET_OPTIONS (SVG_Get_options  ?+ 5)
 $Dom_svg:=SVG_New 
 
 Case of 
+		  //________________________________________
+	: (True:C214)  // Define picture
+		
+		$Dom_root:=SVG_New 
+		SVG_New_rect ($Dom_root;10;10;50;50;0;0;"blue";"red")
+		$Pic_buffer:=SVG_Export_to_picture ($Dom_root)
+		SVG_CLEAR ($Dom_root)
+		
+		SVG_Define_image ($Dom_svg;"myPicture";$Pic_buffer;".svg")
+		
+		$Dom_use:=SVG_Use ($Dom_svg;"myPicture";50;50)
+		
+		$Dom_use:=SVG_Use ($Dom_svg;"myPicture";80;80)
+		
+		$Dom_use:=SVG_Use ($Dom_svg;"myPicture";100;100)
+		
+		  //________________________________________
+	: (True:C214)
+		$Txt_path:=Select document:C905("";".svg";"";0)
+		
+		If (OK=1)
+			
+			$Dom_svg:=SVG_Open_file (DOCUMENT;True:C214)
+			
+		End if 
 		
 		  //________________________________________
 	: (True:C214)  //#ACI0097608
