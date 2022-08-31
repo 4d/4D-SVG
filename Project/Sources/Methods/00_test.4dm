@@ -28,6 +28,13 @@ $Dom_svg:=SVG_New
 Case of 
 		
 		//________________________________________
+	: (True:C214)
+		
+		$Txt_path:=System folder:C487(Desktop:K41:16)+"Elevation _1.tiff"
+		READ PICTURE FILE:C678($Txt_path; $Pic_buffer)
+		SVG_New_embedded_image($Dom_svg; $Pic_buffer)
+		
+		//________________________________________
 	: (True:C214)  // Embedded SVG
 		
 		$Dom_picture:=SVG_New
@@ -39,12 +46,6 @@ Case of
 		
 		$Dom_picture:=SVG_New_embedded_image($Dom_svg; $Pic_buffer)  //; 100; 100; ".svg")
 		
-		//________________________________________
-	: (True:C214)
-		
-		$Txt_path:=System folder:C487(Desktop:K41:16)+"Elevation _1.tiff"
-		READ PICTURE FILE:C678($Txt_path; $Pic_buffer)
-		SVG_New_embedded_image($Dom_svg; $Pic_buffer)
 		
 		//________________________________________
 	: (True:C214)
