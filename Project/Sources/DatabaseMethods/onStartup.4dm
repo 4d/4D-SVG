@@ -18,4 +18,8 @@ Else
 		ON EVENT CALL:C190("quickOpenEventHandler"; "$quickOpenListener")
 		
 	End if 
+	
+	// Check the current branch, if there is one
+	checkGitBranch
+	
 End if 
