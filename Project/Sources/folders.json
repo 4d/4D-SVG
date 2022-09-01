@@ -243,6 +243,9 @@
 		"groups": [
 			"Rgx",
 			"xml"
+		],
+		"methods": [
+			"checkGitBranch"
 		]
 	},
 	"NOT THREAD SAFE": {
