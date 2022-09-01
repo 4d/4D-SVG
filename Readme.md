@@ -1,10 +1,17 @@
-# 4d-svg
+[![language](https://img.shields.io/static/v1?label=language&message=4d&color=blue)](https://developer.4d.com/)
+[![language](https://img.shields.io/github/languages/top/4d/4D-SVG.svg)](https://developer.4d.com/)
+![code-size](https://img.shields.io/github/languages/code-size/4d/4D-SVG.svg)
+[![license](https://img.shields.io/github/license/4d/4D-SVG)](LICENSE)
 
-SVG (Scalable Vector Graphics) is a two-dimensional vector graphics file format based on XML. 4D includes an integrated rendering engine that can be used to display SVG files.
+# 4D SVG
 
-The XML language used for manipulating SVG pictures is particularly rich and extensive. In order to make getting started easier, 4D provides the SVG component, which includes numerous commands that can be used to create and manipulate common graphic objects. This library is not intended to be exhaustive but rather to meet the most frequent needs of 4D developers. Note that additional needs can be processed with the 4D XML commands.
+SVG (Scalable Vector Graphics) is a two-dimensional vector graphics file format based on XML. [4D](https://us.4d.com/4d-development) includes an integrated rendering engine that can be used to display SVG files.
 
-For more details, read the [4D SVG documentation](https://doc.4d.com/4Dv18/4D/18/4D-SVG-Component.300-4611842.en.html).
+The XML language used for manipulating SVG pictures is particularly rich and extensive. In order to make getting started easier, `4D` provides the `4D SVG` component, which includes numerous commands that can be used to create and manipulate common graphic objects.
+
+This library is not intended to be exhaustive but rather to meet the most frequent needs of 4D developers. Note that additional needs can be processed with the 4D XML commands.
+
+For more details, read the [4D SVG documentation](https://doc.4d.com/4Dv19/4D/19/4D-SVG-Component.100-5461938.en.html).
 
 ## How to use
 
