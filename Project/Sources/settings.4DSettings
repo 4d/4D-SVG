@@ -1,61 +1,62 @@
-﻿<?xml version="1.0" encoding="UTF-8"?><preferences stamp="27">
-	<com.4d>
-		<general execute_host_database_event="true">
-			<auto_comment activated="false" use_template="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGY5NDlcY29jb2FzdWJy dGYzNTAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQwIEx1Y2lkYUdyYW5k ZTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQw XGdyZWVuMFxibHVlMDt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgy MjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJhbAoKXGYwXGZzMjQgXGNmMiBc Cl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f X19fX19fX19fX19fX19fXApNb2RpZmllZCAjRCAjSCBieSAjTlwKfQ=="/>
-			<mover always_display_dialog="2"/>
-                                                    		</general>
-		<compiler>
-			<options AMD64_support="true" compilation_path="3" fat_binary="true" symbol_file="true"/>
-			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
-			<typage default_for_button="2"/>
-                                                                            		</compiler>
-		<interface>
-			<shortcuts>
-				<accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
-				<cancel_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
-				<add_subform alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
-                                                                                                      			</shortcuts>
-			<user flush_window="false" print_progress="false" splash_screen="false"/>
-			<developper allow_read_only_structure="false"/>
-                                                                		</interface>
-		<database>
-			<data_storage allow_data_read_only="true"/>
-			<cache size_fixed="32" size_maximum="100" size_reserved="128"/>
-			<misc/>
-                      		</database>
-		<server>
-			<network>
-				<options publication_name="SVG 2.2" use_legacy_network_layer="false"/>
-                              			</network>
-			<ip_config>
-				<allow_deny_table/>
-                        			</ip_config>
-                                        		</server>
-		<web>
-			<standalone_server>
-				<log tokens="">
-					<backup daily="" hourly="" monthly="" size="0" weekly=""/>
-				</log>
-				<options>
-					<web_processes timeout_for_inactives="5"/>
-				</options>
-				<configuration automatic_session_management="false">
-					<hosts>
-						<host home_page="index.html" html_root="./DossierWeb/" id="0" name="Default"/>
-					</hosts>
-				</configuration>
-				<misc/>
-                      			</standalone_server>
-			<remote>
-				<options>
-					<web_processes timeout_for_inactives="5"/>
-				</options>
-				<configuration automatic_session_management="false"/>
-				<misc/>
-			</remote>
-                		</web>
-		<deployment>
-			<options/>
-		</deployment>
-                                                                                                          	</com.4d>
-                </preferences>
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences stamp="28">
+  <com.4d>
+    <general execute_host_database_event="true">
+      <auto_comment activated="false" use_template="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGY5NDlcY29jb2FzdWJy dGYzNTAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQwIEx1Y2lkYUdyYW5k ZTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQw XGdyZWVuMFxibHVlMDt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgy MjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJhbAoKXGYwXGZzMjQgXGNmMiBc Cl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f X19fX19fX19fX19fX19fXApNb2RpZmllZCAjRCAjSCBieSAjTlwKfQ=="/>
+      <mover always_display_dialog="2"/>
+    </general>
+    <compiler>
+      <options AMD64_support="true" compilation_path="3" fat_binary="true" symbol_file="true" target="all"/>
+      <method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
+      <typage default_for_button="2"/>
+    </compiler>
+    <interface>
+      <shortcuts>
+        <accept_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+        <cancel_input_form alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+        <add_subform alt="false" command="false" ctrl="false" key_code="0" shift="false"/>
+      </shortcuts>
+      <user flush_window="false" print_progress="false" splash_screen="false"/>
+      <developper allow_read_only_structure="false"/>
+    </interface>
+    <database>
+      <data_storage allow_data_read_only="true"/>
+      <cache size_fixed="32" size_maximum="100" size_reserved="128"/>
+      <misc/>
+    </database>
+    <server>
+      <network>
+        <options publication_name="SVG 2.2" use_legacy_network_layer="false"/>
+      </network>
+      <ip_config>
+        <allow_deny_table/>
+      </ip_config>
+    </server>
+    <web>
+      <standalone_server>
+        <log tokens="">
+          <backup daily="" hourly="" monthly="" size="0" weekly=""/>
+        </log>
+        <options>
+          <web_processes timeout_for_inactives="5"/>
+        </options>
+        <configuration automatic_session_management="false">
+          <hosts>
+            <host home_page="index.html" html_root="./DossierWeb/" id="0" name="Default"/>
+          </hosts>
+        </configuration>
+        <misc/>
+      </standalone_server>
+      <remote>
+        <options>
+          <web_processes timeout_for_inactives="5"/>
+        </options>
+        <configuration automatic_session_management="false"/>
+        <misc/>
+      </remote>
+    </web>
+    <deployment>
+      <options/>
+    </deployment>
+  </com.4d>
+</preferences>

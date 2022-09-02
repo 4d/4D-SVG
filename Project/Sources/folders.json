@@ -1,41 +1,11 @@
 {
+	"(00_IN_WORKS)": {},
 	"00_DEV": {
 		"methods": [
-			"_TEST_Macros",
 			"0_Notes",
 			"0_TestCallbackMethod",
-			"00_",
-			"00_beaucoup",
-			"00_ColorPalette",
-			"00_RepairConstants",
 			"00_test",
-			"00_toDoList",
-			"ACI0075561",
-			"ACI0087022",
-			"ACI0087082",
-			"COMPILER_TEMPO",
-			"Compiler_test",
-			"COMPILER_TESTS",
-			"draw_picture",
-			"MaMethode",
-			"Méthode 262",
-			"OPTIMIZATION",
-			"TEST PAGES",
-			"test_ACI0092966",
-			"test_ACI0094904",
-			"test_filter_colorMatrix",
-			"Test_Get_named_color_value"
-		],
-		"forms": [
-			"color",
-			"Form1",
-			"Form2",
-			"tool_METHOD"
-		]
-	},
-	"00_IN_WORKS": {
-		"methods": [
-			"SVG_Get_styled_text"
+			"Compiler_test"
 		]
 	},
 	"1 - Documents": {
@@ -82,6 +52,7 @@
 	"3 - Text": {
 		"methods": [
 			"SVG_APPEND_TEXT_TO_TEXTAREA",
+			"SVG_Get_styled_text",
 			"SVG_Get_text",
 			"SVG_New_text",
 			"SVG_New_textArea",
@@ -343,5 +314,9 @@
 			"xmlColoredSyntax"
 		]
 	},
-	"trash": {}
+	"trash": {
+		"groups": [
+			"(00_IN_WORKS)"
+		]
+	}
 }
