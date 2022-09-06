@@ -1,0 +1,223 @@
+﻿{
+	"destination": "detailScreen",
+	"width": 990,
+	"height": 475,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Onglet": {
+					"type": "tab",
+					"top": 15,
+					"left": 304,
+					"width": 666,
+					"height": 440,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"Comments",
+						"Shared"
+					],
+					"fontFamily": "Lucida Grande",
+					"fontSize": 11,
+					"action": "gotoPage",
+					"method": "ObjectMethods/Onglet.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver"
+					]
+				},
+				"listMethods": {
+					"type": "listbox",
+					"top": 20,
+					"left": 20,
+					"width": 263,
+					"height": 433,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Lucida Sans",
+					"fontSize": 11,
+					"method": "ObjectMethods/listMethods.4dm",
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "methodNames",
+							"width": 249,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"fontFamily": "Lucida Sans",
+							"fontSize": 11,
+							"fontWeight": "bold",
+							"header": {
+								"name": "Entête1",
+								"text": "Methods",
+								"fontFamily": "Lucida Sans",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied1",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Lucida Sans",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Séparateur": {
+					"type": "splitter",
+					"top": 15,
+					"left": 290,
+					"width": 4,
+					"height": 440,
+					"sizingY": "grow",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"comment": {
+					"type": "input",
+					"top": 91,
+					"left": 326,
+					"width": 627,
+					"height": 336,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"hideFocusRing": true,
+					"styledText": true,
+					"dragging": "none",
+					"method": "ObjectMethods/comment.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"style.bold": {
+					"type": "button",
+					"top": 53,
+					"left": 326,
+					"width": 55,
+					"height": 26,
+					"text": "Bold",
+					"focusable": false,
+					"method": "ObjectMethods/style.bold.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"style.font": {
+					"type": "button",
+					"top": 53,
+					"left": 401,
+					"width": 75,
+					"height": 26,
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"text": "Font",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "bevel",
+					"method": "ObjectMethods/style.font.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"fontName": {
+					"type": "input",
+					"top": 524,
+					"left": 20,
+					"width": 125,
+					"height": 16,
+					"stroke": "#FF6600",
+					"fill": "#FFFF00",
+					"borderStyle": "dotted",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box1": {
+					"type": "listbox",
+					"top": 48,
+					"left": 314,
+					"width": 641,
+					"height": 394,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"hideFocusRing": true,
+					"movableRows": false,
+					"rowHeight": "20px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"fontFamily": "Lucida Sans",
+					"fontSize": 11,
+					"events": [
+						"onSelectionChange"
+					],
+					"columns": [
+						{
+							"name": "methodShared",
+							"width": 626,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"fontFamily": "Lucida Sans",
+							"fontSize": 11,
+							"fontWeight": "bold",
+							"header": {
+								"name": "Entête2",
+								"text": "Methods",
+								"fontFamily": "Lucida Sans",
+								"fontSize": 11,
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Pied2",
+								"timeFormat": "hh_mm_ss",
+								"fontFamily": "Lucida Sans",
+								"fontSize": 11
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,192 @@
+﻿{
+	"destination": "detailScreen",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onTimer"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "595pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Hierarchical List": {
+					"type": "list",
+					"top": 22,
+					"left": 16,
+					"width": 175,
+					"height": 525,
+					"dataSource": "colors",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/Hierarchical List.4dm",
+					"events": [
+						"onSelectionChange"
+					]
+				},
+				"Variable": {
+					"type": "input",
+					"top": 35,
+					"left": 245,
+					"width": 87,
+					"height": 16,
+					"dataSource": "R",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable1": {
+					"type": "input",
+					"top": 71,
+					"left": 245,
+					"width": 87,
+					"height": 16,
+					"dataSource": "G",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable1.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable2": {
+					"type": "input",
+					"top": 107,
+					"left": 245,
+					"width": 87,
+					"height": 16,
+					"dataSource": "B",
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable2.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 492,
+					"left": 253,
+					"width": 79,
+					"height": 21,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 140,
+					"left": 245,
+					"width": 87,
+					"height": 31,
+					"fill": "transparent",
+					"strokeDashArray": "1 1"
+				},
+				"Button1": {
+					"type": "button",
+					"top": 526,
+					"left": 253,
+					"width": 79,
+					"height": 21,
+					"text": "Export",
+					"focusable": false,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 35,
+					"left": 202,
+					"width": 30,
+					"height": 16,
+					"textAlign": "right",
+					"text": "R"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 71,
+					"left": 202,
+					"width": 30,
+					"height": 16,
+					"textAlign": "right",
+					"text": "G"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 107,
+					"left": 202,
+					"width": 30,
+					"height": 16,
+					"textAlign": "right",
+					"text": "B"
+				},
+				"color": {
+					"type": "input",
+					"top": 191,
+					"left": 245,
+					"width": 87,
+					"height": 16,
+					"dataSourceTypeHint": "number",
+					"textAlign": "left",
+					"focusable": false,
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"entryFilter": "&9",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button2": {
+					"type": "button",
+					"top": 252,
+					"left": 207,
+					"width": 125,
+					"height": 25,
+					"text": "Create constants",
+					"method": "ObjectMethods/Button2.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	]
+}
