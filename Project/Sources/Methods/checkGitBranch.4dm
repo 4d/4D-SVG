@@ -13,7 +13,7 @@ If ($file.exists)
 	
 	$head:=$file.getText()
 	
-	If (Match regex:C1019("(?m-si)ref: refs/heads/(.*)$"; $head; 1; $pos; $len))
+	If (Match regex:C1019("(?m-si)ref: refs/heads/(.*)[[:space:]]"; $head; 1; $pos; $len))
 		
 		$branch:=Substring:C12($head; $pos{1}; $len{1})
 		
@@ -32,12 +32,12 @@ If ($file.exists)
 			If ($c[2]#"0")
 				
 				$version:=$major+"R"+$c[2]
-				$success:=($branch=($version)) | ($branch=($major+"RX"))
+				$success:=($branch=($major+"RX")) | ($branch=($major+"R"+$c[2]))
 				
 			Else 
 				
 				$version:=$major+"."+$c[3]
-				$success:=($branch=($version)) | ($branch=($major+".X"))
+				$success:=$branch=($major+".X")
 				
 			End if 
 		End if 
