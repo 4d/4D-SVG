@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowTitle": ":xliff:about",
 	"windowMinWidth": 256,
@@ -23,16 +23,14 @@
 		null,
 		{
 			"objects": {
-				"Image1": {
+				"Static Picture2": {
 					"type": "picture",
 					"top": 0,
 					"left": 0,
 					"width": 339,
 					"height": 259,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"pictureFormat": "scaled",
-					"picture": "/RESOURCES/Images/logo.svg"
+					"picture": "/RESOURCES/Images/logo.svg",
+					"pictureFormat": "scaled"
 				},
 				"Variable": {
 					"type": "input",
@@ -40,7 +38,7 @@
 					"left": 9,
 					"width": 112,
 					"height": 13,
-					"dataSource": "SVG_Get_version ",
+					"dataSource": "SVG_Get_version",
 					"stroke": "#FFFFFF",
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -60,5 +58,6 @@
 	"$4d": {
 		"version": "1",
 		"kind": "form"
-	}
+	},
+	"geometryStamp": 9
 }
