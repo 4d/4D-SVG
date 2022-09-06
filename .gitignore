@@ -33,7 +33,7 @@ Preferences/
 !4DPop AppMaker.*
 
 Settings/
-!buildApp.4DSettings
+#!buildApp.4DSettings
 
 userPreferences.*/
 
@@ -53,4 +53,3 @@ Resources/php.ini
 Libraries
 Resources/Images/banner.svg
 Resources/Images/icon.svg
-Resources/svg
