@@ -1,11 +1,22 @@
 {
+	"_Component": {
+		"groups": [
+			"Interface (THREAD-SAFE)",
+			"NOT THREAD SAFE",
+			"Private"
+		],
+		"methods": [
+			"Compiler_SVG",
+			"Compiler_SVG_Private",
+			"Compiler_SVG_Public"
+		]
+	},
 	"(00_IN_WORKS)": {},
 	"00_DEV": {
 		"methods": [
-			"0_Notes",
-			"0_TestCallbackMethod",
 			"00_test",
-			"Compiler_test"
+			"Compiler_test",
+			"testCallbackMethod"
 		]
 	},
 	"1 - Documents": {
@@ -174,19 +185,6 @@
 		"methods": [
 			"SVG_ROTATION_CENTERED",
 			"SVG_SCALING_CENTERED"
-		]
-	},
-	"Component": {
-		"groups": [
-			"4DPop",
-			"Interface (THREAD-SAFE)",
-			"NOT THREAD SAFE",
-			"Private"
-		],
-		"methods": [
-			"Compiler_SVG",
-			"Compiler_SVG_Private",
-			"Compiler_SVG_Public"
 		]
 	},
 	"Getter": {

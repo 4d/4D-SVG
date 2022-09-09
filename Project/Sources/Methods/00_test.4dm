@@ -1550,7 +1550,7 @@ Case of
 		//DOM ECRIRE ATTRIBUT XML($rect;"filter";"none")
 		//SVG_SET_CLASS ($rect;"not_selected")
 		
-		// SVGTool_SET_VIEWER_CALLBACK ("0_TestCallbackMethod")
+		// SVGTool_SET_VIEWER_CALLBACK ("testCallbackMethod")
 		
 		//______________________________________________________
 	: (False:C215)
@@ -1670,7 +1670,7 @@ Case of
 		SVG_SET_ID(SVG_New_rect($Dom_g; 20; 20; 300; 150; 0; 0; "inherit"; "white"); "rec_2")
 		SVG_SET_ID(SVG_New_rect($Dom_g; 30; 30; 200; 100; 0; 0; "inherit"; "white"); "rec_3")
 		
-		SVGTool_SET_VIEWER_CALLBACK("0_TestCallbackMethod")
+		SVGTool_SET_VIEWER_CALLBACK("testCallbackMethod")
 		
 		//______________________________________________________
 	: (False:C215)
