@@ -43,6 +43,7 @@ If (Count parameters:C259>=2)
 			$codec:=$codecs{1}
 			
 			For each ($t; New collection:C1472(\
+				".heic"; \
 				".svg"; \
 				".png"; \
 				".jpeg"; \
@@ -70,16 +71,16 @@ If (Count parameters:C259>=2)
 					$codec:=".png"
 					
 					//…………………………………………………………………………………
-				: ($codec=".4DMetaPict")
+				: ($codec=".4DMetaPict") | ($codec=".dng")
 					
 					CONVERT PICTURE:C1002($image; ".png")
+					TRANSFORM PICTURE:C988($image; Transparency:K61:11; 0x00FFFFFF)
 					$codec:=".png"
 					
 					//…………………………………………………………………………………
 			End case 
 			
 		Else 
-			
 			$codec:=".png"  // Default is .png
 			
 		End if 
