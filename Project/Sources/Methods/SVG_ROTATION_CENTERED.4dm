@@ -1,115 +1,101 @@
 //%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method: SVG_ROTATION_CENTERED
-  // Created 19/02/13 by Vincent de Lachaux
-  // ----------------------------------------------------
-C_TEXT:C284($1)
-C_REAL:C285($2)
-
-C_LONGINT:C283($Lon_buffer;$Lon_end;$Lon_parameters;$Lon_start;$Lon_x;$Lon_y)
-C_REAL:C285($Num_angle;$Num_cx;$Num_cy)
-C_TEXT:C284($Dom_svgObject;$kTxt_currentMethod;$t;$Txt_value)
+// ----------------------------------------------------
+// Method: SVG_ROTATION_CENTERED
+// Created 19/02/13 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($dom : Text; $angle : Real)
 
 If (False:C215)
-	C_TEXT:C284(SVG_ROTATION_CENTERED ;$1)
-	C_REAL:C285(SVG_ROTATION_CENTERED ;$2)
+	C_TEXT:C284(SVG_ROTATION_CENTERED; $1)
+	C_REAL:C285(SVG_ROTATION_CENTERED; $2)
 End if 
 
-Compiler_SVG 
+var $cx; $cy : Real
+var $name; $transform : Text
+var $end; $height; $Lon_y; $start; $width; $x : Integer
 
-$Lon_parameters:=Count parameters:C259
-$kTxt_currentMethod:="SVG_ROTATION_CENTERED"  //Nom methode courante
+Compiler_SVG
 
-If ($Lon_parameters>=2)
+If (Count parameters:C259>=2)
 	
-	$Dom_svgObject:=$1
-	$Num_angle:=$2
-	
-	If (Asserted:C1132(xml_referenceValid ($Dom_svgObject);Get localized string:C991("error_badReference")))
+	If (Asserted:C1132(xml_referenceValid($dom); Get localized string:C991("error_badReference")))
 		
-		Component_errorHandler ("init";$kTxt_currentMethod)
+		Component_errorHandler("init"; "SVG_ROTATION_CENTERED")
 		
-		  //Get the current value of transform attribute if any {
-		Component_errorHandler ("ERROR_OFF")
-		DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"transform";$Txt_value)
+		// Get the current value of transform attribute if any
+		Component_errorHandler("ERROR_OFF")
+		DOM GET XML ATTRIBUTE BY NAME:C728($dom; "transform"; $transform)
 		
-		If (OK=1)
+		If (Bool:C1537(OK))
 			
-			$Lon_start:=Position:C15("rotate(";$Txt_value)
+			$start:=Position:C15("rotate("; $transform)
 			
-			If ($Lon_start>0)
+			If ($start>0)
 				
-				$Lon_end:=Position:C15(")";$Txt_value;$Lon_start+1)
-				$Txt_value:=Delete string:C232($Txt_value;$Lon_start;$Lon_end-$Lon_start+1)
+				$end:=Position:C15(")"; $transform; $start+1)
+				$transform:=Delete string:C232($transform; $start; $end-$start+1)
 				
 			End if 
 			
-			If (Length:C16($Txt_value)>0)
+			If (Length:C16($transform)>0)
 				
-				If ($Txt_value[[1]]=" ")
+				If ($transform[[1]]=" ")
 					
-					$Txt_value:=Substring:C12($Txt_value;2)
+					$transform:=Substring:C12($transform; 2)
 					
 				End if 
 				
-				If (Length:C16($Txt_value)>0)
+				If (Length:C16($transform)>0)
 					
-					$Txt_value:=$Txt_value+" "
+					$transform+=" "
 					
 				End if 
 			End if 
 		End if 
 		
-		  //#ACI0100389 [
-		DOM GET XML ELEMENT NAME:C730($Dom_svgObject;$t)
+		// Mark:ACI0100389
+		DOM GET XML ELEMENT NAME:C730($dom; $name)
 		
 		Case of 
 				
-				  //______________________________________________________
-			: ($t="ellipse")\
-				 | ($t="circle")
+				//______________________________________________________
+			: ($name="ellipse")\
+				 | ($name="circle")
 				
-				DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"cx";$Num_cx)
-				DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"cy";$Num_cy)
+				DOM GET XML ATTRIBUTE BY NAME:C728($dom; "cx"; $cx)
+				DOM GET XML ATTRIBUTE BY NAME:C728($dom; "cy"; $cy)
 				
-				  //______________________________________________________
+				//______________________________________________________
 			Else 
 				
-				DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"x";$Lon_x)
-				DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"width";$Lon_buffer)
-				$Num_cx:=$Lon_x+($Lon_buffer/2)
+				DOM GET XML ATTRIBUTE BY NAME:C728($dom; "x"; $x)
+				DOM GET XML ATTRIBUTE BY NAME:C728($dom; "width"; $width)
+				$cx:=$x+($width/2)
 				
-				DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"y";$Lon_y)
-				DOM GET XML ATTRIBUTE BY NAME:C728($Dom_svgObject;"height";$Lon_buffer)
-				$Num_cy:=$Lon_y+($Lon_buffer/2)
+				DOM GET XML ATTRIBUTE BY NAME:C728($dom; "y"; $Lon_y)
+				DOM GET XML ATTRIBUTE BY NAME:C728($dom; "height"; $height)
+				$cy:=$Lon_y+($height/2)
 				
-				  //______________________________________________________
+				//______________________________________________________
 		End case 
-		  //]
 		
-		Component_errorHandler ("ERROR_ON")
-		  //}
+		Component_errorHandler("ERROR_ON")
 		
-		$Txt_value:=$Txt_value\
-			+"rotate("+String:C10($Num_angle;"&xml")\
-			+","+String:C10($Num_cx;"&xml")\
-			+","\
-			+String:C10($Num_cy;"&xml")\
-			+")"
+		$transform+="rotate("+String:C10($angle; "&xml")+","+String:C10($cx; "&xml")+","+String:C10($cy; "&xml")+")"
 		
-		DOM SET XML ATTRIBUTE:C866($Dom_svgObject;\
-			"transform";$Txt_value)
+		DOM SET XML ATTRIBUTE:C866($dom; \
+			"transform"; $transform)
 		
-		ASSERT:C1129(Component_errorHandler ("deinit"))
+		ASSERT:C1129(Component_errorHandler("deinit"))
 		
 	Else 
 		
-		ASSERT:C1129(Component_putError (8852;$kTxt_currentMethod))  //The reference is not a svg object
+		ASSERT:C1129(Component_putError(8852; "SVG_ROTATION_CENTERED"))  // The reference is not a svg object
 		
 	End if 
 	
 Else 
 	
-	ASSERT:C1129(Component_putError (8850;$kTxt_currentMethod))  //Parameters Missing
+	ASSERT:C1129(Component_putError(8850; "SVG_ROTATION_CENTERED"))  // Parameters Missing
 	
 End if 

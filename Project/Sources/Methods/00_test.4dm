@@ -30,6 +30,20 @@ Case of
 		//________________________________________
 	: (True:C214)
 		
+		READ PICTURE FILE:C678(File:C1566("/Users/vincentdelachaux/Desktop/Pierre.JPG").platformPath; $Pic_buffer)
+		
+		READ PICTURE FILE:C678(File:C1566("/Users/vincentdelachaux/Desktop/IMG_0029.HEIC").platformPath; $Pic_buffer)
+		
+		READ PICTURE FILE:C678(File:C1566("/Users/vincentdelachaux/Desktop/L1004220.DNG").platformPath; $Pic_buffer)
+		
+		TRANSFORM PICTURE:C988($Pic_buffer; Scale:K61:2; 0.5; 0.5)
+		
+		$Dom_picture:=SVG_New_embedded_image($Dom_svg; $Pic_buffer)
+		//SVG_ROTATION_CENTERED($Dom_picture; 90)
+		
+		//________________________________________
+	: (True:C214)
+		
 		$Txt_path:=System folder:C487(Desktop:K41:16)+"Elevation _1.tiff"
 		READ PICTURE FILE:C678($Txt_path; $Pic_buffer)
 		SVG_New_embedded_image($Dom_svg; $Pic_buffer)
