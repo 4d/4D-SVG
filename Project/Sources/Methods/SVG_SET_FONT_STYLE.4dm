@@ -4,12 +4,12 @@
 // Created 10/07/08 by Vincent de Lachaux
 // ----------------------------------------------------
 // Description
-// 
+//
 // ----------------------------------------------------
 C_TEXT:C284($1)
 C_LONGINT:C283($2)
 
-C_LONGINT:C283($Lon_fontStyle; $Lon_parameters)
+C_LONGINT:C283($Lon_fontStyles; $Lon_parameters)
 C_TEXT:C284($Dom_svgObject; $kTxt_currentMethod; $Txt_Name)
 
 If (False:C215)
@@ -25,7 +25,7 @@ $kTxt_currentMethod:="SVG_SET_FONT_STYLE"  //Nom methode courante
 If ($Lon_parameters>=2)
 	
 	$Dom_svgObject:=$1
-	$Lon_fontStyle:=$2
+	$Lon_fontStyles:=$2
 	
 	If (Asserted:C1132(xml_referenceValid($Dom_svgObject); Get localized string:C991("error_badReference")))
 		
@@ -39,7 +39,7 @@ If ($Lon_parameters>=2)
 		
 		If (Find in array:C230($tTxt_objects; $Txt_Name)>0)
 			
-			If ($Lon_fontStyle=0)
+			If ($Lon_fontStyles=0)
 				
 				DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 					"text-decoration"; "none")
@@ -59,36 +59,30 @@ If ($Lon_parameters>=2)
 				
 			Else 
 				
-				If ($Lon_fontStyle>=8)  //line-through
-					
-					DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-						"text-decoration"; "line-through")
-					$Lon_fontStyle:=$Lon_fontStyle-8
-					
-				End if 
+				Case of 
+					: ($Lon_fontStyles ?? 2) & ($Lon_fontStyles ?? 3)
+						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+							"text-decoration"; "underline line-through")
+						
+					: ($Lon_fontStyles ?? 2)
+						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+							"text-decoration"; "underline")
+						
+					: ($Lon_fontStyles ?? 3)
+						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+							"text-decoration"; "line-through")
+				End case 
 				
-				If ($Lon_fontStyle>=4)  //underline
-					
-					DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-						"text-decoration"; "underline")
-					$Lon_fontStyle:=$Lon_fontStyle-4
-					
-				End if 
-				
-				If ($Lon_fontStyle>=2)  //italic
-					
+				If ($Lon_fontStyles ?? 1)
 					DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 						"font-style"; "italic")
-					$Lon_fontStyle:=$Lon_fontStyle-2
-					
 				End if 
 				
-				If ($Lon_fontStyle=1)  //bold
-					
+				If ($Lon_fontStyles ?? 0)
 					DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 						"font-weight"; "bold")
-					
 				End if 
+				
 			End if 
 			
 			ASSERT:C1129(Component_errorHandler("deinit"))

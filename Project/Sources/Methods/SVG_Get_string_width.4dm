@@ -7,7 +7,7 @@
 //Returns the width of the parameter text, based on the font information.
 // ----------------------------------------------------
 //SVG_Get_string_width (text; font; size; style) -> width
-// 
+//
 //Parameter               Type                          Description
 //text                         Text              ->        A text value
 //font                          Alpha           ->        The font that will be used to display the text.
@@ -23,7 +23,7 @@ C_TEXT:C284($2)
 C_LONGINT:C283($3)
 C_LONGINT:C283($4)
 
-C_LONGINT:C283($Lon_fonStyle; $Lon_fontSize; $Lon_height; $Lon_Unused)
+C_LONGINT:C283($Lon_fontStyles; $Lon_fontSize; $Lon_height; $Lon_Unused)
 C_PICTURE:C286($Pic_buffer)
 C_REAL:C285($Num_width)
 C_TEXT:C284($Txt_fontName; $Txt_rootReference; $Txt_string; $Txt_textID)
@@ -42,7 +42,7 @@ $Lon_fontSize:=$3
 
 If (Count parameters:C259>=4)
 	
-	$Lon_fonStyle:=$4
+	$Lon_fontStyles:=$4
 	
 End if 
 
@@ -56,35 +56,28 @@ If (OK=1)
 	DOM SET XML ATTRIBUTE:C866($Txt_textID; \
 		"font-size"; $Lon_fontSize)
 	
-	If ($Lon_fonStyle>=8)  //line-through
-		
-		DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-			"text-decoration"; "line-through")
-		$Lon_fonStyle:=$Lon_fonStyle-8
-		
-	End if 
+	Case of 
+		: ($Lon_fontStyles ?? 2) & ($Lon_fontStyles ?? 3)
+			DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+				"text-decoration"; "underline line-through")
+			
+		: ($Lon_fontStyles ?? 2)
+			DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+				"text-decoration"; "underline")
+			
+		: ($Lon_fontStyles ?? 3)
+			DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+				"text-decoration"; "line-through")
+	End case 
 	
-	If ($Lon_fonStyle>=4)  //underline
-		
-		DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-			"text-decoration"; "underline")
-		$Lon_fonStyle:=$Lon_fonStyle-4
-		
-	End if 
-	
-	If ($Lon_fonStyle>=2)  //italic
-		
-		DOM SET XML ATTRIBUTE:C866($Txt_textID; \
+	If ($Lon_fontStyles ?? 1)
+		DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 			"font-style"; "italic")
-		$Lon_fonStyle:=$Lon_fonStyle-2
-		
 	End if 
 	
-	If ($Lon_fonStyle=1)  //bold
-		
-		DOM SET XML ATTRIBUTE:C866($Txt_textID; \
+	If ($Lon_fontStyles ?? 0)
+		DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 			"font-weight"; "bold")
-		
 	End if 
 	
 	//Invisible characters are not treated properly

@@ -19,7 +19,7 @@ C_TEXT:C284($9)
 C_REAL:C285($10)
 
 C_LONGINT:C283($Lon_Aligment; $Lon_Count; $Lon_Font_Size; $Lon_i; $Lon_opacity; $Lon_parameters)
-C_LONGINT:C283($Lon_Styles; $Lon_x)
+C_LONGINT:C283($Lon_fontStyles; $Lon_x)
 C_REAL:C285($Num_rotation; $Num_x; $Num_y)
 C_TEXT:C284($Dom_svgObject; $Dom_svgReference; $kTxt_currentMethod; $Txt_character; $Txt_Color; $Txt_Font_Name)
 C_TEXT:C284($Txt_Span; $Txt_text)
@@ -49,7 +49,7 @@ If ($Lon_parameters>=2)
 	$Txt_text:=$2  //String to write
 	
 	$Lon_Font_Size:=-1
-	$Lon_Styles:=-1
+	$Lon_fontStyles:=-1
 	
 	If ($Lon_parameters>=3)
 		
@@ -69,7 +69,7 @@ If ($Lon_parameters>=2)
 					
 					If ($Lon_parameters>=7)
 						
-						$Lon_Styles:=$7  //Default is standard
+						$Lon_fontStyles:=$7  //Default is standard
 						
 						If ($Lon_parameters>=8)
 							
@@ -184,10 +184,10 @@ If ($Lon_parameters>=2)
 				: (OK=0)
 					
 					//.....................................................
-				: ($Lon_Styles<0)
+				: ($Lon_fontStyles<0)
 					
 					//.....................................................
-				: ($Lon_Styles=0)
+				: ($Lon_fontStyles=0)
 					
 					DOM SET XML ATTRIBUTE:C866($Dom_svgReference; \
 						"text-decoration"; "none")
@@ -208,35 +208,28 @@ If ($Lon_parameters>=2)
 					//.....................................................
 				Else 
 					
-					If ($Lon_Styles>=8)  //line-through
-						
-						DOM SET XML ATTRIBUTE:C866($Dom_svgReference; \
-							"text-decoration"; "line-through")
-						$Lon_Styles:=$Lon_Styles-8
-						
-					End if 
+					Case of 
+						: ($Lon_fontStyles ?? 2) & ($Lon_fontStyles ?? 3)
+							DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+								"text-decoration"; "underline line-through")
+							
+						: ($Lon_fontStyles ?? 2)
+							DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+								"text-decoration"; "underline")
+							
+						: ($Lon_fontStyles ?? 3)
+							DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
+								"text-decoration"; "line-through")
+					End case 
 					
-					If ($Lon_Styles>=4)  //underline
-						
-						DOM SET XML ATTRIBUTE:C866($Dom_svgReference; \
-							"text-decoration"; "underline")
-						$Lon_Styles:=$Lon_Styles-4
-						
-					End if 
-					
-					If ($Lon_Styles>=2)  //italic
-						
-						DOM SET XML ATTRIBUTE:C866($Dom_svgReference; \
+					If ($Lon_fontStyles ?? 1)
+						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 							"font-style"; "italic")
-						$Lon_Styles:=$Lon_Styles-2
-						
 					End if 
 					
-					If ($Lon_Styles=1)  //bold
-						
-						DOM SET XML ATTRIBUTE:C866($Dom_svgReference; \
+					If ($Lon_fontStyles ?? 0)
+						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
 							"font-weight"; "bold")
-						
 					End if 
 					
 					//.....................................................
