@@ -27,6 +27,14 @@ $Dom_svg:=SVG_New
 
 Case of 
 		
+		//________________________________________ ACI0103472
+	: (True:C214)
+		
+		$Dom_text:=SVG_New_text($Dom_svg; "underline & line-throught"; 10; 10; "Arial"; 24; 12)
+		$Dom_text:=SVG_New_textArea($Dom_svg; "underline & line-throught"; 10; 40; -1; -1; "Arial"; 24; 12)
+		$Dom_text:=SVG_New_text($Dom_svg; "tspan"; 10; 80; "Arial"; 24)
+		$Dom_text:=SVG_New_tspan($Dom_text; "underline & line-throught"; 30; 130; "Arial"; -1; 12)
+		
 		//________________________________________
 	: (True:C214)
 		

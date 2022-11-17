@@ -1,36 +1,36 @@
 //%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Project method : xmlColoredSyntax
-  // ID[20858E31C6A94C829CD0963124FCD4C1]
-  // Created 06/07/11 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description:
-  // Return colored XML to display in a Multi-style text object
-  // ----------------------------------------------------
-  // Declarations
+// ----------------------------------------------------
+// Project method : xmlColoredSyntax
+// ID[20858E31C6A94C829CD0963124FCD4C1]
+// Created 06/07/11 by Vincent de Lachaux
+// ----------------------------------------------------
+// Description:
+// Return colored XML to display in a Multi-style text object
+// ----------------------------------------------------
+// Declarations
 C_TEXT:C284($0)
 C_TEXT:C284($1)
 
-C_LONGINT:C283($Lon_error;$Lon_parameters)
-C_TEXT:C284($Txt_attributeFontWeight;$Txt_attributeNameColor;$Txt_attributeValueColor;$Txt_commentColor;$Txt_commentFontWeight;$Txt_defaultColor)
-C_TEXT:C284($Txt_defaultFontWeight;$Txt_doctypeColor;$Txt_doctypeFontWeight;$Txt_elementColor;$Txt_elementFontWeight;$Txt_entityColor)
-C_TEXT:C284($Txt_entityFontWeight;$Txt_pattern;$Txt_processingColor;$Txt_processingFontWeight;$Txt_styleAttribute;$Txt_styleComment)
-C_TEXT:C284($Txt_styleDoctype;$Txt_styleElement;$Txt_styleEntity;$Txt_styleProcessing;$Txt_xml)
+C_LONGINT:C283($Lon_error; $Lon_parameters)
+C_TEXT:C284($Txt_attributeFontWeight; $Txt_attributeNameColor; $Txt_attributeValueColor; $Txt_commentColor; $Txt_commentFontWeight; $Txt_defaultColor)
+C_TEXT:C284($Txt_defaultFontWeight; $Txt_doctypeColor; $Txt_doctypeFontWeight; $Txt_elementColor; $Txt_elementFontWeight; $Txt_entityColor)
+C_TEXT:C284($Txt_entityFontWeight; $Txt_pattern; $Txt_processingColor; $Txt_processingFontWeight; $Txt_styleAttribute; $Txt_styleComment)
+C_TEXT:C284($Txt_styleDoctype; $Txt_styleElement; $Txt_styleEntity; $Txt_styleProcessing; $Txt_xml)
 
 If (False:C215)
-	C_TEXT:C284(xmlColoredSyntax ;$0)
-	C_TEXT:C284(xmlColoredSyntax ;$1)
+	C_TEXT:C284(xmlColoredSyntax; $0)
+	C_TEXT:C284(xmlColoredSyntax; $1)
 End if 
 
-  // ----------------------------------------------------
-  // Initialisations
+// ----------------------------------------------------
+// Initialisations
 $Lon_parameters:=Count parameters:C259
 
-If (Asserted:C1132($Lon_parameters>=1;Get localized string:C991("error_missingParameter")))
+If (Asserted:C1132($Lon_parameters>=1; Get localized string:C991("error_missingParameter")))
 	
 	$Txt_xml:=$1
 	
-	$Txt_defaultColor:="black"
+	$Txt_defaultColor:=Get Application color scheme:C1763="dark" ? "white" : "black"
 	$Txt_defaultFontWeight:="normal"
 	
 	$Txt_elementColor:="#2a2aa7"
@@ -81,48 +81,48 @@ Else
 	
 End if 
 
-  // ----------------------------------------------------
+// ----------------------------------------------------
 
-  // Replace < and > caracteres
-$Txt_xml:=Replace string:C233($Txt_xml;"<";"_§§")
-$Txt_xml:=Replace string:C233($Txt_xml;">";"_¿¿")
+// Replace < and > caracteres
+$Txt_xml:=Replace string:C233($Txt_xml; "<"; "_§§")
+$Txt_xml:=Replace string:C233($Txt_xml; ">"; "_¿¿")
 
-  // #ACI0098253
-$Txt_xml:=Replace string:C233($Txt_xml;"&";"&amp;")
+// #ACI0098253
+$Txt_xml:=Replace string:C233($Txt_xml; "&"; "&amp;")
 
-  // Processing instruction
+// Processing instruction
 $Txt_pattern:="(_\\?[^_¿¿]*\\?_¿¿)"
-$Lon_error:=Rgx_SubstituteText ($Txt_pattern;$Txt_styleProcessing;->$Txt_xml)
+$Lon_error:=Rgx_SubstituteText($Txt_pattern; $Txt_styleProcessing; ->$Txt_xml)
 
-  // Attributes
+// Attributes
 $Txt_pattern:="(\\s+[^= ]*)=\"([^\"]*)\"(?!.*\\?_¿¿)"
-$Lon_error:=Rgx_SubstituteText ($Txt_pattern;$Txt_styleAttribute;->$Txt_xml)
+$Lon_error:=Rgx_SubstituteText($Txt_pattern; $Txt_styleAttribute; ->$Txt_xml)
 
-  // Elements
+// Elements
 $Txt_pattern:="(_\\[^?_¿¿]*_¿¿)"
-$Lon_error:=Rgx_SubstituteText ($Txt_pattern;$Txt_styleElement;->$Txt_xml)
+$Lon_error:=Rgx_SubstituteText($Txt_pattern; $Txt_styleElement; ->$Txt_xml)
 
-  // Comments
+// Comments
 $Txt_pattern:="(_\\!--.*?--_¿¿)"
-$Lon_error:=Rgx_SubstituteText ($Txt_pattern;$Txt_styleComment;->$Txt_xml)
+$Lon_error:=Rgx_SubstituteText($Txt_pattern; $Txt_styleComment; ->$Txt_xml)
 
-  // Default
+// Default
 $Txt_xml:="<span style=\"color:"+$Txt_defaultColor\
 +";font-weight:"+$Txt_defaultFontWeight+";\">"+$Txt_xml+"</span>"
 
-  // Doctype
+// Doctype
 $Txt_pattern:="(_\\\\![^-][^_¿¿]*_¿¿)"
-$Lon_error:=Rgx_SubstituteText ($Txt_pattern;$Txt_styleDoctype;->$Txt_xml)
+$Lon_error:=Rgx_SubstituteText($Txt_pattern; $Txt_styleDoctype; ->$Txt_xml)
 
-  // Entities
+// Entities
 $Txt_pattern:="(&amp;[^;]*;)"
-$Lon_error:=Rgx_SubstituteText ($Txt_pattern;$Txt_styleEntity;->$Txt_xml)
+$Lon_error:=Rgx_SubstituteText($Txt_pattern; $Txt_styleEntity; ->$Txt_xml)
 
-  // Restore < and > caracteres
-$Txt_xml:=Replace string:C233($Txt_xml;"_§§";"&lt;")
-$Txt_xml:=Replace string:C233($Txt_xml;"_¿¿";"&gt;")
+// Restore < and > caracteres
+$Txt_xml:=Replace string:C233($Txt_xml; "_§§"; "&lt;")
+$Txt_xml:=Replace string:C233($Txt_xml; "_¿¿"; "&gt;")
 
-  // ----------------------------------------------------
-  // End
+// ----------------------------------------------------
+// End
 
 $0:=$Txt_xml

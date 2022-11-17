@@ -59,29 +59,7 @@ If ($Lon_parameters>=2)
 				
 			Else 
 				
-				Case of 
-					: ($Lon_fontStyles ?? 2) & ($Lon_fontStyles ?? 3)
-						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-							"text-decoration"; "underline line-through")
-						
-					: ($Lon_fontStyles ?? 2)
-						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-							"text-decoration"; "underline")
-						
-					: ($Lon_fontStyles ?? 3)
-						DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-							"text-decoration"; "line-through")
-				End case 
-				
-				If ($Lon_fontStyles ?? 1)
-					DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-						"font-style"; "italic")
-				End if 
-				
-				If ($Lon_fontStyles ?? 0)
-					DOM SET XML ATTRIBUTE:C866($Dom_svgObject; \
-						"font-weight"; "bold")
-				End if 
+				setFontStyles($Dom_svgObject; $Lon_fontStyles)
 				
 			End if 
 			

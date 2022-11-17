@@ -51,34 +51,12 @@ $Txt_rootReference:=DOM Create XML Ref:C861("svg"; "http://www.w3.org/2000/svg")
 If (OK=1)
 	
 	$Txt_textID:=DOM Create XML element:C865($Txt_rootReference; "text")
+	
 	DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-		"font-family"; $Txt_fontName)
-	DOM SET XML ATTRIBUTE:C866($Txt_textID; \
+		"font-family"; $Txt_fontName; \
 		"font-size"; $Lon_fontSize)
 	
-	Case of 
-		: ($Lon_fontStyles ?? 2) & ($Lon_fontStyles ?? 3)
-			DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-				"text-decoration"; "underline line-through")
-			
-		: ($Lon_fontStyles ?? 2)
-			DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-				"text-decoration"; "underline")
-			
-		: ($Lon_fontStyles ?? 3)
-			DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-				"text-decoration"; "line-through")
-	End case 
-	
-	If ($Lon_fontStyles ?? 1)
-		DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-			"font-style"; "italic")
-	End if 
-	
-	If ($Lon_fontStyles ?? 0)
-		DOM SET XML ATTRIBUTE:C866($Txt_textID; \
-			"font-weight"; "bold")
-	End if 
+	setFontStyles($Txt_textID; $Lon_fontStyles)
 	
 	//Invisible characters are not treated properly
 	//So they were  replaced {
