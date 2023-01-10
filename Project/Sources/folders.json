@@ -238,6 +238,7 @@
 			"Component_putError",
 			"fontReplaceArial",
 			"PREFERENCES",
+			"setFontStyles",
 			"str_styledText",
 			"SVG_Get_string_width",
 			"svg_relativeURL",

@@ -1,4 +1,4 @@
-﻿{
+{
 	"destination": "detailScreen",
 	"windowTitle": ":xliff:viewerTitle",
 	"windowMinWidth": 550,
@@ -78,7 +78,6 @@
 					"fontFamily": "Lucida Grande",
 					"fontSize": 13,
 					"fill": "transparent",
-					"enterable": false,
 					"hideFocusRing": true,
 					"scrollbarVertical": "automatic",
 					"scrollbarHorizontal": "automatic",
@@ -93,7 +92,8 @@
 						"onMouseLeave",
 						"onMouseMove",
 						"onBeginDragOver"
-					]
+					],
+					"enterable": false
 				},
 				"Texte": {
 					"type": "text",
@@ -297,7 +297,7 @@
 					"min": 8,
 					"max": 96,
 					"graduationStep": 1,
-					"fontFamily": ".SF NS Text",
+					"fontFamily": "System Font Regular",
 					"fontSize": 12,
 					"method": "ObjectMethods/fontSize.4dm",
 					"events": [
@@ -335,5 +335,13 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"memorizeGeometry": false
+	"memorizeGeometry": false,
+	"geometryStamp": 1,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }
