@@ -1,1 +1,69 @@
-﻿<!-- svgReference := SVG_New_group ( svgObject ; ID ; URL ; Target ) -> svgObject (Text) -> ID (Text) -> URL (Text) -> Target (Text) <- svgReference (Text)-->## Description **SVG\_New\_group** ( parentSVGObject {; id {; url {; target}}} ) -&gt; Function result 
+<!-- svgReference := SVG_New_group ( svgObject ; ID ; URL ; Target )
+ -> svgObject (Text)
+ -> ID (Text)
+ -> URL (Text)
+ -> Target (Text)
+ <- svgReference (Text)-->
+# SVG_New_group
+
+> SVG_New_group ( parentSVGObject {; id {; url {; target}}} ) -> Function result
+
+| Parameter |     | Type |     |     |     | Description |     |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| parentSVGObject |     | SVG_Ref |     | ➡️ |     | Reference of parent element |     |
+| id  |     | String |     | ➡️ |     | Name of group |     |
+| url |     | String |     | ➡️ |     | External link |     |
+| target |     | String |     | ➡️ |     | Target of link |     |
+| Function result |     | SVG_Ref |     | ↩️ |     | Reference of group |     |
+
+## Description
+
+The SVG_New_group command creates a group in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not a valid SVG group or document, an error is generated.
+
+The group ('g' element) can be used to group together several linked graphic elements, which will inherit the properties of the group.
+
+The optional [id](# "Name of group") parameter can be used to assign a name to the group. Named groups are necessary for several purposes such as animation and reusable objects.
+
+The optional [url](# "External link") parameter can be used to associate an external link. Group objects are then clickable (similar to the 'a' element of HTML).
+
+The optional [target](# "Target of link") parameter specifies the name of the target where the document will open when the link is activated. The values expected are those of the HTML specification to which are added the 'new' value for opening a new window and the 'none' value which is equivalent to not processing this attribute.
+
+**Note:** External links are ignored when the SVG is displayed in a picture object (variable or field) of a 4D form. Management of external references is handled by the rendering engine. Under these conditions, the result may depend on the platform and the viewing software.
+
+### Example 1  
+
+A group of lines, all the same color:  
+![](..Home.md..Home.mdpictureHome.md196080Home.mdpict196080.en.png)  
+
+```4d
+
+```4d
+ $SVG:=SVG_New   
+ $group:=SVG_New_group ($SVG)  
+  
+```
+
+Assign a color to the group elements  
+ [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md) ($group;"firebrick")  
+ $newobject:=SVG_New_line ($group;100;300;300;100;"";5)  
+ $newobject:=SVG_New_line ($group;300;300;500;100;"";10)  
+ $newobject:=SVG_New_line ($group;500;300;700;100;"";15)  
+ $newobject:=SVG_New_line ($group;700;300;900;100;"";20)  
+ $newobject:=SVG_New_line ($group;900;300;1100;100;"";25)
+
+```
+
+```4d
+
+
+### Example 2  
+
+Clickable text:  
+![](..Home.md..Home.mdpictureHome.md196081Home.mdpict196081.en.png)  
+
+
+```4d
+ $SVG:=SVG_New   
+ $group:=SVG_New_group ($SVG;"w3Link";"www.w3.org";"new")  
+ $newobject:=SVG_New_text ($group;"www.w3.org";10;10;"arial";12;[Underline](Font-Styles.302-6103262.en.html "Underline");[Align left](Home.md4Dv19R8Home.mdindex.en.html "Align left");"blue")
+```

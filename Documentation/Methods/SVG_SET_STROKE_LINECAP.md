@@ -1,1 +1,32 @@
-﻿<!-- SVG_SET_STROKE_LINECAP ( objectID ; linecap ) -> objectID (Text) -> linecap (Text)-->## Description **SVG\_SET\_STROKE\_LINECAP** ( svgObject ; mode )
+<!-- SVG_SET_STROKE_LINECAP ( objectID ; linecap )
+ -> objectID (Text)
+ -> linecap (Text)-->
+# SVG_SET_STROKE_LINECAP
+
+> SVG_SET_STROKE_LINECAP ( svgObject ; mode )
+
+| Parameter |     | Type |     |     |     | Description |     |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| svgObject |     | SVG_Ref |     | ➡️ |     | Reference of SVG element |     |
+| mode |     | String |     | ➡️ |     | Rendering mode |     |
+
+## Description
+
+The SVG_SET_STROKE_LINECAP command can be used to specify the form of the path ends of the SVG object having the [svgObject](# "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed as parameter.
+
+The [mode](# "Rendering mode") parameter must contain one of the following strings, handled by SVG:
+
+* butt (default): standard  
+
+* round  
+
+* square  
+
+* inherit: inherited from parent object  
+
+![](..Home.md..Home.mdpictureHome.md194174Home.mdpict194174.en.png)  
+If the [mode](# "Rendering mode") parameter contains any other value, an error is generated.
+
+## See also
+
+[SVG_SET_STROKE_LINEJOIN](SVG_SET_STROKE_LINEJOIN.md)

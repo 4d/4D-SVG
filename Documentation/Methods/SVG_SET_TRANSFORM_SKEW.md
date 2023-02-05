@@ -1,1 +1,63 @@
-﻿<!-- SVG_SET_TRANSFORM_SKEW ( objectID ; angleVertical ; angleHorizontal ) -> objectID (Text) -> angleVertical (Real) -> angleHorizontal (Real)-->## Description **SVG\_SET\_TRANSFORM\_SKEW** ( svgObject ; horizontal {; vertical} ) 
+<!-- SVG_SET_TRANSFORM_SKEW ( objectID ; angleVertical ; angleHorizontal )
+ -> objectID (Text)
+ -> angleVertical (Real)
+ -> angleHorizontal (Real)-->
+# SVG_SET_TRANSFORM_SKEW
+
+> SVG_SET_TRANSFORM_SKEW ( svgObject ; horizontal {; vertical} )
+
+| Parameter |     | Type |     |     |     | Description |     |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| svgObject |     | SVG_Ref |     | ➡️ |     | Reference of SVG element |     |
+| horizontal |     | Longint |     | ➡️ |     | Value of incline along X axis |     |
+| vertical |     | Longint |     | ➡️ |     | Value of incline along Y axis |     |
+
+## Description
+
+The SVG_SET_TRANSFORM_SKEW command specifies a horizontal andHome.mdor vertical incline for the SVG object having the [svgObject](# "Reference of SVG element") reference.
+
+If the value of the [horizontal](# "Value of incline along X axis") parameter is not null, the object will be inclined horizontally according to the number of units passed; otherwise, it is ignored.
+
+If the value of the [vertical](# "Value of incline along Y axis") parameter is not null, the object will be inclined vertically according to the number of units passed.
+
+### Example  
+
+![](..Home.md..Home.mdpictureHome.md194371Home.mdpict194371.en.png)
+
+```4d
+ $svg :=SVG_New   
+  
+```
+
+Draw a background  
+```4d
+ [SVG_New_rect](SVG_New_rect.md) ($svg;0;0;270;160;10;10;"black";"gray")  
+  
+```
+Place the text…  
+```4d
+ $tx:=SVG_New_text ($svg;"Hello world!";100;5;"";48)  
+  
+```
+
+in white  
+```4d
+ [SVG_SET_FONT_COLOR](SVG_SET_FONT_COLOR.md) ($tx;"white")  
+  
+```
+Incline it  
+```4d
+ [SVG_SET_TRANSFORM_SKEW](SVG_SET_TRANSFORM_SKEW.md) ($tx;-50;10) 
+```
+
+Incline
+ 
+ 
+
+
+  
+  
+
+## See also 
+
+[SVG_SET_TRANSFORM_FLIP](SVG_SET_TRANSFORM_FLIP.md)
