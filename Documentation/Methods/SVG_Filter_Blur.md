@@ -29,7 +29,7 @@ The optional [input](# "Source of filter primitive") parameter identifies the gr
 
 The optional [name](# "Target of filter primitive") parameter is the name, if any, assigned to the result of this filter primitive.
 
-**Note:** Starting with 4D v14 R5, this command works under Windows with Direct2D enabled in software mode (see the Direct2D software constant in the description of the [SET DATABASE PARAMETER](SET-DATABASE-PARAMETER.301-6102577.en.html) command).
+**Note:** Starting with 4D v14 R5, this command works under Windows with Direct2D enabled in software mode (see the Direct2D software constant in the description of the [SET DATABASE PARAMETER](https://developer.4d.com/docs/Desktop/user-settings/#set-database-parameter-and-user-settings) command).
 
 ### Example  
 

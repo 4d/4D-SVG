@@ -46,7 +46,7 @@ The optional [textWidth](# "Width of text area") and [textHeight](# "Height of t
 The **SVG_New_textArea** command accepts two different syntaxes for setting characters:
 
 * You can pass various values in the [font](# "Font name or Style definition") , [size](# "Size of characters in points") , [style](# "Style of characters") and [alignment](# "Alignment") parameters: [font](# "Font name or Style definition") and [size](# "Size of characters in points") can be used to specify the font and size, in points, to be used. When these parameters are omitted, the text will be written in Times New Roman 12 pts.  
-    The optional [style](# "Style of characters") parameter gives information about the character style used. In the [style](# "Style of characters") parameter, you must pass one of the following values or a combination of several of them (or you can also use the corresponding 4D constants from the [Font Styles](Font-Styles.302-6103262.en.html) theme):  
+    The optional [style](# "Style of characters") parameter gives information about the character style used. In the [style](# "Style of characters") parameter, you must pass one of the following values or a combination of several of them (or you can also use the corresponding 4D constants from the [Font Styles](https://doc.4d.com/4Dv19/4D/19.5/Font-Styles.302-6103262.en.html) theme):  
 
     > 0 = Plain  
     > 1 = Bold  

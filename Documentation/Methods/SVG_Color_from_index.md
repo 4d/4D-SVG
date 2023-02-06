@@ -13,7 +13,7 @@
 
 The **SVG_Color_from_index** returns the SVG color matching the 4D color specified in the [index](# "Number of color") parameter.
 
-The [index](# "Number of color") parameter designates a number in the 4D color palette, where colors are numbered from 1 to 256. For more information about this point, refer to the description of the 4D [_o_OBJECT SET COLOR](o-OBJECT-SET-COLOR.301-6101929.en.html) command.
+The [index](# "Number of color") parameter designates a number in the 4D color palette, where colors are numbered from 1 to 256. For more information about this point, refer to the description of the 4D [_o_OBJECT SET COLOR](https://doc.4d.com/4Dv19/4D/19.5/o-OBJECT-SET-COLOR.301-6136511.en.html) command.
 
 ### Example  
 

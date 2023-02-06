@@ -57,7 +57,7 @@ The **SVG_New_text** command accepts two different syntaxes for setting characte
     > 3 = Center  
     > 4 = Align right  
 
-    The optional [color](# "Text color") parameter contains the name of the font color. (For more information about colors, please refer to the [Colors and Gradients](Colors%20and%20Gradients.md) section).  
+    The optional [color](# "Text color") parameter contains the name of the font color. (For more information about colors, please refer to the [Colors and Gradients](../Colors%20and%20Gradients.md) section).  
     The optional [rotation](# "Angle of rotation of text") parameter can be used to specify the rotation to be applied to the text.  
     The optional [lineSpacing](# "Line spacing in points") parameter can be used to specify the value of the line spacing if the text has more than one line. Default value = 1.  
     The optional [stretching](# "Horizontal stretch factor") parameter can be used to specify a horizontal stretching (value >1) or condensing (value included between 0 and 1) factor of the text.

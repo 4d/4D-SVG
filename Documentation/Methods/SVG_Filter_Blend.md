@@ -28,7 +28,7 @@ The optional [mode](# "Mixing mode") parameter can be used to set the combinatio
 
 The optional [name](# "Target of filter primitive") parameter is the name, if any, assigned to the result of this filter primitive.
 
-**Note:** Starting with 4D v14 R5, this command works under Windows with Direct2D enabled in software mode (see the Direct2D software constant in the description of the [SET DATABASE PARAMETER](SET-DATABASE-PARAMETER.301-6102577.en.html) command).
+**Note:** Starting with 4D v14 R5, this command works under Windows with Direct2D enabled in software mode (see the Direct2D software constant in the description of the [SET DATABASE PARAMETER](https://developer.4d.com/docs/Desktop/user-settings/#set-database-parameter-and-user-settings) command).
 
 ### Example  
 
@@ -64,7 +64,8 @@ In a form, we display two identical SVG pictures then we create a "blend" filter
  <>pict2:=SVG_Export_to_picture ($root2) // display second picture
 ```
 
-Result (blur input filter = sourceGraphic):  
+Result (blur input filter = sourceGraphic): 
+
 ![](https://doc.4d.com/4Dv19/picture/1756656/pict1756656.fr.png)
 
 Result (blur input filter = sourceAlpha):

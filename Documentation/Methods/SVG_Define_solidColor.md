@@ -22,7 +22,7 @@ The SVG_Define_solidColor command sets a new custom color in the SVG container d
 
 The [id](# "Color name") parameter specifies the color name. The name will be used to associate a color with an object. If an element with the same name exists, it will be replaced.
 
-The [color](# "Color expression") parameter is a color expression recognized by SVG (see [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients")).
+The [color](# "Color expression") parameter is a color expression recognized by SVG (see [Colors and Gradients](../Colors%20and%20Gradients.md "Colors and Gradients")).
 
 The optional [opacity](# "Opacity") parameter can be used to specify an opacity (from 0 to 100) for this color. If the parameter is omitted, the opacity will be 100%.
 
