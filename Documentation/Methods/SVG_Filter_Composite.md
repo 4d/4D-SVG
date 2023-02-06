@@ -5,11 +5,4 @@
  -> operator (Text)
  -> in2 (Text)
  <- nodeReference (Text)-->
-﻿<!-- nodeReference := SVG_Filter_Composite ( parentReference ; in ; result ; operator ; in2 )
- -> parentReference (Text)
- -> in (Text)
- -> result (Text)
- -> operator (Text)
- -> in2 (Text)
- <- nodeReference (Text)-->
-## Description
+# SVG_Filter_Composite

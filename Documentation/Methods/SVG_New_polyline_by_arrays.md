@@ -60,20 +60,22 @@ Draw a line diagram:
 ![](https://doc.4d.com/4Dv19/picture/196983/pict196983.en.png)
 
 ```4d
-
-```4d
  ARRAY LONGINT($tX;0)  
  ARRAY LONGINT($tY;0)  
   
 ```
 
 X axis  
+
+```4d
  For($Lon_i;0;200;20)  
     APPEND TO ARRAY($tX;$Lon_i)  
  End for  
-  
 ```
+
 Values  
+
+```4d
  APPEND TO ARRAY($tY;100)  
  APPEND TO ARRAY($tY;100)  
  APPEND TO ARRAY($tY;30)  
@@ -87,12 +89,6 @@ Values
    
  objectRef:=SVG_New_polyline_by_arrays (svgRef;->$tX;->$tY;"crimson";"none";5)
 ```
-
-```4d
-
-
-  
-  
 
 ## See also 
 

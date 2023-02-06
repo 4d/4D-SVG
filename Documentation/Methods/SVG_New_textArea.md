@@ -64,7 +64,7 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
 
 * Or you can pass a style definition in the styleDef parameter (instead of the [font](# "Font name or Style definition") parameter) and then omit the following parameters. For example, you can pass:  
 
-```
+```4d
  SVG_New_textArea ($Dom_svg;"Hello World !";x;y;vWidth;vHeight;style_definition)
 ```
 
@@ -81,7 +81,6 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
 
 ```4d
  $svg:=SVG_New   
-  
 ```
 
 Position a border rectangle  
