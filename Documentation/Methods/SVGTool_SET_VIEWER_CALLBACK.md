@@ -12,7 +12,7 @@
 
 The SVGTool_SET_VIEWER_CALLBACK command is used to install [methodName](# "Name of 4D project method") as the project method that will be called when the On Clicked and On Mouse Move events occur on the image displayed by the [SVGTool_SHOW_IN_VIEWER](SVGTool_SHOW_IN_VIEWER.md "SVGTool_SHOW_IN_VIEWER") command.
 
-This method receives a text parameter that is the ID of the element being clicked or over which the mouse is moving as provided by the 4D [SVG Find element ID by coordinates](SVG-Find-element-ID-by-coordinates.301-6102954.en.html "SVG Find element ID by coordinates") command.
+This method receives a text parameter that is the ID of the element being clicked or over which the mouse is moving as provided by the 4D [SVG Find element ID by coordinates](https://doc.4d.com/4Dv19/4D/19.5/SVG-Find-element-ID-by-coordinates.301-6137565.en.html) command.
 
 This parameter must be declared in the [methodName](# "Name of 4D project method") project method of the host database by inserting it into the line C_TEXT($1).
 

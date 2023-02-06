@@ -25,45 +25,17 @@ Flipping of a text object:
 ![](https://doc.4d.com/4Dv19/picture/194228/pict194228.en.png)
 
 ```4d
- svgRef:=SVG_New   
- SVG_SET_VIEWBOX (svgRef;0;0;400;200)  
- $tx:=SVG_New_text (svgRef;"4D";10;0;"";96)  
- SVG_SET_FONT_COLOR ($tx;"blue") // Change the color 
-```
-
-Effect:
-
-```4d
- &[NBSP](ASCII-Codes.302-6103210.en.html "NBSP"); 
-```
-
-Take the same text
-
-```4d
- $tx:=SVG_New_text (svgRef;"4D";10;0;"";96) 
-```
-
- Change the color  
-
-```4d
- SVG_SET_FONT_COLOR ($tx;"lightblue")
-```
-
-Apply a vertical flip  
-
-```4d
- SVG_SET_TRANSFORM_FLIP($tx;True) 
-```
-
-Incline
-
-```4d
- SVG_SET_TRANSFORM_SKEW ($tx;-10)
-```
-
-Reposition
-
-```4d
+ svgRef:=SVG_New
+ SVG_SET_VIEWBOX(svgRef;0;0;400;200)
+ $tx:=SVG_New_text(svgRef;"4D";10;0;"";96)
+ SVG_SET_FONT_COLOR($tx;"blue") `Change the color
+ &NBSP;
+  `Effect:
+ $tx:=SVG_New_text(svgRef;"4D";10;0;"";96) `Take the same text
+ SVG_SET_FONT_COLOR($tx;"lightblue") ` Change the color
+ SVG_SET_TRANSFORM_FLIP($tx;True) `Apply a vertical flip
+ SVG_SET_TRANSFORM_SKEW($tx;-10) `Incline
+ SVG_SET_TRANSFORM_TRANSLATE($tx;-17;-193) `Reposition
  SVG_SET_TRANSFORM_TRANSLATE ($tx;-17;-193) 
 ```
 

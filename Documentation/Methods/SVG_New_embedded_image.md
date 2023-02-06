@@ -37,7 +37,7 @@ Embed the ‘logo4D.png’ picture located in the ‘Resources’ folder:
 
 ```4d
  svgRef:=SVG_New   
- $Path:=Get 4D folder([Current resources folder](4D-Environment.302-6103271.en.html "Current resources folder"))+"logo4D.png")  
+ $Path:=Get 4D folder(Current resources folder)+"logo4D.png")  
  READ PICTURE FILE($Path;$Picture)  
  If(OK=1)  
     objectRef:=SVG_New_embedded_image (svgRef;$Picture)  

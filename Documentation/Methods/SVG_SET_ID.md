@@ -14,7 +14,7 @@
 
 The SVG_SET_ID command can be used to set the ‘ID’ property of the SVG object having the [svgObject](# "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
 
-The object id is used to reference an object. This reference will then be recovered using the [SVG_Get_ID](SVG_Get_ID.md)  command. The id is also used by the 4D [SVG Find element ID by coordinates](SVG-Find-element-ID-by-coordinates.301-6102954.en.html "SVG Find element ID by coordinates") command (see the 4D documentation).
+The object id is used to reference an object. This reference will then be recovered using the [SVG_Get_ID](SVG_Get_ID.md)  command. The id is also used by the 4D [SVG Find element ID by coordinates](https://doc.4d.com/4Dv19/4D/19.5/SVG-Find-element-ID-by-coordinates.301-6137565.en.html) command (see the 4D documentation).
 
 ### Example  
 

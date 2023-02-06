@@ -43,7 +43,7 @@ The command returns a 32-character string ([SVG_Ref](# "Unique ID of an SVG file
 ```4d
  svgRef:=SVG_New   
  svgRef:=SVG_New (500;200)  
- svgRef:=SVG_New (900;700;"SVG component test";"This is an example";True;[Scaled to fit](Picture-Display-Formats.302-6103272.en.html "Scaled to fit"))
+ svgRef:=SVG_New (900;700;"SVG component test";"This is an example";True;Scaled to fit)
 ```
 
 ## See also

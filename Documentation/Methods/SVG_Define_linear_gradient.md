@@ -64,27 +64,27 @@ Draw 6 solid squares where each uses a linear gradient paint server while varyin
    
  SVG_Define_linear_gradient ($svg;"demoGradient_1";"red";"yellow")  
  SVG_New_rect ($svg;10;10;90;90;0;0;"black";"url(#demoGradient_1)")  
- SVG_New_text ($svg;"rotation = 0\rrotation = 180";50;40;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"rotation = 0\rrotation = 180";50;40;"";-1;-1;Align center)  
    
  SVG_Define_linear_gradient ($svg;"demoGradient_2";"red";"yellow";-180)  
  SVG_New_rect ($svg;110;10;90;90;0;0;"black";"url(#demoGradient_2)")  
- SVG_New_text ($svg;"rotation = -180";150;50;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"rotation = -180";150;50;"";-1;-1;Align center)  
    
  SVG_Define_linear_gradient ($svg;"demoGradient_3";"red";"yellow";45)  
  SVG_New_rect ($svg;10;110;90;90;0;0;"black";"url(#demoGradient_3)")  
- SVG_New_text ($svg;"rotation = 45";50;150;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"rotation = 45";50;150;"";-1;-1;Align center)  
    
  SVG_Define_linear_gradient ($svg;"demoGradient_4";"red";"yellow";-45)  
  SVG_New_rect ($svg;110;110;90;90;0;0;"black";"url(#demoGradient_4)")  
- SVG_New_text ($svg;"rotation = -45";150;150;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"rotation = -45";150;150;"";-1;-1;Align center)  
    
  SVG_Define_linear_gradient ($svg;"demoGradient_5";"red";"yellow";90)  
  SVG_New_rect ($svg;10;210;90;90;0;0;"black";"url(#demoGradient_5)")  
- SVG_New_text ($svg;"rotation = 90";50;250;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"rotation = 90";50;250;"";-1;-1;Align center)  
    
  SVG_Define_linear_gradient ($svg;"demoGradient_6";"red";"yellow";-90)  
  SVG_New_rect ($svg;110;210;90;90;0;0;"black";"url(#demoGradient_6)")  
- SVG_New_text ($svg;"rotation = -90";150;250;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"rotation = -90";150;250;"";-1;-1;Align center)  
    
   // Save document  
  SVG_SAVE_AS_TEXT ($svg;"test.svg")  
@@ -116,11 +116,11 @@ This example illustrates the effect of the [startColorOffset](# "Percentage valu
    
  SVG_Define_linear_gradient ($svg;"demoGradient_1";"red";"yellow";-180;"reflect")  
  SVG_New_rect ($svg;10;10;90;90;0;0;"black";"url(#demoGradient_1)")  
- SVG_New_text ($svg;"offset=0/100";50;50;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"offset=0/100";50;50;"";-1;-1;Align center)  
    
  SVG_Define_linear_gradient ($svg;"demoGradient_2";"red";"yellow";-180;"reflect";20;80)  
  SVG_New_rect ($svg;110;10;90;90;0;0;"black";"url(#demoGradient_2)")  
- SVG_New_text ($svg;"offset=20/80";150;50;"";-1;-1;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ SVG_New_text ($svg;"offset=20/80";150;50;"";-1;-1;Align center)  
   // Save document  
  SVG_SAVE_AS_TEXT ($svg;"test2.svg")  
   // Free up memory  

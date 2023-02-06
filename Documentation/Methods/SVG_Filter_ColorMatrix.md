@@ -106,11 +106,11 @@ SVG_SET_OPTIONS([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md)([SVG_Get_
  $Dom_rect:=SVG_New_rect ($Dom_svg;2;400;797;100;0;0;"none";"coral")  
  SVG_SET_FILTER ($Dom_rect;"LuminanceToAlpha")  
    
- SVG_New_text ($Dom_svg;"No filter";110;10;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- SVG_New_text ($Dom_svg;"Matrix";110;110;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- SVG_New_text ($Dom_svg;"Saturate";110;210;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- SVG_New_text ($Dom_svg;"HueRotate";110;310;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- SVG_New_text ($Dom_svg;"Luminance";110;410;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
+ SVG_New_text ($Dom_svg;"No filter";110;10;"Verdana";60;Bold;-1;"black")  
+ SVG_New_text ($Dom_svg;"Matrix";110;110;"Verdana";60;Bold;-1;"black")  
+ SVG_New_text ($Dom_svg;"Saturate";110;210;"Verdana";60;Bold;-1;"black")  
+ SVG_New_text ($Dom_svg;"HueRotate";110;310;"Verdana";60;Bold;-1;"black")  
+ SVG_New_text ($Dom_svg;"Luminance";110;410;"Verdana";60;Bold;-1;"black")  
    
   // View the result  
  SVGTool_SHOW_IN_VIEWER($Dom_svg)  

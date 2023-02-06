@@ -62,7 +62,7 @@ The following options are currently available:
     By default, 4D SVG replaces 'Arial' font with 'Arial Unicode MS', 'Arial' to improve compatibility with non-Roman characters (e.g. Japanese). In certain cases, you may want to disable this functioning. This option means you do not have to replace Arial fonts.
 
 * _Set shape-rendering='crispEdges' as default for a new canvas_  
-    The crispEdges attribute (see [SVG_SET_SHAPE_RENDERING](/4Dv19R8/4D/13/SVG-SET-SHAPE-RENDERING.301-888659.en.html "SVG_SET_SHAPE_RENDERING")) can be forced by default using this option.
+    The crispEdges attribute (see [SVG_SET_SHAPE_RENDERING](SVG_SET_SHAPE_RENDERING.md) can be forced by default using this option.
 
 * _Checks parameters_  
     By default, 4D SVG checks the validity of parameters passed to commands. Once the development step is finished, you may want to disable this option to speed up code execution.

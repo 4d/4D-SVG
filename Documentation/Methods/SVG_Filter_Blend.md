@@ -38,7 +38,7 @@ In a form, we display two identical SVG pictures then we create a "blend" filter
  $root:=SVG_New (400;400;"filters test") // definition of first (left) picture  
  $rect:=SVG_New_rect ($root;10;10;380;100;0;0;"darkblue";"white";1)  
  SVG_SET_FILL_BRUSH ($root;"orange")  
- $textAreaRef:=SVG_New_textArea ($root;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ $textAreaRef:=SVG_New_textArea ($root;"Hello World!";10;10;380;100;"arial";60;Normal;Align center)  
  <>pict1:=SVG_Export_to_picture ($root) // display first picture  
    
  $root2:=SVG_New (400;400;"filters test") // definition of identical (right) picture  
@@ -58,7 +58,7 @@ In a form, we display two identical SVG pictures then we create a "blend" filter
    
  $rect2:=SVG_New_rect ($root2;10;10;380;100;0;0;"darkblue";"white";1)  
  SVG_SET_FILL_BRUSH ($root2;"orange")  
- $textAreaRef2:=SVG_New_textArea ($root2;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
+ $textAreaRef2:=SVG_New_textArea ($root2;"Hello World!";10;10;380;100;"arial";60;Normal;Align center)  
    
  SVG_SET_FILTER ($textAreaRef2;"MyShadow") // apply final filter  
  <>pict2:=SVG_Export_to_picture ($root2) // display second picture

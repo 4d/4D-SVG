@@ -94,15 +94,13 @@ The text
 
 ```4d
  $txt:="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."  
- $txtArea:=SVG_New_textArea ($svg;$txt;10;10;200;310;"Georgia";25;[Italic](Font-Styles.302-6103262.en.html "Italic");5)  
-  
+ $txtArea:=SVG_New_textArea ($svg;$txt;10;10;200;310;"Georgia";25;Italic;5)  
 ```
 
 Save document  
 
 ```4d
  SVG_SAVE_AS_TEXT ($svg;"test.svg")
-
 ```
 
 ### Example 2  

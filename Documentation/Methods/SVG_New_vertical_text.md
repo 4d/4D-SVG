@@ -61,7 +61,7 @@ The optional [rotation](# "Angle of rotation of text") parameter can be used to 
 ```4d
  $SVG:=SVG_New   
  $textID:=SVG_New_text ($SVG;"Hello world";10;12)  
- $textID:=SVG_New_vertical_text ($SVG;"Hello world";22;3;"";-1;-1;[Center](/4Dv19R8/index.en.html "Center");"blue")
+ $textID:=SVG_New_vertical_text ($SVG;"Hello world";22;3;"";-1;-1;Center;"blue")
 ```
 
 ## See also

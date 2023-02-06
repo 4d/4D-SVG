@@ -95,7 +95,7 @@ Text that is blue, italic, underlined and aligned to the right:
  $text:="Hello world!\rBonjour le monde!\rHola Mundo!"  
  $size:=48  
  $font:="helvetica"  
- $textID:=SVG_New_text ($SVG;$text;400;10;$font;$size;[Italic](Font-Styles.302-6103262.en.html "Italic")+[Underline](Font-Styles.302-6103262.en.html "Underline");[Align right](/4Dv19R8/index.en.html "Align right");"blue")
+ $textID:=SVG_New_text ($SVG;$text;400;10;$font;$size;Italic+Underline;Align right;"blue")
 ```
 
 ### Example 3  

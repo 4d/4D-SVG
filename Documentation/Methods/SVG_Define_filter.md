@@ -62,7 +62,7 @@ In this example, we want to perform the following operations:
  SVG_SET_FILTER ($Dom_rect;"blur")  
    
   // saving result in an SVG file  
- SVG_SAVE_AS_TEXT ($Dom_SVG;System folder([Desktop](System-Folder.302-6103182.en.html "Desktop"))+"test.svg")  
+ SVG_SAVE_AS_TEXT ($Dom_SVG;System folder(Desktop)+"test.svg")  
    
  SVG_CLEAR ($Dom_SVG)
 ```
