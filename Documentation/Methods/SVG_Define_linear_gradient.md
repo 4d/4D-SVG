@@ -131,5 +131,5 @@ This example illustrates the effect of the [startColorOffset](# "Percentage valu
 
 ## See also
 
-[SVG Colors](SVG%20Colors.md)  
+[SVG Colors](../SVG%20Colors.md)  
 [SVG_Define_radial_gradient](SVG_Define_radial_gradient.md)

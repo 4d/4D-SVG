@@ -120,11 +120,11 @@ Display of multi-style text:
  $Dom_svg:=SVG_New   
    
   // title  
- SVG_SET_FONT_COLOR](SVG_SET_FONT_COLOR.md)([SVG_New_text](SVG_SET_FONT_COLOR ($Dom_svg;"_______ SVG_New_textArea ______";10;30;"";-1);"blue")  
+ SVG_SET_FONT_COLOR(SVG_New_text($Dom_svg;"_______ SVG_New_textArea ______";10;30;"";-1);"blue")  
   // textArea  
  $Dom_text:=SVG_New_textArea ($Dom_svg;$Txt_buffer;50;50)  
    
- [SVGTool_SHOW_IN_VIEWER](SVGTool_SHOW_IN_VIEWER.md "SVGTool_SHOW_IN_VIEWER")($Dom_svg)  
+SVGTool_SHOW_IN_VIEWER($Dom_svg)  
  SVG_CLEAR ($Dom_svg)
 ```
 

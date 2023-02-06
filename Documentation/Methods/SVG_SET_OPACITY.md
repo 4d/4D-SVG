@@ -35,4 +35,4 @@ Set the line opacity to 50%
 
 ## See also
 
-[SVG Colors](SVG%20Colors.md)
+[SVG Colors](../SVG%20Colors.md)

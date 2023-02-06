@@ -15,7 +15,7 @@
 
 The SVG_SET_FILL_BRUSH command can be used to set the fill color for the SVG object having the [svgObject](# "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
 
-For more information about colors, please refer to the “[SVG Colors](SVG%20Colors.md "SVG Colors")” section.
+For more information about colors, please refer to the “[SVG Colors](../SVG%20Colors.md)” section.
 
 ### Example  
 
@@ -27,5 +27,5 @@ For more information about colors, please refer to the “[SVG Colors](SVG%20Col
 
 ## See also
 
-[SVG Colors](SVG%20Colors.md)  
+[SVG Colors](../SVG%20Colors.md)  
 [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md)

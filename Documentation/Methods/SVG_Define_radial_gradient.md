@@ -81,5 +81,5 @@ Free up memory
 
 ## See also
 
-[SVG Colors](SVG%20Colors.md)  
+[SVG Colors](../SVG%20Colors.md)  
 [SVG_Define_linear_gradient](SVG_Define_linear_gradient.md)
