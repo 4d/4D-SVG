@@ -19,13 +19,13 @@ The [writingMode](# "Direction of writing") parameter can have one of the follow
 ### Example  
 
 Writing from right to left:  
-![](..Home.md..Home.mdpictureHome.md359263Home.mdpict359263.en.png)
+![](https://doc.4d.com/4Dv19/picture/359263/pict359263.en.png)
 
 ```4d
   // Frame  
- [SVG_New_rect](SVG_New_rect.md) ($Dom_SVG;5;5;210;310;0;0;"blue";"none")  
+ SVG_New_rect ($Dom_SVG;5;5;210;310;0;0;"blue";"none")  
    
   // Text  
  $Dom_text:=SVG_New_textArea ($Dom_SVG;$Txt_sample;10;10;200;300;"Baghdad 'Arial Unicode MS'";25)  
- [SVG_SET_TEXT_WRITING_MODE](SVG_SET_TEXT_WRITING_MODE.md) ($Dom_text;"rl")
+ SVG_SET_TEXT_WRITING_MODE ($Dom_text;"rl")
 ```

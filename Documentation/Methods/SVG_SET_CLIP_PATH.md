@@ -14,12 +14,12 @@
 
 The SVG_SET_CLIP_PATH command sets the clip path named [clipPathID](# "Name of clip path") for the object passed in [svgObject](# "Reference of SVG element"). An error is generated if [svgObject](# "Reference of SVG element") is not a valid reference or if the clip path is not defined.
 
-**See Also:** [www.w3.orgHome.mdTRHome.md2001Home.mdREC-SVG-20010904Home.mdmasking.html#EstablishingANewClippingPath](www.w3.orgHome.mdTRHome.md2001Home.mdREC-SVG-20010904Home.mdmasking.html#EstablishingANewClippingPath)
+**See Also:** [www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath](www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath)
 
 ### Example 1  
 
 Defining a circular clip path that will then be assigned to an image:  
-![](..Home.md..Home.mdpictureHome.md359066Home.mdpict359066.en.png)
+![](https://doc.4d.com/4Dv19/picture/359066/pict359066.en.png)
 
 ```4d
   // Defining a circular clip path  
@@ -33,16 +33,16 @@ Defining a circular clip path that will then be assigned to an image:
  $Txt_path:=Get 4D folder(6)+"logo.svg"  
  READ PICTURE FILE($Txt_path;$Pic_buffer)  
  $Dom_picture:=SVG_New_embedded_image ($Dom_g;$Pic_buffer)  
- [SVG_SET_ID](SVG_SET_ID.md) ($Dom_picture;"MyPicture")  
+ SVG_SET_ID ($Dom_picture;"MyPicture")  
    
   // Applying clip path to group  
- [SVG_SET_CLIP_PATH](SVG_SET_CLIP_PATH.md) ($Dom_g;"theClip")
+ SVG_SET_CLIP_PATH ($Dom_g;"theClip")
 ```
 
 ### Example 2  
 
 The same image with a rectangular clip path with rounded corners:  
-![](..Home.md..Home.mdpictureHome.md359069Home.mdpict359069.en.png)
+![](https://doc.4d.com/4Dv19/picture/359069/pict359069.en.png)
 
 ```4d
   // Defining a rectangular clip path  
@@ -56,10 +56,10 @@ The same image with a rectangular clip path with rounded corners:
  $Txt_path:=Get 4D folder(6)+"logo.svg"  
  READ PICTURE FILE($Txt_path;$Pic_buffer)  
  $Dom_picture:=SVG_New_embedded_image ($Dom_g;$Pic_buffer)  
- [SVG_SET_ID](SVG_SET_ID.md) ($Dom_picture;"MyPicture")  
+ SVG_SET_ID ($Dom_picture;"MyPicture")  
    
   // Applying clip path to group  
- [SVG_SET_CLIP_PATH](SVG_SET_CLIP_PATH.md) ($Dom_g;"theClip")
+ SVG_SET_CLIP_PATH ($Dom_g;"theClip")
 ```
 
 ## See also

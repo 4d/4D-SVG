@@ -46,7 +46,7 @@ If you do not pass a type parameter, by default the effect is as if a value of _
 
 In the [values](# "Numeric values for the transformation matrix") parameter, you pass numeric values based on the keyword passed in the type parameter:
 
-* With the "_matrix_" keyword: you pass a list of 20 matrix values, separated by whitespace andHome.mdor a comma.
+* With the "_matrix_" keyword: you pass a list of 20 matrix values, separated by whitespace and/or a comma.
 * With the "_saturate_" keyword: you pass a single real number value (0 to 1). The permitted value according to the specification is 0-1, but many browsers accept higher values >1 to allow over-saturation.
 * With the "_hueRotate_" keyword: you pass a single real number value (to indicate degrees of rotation).
 * With the "_luminanceToAlpha_" keyword: you do not pass a numeric value. The [values](# "Numeric values for the transformation matrix") parameter is not used with this type, which discards the alpha channel and replaces it with values equal to the input's luminance.
@@ -58,16 +58,16 @@ If you do not pass a [values](# "Numeric values for the transformation matrix") 
 * With the "_hueRotate_" keyword: by default the value is 0 (no change).
 * With the "_luminanceToAlpha_" keyword: by default, this parameter is not used.
 
-**Note:** Under Windows, this command requires the prior disabling of Direct2D (see the Direct2D disabled constant in the description of the [SET DATABASE PARAMETER](SET-DATABASE-PARAMETER.301-6102577.en.html) command).
+**Note:** Under Windows, this command requires the prior disabling of Direct2D (see the Direct2D disabled constant in the description of the [SET DATABASE PARAMETER](https://developer.4d.com/docs/Desktop/user-settings/#set-database-parameter-and-user-settings) command).
 
 ### Example  
 
-![](..Home.md..Home.mdpictureHome.md1788318Home.mdpict1788318.en.png)
+![](https://doc.4d.com/4Dv19/picture/1788318/pict1788318.en.png)
 
 ```4d
  C_TEXT($Dom_filter;$Dom_node;$Dom_rect;$Dom_svg;$Txt_matrix)  
    
- [SVG_SET_OPTIONS](SVG_SET_OPTIONS.md "SVG_SET_OPTIONS")([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md "SVG_SET_OPTIONS")([SVG_Get_options.md) ?+5)  
+SVG_SET_OPTIONS([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md)([SVG_Get_options.md) ?+5)  
    
  $Dom_svg:=SVG_New   
    
@@ -95,28 +95,28 @@ If you do not pass a [values](# "Numeric values for the transformation matrix") 
  $Dom_rect:=SVG_New_rect ($Dom_svg;2;0;797;100;0;0;"none";"coral")  
    
  $Dom_rect:=SVG_New_rect ($Dom_svg;2;100;797;100;0;0;"none";"coral")  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($Dom_rect;"Matrix")  
+ SVG_SET_FILTER ($Dom_rect;"Matrix")  
    
  $Dom_rect:=SVG_New_rect ($Dom_svg;2;200;797;100;0;0;"none";"coral")  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($Dom_rect;"Saturate")  
+ SVG_SET_FILTER ($Dom_rect;"Saturate")  
    
  $Dom_rect:=SVG_New_rect ($Dom_svg;2;300;797;100;0;0;"none";"coral")  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($Dom_rect;"HueRotate90")  
+ SVG_SET_FILTER ($Dom_rect;"HueRotate90")  
    
  $Dom_rect:=SVG_New_rect ($Dom_svg;2;400;797;100;0;0;"none";"coral")  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($Dom_rect;"LuminanceToAlpha")  
+ SVG_SET_FILTER ($Dom_rect;"LuminanceToAlpha")  
    
- [SVG_New_text](SVG_New_text.md) ($Dom_svg;"No filter";110;10;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- [SVG_New_text](SVG_New_text.md) ($Dom_svg;"Matrix";110;110;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- [SVG_New_text](SVG_New_text.md) ($Dom_svg;"Saturate";110;210;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- [SVG_New_text](SVG_New_text.md) ($Dom_svg;"HueRotate";110;310;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
- [SVG_New_text](SVG_New_text.md) ($Dom_svg;"Luminance";110;410;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
+ SVG_New_text ($Dom_svg;"No filter";110;10;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
+ SVG_New_text ($Dom_svg;"Matrix";110;110;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
+ SVG_New_text ($Dom_svg;"Saturate";110;210;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
+ SVG_New_text ($Dom_svg;"HueRotate";110;310;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
+ SVG_New_text ($Dom_svg;"Luminance";110;410;"Verdana";60;[Bold](Font-Styles.302-6103262.en.html "Bold");-1;"black")  
    
   // View the result  
- [SVGTool_SHOW_IN_VIEWER](SVGTool_SHOW_IN_VIEWER.md "SVGTool_SHOW_IN_VIEWER")($Dom_svg)  
+ SVGTool_SHOW_IN_VIEWER($Dom_svg)  
    
   // SVG_SAVE_AS_TEXT($Dom_svg;System folder(Desktop)+"export.svg")  
    
   // Don't forget to clear the memory  
- [SVG_CLEAR](SVG_CLEAR.md) ($Dom_svg)
+ SVG_CLEAR ($Dom_svg)
 ```

@@ -14,4 +14,4 @@
 
 The SVG_Get_text command returns the textual content of the element designated by [svgObject](# "Reference of text element"). If [svgObject](# "Reference of text element") is not a text object reference ('text', 'textArea' or 'tspan'), an error is generated.
 
-In the case of a textArea object, &lt;tbreakHome.md&gt; elements are converted to CRs.
+In the case of a textArea object, &lt;tbreak/&gt; elements are converted to CRs.

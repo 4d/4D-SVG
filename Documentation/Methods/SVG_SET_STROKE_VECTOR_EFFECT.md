@@ -32,15 +32,15 @@ The following code creates a rectangle and resizes it:
  C_TEXT($Dom_rect;$Dom_svg)  
  $Dom_svg:=SVG_New   
  $Dom_rect:=SVG_New_rect ($Dom_svg;10;10;100;100;0;0;"blue";"red")  
- [SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md) ($Dom_rect;2;"px")  
+ SVG_SET_STROKE_WIDTH ($Dom_rect;2;"px")  
    
   //  Redimension  
- [SVG_SET_TRANSFORM_SCALE](SVG_SET_TRANSFORM_SCALE.md) ($Dom_rect;4;1)
+ SVG_SET_TRANSFORM_SCALE ($Dom_rect;4;1)
 ```
 
 By default, line thickness is modified:
 
-![](..Home.md..Home.mdpictureHome.md4612721Home.mdpict4612721.en.png)
+![](https://doc.4d.com/4Dv19/picture/4612721/pict4612721.en.png)
 
 To resize without changing line thickness, add **SVG_SET_STROKE_VECTOR_EFFECT**:
 
@@ -48,10 +48,10 @@ To resize without changing line thickness, add **SVG_SET_STROKE_VECTOR_EFFECT**
  C_TEXT($Dom_rect;$Dom_svg)  
  $Dom_svg:=SVG_New   
  $Dom_rect:=SVG_New_rect ($Dom_svg;10;10;100;100;0;0;"blue";"red")  
- [SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md) ($Dom_rect;2;"px")  
+ SVG_SET_STROKE_WIDTH ($Dom_rect;2;"px")  
    
   //  Redimension  
- [SVG_SET_TRANSFORM_SCALE](SVG_SET_TRANSFORM_SCALE.md) ($Dom_rect;4;1)  
+ SVG_SET_TRANSFORM_SCALE ($Dom_rect;4;1)  
    
   //  Set non-scalling  
  SVG_SET_STROKE_VECTOR_EFFECT($Dom_rect;"non-scaling-stroke")
@@ -59,4 +59,4 @@ To resize without changing line thickness, add **SVG_SET_STROKE_VECTOR_EFFECT**
 
 The line thickness is not modified:
 
-![](..Home.md..Home.mdpictureHome.md4612723Home.mdpict4612723.en.png)
+![](https://doc.4d.com/4Dv19/picture/4612723/pict4612723.en.png)

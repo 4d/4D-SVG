@@ -35,7 +35,7 @@ The [index](# "Number of color") parameter designates a number in the 4D color p
  [SVGTool_SHOW_IN_VIEWER](SVGTool_SHOW_IN_VIEWER.md "SVGTool_SHOW_IN_VIEWER")($Dom_svg)
 ```
 
-![](..Home.md..Home.mdpictureHome.md927034Home.mdpict927034.en.png)
+![](https://doc.4d.com/4Dv19/picture/927034/pict927034.en.png)
 
 ## See also
 

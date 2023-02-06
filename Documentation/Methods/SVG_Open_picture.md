@@ -23,7 +23,7 @@ The SVG_Open_picture command analyzes an SVG picture and returns an SVG referenc
  If(OK=1)  
     $ref:=SVG_Open_picture ($picture)  
     ...  
-    [SVG_CLEAR](SVG_CLEAR.md) ($ref)  
+    SVG_CLEAR ($ref)  
  End if
 ```
 

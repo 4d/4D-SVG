@@ -30,7 +30,7 @@ Set the line opacity to 50%
 
 ```4d
  $object:=SVG_New_rect ($svg ;10;10;200;100;0;0;"red";"blue")  
- [SVG_SET_OPACITY](SVG_SET_OPACITY.md) ($object;-1;50)
+ SVG_SET_OPACITY ($object;-1;50)
 ```
 
 ## See also

@@ -1,6 +1,7 @@
 # Colors and Gradients
 
-- [SVG Colors](Methods/SVG%20Colors.md)
+[SVG Colors](SVG%20Colors.md)
+  
 - [SVG_Color_from_index](Methods/SVG_Color_from_index.md)
 - [SVG_Color_grey](Methods/SVG_Color_grey.md)
 - [SVG_Color_RGB_from_CMYK](Methods/SVG_Color_RGB_from_CMYK.md)

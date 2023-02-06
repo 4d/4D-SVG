@@ -55,21 +55,21 @@ In this example, we want to perform the following operations:
    
   // creation of 4% blur filter  
  $Dom_filter:=SVG_Define_filter ($Dom_SVG;"blur")  
- [SVG_Filter_Blur](SVG_Filter_Blur.md) ($Dom_filter;4)  
- [SVG_Filter_Offset](SVG_Filter_Offset.md) ($Dom_filter;4)  
+ SVG_Filter_Blur ($Dom_filter;4)  
+ SVG_Filter_Offset ($Dom_filter;4)  
    
   // application of this filter to the rectangle  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($Dom_rect;"blur")  
+ SVG_SET_FILTER ($Dom_rect;"blur")  
    
   // saving result in an SVG file  
- [SVG_SAVE_AS_TEXT](SVG_SAVE_AS_TEXT.md) ($Dom_SVG;System folder([Desktop](System-Folder.302-6103182.en.html "Desktop"))+"test.svg")  
+ SVG_SAVE_AS_TEXT ($Dom_SVG;System folder([Desktop](System-Folder.302-6103182.en.html "Desktop"))+"test.svg")  
    
- [SVG_CLEAR](SVG_CLEAR.md) ($Dom_SVG)
+ SVG_CLEAR ($Dom_SVG)
 ```
 
 Result:
 
-![](..Home.md..Home.mdpictureHome.md1044185Home.mdpict1044185.fr.png)
+![](https://doc.4d.com/4Dv19/picture/1044185/pict1044185.fr.png)
 
 ## See also
 

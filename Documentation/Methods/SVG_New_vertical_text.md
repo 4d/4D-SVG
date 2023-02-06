@@ -50,18 +50,18 @@ The optional [alignment](# "Alignment") parameter can be used to set the type of
 > 3 = Center  
 > 4 = Align right
 
-The optional [color](# "Text color") parameter contains the name of the font color. (For more information about colors, please refer to the ”[Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients")” section).
+The optional [color](# "Text color") parameter contains the name of the font color. (For more information about colors, please refer to the ”[Colors and Gradients](../Colors%20and%20Gradients.md)” section).
 
 The optional [rotation](# "Angle of rotation of text") parameter can be used to specify the rotation to be applied to the text.
 
 ### Example  
 
-![](..Home.md..Home.mdpictureHome.md196342Home.mdpict196342.en.png)
+![](https://doc.4d.com/4Dv19/picture/196342/pict196342.en.png)
 
 ```4d
  $SVG:=SVG_New   
  $textID:=SVG_New_text ($SVG;"Hello world";10;12)  
- $textID:=SVG_New_vertical_text ($SVG;"Hello world";22;3;"";-1;-1;[Center](Home.md4Dv19R8Home.mdindex.en.html "Center");"blue")
+ $textID:=SVG_New_vertical_text ($SVG;"Hello world";22;3;"";-1;-1;[Center](/4Dv19R8/index.en.html "Center");"blue")
 ```
 
 ## See also

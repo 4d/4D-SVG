@@ -30,14 +30,14 @@ The SVG_New_ellipse command creates a new ellipse in the SVG container designate
 
 The ellipse is positioned and sized according to the values of [x](# "Coordinate on center X axis of ellipse"), [y](# "Coordinate on center Y axis of ellipse"), width and height.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 
 Draw an ellipse (default fill and border color, default line thickness):  
-![](..Home.md..Home.mdpictureHome.md195019Home.mdpict195019.en.png)
+![](https://doc.4d.com/4Dv19/picture/195019/pict195019.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -47,7 +47,7 @@ Draw an ellipse (default fill and border color, default line thickness):
 ### Example 2  
 
 Draw a light blue ellipse with a blue edge and a 2-point line thickness:  
-![](..Home.md..Home.mdpictureHome.md195020Home.mdpict195020.en.png)
+![](https://doc.4d.com/4Dv19/picture/195020/pict195020.en.png)
 
 ```4d
  svgRef:=SVG_New   

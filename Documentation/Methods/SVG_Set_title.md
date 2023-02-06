@@ -23,9 +23,9 @@ A title is text data that is not included in the rendered picture but is use for
 ```4d
  $SVG:=SVG_New   
  $rec:=SVG_New_rect ($SVG;20;20;650;650;0;0;"gray";"lemonchiffon")  
- [SVG_Set_title](SVG_Set_title.md) ($rec;"Background rectangle")  
+ SVG_Set_title ($rec;"Background rectangle")  
  $Symbol:=SVG_Define_symbol ($SVG;"MySymbol";0;0;110;110;"true")  
- [SVG_Set_title](SVG_Set_title.md) ($Symbol;" Set a symbol composed of 2 squares and 2 circles ")  
+ SVG_Set_title ($Symbol;" Set a symbol composed of 2 squares and 2 circles ")  
  ...
 ```
 

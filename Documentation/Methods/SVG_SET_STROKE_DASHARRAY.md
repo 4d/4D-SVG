@@ -24,26 +24,26 @@ If [dash](# "Length of first dash") is 0, the dotted pattern is removed.
 
 The [value](# "Length of spaces and dashes") parameters alternately specify the lengths of the gaps and dashes that follow the first dash. If an odd number of values is given (including the first dash), the list of values is repeated until it produces an even number of values.
 
-**See Also:** [www.w3.orgHome.mdTRHome.mdSVGHome.mdpainting.html#StrokeProperties](www.w3.orgHome.mdTRHome.mdSVGHome.mdpainting.html#StrokeProperties)
+**See Also:** [www.w3.org/TR/SVG/painting.html#StrokeProperties](www.w3.org/TR/SVG/painting.html#StrokeProperties)
 
 ### Example  
 
 Illustrations of a dotted line path:  
-![](..Home.md..Home.mdpictureHome.md359111Home.mdpict359111.en.png)
+![](https://doc.4d.com/4Dv19/picture/359111/pict359111.en.png)
 
 ```4d
   // Line  
  $Dom_line:=SVG_New_line ($Dom_SVG;10;10;500;500)  
- [SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md) ($Dom_line;10)  
- [SVG_SET_STROKE_DASHARRAY](SVG_SET_STROKE_DASHARRAY.md) ($Dom_line;8,099)  
- [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md) ($Dom_line;"red")  
+ SVG_SET_STROKE_WIDTH ($Dom_line;10)  
+ SVG_SET_STROKE_DASHARRAY ($Dom_line;8,099)  
+ SVG_SET_STROKE_BRUSH ($Dom_line;"red")  
    
   // Rectangle  
  $Dom_rect:=SVG_New_rect ($Dom_SVG;25;30;320;240;10;10;"red";"yellow:30")  
- [SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md) ($Dom_rect;5)  
- [SVG_SET_STROKE_DASHARRAY](SVG_SET_STROKE_DASHARRAY.md) ($Dom_rect;2)  
+ SVG_SET_STROKE_WIDTH ($Dom_rect;5)  
+ SVG_SET_STROKE_DASHARRAY ($Dom_rect;2)  
    
   // Circle  
  $Dom_circle:=SVG_New_circle ($Dom_SVG;350;400;100;"blue";"none")  
- [SVG_SET_STROKE_DASHARRAY](SVG_SET_STROKE_DASHARRAY.md) ($Dom_circle;2;4;6;8)
+ SVG_SET_STROKE_DASHARRAY ($Dom_circle;2;4;6;8)
 ```

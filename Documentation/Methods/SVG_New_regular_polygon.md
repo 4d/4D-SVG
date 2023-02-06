@@ -30,14 +30,14 @@ The SVG_New_regular_polygon command draws a regular polygon with number of sides
 
 The optional [x](# "Coordinate on center X axis") and [y](# "Coordinate on center Y axis") parameters can be used to specify the center of the circle. If they are omitted, the figure will be drawn in the upper left corner of the document.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 
 Draw a pentagon (default fill and border color, default line thickness):  
-![](..Home.md..Home.mdpictureHome.md195397Home.mdpict195397.en.png)
+![](https://doc.4d.com/4Dv19/picture/195397/pict195397.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -47,7 +47,7 @@ Draw a pentagon (default fill and border color, default line thickness):
 ### Example 2  
 
 Draw an octogon, the circle containing it and the trace lines:  
-![](..Home.md..Home.mdpictureHome.md195398Home.mdpict195398.en.png)
+![](https://doc.4d.com/4Dv19/picture/195398/pict195398.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -55,7 +55,7 @@ Draw an octogon, the circle containing it and the trace lines:
  $sides:=8  
  objectRef:=SVG_New_regular_polygon (svgRef;$width;$sides;0;0;"crimson";"palevioletred";2)  
    
- $radius:=$widthHome.md2  
+ $radius:=$width/2  
  objectRef:=SVG_New_rect (svgRef;0;0;$width;$width;0;0;"blue";"none")  
  objectRef:=SVG_New_line (svgRef;0;$radius;$width;$radius;"blue")  
  objectRef:=SVG_New_line (svgRef;$radius;0;$radius;$width;"blue")  

@@ -42,25 +42,25 @@ In a form, we display two identical SVG pictures then we create an "offset" filt
 ```4d
  $root:=SVG_New (400;400;"filters test") // definition of first (left) picture  
  $rect:=SVG_New_rect ($root;10;10;380;100;0;0;"darkblue";"white";1)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($root;"orange")  
+ SVG_SET_FILL_BRUSH ($root;"orange")  
  $textAreaRef:=SVG_New_textArea ($root;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
  <>pict1:=SVG_Export_to_picture ($root) // display first picture  
    
  $root2:=SVG_New (400;400;"filters test") // definition of identical (right) picture  
  $rect2:=SVG_New_rect ($root2;10;10;380;100;0;0;"darkblue";"white";1)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($root2;"orange")  
+ SVG_SET_FILL_BRUSH ($root2;"orange")  
  $textAreaRef2:=SVG_New_textArea ($root2;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
    
  $filter:=SVG_Define_filter ($root2;"Offset") // create filter  
- [SVG_Filter_Offset](SVG_Filter_Offset.md) ($filter;10;20)  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($textAreaRef2;"Offset") // apply filter  
+ SVG_Filter_Offset ($filter;10;20)  
+ SVG_SET_FILTER ($textAreaRef2;"Offset") // apply filter  
    
  <>pict2:=SVG_Export_to_picture ($root2) // display second picture
 ```
 
 Result:
 
-![](..Home.md..Home.mdpictureHome.md1756614Home.mdpict1756614.fr.png)
+![](https://doc.4d.com/4Dv19/picture/1756614/pict1756614.fr.png)
 
 ## See also
 

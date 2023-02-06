@@ -35,13 +35,13 @@ The following options are currently available:
     If this option is enabled, when the component creates a new element, it systematically adds and fills in an 'id' attribute for the object created, if this is not already specified.
 
 * _Automatically close objects_  
-    If this option is enabled, the objects created with the [SVG_New_arc](SVG_New_arc.md "SVG_New_arc") and [SVG_New_polyline_by_arrays](SVG_New_arc](SVG_New_arc.md "SVG_New_arc") and [SVG_New_polyline_by_arrays.md)  commands will be automatically closed.
+    If this option is enabled, the objects created with the [SVG_New_arc](SVG_New_arc.md) and [SVG_New_polyline_by_arrays](SVG_New_arc](SVG_New_arc.md) and [SVG_New_polyline_by_arrays.md)  commands will be automatically closed.
 
 * _Create objects with a background_  
     If this option is enabled, closed objects will be created with a background color; otherwise, the background will be transparent.
 
 * _Absolute coordinates for paths_  
-    When drawing paths with the [SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md "SVG_PATH_MOVE_TO"), [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md "SVG_PATH_LINE_TO"), [SVG_PATH_CURVE](SVG_PATH_CURVE.md "SVG_PATH_CURVE") and [SVG_PATH_ARC](SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md "SVG_PATH_MOVE_TO"), [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md "SVG_PATH_LINE_TO"), [SVG_PATH_CURVE](SVG_PATH_CURVE.md "SVG_PATH_CURVE") and [SVG_PATH_ARC.md)  commands, the coordinates passed will be interpreted as absolute if this option is enabled; otherwise they will be considered as relative.
+    When drawing paths with the [SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md), [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md), [SVG_PATH_CURVE](SVG_PATH_CURVE.md) and [SVG_PATH_ARC](SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md), [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md), [SVG_PATH_CURVE](SVG_PATH_CURVE.md) and [SVG_PATH_ARC.md)  commands, the coordinates passed will be interpreted as absolute if this option is enabled; otherwise they will be considered as relative.
 
 * _Create more readable code_  
     This option can be used to create indented and well-spaced code which is nevertheless unwieldy; its activation is particularly useful during the debugging phase.
@@ -62,7 +62,7 @@ The following options are currently available:
     By default, 4D SVG replaces 'Arial' font with 'Arial Unicode MS', 'Arial' to improve compatibility with non-Roman characters (e.g. Japanese). In certain cases, you may want to disable this functioning. This option means you do not have to replace Arial fonts.
 
 * _Set shape-rendering='crispEdges' as default for a new canvas_  
-    The crispEdges attribute (see [SVG_SET_SHAPE_RENDERING](Home.md4Dv19R8Home.md4DHome.md13Home.mdSVG-SET-SHAPE-RENDERING.301-888659.en.html "SVG_SET_SHAPE_RENDERING")) can be forced by default using this option.
+    The crispEdges attribute (see [SVG_SET_SHAPE_RENDERING](/4Dv19R8/4D/13/SVG-SET-SHAPE-RENDERING.301-888659.en.html "SVG_SET_SHAPE_RENDERING")) can be forced by default using this option.
 
 * _Checks parameters_  
     By default, 4D SVG checks the validity of parameters passed to commands. Once the development step is finished, you may want to disable this option to speed up code execution.

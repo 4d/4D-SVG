@@ -26,14 +26,14 @@ The SVG_New_polygon_by_arrays command draws a closed form consisting of a set of
 
 All the coordinate values are in the user coordinate system.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example  
 
 Draw a star (default border color and line thickness):  
-![](..Home.md..Home.mdpictureHome.md196941Home.mdpict196941.en.png)
+![](https://doc.4d.com/4Dv19/picture/196941/pict196941.en.png)
 
 ```4d
  ARRAY LONGINT($tX;0)  

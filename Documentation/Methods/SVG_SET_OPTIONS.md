@@ -12,7 +12,7 @@
 
 The SVG_SET_OPTIONS command can be used to set the options of the 4D SVG component with the [options](# "4D SVG component options") longint. For more information about the contents of [options](# "4D SVG component options"), please refer to the description of the [SVG_Get_options](SVG_Get_options.md)  command.
 
-Since all options will be set at once, this command must have been preceded with a call to the [SVG_Get_options](SVG_Get_options.md)  command, followed by the use of the [Bitwise Operators](Home.md4Dv19R8Home.md4DHome.md12.4Home.mdBitwise-Operators.300-977852.en.html "Bitwise Operators") of 4D.
+Since all options will be set at once, this command must have been preceded with a call to the [SVG_Get_options](SVG_Get_options.md)  command, followed by the use of the [Bitwise Operators](/4Dv19R8/4D/12.4/Bitwise-Operators.300-977852.en.html "Bitwise Operators") of 4D.
 
 If the [options](# "4D SVG component options") parameter is not passed, all the options are reset to their default value (see the [SVG_Get_options](SVG_Get_options.md)  command).
 
@@ -28,7 +28,7 @@ Create readable code:
 ```
 
 enable the option  
- [SVG_SET_OPTIONS](SVG_SET_OPTIONS.md) ($Options)
+ SVG_SET_OPTIONS ($Options)
 
 ```
 
@@ -38,7 +38,7 @@ enable the option
 ### Example 2  
 
 Draw a pie chart diagram:  
-![](..Home.md..Home.mdpictureHome.md196638Home.mdpict196638.en.png)
+![](https://doc.4d.com/4Dv19/picture/196638/pict196638.en.png)
 
 
 ```4d
@@ -50,13 +50,13 @@ Draw a pie chart diagram:
 ```
 
 Enable automatic closing of objects  
- [SVG_SET_OPTIONS](SVG_SET_OPTIONS.md "SVG_SET_OPTIONS")([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md "SVG_SET_OPTIONS")([SVG_Get_options.md) ?+2)  
+ [SVG_SET_OPTIONS](SVG_SET_OPTIONS.md)([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md)([SVG_Get_options.md) ?+2)  
 
- [SVG_New_arc](SVG_New_arc.md) ($svg;100;100;90;0;105;"gray";"lightcoral";1)  
- [SVG_New_arc](SVG_New_arc.md) ($svg;100;100;90;105;138;"gray";"lightskyblue";1)  
- [SVG_New_arc](SVG_New_arc.md) ($svg;100;100;90;138;230;"gray";"lightgreen";1)  
- [SVG_New_arc](SVG_New_arc.md) ($svg;100;100;90;230;270;"gray";"lightsteelblue";1)  
- [SVG_New_arc](SVG_New_arc.md) ($svg;100;100;90;270;360;"gray";"lightyellow";1)
+ SVG_New_arc ($svg;100;100;90;0;105;"gray";"lightcoral";1)  
+ SVG_New_arc ($svg;100;100;90;105;138;"gray";"lightskyblue";1)  
+ SVG_New_arc ($svg;100;100;90;138;230;"gray";"lightgreen";1)  
+ SVG_New_arc ($svg;100;100;90;230;270;"gray";"lightsteelblue";1)  
+ SVG_New_arc ($svg;100;100;90;270;360;"gray";"lightyellow";1)
 
 ```
 
@@ -76,7 +76,7 @@ Displaying multiple spaces in text objects using the _Keep extra spaces_ option 
 is displayed as "abc def"
 
 ```4d
- [SVG_SET_OPTIONS](SVG_SET_OPTIONS.md "SVG_SET_OPTIONS")([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md "SVG_SET_OPTIONS")([SVG_Get_options.md) ?+13) //  keep spaces in text objects  
+ [SVG_SET_OPTIONS](SVG_SET_OPTIONS.md)([SVG_Get_options](SVG_SET_OPTIONS](SVG_SET_OPTIONS.md)([SVG_Get_options.md) ?+13) //  keep spaces in text objects  
  $Txt_buffer:="abc      def"  
  $Dom_text:=SVG_New_textArea ($Dom_svg;$Txt_buffer;50;50)
 ```

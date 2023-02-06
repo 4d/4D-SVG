@@ -33,7 +33,7 @@ The optional [offsetX](# "Offset on X axis") and [offsetY](# "Offset on Y axis")
 ### Example  
 
 Declaration of a filter that can be used to make a shadow beneath an object:  
-![](..Home.md..Home.mdpictureHome.md195976Home.mdpict195976.en.png)
+![](https://doc.4d.com/4Dv19/picture/195976/pict195976.en.png)
 
 ```4d
 
@@ -41,16 +41,16 @@ Declaration of a filter that can be used to make a shadow beneath an object:
  $svg:=SVG_New   
    
  $text:=SVG_New_text ($svg;"SVG";52;76-45;"Verdana";45)  
- [SVG_SET_FONT_COLOR](SVG_SET_FONT_COLOR.md) ($text;"red")  
+ SVG_SET_FONT_COLOR ($text;"red")  
   
 ```
 
 Set filter  
- [SVG_Define_shadow](SVG_Define_shadow.md) ($svg;"myShadow")  
+ SVG_Define_shadow ($svg;"myShadow")  
   
 ```
 and apply it to text  
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($text;"myShadow")
+ SVG_SET_FILTER ($text;"myShadow")
 ```
 
 ```4d

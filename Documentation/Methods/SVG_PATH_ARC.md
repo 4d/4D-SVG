@@ -41,7 +41,7 @@ The following values, representing the four possible combinations of the two con
 When large-arc-flag is equal to 1, the larger arc is drawn (and the smaller when it is equal to 0). When sweep-flag is equal to 1, the arc is drawn at a positive angle (and at a negative angle when it is equal to 0).
 
 The following drawing illustrates the four possible combinations:  
-![](..Home.md..Home.mdpictureHome.md195449Home.mdpict195449.en.png)  
+![](https://doc.4d.com/4Dv19/picture/195449/pict195449.en.png)  
 By default, the value of arcpath is 0 (large-arc-flag=0, sweep-flag=1).
 
 ### Example  

@@ -33,7 +33,7 @@ The optional [target](# "Target of link") parameter specifies the name of the ta
 ### Example 1  
 
 A group of lines, all the same color:  
-![](..Home.md..Home.mdpictureHome.md196080Home.mdpict196080.en.png)  
+![](https://doc.4d.com/4Dv19/picture/196080/pict196080.en.png)  
 
 ```4d
 
@@ -44,7 +44,7 @@ A group of lines, all the same color:
 ```
 
 Assign a color to the group elements  
- [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md) ($group;"firebrick")  
+ SVG_SET_STROKE_BRUSH ($group;"firebrick")  
  $newobject:=SVG_New_line ($group;100;300;300;100;"";5)  
  $newobject:=SVG_New_line ($group;300;300;500;100;"";10)  
  $newobject:=SVG_New_line ($group;500;300;700;100;"";15)  
@@ -59,11 +59,11 @@ Assign a color to the group elements
 ### Example 2  
 
 Clickable text:  
-![](..Home.md..Home.mdpictureHome.md196081Home.mdpict196081.en.png)  
+![](https://doc.4d.com/4Dv19/picture/196081/pict196081.en.png)  
 
 
 ```4d
  $SVG:=SVG_New   
  $group:=SVG_New_group ($SVG;"w3Link";"www.w3.org";"new")  
- $newobject:=SVG_New_text ($group;"www.w3.org";10;10;"arial";12;[Underline](Font-Styles.302-6103262.en.html "Underline");[Align left](Home.md4Dv19R8Home.mdindex.en.html "Align left");"blue")
+ $newobject:=SVG_New_text ($group;"www.w3.org";10;10;"arial";12;[Underline](Font-Styles.302-6103262.en.html "Underline");[Align left](/4Dv19R8/index.en.html "Align left");"blue")
 ```

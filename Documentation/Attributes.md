@@ -35,8 +35,6 @@
 - [SVG_SET_VIEWPORT_FILL](Methods/SVG_SET_VIEWPORT_FILL.md)
 - [SVG_SET_VISIBILITY](Methods/SVG_SET_VISIBILITY.md)
 - [SVG_SET_XY](Methods/SVG_SET_XY.md)
-- [SVG Colors](Methods/SVG%20Colors.md)
-- [SVG Filters](Methods/SVG%20Filters.md)
 - [SVG_Define_clip_path](Methods/SVG_Define_clip_path.md)
 - [SVG_Define_filter](Methods/SVG_Define_filter.md)
 - [SVG_Define_marker](Methods/SVG_Define_marker.md)

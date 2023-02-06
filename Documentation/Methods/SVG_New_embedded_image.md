@@ -33,7 +33,7 @@ The optional [codec](# "Codec to use") parameter sets the codec to use for the [
 ### Example  
 
 Embed the ‘logo4D.png’ picture located in the ‘Resources’ folder:  
-![](..Home.md..Home.mdpictureHome.md195077Home.mdpict195077.en.png)
+![](https://doc.4d.com/4Dv19/picture/195077/pict195077.en.png)
 
 ```4d
  svgRef:=SVG_New   

@@ -31,7 +31,7 @@ The attributes and their values are passed using two arrays, to which [namesArra
  APPEND TO ARRAY($values;"blue")  
  APPEND TO ARRAY($attributes;"stroke-width")  
  APPEND TO ARRAY($values;"3")  
- [SVG_SET_ATTRIBUTES_BY_ARRAYS](SVG_SET_ATTRIBUTES_BY_ARRAYS.md) ($object;->$attributes;->$values)
+ SVG_SET_ATTRIBUTES_BY_ARRAYS ($object;->$attributes;->$values)
 ```
 
 ## See also

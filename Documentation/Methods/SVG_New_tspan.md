@@ -35,7 +35,7 @@ The different optional parameters are described with the [SVG_New_text](SVG_New_
 ### Example 1  
 
 In a text, it is possible to create paragraphs that inherit the properties of a parent.  
-![](..Home.md..Home.mdpictureHome.md196293Home.mdpict196293.en.png)
+![](https://doc.4d.com/4Dv19/picture/196293/pict196293.en.png)
 
 ```4d
 
@@ -45,7 +45,7 @@ In a text, it is possible to create paragraphs that inherit the properties of a 
 ```
 
 Creates a new text that is in Arial, blue, and aligned to the left  
- $textID:=SVG_New_text ($SVG;"";0;0;"arial";-1;-1;[Align left](Home.md4Dv19R8Home.mdindex.en.html "Align left");"blue")  
+ $textID:=SVG_New_text ($SVG;"";0;0;"arial";-1;-1;[Align left](/4Dv19R8/index.en.html "Align left");"blue")  
   
 ```
 Nested paragraphs with indentation and changing of size and style  
@@ -61,15 +61,15 @@ Nested paragraphs with indentation and changing of size and style
 ### Example 2  
 
 Changing a property while remaining in the same "text" element, here the size of the text.  
-![](..Home.md..Home.mdpictureHome.md196294Home.mdpict196294.en.png)
+![](https://doc.4d.com/4Dv19/picture/196294/pict196294.en.png)
 
 
 ```4d
  $textID:=SVG_New_text ($SVG;"Writing ";10;10;"arial";12)  
- [SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan](SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan.md) ($textID;"with ");14)  
- [SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan](SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan.md) ($textID;"SVG ");18)  
- [SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan](SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan.md) ($textID;"is ");24)  
- [SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan](SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md "SVG_SET_FONT_SIZE")([SVG_New_tspan.md) ($textID;"easy ");36)
+ SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md)([SVG_New_tspan](SVG_SET_FONT_SIZE ($textID;"with ");14)  
+ SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md)([SVG_New_tspan](SVG_SET_FONT_SIZE ($textID;"SVG ");18)  
+ SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md)([SVG_New_tspan](SVG_SET_FONT_SIZE ($textID;"is ");24)  
+ SVG_SET_FONT_SIZE](SVG_SET_FONT_SIZE.md)([SVG_New_tspan](SVG_SET_FONT_SIZE ($textID;"easy ");36)
 ```
 
 ## See also

@@ -43,38 +43,38 @@ The optional [fx](# "Coordinate on X axis of center of startColor") and [fy](# "
 
 ### Example  
 
-![](..Home.md..Home.mdpictureHome.md195917Home.mdpict195917.en.png)
+![](https://doc.4d.com/4Dv19/picture/195917/pict195917.en.png)
 
 ```4d
 
 ```4d
  $svg:=SVG_New   
    
- [SVG_Define_radial_gradient](SVG_Define_radial_gradient.md) ($svg;"grad1";"yellow";"red")  
- [SVG_New_rect](SVG_New_rect.md) ($svg;10;10;90;90;0;0;"black";"url(#grad1)")  
- [SVG_New_text](SVG_New_text.md) ($svg;"grad1";12;10)  
+ SVG_Define_radial_gradient ($svg;"grad1";"yellow";"red")  
+ SVG_New_rect ($svg;10;10;90;90;0;0;"black";"url(#grad1)")  
+ SVG_New_text ($svg;"grad1";12;10)  
    
- [SVG_Define_radial_gradient](SVG_Define_radial_gradient.md) ($svg;"grad2";"yellow";"red";50;50;20;50;50)  
- [SVG_New_rect](SVG_New_rect.md) ($svg;110;10;90;90;0;0;"black";"url(#grad2)")  
- [SVG_New_text](SVG_New_text.md) ($svg;"grad2";112;10)  
+ SVG_Define_radial_gradient ($svg;"grad2";"yellow";"red";50;50;20;50;50)  
+ SVG_New_rect ($svg;110;10;90;90;0;0;"black";"url(#grad2)")  
+ SVG_New_text ($svg;"grad2";112;10)  
    
- [SVG_Define_radial_gradient](SVG_Define_radial_gradient.md) ($svg;"grad3";"yellow";"red";80;60;50;60;80)  
- [SVG_New_rect](SVG_New_rect.md) ($svg;10;110;90;90;0;0;"black";"url(#grad3)")  
- [SVG_New_text](SVG_New_text.md) ($svg;"grad3";12;110)  
+ SVG_Define_radial_gradient ($svg;"grad3";"yellow";"red";80;60;50;60;80)  
+ SVG_New_rect ($svg;10;110;90;90;0;0;"black";"url(#grad3)")  
+ SVG_New_text ($svg;"grad3";12;110)  
    
- [SVG_Define_radial_gradient](SVG_Define_radial_gradient.md) ($svg;"grad4";"yellow";"red";20;50;80;20;30)  
- [SVG_New_rect](SVG_New_rect.md) ($svg;110;110;90;90;0;0;"black";"url(#grad4)")  
- [SVG_New_text](SVG_New_text.md) ($svg;"grad4";112;110)  
+ SVG_Define_radial_gradient ($svg;"grad4";"yellow";"red";20;50;80;20;30)  
+ SVG_New_rect ($svg;110;110;90;90;0;0;"black";"url(#grad4)")  
+ SVG_New_text ($svg;"grad4";112;110)  
    
   
 ```
 
 Save document  
- [SVG_SAVE_AS_TEXT](SVG_SAVE_AS_TEXT.md) ($svg;"test.svg")  
+ SVG_SAVE_AS_TEXT ($svg;"test.svg")  
   
 ```
 Free up memory  
- [SVG_CLEAR](SVG_CLEAR.md) ($svg)
+ SVG_CLEAR ($svg)
 ```
 
 ```4d

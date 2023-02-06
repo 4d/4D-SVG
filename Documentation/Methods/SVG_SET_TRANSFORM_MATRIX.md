@@ -28,27 +28,19 @@ This type of transformation can be used to combine transformations like, for exa
 
 ### Example  
 
-![](..Home.md..Home.mdpictureHome.md194249Home.mdpict194249.en.png)
+![](https://doc.4d.com/4Dv19/picture/194249/pict194249.en.png)
 
 ```4d
-
-```4d
- [SVG_SET_TRANSFORM_MATRIX](SVG_SET_TRANSFORM_MATRIX.md) ($ID;0,707;-0,707;0,707;0,707;255,03;111,21)  
+ SVG_SET_TRANSFORM_MATRIX ($ID;0,707;-0,707;0,707;0,707;255,03;111,21)  
   
 ```
 
-Is equivalent to applying the 3 following transformations:  
- [SVG_SET_TRANSFORM_TRANSLATE](SVG_SET_TRANSFORM_TRANSLATE.md) ($ID;50;90)  
- [SVG_SET_TRANSFORM_ROTATE](SVG_SET_TRANSFORM_ROTATE.md) ($ID;-45)  
- [SVG_SET_TRANSFORM_TRANSLATE](SVG_SET_TRANSFORM_TRANSLATE.md) ($ID;130;160)
-
+Is equivalent to applying the 3 following transformations: 
+```4d 
+ SVG_SET_TRANSFORM_TRANSLATE ($ID;50;90)  
+ SVG_SET_TRANSFORM_ROTATE ($ID;-45)  
+ SVG_SET_TRANSFORM_TRANSLATE ($ID;130;160)
 ```
-
-```4d
-
-
-  
-  
 
 ## See also 
 

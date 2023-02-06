@@ -22,32 +22,32 @@ If [kerning](# "Letter spacing") is -1, the kerning value is set to 'auto'.
 
 **Note:** Under Windows, the implementation is limited to text from left to right and top to bottom (disabled for right to left text) and to the 'text' and 'tspan' elements; under Mac OS, support is not limited.
 
-**See Also:** [www.w3.orgHome.mdTRHome.mdSVGHome.mdtext.html#KerningProperty](www.w3.orgHome.mdTRHome.mdSVGHome.mdtext.html#KerningProperty)
+**See Also:** [www.w3.org/TR/SVG/text.html#KerningProperty](www.w3.org/TR/SVG/text.html#KerningProperty)
 
 ### Example  
 
 Examples of kerning variations:  
-![](..Home.md..Home.mdpictureHome.md359232Home.mdpict359232.en.png)
+![](https://doc.4d.com/4Dv19/picture/359232/pict359232.en.png)
 
 ```4d
   // Reference  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;40;"";36)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;80;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;0,5)  
+ SVG_SET_TEXT_KERNING ($Dom_text;0,5)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;120;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;1)  
+ SVG_SET_TEXT_KERNING ($Dom_text;1)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;160;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;1,5)  
+ SVG_SET_TEXT_KERNING ($Dom_text;1,5)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;200;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;2)  
+ SVG_SET_TEXT_KERNING ($Dom_text;2)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;240;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;1,5)  
+ SVG_SET_TEXT_KERNING ($Dom_text;1,5)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;280;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;1)  
+ SVG_SET_TEXT_KERNING ($Dom_text;1)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;320;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;0,5)  
+ SVG_SET_TEXT_KERNING ($Dom_text;0,5)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;360;"";36)  
- [SVG_SET_TEXT_KERNING](SVG_SET_TEXT_KERNING.md) ($Dom_text;0)
+ SVG_SET_TEXT_KERNING ($Dom_text;0)
 ```
 
 ## See also

@@ -30,7 +30,7 @@ The optional [position](# "Position of marker") parameter can be used to set the
 ### Example 1  
 
 Draw an arrow:  
-![](..Home.md..Home.mdpictureHome.md194079Home.mdpict194079.en.png)
+![](https://doc.4d.com/4Dv19/picture/194079/pict194079.en.png)
 
 ```4d
  $SVG:=SVG_New   
@@ -40,22 +40,22 @@ Draw an arrow:
 Set the arrow  
 ```4d
  $arrow:=SVG_Define_marker ($SVG;"arrow";0;5;4;3;-1)  
- [SVG_SET_VIEWBOX](SVG_SET_VIEWBOX.md) ($arrow;0;0;10;10)  
+ SVG_SET_VIEWBOX ($arrow;0;0;10;10)  
  $path:=SVG_New_path ($arrow;0;0)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($path;"black")  
- [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) ($path;10;5)  
- [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) ($path;0;10)  
- [SVG_PATH_CLOSE](SVG_PATH_CLOSE.md) ($path)  
+ SVG_SET_FILL_BRUSH ($path;"black")  
+ SVG_PATH_LINE_TO ($path;10;5)  
+ SVG_PATH_LINE_TO ($path;0;10)  
+ SVG_PATH_CLOSE ($path)  
 
  $line:=SVG_New_path ($SVG;100;75)  
- [SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md) ($line;10)  
- [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) ($line;200;75)  
- [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) ($line;250;125)  
+ SVG_SET_STROKE_WIDTH ($line;10)  
+ SVG_PATH_LINE_TO ($line;200;75)  
+ SVG_PATH_LINE_TO ($line;250;125)  
   
 ```
 Put an arrow at the end of a path 
 ```4d 
- [SVG_SET_MARKER](SVG_SET_MARKER.md) ($line;" arrow ")
+ SVG_SET_MARKER ($line;" arrow ")
 ```
  
 
@@ -63,50 +63,50 @@ Put an arrow at the end of a path
 ### Example 2  
 
 Draw a diagram with different markers at the beginning and end:  
-![](..Home.md..Home.mdpictureHome.md194080Home.mdpict194080.en.png)
+![](https://doc.4d.com/4Dv19/picture/194080/pict194080.en.png)
  
 
 ```4d
  $SVG:=SVG_New   
- [SVG_SET_DEFAULT_BRUSHES](SVG_SET_DEFAULT_BRUSHES.md) ("red";"red")  
-   
-  
+ SVG_SET_DEFAULT_BRUSHES ("red";"red")  
 ```
 
 Set a circle to mark the points  
+
 ```4d
  $point:=SVG_Define_marker ($SVG;"pointMarker";2;2;3;3)  
- [SVG_SET_VIEWBOX](SVG_SET_VIEWBOX.md) ($point;0;0;4;4)  
- [SVG_New_circle](SVG_New_circle.md) ($point;2;2;1)  
-
+ SVG_SET_VIEWBOX ($point;0;0;4;4)  
+ SVG_New_circle ($point;2;2;1)  
 ```
+
 Set a square for the starting point  
+
 ```4d
  $start:=SVG_Define_marker ($SVG;"startMarker";1;1;2;2)  
- [SVG_New_rect](SVG_New_rect.md) ($start;0;0;2;2)  
-   
-  
+ SVG_New_rect ($start;0;0;2;2)  
 ```
 
 Set a triangle for the end point  
+
 ```4d
  $end:=SVG_Define_marker ($SVG;"endMarker";5;5;3;3;60)  
- [SVG_SET_VIEWBOX](SVG_SET_VIEWBOX.md) ($end;0;0;10;10)  
- [SVG_New_regular_polygon](SVG_New_regular_polygon.md) ($end;10;3)  
+ SVG_SET_VIEWBOX ($end;0;0;10;10)  
+ SVG_New_regular_polygon ($end;10;3)  
 
  ARRAY LONGINT($tX;0)  
  ARRAY LONGINT($tY;0)  
-  
 ```
-X axis  
+
+X axis 
+
 ```4d
  For($Lon_i;0;200;20)  
     APPEND TO ARRAY($tX;$Lon_i+10)  
  End for  
-  
 ```
 
 Data  
+
 ```4d
  APPEND TO ARRAY($tY;100)  
  APPEND TO ARRAY($tY;100)  
@@ -119,17 +119,15 @@ Data
  APPEND TO ARRAY($tY;50)  
  APPEND TO ARRAY($tY;70)  
  $line:=SVG_New_polyline_by_arrays ($SVG;->$tX;->$tY;"red";"none";5)  
-  
 ```
+
 Arrange the markers:  
 ```4d
- [SVG_SET_MARKER](SVG_SET_MARKER.md) ($line;"startMarker";"start")  
- [SVG_SET_MARKER](SVG_SET_MARKER.md) ($line;"pointMarker";"middle")  
- [SVG_SET_MARKER](SVG_SET_MARKER.md) ($line;"endMarker";"end")
+ SVG_SET_MARKER ($line;"startMarker";"start")  
+ SVG_SET_MARKER ($line;"pointMarker";"middle")  
+ SVG_SET_MARKER ($line;"endMarker";"end")
 ```
  
-  
-
 ## See also 
 
 [SVG_Define_marker](SVG_Define_marker.md)

@@ -22,7 +22,7 @@ The attributes and their values are passed as paired parameters.
 ```4d
  $svg:=SVG_New   
  $object:=SVG_New_rect ($svg;10;10;200;200;0;0;"black";"white";2)  
- [SVG_SET_ATTRIBUTES](SVG_SET_ATTRIBUTES.md) ($object;"style";"fill:red; stroke:blue; stroke-width:3")
+ SVG_SET_ATTRIBUTES ($object;"style";"fill:red; stroke:blue; stroke-width:3")
 ```
 
 ## See also

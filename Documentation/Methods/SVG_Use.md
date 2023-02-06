@@ -36,9 +36,8 @@ The optional [mode](# "Adjustment to viewbox") parameter can be used to indicate
 ### Example  
 
 Specify a graphic composed of two red circles and two blue squares. Then use this graphic in a loop to create 36 occurrences with varying positions, opacity and rotation of the original graphic.  
-![](..Home.md..Home.mdpictureHome.md195636Home.mdpict195636.en.png)
+![](https://doc.4d.com/4Dv19/picture/195636/pict195636.en.png)
 
-```4d
 
 ```4d
  $SVG:=SVG_New   
@@ -46,45 +45,42 @@ Specify a graphic composed of two red circles and two blue squares. Then use thi
 ```
 
 Draw a background  
- [SVG_New_rect](SVG_New_rect.md) ($SVG;20;20;650;650;0;0;"gray";"lemonchiffon")  
+```4d
+ SVG_New_rect ($SVG;20;20;650;650;0;0;"gray";"lemonchiffon")  
   
 ```
 Specify a symbol composed of 2 squares and 2 circles  
+```4d
  $Symbol:=SVG_Define_symbol ($SVG;"MySymbol";0;0;110;110;"true")  
- [SVG_New_circle](SVG_New_circle.md) ($Symbol;30;30;25;"red";"palevioletred")  
- [SVG_New_rect](SVG_New_rect.md) ($Symbol;10;60;40;40;0;0;"blue";"cornflowerblue")  
- [SVG_New_rect](SVG_New_rect.md) ($Symbol;60;10;40;40;0;0;"blue";"cornflowerblue")  
- [SVG_New_circle](SVG_New_circle.md) ($Symbol;80;80;25;"red";"palevioletred")  
+ SVG_New_circle ($Symbol;30;30;25;"red";"palevioletred")  
+ SVG_New_rect ($Symbol;10;60;40;40;0;0;"blue";"cornflowerblue")  
+ SVG_New_rect ($Symbol;60;10;40;40;0;0;"blue";"cornflowerblue")  
+ SVG_New_circle ($Symbol;80;80;25;"red";"palevioletred")  
   
 ```
 
 In a group…  
+```4d
  $g:=SVG_New_group ($SVG)  
   
 ```
-…positioned 20 units from the top left corner of the document…  
- [SVG_SET_TRANSFORM_TRANSLATE](SVG_SET_TRANSFORM_TRANSLATE.md) ($g;20;20)  
+…positioned 20 units from the top left corner of the document… 
+```4d 
+ SVG_SET_TRANSFORM_TRANSLATE ($g;20;20)  
   
 ```
 
 …place 36 patterns by varying the position, opacity and rotation  
- For($x;0;540;90)
-
-```
-6 columns  
-    For($y;0;540;90) 
-```
-
-6 rows  
+```4d
+ For($x;0;540;90) // 6 columns  
+    For($y;0;540;90) // 6 rows  
        $use:=SVG_Use ($g;"MySymbol";$x;$y;110;110)  
-       [SVG_SET_OPACITY](SVG_SET_OPACITY.md) ($use;100-($yHome.md12)+($xHome.md12)  
-       [SVG_SET_TRANSFORM_ROTATE](SVG_SET_TRANSFORM_ROTATE.md) ($use;($x*(18Home.md50))+($y*(18Home.md50));($x+55);($y+55))  
+       SVG_SET_OPACITY ($use;100-($y/12)+($x/12)  
+       SVG_SET_TRANSFORM_ROTATE ($use;($x*(18/50))+($y*(18/50));($x+55);($y+55))  
     End for  
  End for
 
 ```
-
-```4d
 
 
   

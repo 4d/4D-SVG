@@ -22,7 +22,7 @@ Pass the value of the line thickness in [strokeWidth](# "Line thickness"). The o
 
 ```4d
  $svg :=SVG_New   
- [SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md "SVG_SET_STROKE_WIDTH")([SVG_New_rect](SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md "SVG_SET_STROKE_WIDTH")([SVG_New_rect.md) ($svg;10;10;200;200;0;0;"black";"white";2);10)
+ SVG_SET_STROKE_WIDTH](SVG_SET_STROKE_WIDTH.md)([SVG_New_rect](SVG_SET_STROKE_WIDTH ($svg;10;10;200;200;0;0;"black";"white";2);10)
 ```
 
 ## See also

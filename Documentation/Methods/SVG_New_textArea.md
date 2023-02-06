@@ -32,11 +32,11 @@
 
 The **SVG_New_textArea** command inserts a text area in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
 
-The "textArea" element is recommended by the SVG tiny 1.2 standard and implemented in 4D v11 SQL beginning with version 11.3 (see [www.w3.orgHome.mdTRHome.mdSVGMobile12Home.mdtext.html#TextAreaElement](www.w3.orgHome.mdTRHome.mdSVGMobile12Home.mdtext.html#TextAreaElement)). This element implements a text area that, unlike the "text" element, automatically handles the line feed when the text exceeds the width requested.
+The "textArea" element is recommended by the SVG tiny 1.2 standard and implemented in 4D v11 SQL beginning with version 11.3 (see [www.w3.org/TR/SVGMobile12/text.html#TextAreaElement](www.w3.org/TR/SVGMobile12/text.html#TextAreaElement)). This element implements a text area that, unlike the "text" element, automatically handles the line feed when the text exceeds the width requested.
 
 **Notes:**
 
-* In the "textArea" element, &lt;tbreakHome.md&gt; elements replace line returns.
+* In the "textArea" element, &lt;tbreak/&gt; elements replace line returns.
 * Starting with 4D v15, the **SVG_New_textArea** command supports simple Styled text (the text can contain different styles, but SPAN attributes must not be nested). See example 2.
 
 The optional [x](# "Coordinate on X axis") and [y](# "Coordinate on Y axis") parameters can be used to specify the position on the X and Y axes of the top left corner of the area.
@@ -65,7 +65,7 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
 * Or you can pass a style definition in the styleDef parameter (instead of the [font](# "Font name or Style definition") parameter) and then omit the following parameters. For example, you can pass:  
 
 ```
- [SVG_New_textArea](SVG_New_textArea.md) ($Dom_svg;"Hello World !";x;y;vWidth;vHeight;style_definition)
+ SVG_New_textArea ($Dom_svg;"Hello World !";x;y;vWidth;vHeight;style_definition)
 ```
 
     ... where the _style_definition_ parameter contains a complete style definition. If you pass, for instance, "{font-size:48px;fill:red;}", this definition is added as a style attribute in the form:  
@@ -77,7 +77,7 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
 
 ### Example 1  
 
-![](..Home.md..Home.mdpictureHome.md196247Home.mdpict196247.en.png)
+![](https://doc.4d.com/4Dv19/picture/196247/pict196247.en.png)
 
 
 ```4d
@@ -99,7 +99,7 @@ The text
 
 Save document  
 ```4d
- [SVG_SAVE_AS_TEXT](SVG_SAVE_AS_TEXT.md) ($svg;"test.svg")
+ SVG_SAVE_AS_TEXT ($svg;"test.svg")
 
 ```
  
@@ -113,23 +113,23 @@ Display of multi-style text:
 ```4d
  C_TEXT($Dom_svg;$Dom_text;$Txt_buffer)  
   // definition of multi-style text  
- $Txt_buffer:="<SPAN STYLE=\"font-size:18pt\">Hello <Home.mdSPAN>"+\  
- "<SPAN STYLE=\"font-size:24pt;font-weight:bold;color:#D81E05\">World<Home.mdSPAN>"+\  
- "<SPAN STYLE=\"font-size:36pt\">!<Home.mdSPAN><BRHome.md>"+\  
- "<SPAN STYLE=\"font-size:19pt;font-style:italic\">It's <Home.mdSPAN>"+\  
- "<SPAN STYLE=\"font-size:24pt\">Monday<Home.mdSPAN>"  
+ $Txt_buffer:="<SPAN STYLE=\"font-size:18pt\">Hello </SPAN>"+\  
+ "<SPAN STYLE=\"font-size:24pt;font-weight:bold;color:#D81E05\">World</SPAN>"+\  
+ "<SPAN STYLE=\"font-size:36pt\">!</SPAN><BR/>"+\  
+ "<SPAN STYLE=\"font-size:19pt;font-style:italic\">It's </SPAN>"+\  
+ "<SPAN STYLE=\"font-size:24pt\">Monday</SPAN>"  
  $Dom_svg:=SVG_New   
    
   // title  
- [SVG_SET_FONT_COLOR](SVG_SET_FONT_COLOR.md "SVG_SET_FONT_COLOR")([SVG_New_text](SVG_SET_FONT_COLOR](SVG_SET_FONT_COLOR.md "SVG_SET_FONT_COLOR")([SVG_New_text.md) ($Dom_svg;"_______ SVG_New_textArea ______";10;30;"";-1);"blue")  
+ SVG_SET_FONT_COLOR](SVG_SET_FONT_COLOR.md)([SVG_New_text](SVG_SET_FONT_COLOR ($Dom_svg;"_______ SVG_New_textArea ______";10;30;"";-1);"blue")  
   // textArea  
  $Dom_text:=SVG_New_textArea ($Dom_svg;$Txt_buffer;50;50)  
    
  [SVGTool_SHOW_IN_VIEWER](SVGTool_SHOW_IN_VIEWER.md "SVGTool_SHOW_IN_VIEWER")($Dom_svg)  
- [SVG_CLEAR](SVG_CLEAR.md) ($Dom_svg)
+ SVG_CLEAR ($Dom_svg)
 ```
 
-![](..Home.md..Home.mdpictureHome.md2628819Home.mdpict2628819.en.png)
+![](https://doc.4d.com/4Dv19/picture/2628819/pict2628819.en.png)
 
 ## See also
 

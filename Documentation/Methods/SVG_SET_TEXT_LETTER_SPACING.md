@@ -20,33 +20,33 @@ The optional [unit](# "Unit of value") parameter is used to specify the unit of 
 
 If [spacing](# "Letter spacing") is -1, the spacing value is set to 'normal'.
 
-**See Also:** [www.w3.orgHome.mdTRHome.mdSVGHome.mdtext.html#LetterSpacingProperty](www.w3.orgHome.mdTRHome.mdSVGHome.mdtext.html#LetterSpacingProperty)
+**See Also:** [www.w3.org/TR/SVG/text.html#LetterSpacingProperty](www.w3.org/TR/SVG/text.html#LetterSpacingProperty)
 
 ### Example  
 
 Examples of spacing variations:  
-![](..Home.md..Home.mdpictureHome.md359244Home.mdpict359244.en.png)
+![](https://doc.4d.com/4Dv19/picture/359244/pict359244.en.png)
 
 ```4d
   // Reference  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;40;"";36)  
    
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;80;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1)  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1)  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;120;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"em")  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"em")  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;160;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"px")  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"px")  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;200;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"pt")  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"pt")  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;240;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"pc")  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"pc")  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;280;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"mm")  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"mm")  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;320;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"cm")  
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"cm")  
  $Dom_text:=SVG_New_text ($Dom_SVG;"Hello world !";20;360;"";36)  
- [SVG_SET_TEXT_LETTER_SPACING](SVG_SET_TEXT_LETTER_SPACING.md) ($Dom_text;1;"in")
+ SVG_SET_TEXT_LETTER_SPACING ($Dom_text;1;"in")
 ```
 
 ## See also

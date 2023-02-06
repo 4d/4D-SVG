@@ -28,7 +28,7 @@ The **SVG_DEFINE_STYLE_WITH_ARRAYS** method defines styles (using arrays) for th
 * If the [svgObject](# "SVG object reference") parameter designates the root element, styles are set as "style" elements included in the "defs" section (Internal Style Sheet). In this case, the [className](# "CSS class name") parameter is mandatory (if it is missing, an error is returned). You can then assign the [className](# "CSS class name") style sheet to the SVG objects by passing its name to the [SVG_SET_CLASS](SVG_SET_CLASS.md) method (see example 1).
 * If the [svgObject](# "SVG object reference") parameter designates an SVG element other than the root element, the style is set as a style attribute for this element (Inline Style Sheet) (see example 2).
 
-The optional [type](# "Type of contents") parameter specifies the language of the style sheet for the contents of the element. The default value is "textHome.mdcss".
+The optional [type](# "Type of contents") parameter specifies the language of the style sheet for the contents of the element. The default value is "text/css".
 
 The optional [media](# "Media descriptor") parameter indicates the desired destination media for the style information. If you omit this parameter, the default value used is "all". If the value is not included in the list of media types recognized by CSS2, an error is generated.
 
@@ -51,20 +51,20 @@ Example of definition of internal styles:
  APPEND TO ARRAY($arrvalues;"center")  
    
  $svg:=SVG_New   
- [SVG_DEFINE_STYLE_WITH_ARRAYS](SVG_DEFINE_STYLE_WITH_ARRAYS.md) ($svg;->$arrnames;->$arrvalues;"title")  
+ SVG_DEFINE_STYLE_WITH_ARRAYS ($svg;->$arrnames;->$arrvalues;"title")  
  $object:=SVG_New_textArea ($svg;"Hello World!";10;10;200;310)  
- [SVG_SET_CLASS](SVG_SET_CLASS.md) ($object;"title")
+ SVG_SET_CLASS ($object;"title")
 ```
 
 This method generates the following code:
 
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes" ?&gt;
-&lt;svg xmlns="www.w3.orgHome.md2000Home.mdsvg"&gt;
+&lt;svg xmlns="www.w3.org/2000/svg"&gt;
     &lt;defs id="4D"&gt;
-        &lt;style type="textHome.mdcss"&gt;.title{fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;}&lt;Home.mdstyle&gt;
-    &lt;Home.mddefs&gt;
-    &lt;textArea class="title" height="310" width="200" x="10" y="10"&gt;Hello World!&lt;Home.mdtextArea&gt;
-&lt;Home.mdsvg&gt;
+        &lt;style type="text/css"&gt;.title{fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;}&lt;/style&gt;
+    &lt;/defs&gt;
+    &lt;textArea class="title" height="310" width="200" x="10" y="10"&gt;Hello World!&lt;/textArea&gt;
+&lt;/svg&gt;
 
 ### Example 2  
 
@@ -84,12 +84,12 @@ Example of definition of inline styles:
    
  $svg:=SVG_New   
  $object:=SVG_New_textArea ($svg;"Hello World!";10;10;200;310)  
- [SVG_DEFINE_STYLE_WITH_ARRAYS](SVG_DEFINE_STYLE_WITH_ARRAYS.md) ($object;->$arrnames;->$arrvalues)
+ SVG_DEFINE_STYLE_WITH_ARRAYS ($object;->$arrnames;->$arrvalues)
 ```
 
 This method generates the following code:
 
 &lt;?xml version="1.0" encoding="UTF-8" standalone="yes" ?&gt;
-&lt;svg xmlns="www.w3.orgHome.md2000Home.mdsvg"&gt;
-    &lt;textArea height="310" style="fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;" width="200" x="10" y="10"&gt;Hello World!&lt;Home.mdtextArea&gt;
-&lt;Home.mdsvg&gt;
+&lt;svg xmlns="www.w3.org/2000/svg"&gt;
+    &lt;textArea height="310" style="fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;" width="200" x="10" y="10"&gt;Hello World!&lt;/textArea&gt;
+&lt;/svg&gt;

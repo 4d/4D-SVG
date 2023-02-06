@@ -37,7 +37,7 @@ The optional [strokeWidth](# "Line thickness") parameter contains the size of th
 ### Example 1  
 
 Draw an arc from 0° to 90° (default fill and border color, default line thickness):  
-![](..Home.md..Home.mdpictureHome.md194911Home.mdpict194911.en.png)
+![](https://doc.4d.com/4Dv19/picture/194911/pict194911.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -47,7 +47,7 @@ Draw an arc from 0° to 90° (default fill and border color, default line thickn
 ### Example 2  
 
 Draw the arc from 90° to 180° of a light blue circle with a blue edge and a 2-point link thickness:  
-![](..Home.md..Home.mdpictureHome.md194912Home.mdpict194912.en.png)
+![](https://doc.4d.com/4Dv19/picture/194912/pict194912.en.png)
 
 ```4d
  svgRef:=SVG_New   

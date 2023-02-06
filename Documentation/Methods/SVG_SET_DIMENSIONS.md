@@ -23,17 +23,9 @@ If the [unit](# "Unit of measurement") parameter is passed, it will be used. The
 ### Example  
 
 ```4d
+ $svg :=SVG_New  //  Create a new document 
 
-```4d
- $svg :=SVG_New  
-```
-
- Create a new document  
  $object:=SVG_New_rect ($svg;10;10;200;200;0;0;"black";"white";2)  
- [SVG_SET_DIMENSIONS](SVG_SET_DIMENSIONS.md) ($object;-1;400)
-
+ SVG_SET_DIMENSIONS ($object;-1;400) //   New height
 ```
-New height
-```
-
-```4d
+ 

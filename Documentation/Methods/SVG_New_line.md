@@ -26,7 +26,7 @@
 
 The SVG_New_line command creates a new line in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. The object is positioned according to the [startX](# "Horizontal start position"), [startY](# "Vertical start position"), [endX](# "Horizontal end position") and [endY](# "Vertical end position") coordinates. The SVG container can be the document root or any other reference to an SVG object that can contain this type of element.
 
-The optional [color](# "Color or gradient name") parameter contains the name of the line color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [color](# "Color or gradient name") parameter contains the name of the line color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the pen size expressed in pixels. Its default value is 1.
 
@@ -34,7 +34,7 @@ The optional [strokeWidth](# "Line thickness") parameter contains the pen size e
 
 Draw a blue line that is 3 pixels thick:
 
-![](..Home.md..Home.mdpictureHome.md195146Home.mdpict195146.en.png)
+![](https://doc.4d.com/4Dv19/picture/195146/pict195146.en.png)
 
 ```4d
  svgRef:=SVG_New   

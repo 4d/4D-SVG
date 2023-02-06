@@ -20,7 +20,7 @@ The [mode](# "Rendering mode") parameter must contain one of the following value
 * round
 * bevel
 * inherit: inherited from parent object  
-    ![](..Home.md..Home.mdpictureHome.md194191Home.mdpict194191.en.png)
+    ![](https://doc.4d.com/4Dv19/picture/194191/pict194191.en.png)
 
 If the [mode](# "Rendering mode") parameter contains any other value, an error is generated.
 

@@ -22,7 +22,7 @@ For more information about colors, please refer to the “[SVG Colors](SVG%20Col
 ```4d
  $svg:=SVG_New   
  $object:=SVG_New_rect ($svg;10;10;200;200;0;0;"black";"white";2)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($object;"blue")
+ SVG_SET_FILL_BRUSH ($object;"blue")
 ```
 
 ## See also

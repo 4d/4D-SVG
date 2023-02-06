@@ -38,7 +38,7 @@ In a form, we display two identical SVG pictures then we create a "blur" filter 
 ```4d
  $root:=SVG_New (400;400;"filters test") // definition of first (left) picture  
  $rect:=SVG_New_rect ($root;10;10;380;100;0;0;"darkblue";"white";1)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($root;"orange")  
+ SVG_SET_FILL_BRUSH ($root;"orange")  
  $textAreaRef:=SVG_New_textArea ($root;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
  <>pict1:=SVG_Export_to_picture ($root) // display first picture  
    
@@ -49,25 +49,25 @@ In a form, we display two identical SVG pictures then we create a "blur" filter 
   //  filter definition  
  $vGraph:=True // applied on graphic layer - pass False to apply to the alpha layer  
  If($vGraph)  
-    [SVG_Filter_Blur](SVG_Filter_Blur.md) ($filter1;Deviation{Deviation};"sourceGraphic")  
+    SVG_Filter_Blur ($filter1;Deviation{Deviation};"sourceGraphic")  
  Else  
-    [SVG_Filter_Blur](SVG_Filter_Blur.md) ($filter1;Deviation{Deviation};"sourceAlpha")  
+    SVG_Filter_Blur ($filter1;Deviation{Deviation};"sourceAlpha")  
  End if  
    
  $rect2:=SVG_New_rect ($root2;10;10;380;100;0;0;"darkblue";"white";1) // definition of identical (right) picture  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($root2;"orange")  
+ SVG_SET_FILL_BRUSH ($root2;"orange")  
  $textAreaRef2:=SVG_New_textArea ($root2;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
    
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($textAreaRef2;"blur") // apply filter  
+ SVG_SET_FILTER ($textAreaRef2;"blur") // apply filter  
  <>pict2:=SVG_Export_to_picture ($root2) // display second picture
 ```
 
 Result (input = sourceGraphic):  
-![](..Home.md..Home.mdpictureHome.md1756647Home.mdpict1756647.fr.png)
+![](https://doc.4d.com/4Dv19/picture/1756647/pict1756647.fr.png)
 
 Result (input = sourceAlpha):
 
-![](..Home.md..Home.mdpictureHome.md1756649Home.mdpict1756649.fr.png)
+![](https://doc.4d.com/4Dv19/picture/1756649/pict1756649.fr.png)
 
 ## See also
 

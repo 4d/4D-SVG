@@ -29,52 +29,37 @@ The error number returned can be specific to a component command or may be an er
 
 Given the "SVG_error_mgmt" method of the example for the [SVG_Set_error_handler](SVG_Set_error_handler.md)  command:
 
-```4d
-
-```4d
-  
-```
 
 Installation of error-handling method  
- $ Error_Method_Txt:=SVG_Set_error_handler ("SVG_error_mgmt")  
-  
+```4d
+ $Error_Method_Txt:=SVG_Set_error_handler ("SVG_error_mgmt")  
 ```
 from now on it is the SVG_error_mgmt method that will be executed in the case of an error  
    
-  
-```
-
 Creation of new SVG document  
+
+```4d
  $SVG:=SVG_New (1200;900;"SVG Component Test";"";True)  
- [SVG_SET_VIEWBOX](SVG_SET_VIEWBOX.md) ($SVG;0;0;1500;1000)  
+ SVG_SET_VIEWBOX ($SVG;0;0;1500;1000)  
 
  If([SVG_Read_last_error](SVG_Read_last_error.md) =0)  
 
     ...  
 
- Else  
-  
-```
-The SVG_error_mgmt method has been called and has received the error number  
+ Else  // The SVG_error_mgmt method has been called and has received the error number  
+
  End if  
-   
-  
 ```
 
 Uninstalling of error-handling method  
- [SVG_Set_error_handler](SVG_Set_error_handler.md)
-
-```
-
 ```4d
-
-
+ [SVG_Set_error_handler](SVG_Set_error_handler.md)
+```
+ 
 ### Example 2  
 
 Given the following SVG_error_mgmt method:  
 
-
-```4d
 
 ```4d
  C_LONGINT($1)  
@@ -84,35 +69,32 @@ Given the following SVG_error_mgmt method:
 ```
 
 Keep the error and the context  
+
+```4d
  errorNumber:=$1  
  commandName:=$2  
 
 ```
 Set the OK system variable to 0  
+
+```4d
  OK:=0
 ```
 
-```4d
-
-
-  
   
 This method can be used as follows:  
 
-
-```4d
-
-```4d
-  
-```
+ 
 
  Installation of error-handling method  
- $ Error_Method_Txt:=SVG_Set_error_handler ("SVG_error_mgmt")  
-
+```4d
+ $Error_Method_Txt:=SVG_Set_error_handler ("SVG_error_mgmt")  
 ```
  Creation of new SVG document  
+
+```4d
  $SVG:=SVG_New (1200;900;" SVG Component Test ";"";True)  
- [SVG_SET_VIEWBOX](SVG_SET_VIEWBOX.md) ($SVG;0;0;1500;1000)  
+ SVG_SET_VIEWBOX ($SVG;0;0;1500;1000)  
  If(OK=1)  
    
     ...  
@@ -120,16 +102,12 @@ This method can be used as follows:
  Else  
     ALERT("Error No."+String(errorNumber)+" during execution of the command \""+commandName+"\"")  
  End if  
-   
-  
 ```
 
- Uninstalling of error-handling method  
- [SVG_Set_error_handler](SVG_Set_error_handler.md)
-
+ Uninstalling of error-handling method 
+```4d 
+ SVG_Set_error_handler
 ```
-
-```4d
 
 
   

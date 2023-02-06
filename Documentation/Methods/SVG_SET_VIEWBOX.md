@@ -28,22 +28,19 @@ The optional [mode](# "Adjustment to viewbox") parameter can be used to indicate
 
 ### Example  
 
-
 Create an SVG document of 4x8cm  
+
 ```4d
  $svg:=SVG_New
- [SVG_SET_DIMENSIONS](SVG_SET_DIMENSIONS.md) ($SVG;4;8;"cm")  
-  
+ SVG_SET_DIMENSIONS ($SVG;4;8;"cm")  
+
 ```
-Declare the user coordinate system here as 1 cm = 250 user points  
+
+Declare the user coordinate system here as 1 cm = 250 user points 
+
 ```4d
-
- [SVG_SET_VIEWBOX](SVG_SET_VIEWBOX.md) ($svg;0;0;1000;2000;"true")
+ SVG_SET_VIEWBOX ($svg;0;0;1000;2000;"true")
 ```
-
-
-  
-  
 
 ## See also 
 

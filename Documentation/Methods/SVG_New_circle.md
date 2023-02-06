@@ -28,14 +28,14 @@ The SVG_New_circle command creates a new circle in the SVG container designated 
 
 The circle is positioned and sized according to the center coordinates ([x](# "Coordinate on center X axis") and [y](# "Coordinate on center Y axis")) and the [radius](# "Radius of circle") passed as a parameter.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 
 Draw a circle (default fill and border color, default line thickness):  
-![](..Home.md..Home.mdpictureHome.md194977Home.mdpict194977.en.png)
+![](https://doc.4d.com/4Dv19/picture/194977/pict194977.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -45,7 +45,7 @@ Draw a circle (default fill and border color, default line thickness):
 ### Example 2  
 
 Draw a light blue circle with a blue edge and a 2-point link thickness:  
-![](..Home.md..Home.mdpictureHome.md194978Home.mdpict194978.en.png)
+![](https://doc.4d.com/4Dv19/picture/194978/pict194978.en.png)
 
 ```4d
  svgRef:=SVG_New   

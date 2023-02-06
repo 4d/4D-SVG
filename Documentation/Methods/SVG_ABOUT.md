@@ -10,5 +10,5 @@
 
 The SVG_ABOUT command displays a dialog with the 4D SVG logo indicating the version number of the component:
 
-![](..Home.md..Home.mdpictureHome.md4018427Home.mdpict4018427.en.pn> ---
+![](https://doc.4d.com/4Dv19/picture/4018427/pict4018427.en.pn> ---
 g)

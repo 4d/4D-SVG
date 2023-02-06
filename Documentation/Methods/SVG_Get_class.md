@@ -22,12 +22,12 @@ In the optional [classNames](# "Pointer to array of class names") parameter, you
 
 ```4d
   //  define 2 styles  
- [SVG_Define_style](SVG_Define_style.md) ($Dom_SVG;".colored {fill: yellow; fill-opacity: 0.6; stroke: red; stroke-width: 8; stroke-opacity: 0.6}")  
- [SVG_Define_style](SVG_Define_style.md) ($Dom_SVG;".blue {fill: blue}")  
+ SVG_Define_style ($Dom_SVG;".colored {fill: yellow; fill-opacity: 0.6; stroke: red; stroke-width: 8; stroke-opacity: 0.6}")  
+ SVG_Define_style ($Dom_SVG;".blue {fill: blue}")  
    
   //  create a group and set a default style  
  $Dom_g:=SVG_New_group ($Dom_SVG)  
- [SVG_SET_CLASS](SVG_SET_CLASS.md) ($Dom_g;"colored blue")  
+ SVG_SET_CLASS ($Dom_g;"colored blue")  
    
  ARRAY TEXT($tTxt_Classes;0)  
  $Txt_buffer:=SVG_Get_class($Dom_g;->$tTxt_classes)  

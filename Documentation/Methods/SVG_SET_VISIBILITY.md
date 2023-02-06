@@ -22,7 +22,7 @@ If the optional [hide](# "True = Show, False = Hide") parameter is set to True o
 ```4d
  $svg :=SVG_New   
  $object:=SVG_New_rect ($svg;10;10;200;200;0;0;"black";" white";2)  
- [SVG_SET_VISIBILITY](SVG_SET_VISIBILITY.md) ($object;False) 
+ SVG_SET_VISIBILITY ($object;False) 
 ```
 
 The object is described but will not be rendered.

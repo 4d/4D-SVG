@@ -20,22 +20,20 @@ The values are expected in the user coordinate system.
 
 ### Example  
 
-```4d
+Create a new document 
 
 ```4d
  $svg :=SVG_New  
 ```
+ 
+Place the logo 
 
-Create a new document  
- $object:=SVG_New_image ($svg;"#PicturesHome.mdlogo4D.png")
-
-```
-Place the logo  
- [SVG_SET_XY](SVG_SET_XY.md) ($object;10;40) 
+```4d
+ $object:=SVG_New_image ($svg;"#Pictures/logo4D.png") 
 ```
 
 Modify the position of the picture
 
-```
-
 ```4d
+ SVG_SET_XY ($object;10;40)
+```

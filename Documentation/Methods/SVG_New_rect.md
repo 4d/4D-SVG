@@ -36,7 +36,7 @@ The rectangle is positioned and sized according to the values of [x](# "X of upp
 
 The optional [roundedX](# "Horizontal curve") and [roundedY](# "Vertical curve") parameters can be used to round off the angles according to the indicated values. If the [roundedY](# "Vertical curve") parameter is omitted (or is -1), the curve will be regular. Pass -1 in these parameters if you want them to be ignored by the command.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
@@ -44,7 +44,7 @@ The optional [strokeWidth](# "Line thickness") parameter contains the size of th
 
 Draw a rectangle (default fill and border color, default line thickness):
 
-![](..Home.md..Home.mdpictureHome.md195332Home.mdpict195332.en.png)
+![](https://doc.4d.com/4Dv19/picture/195332/pict195332.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -55,14 +55,14 @@ Draw a rectangle (default fill and border color, default line thickness):
 
 Draw a blue rectangle with a 3-pixel red border:
 
-![](..Home.md..Home.mdpictureHome.md195333Home.mdpict195333.en.png)svgRef:= SVG_New  
+![](https://doc.4d.com/4Dv19/picture/195333/pict195333.en.png)svgRef:= SVG_New  
 objectRef:=SVG_New_rect (svgRef;10;10;200;100;0;0;"red";"blue";3)
 
 ### Example 3  
 
 Draw a square with rounded edges (default fill and border color, default line thickness):
 
-![](..Home.md..Home.mdpictureHome.md195334Home.mdpict195334.en.png)
+![](https://doc.4d.com/4Dv19/picture/195334/pict195334.en.png)
 
 ```4d
  svgRef:=SVG_New   
@@ -73,7 +73,7 @@ Draw a square with rounded edges (default fill and border color, default line th
 
 Draw a light blue rectangle with rounded ends and a blue edge (default line thickness):
 
-![](..Home.md..Home.mdpictureHome.md195335Home.mdpict195335.en.png)
+![](https://doc.4d.com/4Dv19/picture/195335/pict195335.en.png)
 
 ```4d
  svgRef:=SVG_New   

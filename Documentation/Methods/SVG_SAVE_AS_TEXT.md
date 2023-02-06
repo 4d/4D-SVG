@@ -23,8 +23,8 @@ The **SVG_SAVE_AS_TEXT** modifies the value of the variable (if any) designated 
 ```4d
  svgRef:=SVG_New (500;200;"Sales statistics")  
  ...  
- [SVG_SAVE_AS_TEXT](SVG_SAVE_AS_TEXT.md) (svgRef;"test.svg") // The document is saved next to the structure  
- [SVG_CLEAR](SVG_CLEAR.md) (svgRef)
+ SVG_SAVE_AS_TEXT (svgRef;"test.svg") // The document is saved next to the structure  
+ SVG_CLEAR (svgRef)
 ```
 
 ## See also

@@ -17,7 +17,7 @@ The SVG_Define_clip_path command specifies a new clip path in the SVG container 
 
 The [clipPathID](# "Name of clip path") parameter designates the name of the clip path. This name will be used to associate a clip path with an object. If an element with the same name already exists in the document, an error is generated.
 
-**See Also:** [www.w3.orgHome.mdTRHome.md2001Home.mdREC-SVG-20010904Home.mdmasking.html#EstablishingANewClippingPath](www.w3.orgHome.mdTRHome.md2001Home.mdREC-SVG-20010904Home.mdmasking.html#EstablishingANewClippingPath)
+**See Also:** [www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath](www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath)
 
 ### Example  
 

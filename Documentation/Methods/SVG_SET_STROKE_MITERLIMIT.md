@@ -16,4 +16,4 @@ The SVG_SET_STROKE_MITERLIMIT command is used to set the limit for the length of
 
 If the [join](# "Value of join") parameter is -1, the value will be the default value (4). If the [join](# "Value of join") parameter is 0, then the definition of the attribute is removed. Any other value < 0 will cause an error.
 
-**See Also:** [www.w3.orgHome.mdTRHome.mdSVGHome.mdpainting.html#StrokeProperties](www.w3.orgHome.mdTRHome.mdSVGHome.mdpainting.html#StrokeProperties)
+**See Also:** [www.w3.org/TR/SVG/painting.html#StrokeProperties](www.w3.org/TR/SVG/painting.html#StrokeProperties)

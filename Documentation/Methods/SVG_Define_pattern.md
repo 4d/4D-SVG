@@ -33,24 +33,24 @@ The optional [width](# "Width of pattern"), [height](# "Height of pattern"), [x]
 
 The pattern will be associated as fill or stroke paint by passing the "url(#id)" string as the value when a color expression is expected.
 
-**See Also:** [www.w3.orgHome.mdTRHome.mdSVGHome.mdpservers.html#Patterns](www.w3.orgHome.mdTRHome.mdSVGHome.mdpservers.html#Patterns)
+**See Also:** [www.w3.org/TR/SVG/pservers.html#Patterns](www.w3.org/TR/SVG/pservers.html#Patterns)
 
 ### Example 1  
 
 Setting a pattern and using it to fill an ellipse:  
-![](..Home.md..Home.mdpictureHome.md359150Home.mdpict359150.en.png)
+![](https://doc.4d.com/4Dv19/picture/359150/pict359150.en.png)
 
 ```4d
   // Definition of pattern  
  $Dom_pattern:=SVG_Define_pattern ($Dom_SVG;"MyPattern";100;100;0;0;"";"0 0 10 10")  
  $Dom_path:=SVG_New_path ($Dom_pattern;0;0)  
    
- [SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md) ($Dom_path;0;0)  
- [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) ($Dom_path;7;0)  
- [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) ($Dom_path;3,5;7)  
- [SVG_PATH_CLOSE](SVG_PATH_CLOSE.md) ($Dom_path)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($Dom_path;"red")  
- [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md) ($Dom_path;"blue")  
+ SVG_PATH_MOVE_TO ($Dom_path;0;0)  
+ SVG_PATH_LINE_TO ($Dom_path;7;0)  
+ SVG_PATH_LINE_TO ($Dom_path;3,5;7)  
+ SVG_PATH_CLOSE ($Dom_path)  
+ SVG_SET_FILL_BRUSH ($Dom_path;"red")  
+ SVG_SET_STROKE_BRUSH ($Dom_path;"blue")  
    
   // Drawing an ellipse filled with the pattern  
  $Dom_ellipse:=SVG_New_ellipse ($Dom_SVG;400;200;350;150;"black";"url(#MyPattern)";5)
@@ -59,7 +59,7 @@ Setting a pattern and using it to fill an ellipse:
 ### Example 2  
 
 Setting a pattern and using it to fill and stroke the outline of an ellipse:  
-![](..Home.md..Home.mdpictureHome.md359157Home.mdpict359157.en.png)
+![](https://doc.4d.com/4Dv19/picture/359157/pict359157.en.png)
 
 ```4d
   // Definition of pattern  
@@ -70,6 +70,6 @@ Setting a pattern and using it to fill and stroke the outline of an ellipse:
  $Dom_ellipse:=SVG_New_ellipse ($Dom_SVG;400;200;350;150)  
    
   // Using pattern for filling and outline  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($Dom_ellipse;"url(#MyPattern)")  
- [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md) ($Dom_ellipse;"url(#MyPattern)")
+ SVG_SET_FILL_BRUSH ($Dom_ellipse;"url(#MyPattern)")  
+ SVG_SET_STROKE_BRUSH ($Dom_ellipse;"url(#MyPattern)")
 ```

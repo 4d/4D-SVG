@@ -37,7 +37,7 @@ In a form, we display two identical SVG pictures then we create a "blend" filter
 ```4d
  $root:=SVG_New (400;400;"filters test") // definition of first (left) picture  
  $rect:=SVG_New_rect ($root;10;10;380;100;0;0;"darkblue";"white";1)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($root;"orange")  
+ SVG_SET_FILL_BRUSH ($root;"orange")  
  $textAreaRef:=SVG_New_textArea ($root;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
  <>pict1:=SVG_Export_to_picture ($root) // display first picture  
    
@@ -57,19 +57,19 @@ In a form, we display two identical SVG pictures then we create a "blend" filter
  $ref3:=SVG_Filter_Blend ($filter;"sourceGraphic";"alphaBlurOffset";"normal";"finalFilter";)  
    
  $rect2:=SVG_New_rect ($root2;10;10;380;100;0;0;"darkblue";"white";1)  
- [SVG_SET_FILL_BRUSH](SVG_SET_FILL_BRUSH.md) ($root2;"orange")  
+ SVG_SET_FILL_BRUSH ($root2;"orange")  
  $textAreaRef2:=SVG_New_textArea ($root2;"Hello World!";10;10;380;100;"arial";60;Normal;[Align center](Form-Objects-Properties.302-6103184.en.html "Align center"))  
    
- [SVG_SET_FILTER](SVG_SET_FILTER.md) ($textAreaRef2;"MyShadow") // apply final filter  
+ SVG_SET_FILTER ($textAreaRef2;"MyShadow") // apply final filter  
  <>pict2:=SVG_Export_to_picture ($root2) // display second picture
 ```
 
 Result (blur input filter = sourceGraphic):  
-![](..Home.md..Home.mdpictureHome.md1756656Home.mdpict1756656.fr.png)
+![](https://doc.4d.com/4Dv19/picture/1756656/pict1756656.fr.png)
 
 Result (blur input filter = sourceAlpha):
 
-![](..Home.md..Home.mdpictureHome.md1756654Home.mdpict1756654.fr.png)
+![](https://doc.4d.com/4Dv19/picture/1756654/pict1756654.fr.png)
 
 ## See also
 

@@ -21,7 +21,7 @@ The SVG_Export_to_XML command returns the XML text of the description of the SVG
  ...  
  MyText:=SVG_Export_to_XML (svgRef)  
    
- [SVG_CLEAR](SVG_CLEAR.md) (svgRef)
+ SVG_CLEAR (svgRef)
 ```
 
 ## See also

@@ -23,8 +23,8 @@ A description is often used to insert a comment or explanatory text in the SVG c
 ```4d
  $SVG:=SVG_New   
  $g:=SVG_group($SVG)  
- [SVG_Set_title](SVG_Set_title.md) ($g;"Company sales per region")  
- [SVG_Set_description](SVG_Set_description.md) ($g;"Bar diagram of company sales per region.")  
+ SVG_Set_title ($g;"Company sales per region")  
+ SVG_Set_description ($g;"Bar diagram of company sales per region.")  
  
 ```
 

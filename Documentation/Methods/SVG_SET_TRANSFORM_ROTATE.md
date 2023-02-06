@@ -23,28 +23,22 @@ If the optional [x](# "Coordinate on X axis of center of rotation") and [y](# "C
 
 ### Example  
 
-![](..Home.md..Home.mdpictureHome.md194306Home.mdpict194306.en.png)
-
-```4d
+![](https://doc.4d.com/4Dv19/picture/194306/pict194306.en.png)
 
 ```4d
  svgRef:=SVG_New   
-  
 ```
 
-Draw a red rectangle with a blue border  
- $rec:=SVG_New_rect ($svg;150;50;200;400;0;0;"blue";"red";10)  
-  
-```
-Apply a rotation of 10° clockwise with respect to the center  
- [SVG_SET_TRANSFORM_ROTATE](SVG_SET_TRANSFORM_ROTATE.md) ($rec;370;175;225)
-```
+Draw a red rectangle with a blue border 
 
 ```4d
+ $rec:=SVG_New_rect ($svg;150;50;200;400;0;0;"blue";"red";10)  
+```
+Apply a rotation of 10° clockwise with respect to the center  
 
-
-  
-  
+```4d
+ SVG_SET_TRANSFORM_ROTATE ($rec;370;175;225)
+```
 
 ## See also 
 

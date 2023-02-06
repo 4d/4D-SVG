@@ -28,14 +28,14 @@ Usually, 'polyline' elements design open forms but they can be used for closed f
 
 All the coordinate values are in the user coordinate system.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](Colors%20and%20Gradients.md "Colors and Gradients") theme).
+The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
 The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 
 Draw a triangle (default border color and line thickness):  
-![](..Home.md..Home.mdpictureHome.md196982Home.mdpict196982.en.png)
+![](https://doc.4d.com/4Dv19/picture/196982/pict196982.en.png)
 
 ```4d
  ARRAY LONGINT($tX;0)  
@@ -57,7 +57,7 @@ Draw a triangle (default border color and line thickness):
 ### Example 2  
 
 Draw a line diagram:  
-![](..Home.md..Home.mdpictureHome.md196983Home.mdpict196983.en.png)
+![](https://doc.4d.com/4Dv19/picture/196983/pict196983.en.png)
 
 ```4d
 

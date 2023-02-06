@@ -28,7 +28,7 @@ The values are expected in the user coordinate system.
 
  Create a new document  
  $object:=SVG_New_rect ($svg ;10;10;200;100)  
- [SVG_SET_ROUNDING_RECT](SVG_SET_ROUNDING_RECT.md) ($object;20)
+ SVG_SET_ROUNDING_RECT ($object;20)
 
 ```
 Round the corners

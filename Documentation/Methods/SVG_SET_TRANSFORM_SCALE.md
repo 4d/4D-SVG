@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_SET_TRANSFORM_SCALE command applies a change of horizontal andHome.mdor vertical scale to an SVG object having the [svgObject](# "Reference of SVG element") reference.
+The SVG_SET_TRANSFORM_SCALE command applies a change of horizontal and/or vertical scale to an SVG object having the [svgObject](# "Reference of SVG element") reference.
 
 If the [scaleX](# "Value on X axis") value is not null, the object is enlarged (value >1) or reduced (0 < value < 1) horizontally for the number of units passed. The value 1 is equal to no change to the object scale.
 
@@ -22,25 +22,15 @@ If the [scaleY](# "Value on Y axis") parameter is provided, the object is enlarg
 
 ### Example  
 
-![](..Home.md..Home.mdpictureHome.md194342Home.mdpict194342.en.png)
-
-```4d
+![](https://doc.4d.com/4Dv19/picture/194342/pict194342.en.png)
 
 ```4d
  $SVG:=SVG_New   
  $Text:=SVG_New_text ($SVG;"Hello world!";5)  
- [SVG_SET_TRANSFORM_SCALE](SVG_SET_TRANSFORM_SCALE.md) ($Text;3;12) 
+ SVG_SET_TRANSFORM_SCALE ($Text;3;12) 
 ```
 
 Zoom x*3 y*12
-
-```
-
-```4d
-
-
-  
-  
 
 ## See also 
 

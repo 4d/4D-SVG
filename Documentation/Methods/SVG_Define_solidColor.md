@@ -37,12 +37,12 @@ The color set in this way will be associated with the fill or stroke paint by pa
 ```
 
 Set blue to 50%  
- [SVG_Define_solidColor](SVG_Define_solidColor.md) ($svg;"MyColor";"blue";50)  
+ SVG_Define_solidColor ($svg;"MyColor";"blue";50)  
  ...  
- [SVG_New_rect](SVG_New_rect.md) ($svg;0;0;20;20;0;0;"url(#MyColor)";"url(#MyColor)")  
+ SVG_New_rect ($svg;0;0;20;20;0;0;"url(#MyColor)";"url(#MyColor)")  
  ...  
  $line:=SVG_New_line (10;10;100;100)  
- [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md) ($line;"url(#MyColor)")
+ SVG_SET_STROKE_BRUSH ($line;"url(#MyColor)")
 
 ```
 

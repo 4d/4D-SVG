@@ -14,7 +14,7 @@
 
 The SVG_SET_CLASS command sets the [class](# "Name of class") for the object passed in [svgObject](# "Reference of SVG element"). An error is generated if [svgObject](# "Reference of SVG element") is not a valid reference.
 
-**See Also**: [www.w3.orgHome.mdTRHome.mdSVGHome.mdstyling.html#ClassAttribute](www.w3.orgHome.mdTRHome.mdSVGHome.mdstyling.html#ClassAttribute)
+**See Also**: [www.w3.org/TR/SVG/styling.html#ClassAttribute](www.w3.org/TR/SVG/styling.html#ClassAttribute)
 
 ### Example  
 
