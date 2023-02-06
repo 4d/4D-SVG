@@ -19,7 +19,8 @@
 - [SVG_SET_OPTIONS](Methods/SVG_SET_OPTIONS.md)
 - [SVGTool_SET_VIEWER_CALLBACK](Methods/SVGTool_SET_VIEWER_CALLBACK.md)
 - [SVGTool_SHOW_IN_VIEWER](Methods/SVGTool_SHOW_IN_VIEWER.md)
-- [Development tools](Methods/Development%20tools.md)
 - [SVG_Get_ID](Methods/SVG_Get_ID.md)
 - [SVG_New_group](Methods/SVG_New_group.md)
 - [SVG_SET_ID](Methods/SVG_SET_ID.md)
+
+- [Development tools](Development%20tools.md)

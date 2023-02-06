@@ -44,8 +44,7 @@ The optional [fx](# "Coordinate on X axis of center of startColor") and [fy](# "
 ### Example  
 
 ![](https://doc.4d.com/4Dv19/picture/195917/pict195917.en.png)
-
-```4d
+ 
 
 ```4d
  $svg:=SVG_New   
@@ -65,23 +64,19 @@ The optional [fx](# "Coordinate on X axis of center of startColor") and [fy](# "
  SVG_Define_radial_gradient ($svg;"grad4";"yellow";"red";20;50;80;20;30)  
  SVG_New_rect ($svg;110;110;90;90;0;0;"black";"url(#grad4)")  
  SVG_New_text ($svg;"grad4";112;110)  
-   
   
 ```
 
 Save document  
+```4d
  SVG_SAVE_AS_TEXT ($svg;"test.svg")  
   
 ```
 Free up memory  
+```4d
  SVG_CLEAR ($svg)
 ```
 
-```4d
-
-
-  
-  
 
 ## See also 
 

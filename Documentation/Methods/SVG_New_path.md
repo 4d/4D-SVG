@@ -64,7 +64,6 @@ Draw a Bezier curve:
 Arc commands in path data:  
 ![](https://doc.4d.com/4Dv19/picture/195200/pict195200.en.png)
 
-```4d
 
 ```4d
  svgRef:=SVG_New   
@@ -73,6 +72,7 @@ Arc commands in path data:
 ```
 
 Change to relative coordinates  
+```4d
  SVG_PATH_LINE_TO (objectRef;50;-25)  
  For($Lon_i;1;4;1)  
     SVG_PATH_ARC (objectRef;25;25*$Lon_i;50;-25;-30)  
@@ -81,31 +81,29 @@ Change to relative coordinates
 
 ```
 
-```4d
-
-
 ### Example 4  
 
 Complex path (cubic Bezier curve):  
 ![](https://doc.4d.com/4Dv19/picture/195201/pict195201.en.png)
 
-
-```4d
-
-```4d
-  
-```
+ 
 
 Create a new SVG tree  
+
+```4d
  $Txt_svg:=SVG_New (174,96;125,04;"4D Logo";"";True)  
 
 ```
 Create a new path  
+
+```4d
  $Txt_path:=SVG_New_path ($Txt_svg;150,665;13,021)  
   
 ```
 
-Set colors  
+Set colors 
+
+```4d 
  SVG_SET_STROKE_BRUSH ($Txt_path;"#212a6f")  
  SVG_SET_FILL_BRUSH ($Txt_path;"#212a6f")  
  ...  
@@ -121,51 +119,48 @@ Set colors
 
 ```
 
-```4d
-
 
 ### Example 5  
 
 Quadratic Bezier curve:  
 ![](https://doc.4d.com/4Dv19/picture/195202/pict195202.en.png)
 
-
-```4d
-
-```4d
-  
-```
-
 Create a new SVG tree  
- $svg:=SVG_New
 
+```4d
+ $svg:=SVG_New
 ```
+
 Reset stroke to black and set fill to none  
+
+```4d
  SVG_SET_DEFAULT_BRUSHES ("";"none")  
-   
-  
+
 ```
 
 Draw a quadratic Bezier curve in red  
+```4d
  $qCurve:=SVG_New_path ($svg;200;300)  
  SVG_SET_STROKE_BRUSH ($qCurve;"red")  
  SVG_SET_STROKE_WIDTH ($qCurve;5)  
  SVG_PATH_QCURVE ($qCurve;400;50;600;300)  
  SVG_PATH_QCURVE ($qCurve;1000;300)  
-
 ```
+
 End points in black  
+
+```4d
  $g:=SVG_New_group ($svg)  
  SVG_Set_description ($g;"End points")  
  SVG_SET_DEFAULT_BRUSHES ("black";"black")  
  SVG_New_circle ($g;200;300;10)  
  SVG_New_circle ($g;600;300;10)  
  SVG_New_circle ($g;1000;300;10)  
-   
-  
 ```
 
 Control points and lines from end points to control points in gray  
+
+```4d
  $g:=SVG_New_group ($svg)  
  SVG_Set_description ($g;"Control points and lines from end points to control points")  
  SVG_SET_DEFAULT_BRUSHES](SVG_SET_DEFAULT_BRUSHES.md)([SVG_Color_grey](SVG_SET_DEFAULT_BRUSHES (50);"none")  
@@ -173,19 +168,15 @@ Control points and lines from end points to control points in gray
  SVG_SET_STROKE_WIDTH ($path;2)  
  SVG_PATH_LINE_TO ($path;400;50;600;300;800;550;1000;300)  
  $gray:=SVG_Color_grey (50)
-
 ```
+
 grey 50%  
+
+```4d
  SVG_SET_DEFAULT_BRUSHES ($gray;$gray)  
  SVG_New_circle ($g;400;50;10)  
  SVG_New_circle ($g;800;550;10)
 ```
-
-```4d
-
-
-  
-  
 
 ## See also 
 

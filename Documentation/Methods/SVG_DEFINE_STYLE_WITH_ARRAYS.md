@@ -58,13 +58,15 @@ Example of definition of internal styles:
 
 This method generates the following code:
 
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes" ?&gt;
-&lt;svg xmlns="www.w3.org/2000/svg"&gt;
-    &lt;defs id="4D"&gt;
-        &lt;style type="text/css"&gt;.title{fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;}&lt;/style&gt;
-    &lt;/defs&gt;
-    &lt;textArea class="title" height="310" width="200" x="10" y="10"&gt;Hello World!&lt;/textArea&gt;
-&lt;/svg&gt;
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <defs id="4D">
+        <style type="text/css">.title{fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;}</style>
+    </defs>
+    <textArea class="title" height="310" width="200" x="10" y="10">Hello World!</textArea>
+</svg>
+```
 
 ### Example 2  
 
@@ -89,7 +91,9 @@ Example of definition of inline styles:
 
 This method generates the following code:
 
-&lt;?xml version="1.0" encoding="UTF-8" standalone="yes" ?&gt;
-&lt;svg xmlns="www.w3.org/2000/svg"&gt;
-    &lt;textArea height="310" style="fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;" width="200" x="10" y="10"&gt;Hello World!&lt;/textArea&gt;
-&lt;/svg&gt;
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<svg xmlns="http://www.w3.org/2000/svg">
+    <textArea height="310" style="fill:red;font-family:'Lucida Grande' Verdana;font-size:20px;text-align:center;" width="200" x="10" y="10">Hello World!</textArea>
+</svg>
+```

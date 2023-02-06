@@ -28,7 +28,7 @@ The SVG_Color_RGB_from_HLS command returns a string expressing the color corresp
 
 The optional [format](# "Color format") parameter is used to specify the desired format for the color string returned. The values are:  
 
-|     |
+|     |     |
 | --- | --- |
 | **Value** | **Format** |
 | 1 (default) | rgb(r,g,b) |

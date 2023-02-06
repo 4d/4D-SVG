@@ -29,14 +29,9 @@ The optional [opacity](# "Opacity") parameter can be used to specify an opacity 
 The color set in this way will be associated with the fill or stroke paint by passing the string "url(#ID)" as the value when a color expression is expected.
 
 ### Example  
-
-```4d
-
-```4d
-  
-```
-
+ 
 Set blue to 50%  
+```4d
  SVG_Define_solidColor ($svg;"MyColor";"blue";50)  
  ...  
  SVG_New_rect ($svg;0;0;20;20;0;0;"url(#MyColor)";"url(#MyColor)")  
@@ -44,14 +39,7 @@ Set blue to 50%
  $line:=SVG_New_line (10;10;100;100)  
  SVG_SET_STROKE_BRUSH ($line;"url(#MyColor)")
 
-```
-
-```4d
-
-
-  
-  
-
+``` 
 ## See also 
 
 [SVG Colors](SVG%20Colors.md)

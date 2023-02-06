@@ -15,7 +15,7 @@ In the [svgObj](# "Reference of SVG element") parameter, pass a reference to the
 
 The optional [vectorEffect](# ""non-scaling-stroke", "none", "inherit"") parameter indicates the value to be used for the attribute. The following values are available:
 
-|     |
+|     |     |
 | --- | --- |
 | **vectorEffect** | **Description** |
 | "non-scaling-stroke" | Stroke (line) width is not dependant on the transformations of the element |

@@ -18,7 +18,7 @@ The SVGTool_SHOW_IN_VIEWER command displays the SVG picture specified by [svgObj
 
 If you pass the optional [sources](# "Opens viewer directly on the source page") parameter (added in v14), the viewer is opened directly on the source page.
 
-For more information about the SVG Viewer, please refer to the [Development tools](Development%20tools.md "Development tools") section.
+For more information about the SVG Viewer, please refer to the [Development tools](../Development%20tools.md) section.
 
 By default, the viewer is opened on the `Picture` page.    
 If the value "source" is passed as the second parameter, the viewer is opened on the `Source` page.

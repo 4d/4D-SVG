@@ -16,21 +16,10 @@ The SVG_Color_grey command returns a string expressing a gray color having a [pe
 ### Example  
 
 ```4d
-
-```4d
- $txtColor:=SVG_Color_grey (60)  
-  
+ $txtColor:=SVG_Color_grey (60) 
 ```
 
 $txtColor is "rgb(102,102,102)"
-
-```
-
-```4d
-
-
-  
-  
 
 ## See also 
 

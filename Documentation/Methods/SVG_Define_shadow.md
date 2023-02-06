@@ -36,28 +36,24 @@ Declaration of a filter that can be used to make a shadow beneath an object:
 ![](https://doc.4d.com/4Dv19/picture/195976/pict195976.en.png)
 
 ```4d
-
-```4d
  $svg:=SVG_New   
    
  $text:=SVG_New_text ($svg;"SVG";52;76-45;"Verdana";45)  
  SVG_SET_FONT_COLOR ($text;"red")  
-  
 ```
 
 Set filter  
+
+```4d
  SVG_Define_shadow ($svg;"myShadow")  
-  
 ```
+
 and apply it to text  
+
+```4d
  SVG_SET_FILTER ($text;"myShadow")
 ```
 
-```4d
-
-
-  
-  
 
 ## See also 
 

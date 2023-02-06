@@ -13,7 +13,7 @@ The SVG_Get_options command returns a longint representing a 32-bit array where 
 
 The following options are currently available:
 
-|     |     |
+|     |     |     |
 | --- | --- | --- |
 | **Bit** | **Option** | **Default** |
 | 1   | Assign an ID automatically when creating an element | 0 (disabled) |
