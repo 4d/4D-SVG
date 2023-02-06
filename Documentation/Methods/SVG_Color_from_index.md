@@ -32,7 +32,7 @@ The [index](# "Number of color") parameter designates a number in the 4D color p
     End for  
     $Lon_line:=$Lon_line+11  
  End for  
- [SVGTool_SHOW_IN_VIEWER](SVGTool_SHOW_IN_VIEWER.md "SVGTool_SHOW_IN_VIEWER")($Dom_svg)
+ SVGTool_SHOW_IN_VIEWER($Dom_svg)
 ```
 
 ![](https://doc.4d.com/4Dv19/picture/927034/pict927034.en.png)

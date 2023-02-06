@@ -22,5 +22,5 @@ See the [SVG_Define_filter](SVG_Define_filter.md)  command.
 
 ## See also
 
-[SVG Filters](SVG%20Filters.md)  
+[SVG Filters](../SVG%20Filters.md)  
 [SVG_Define_filter](SVG_Define_filter.md)
