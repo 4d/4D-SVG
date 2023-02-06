@@ -37,13 +37,13 @@ The optional [format](# "Format of color") parameter can be used to specify the 
 
 ### Example  
 
-
 ```4d
  $txtColor:=SVG_Color_RGB_from_long ($color)  
 ```
 
 $txtColor is "rgb(255,128,0)" if $color is 16744448 (orange)
- ## See also 
+
+## See also
 
 [SVG_Color_from_index](SVG_Color_from_index.md)  
 [SVG_Color_grey](SVG_Color_grey.md)

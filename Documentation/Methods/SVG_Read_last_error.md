@@ -29,13 +29,14 @@ The error number returned can be specific to a component command or may be an er
 
 Given the "SVG_error_mgmt" method of the example for the [SVG_Set_error_handler](SVG_Set_error_handler.md)  command:
 
-
 Installation of error-handling method  
+
 ```4d
  $Error_Method_Txt:=SVG_Set_error_handler ("SVG_error_mgmt")  
 ```
+
 from now on it is the SVG_error_mgmt method that will be executed in the case of an error  
-   
+
 Creation of new SVG document  
 
 ```4d
@@ -52,14 +53,14 @@ Creation of new SVG document
 ```
 
 Uninstalling of error-handling method  
+
 ```4d
  [SVG_Set_error_handler](SVG_Set_error_handler.md)
 ```
- 
+
 ### Example 2  
 
 Given the following SVG_error_mgmt method:  
-
 
 ```4d
  C_LONGINT($1)  
@@ -75,21 +76,21 @@ Keep the error and the context
  commandName:=$2  
 
 ```
+
 Set the OK system variable to 0  
 
 ```4d
  OK:=0
 ```
 
-  
 This method can be used as follows:  
 
- 
-
  Installation of error-handling method  
+
 ```4d
  $Error_Method_Txt:=SVG_Set_error_handler ("SVG_error_mgmt")  
 ```
+
  Creation of new SVG document  
 
 ```4d
@@ -104,15 +105,12 @@ This method can be used as follows:
  End if  
 ```
 
- Uninstalling of error-handling method 
-```4d 
+ Uninstalling of error-handling method
+
+```4d
  SVG_Set_error_handler
 ```
 
-
-  
-  
-
-## See also 
+## See also
 
 [SVG_Set_error_handler](SVG_Set_error_handler.md)

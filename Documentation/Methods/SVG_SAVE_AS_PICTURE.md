@@ -24,7 +24,6 @@ The **SVG_SAVE_AS_PICTURE** modifies the value of the variable (if any) designat
 
 ### Example  
 
-
 ```4d
  svgRef:=SVG_New (500;200;"Sales statistics")  
  ...  
@@ -32,14 +31,13 @@ The **SVG_SAVE_AS_PICTURE** modifies the value of the variable (if any) designat
 ```
 
 Save  
+
 ```4d
  SVG_SAVE_AS_PICTURE (svgRef;"test.gif";".gif")  
  SVG_CLEAR (svgRef)
-
 ```
 
-
-## See also 
+## See also
 
 [SVG_Export_to_picture](SVG_Export_to_picture.md)  
 [SVG_SET_DOCUMENT_VARIABLE](SVG_SET_DOCUMENT_VARIABLE.md)

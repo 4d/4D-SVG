@@ -44,7 +44,6 @@ The optional [fx](# "Coordinate on X axis of center of startColor") and [fy](# "
 ### Example  
 
 ![](https://doc.4d.com/4Dv19/picture/195917/pict195917.en.png)
- 
 
 ```4d
  $svg:=SVG_New   
@@ -68,17 +67,19 @@ The optional [fx](# "Coordinate on X axis of center of startColor") and [fy](# "
 ```
 
 Save document  
+
 ```4d
  SVG_SAVE_AS_TEXT ($svg;"test.svg")  
   
 ```
+
 Free up memory  
+
 ```4d
  SVG_CLEAR ($svg)
 ```
 
-
-## See also 
+## See also
 
 [SVG Colors](SVG%20Colors.md)  
 [SVG_Define_linear_gradient](SVG_Define_linear_gradient.md)

@@ -38,18 +38,20 @@ The optional [mode](# "Adjustment to viewbox") parameter can be used to indicate
 Specify a graphic composed of two red circles and two blue squares. Then use this graphic in a loop to create 36 occurrences with varying positions, opacity and rotation of the original graphic.  
 ![](https://doc.4d.com/4Dv19/picture/195636/pict195636.en.png)
 
-
 ```4d
  $SVG:=SVG_New   
   
 ```
 
 Draw a background  
+
 ```4d
  SVG_New_rect ($SVG;20;20;650;650;0;0;"gray";"lemonchiffon")  
   
 ```
+
 Specify a symbol composed of 2 squares and 2 circles  
+
 ```4d
  $Symbol:=SVG_Define_symbol ($SVG;"MySymbol";0;0;110;110;"true")  
  SVG_New_circle ($Symbol;30;30;25;"red";"palevioletred")  
@@ -60,17 +62,21 @@ Specify a symbol composed of 2 squares and 2 circles
 ```
 
 In a group…  
+
 ```4d
  $g:=SVG_New_group ($SVG)  
   
 ```
-…positioned 20 units from the top left corner of the document… 
-```4d 
+
+…positioned 20 units from the top left corner of the document…
+
+```4d
  SVG_SET_TRANSFORM_TRANSLATE ($g;20;20)  
   
 ```
 
 …place 36 patterns by varying the position, opacity and rotation  
+
 ```4d
  For($x;0;540;90) // 6 columns  
     For($y;0;540;90) // 6 rows  
@@ -82,10 +88,6 @@ In a group…
 
 ```
 
-
-  
-  
-
-## See also 
+## See also
 
 [SVG_Define_symbol](SVG_Define_symbol.md)

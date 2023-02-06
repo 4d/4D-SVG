@@ -23,18 +23,20 @@ You can pass an empty string in either of these parameters in order to reset the
 Like Mondrian…  
 ![](https://doc.4d.com/4Dv19/picture/194611/pict194611.en.png)
 
-
 ```4d
  $svg:=SVG_New   
   
 ```
 
 Set the default colors  
+
 ```4d
  SVG_SET_DEFAULT_BRUSHES ("black";"white")  
   
 ```
+
 4-point thick lines  
+
 ```4d
  SVG_SET_STROKE_WIDTH ($svg;4)  
  $g:=SVG_New_group ($svg)  
@@ -50,13 +52,13 @@ Set the default colors
 ```
 
 Caption  
+
 ```4d
  SVG_New_text ($svg;"Inspired by Piet Mondrian - 1930,\rComposition II in Red, Blue, and Yellow";10;220;"";9)
 
 ```
 
-
-## See also 
+## See also
 
 [SVG_GET_DEFAULT_BRUSHES](SVG_GET_DEFAULT_BRUSHES.md)  
 [SVG_SET_STROKE_BRUSH](SVG_SET_STROKE_BRUSH.md)

@@ -28,4 +28,3 @@ If the [unit](# "Unit of measurement") parameter is passed, it will be used. The
  $object:=SVG_New_rect ($svg;10;10;200;200;0;0;"black";"white";2)  
  SVG_SET_DIMENSIONS ($object;-1;400) //   New height
 ```
- 

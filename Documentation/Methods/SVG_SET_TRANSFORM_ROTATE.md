@@ -29,17 +29,18 @@ If the optional [x](# "Coordinate on X axis of center of rotation") and [y](# "C
  svgRef:=SVG_New   
 ```
 
-Draw a red rectangle with a blue border 
+Draw a red rectangle with a blue border
 
 ```4d
  $rec:=SVG_New_rect ($svg;150;50;200;400;0;0;"blue";"red";10)  
 ```
+
 Apply a rotation of 10° clockwise with respect to the center  
 
 ```4d
  SVG_SET_TRANSFORM_ROTATE ($rec;370;175;225)
 ```
 
-## See also 
+## See also
 
 [SVG_SET_TRANSFORM_FLIP](SVG_SET_TRANSFORM_FLIP.md)

@@ -54,7 +54,6 @@ and apply it to text
  SVG_SET_FILTER ($text;"myShadow")
 ```
 
-
-## See also 
+## See also
 
 [SVG_SET_FILTER](SVG_SET_FILTER.md)

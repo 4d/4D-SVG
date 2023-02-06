@@ -79,18 +79,20 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
 
 ![](https://doc.4d.com/4Dv19/picture/196247/pict196247.en.png)
 
-
 ```4d
  $svg:=SVG_New   
   
 ```
 
 Position a border rectangle  
+
 ```4d
  $rec:=SVG_New_rect ($svg;5;5;210;320;0;0;"#777";"peachpuff";3)  
   
 ```
+
 The text  
+
 ```4d
  $txt:="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."  
  $txtArea:=SVG_New_textArea ($svg;$txt;10;10;200;310;"Georgia";25;[Italic](Font-Styles.302-6103262.en.html "Italic");5)  
@@ -98,17 +100,15 @@ The text
 ```
 
 Save document  
+
 ```4d
  SVG_SAVE_AS_TEXT ($svg;"test.svg")
 
 ```
- 
-
 
 ### Example 2  
 
 Display of multi-style text:
-
 
 ```4d
  C_TEXT($Dom_svg;$Dom_text;$Txt_buffer)  

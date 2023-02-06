@@ -52,6 +52,6 @@ Incline it
  SVG_SET_TRANSFORM_SKEW ($tx;-50;10) 
 ```
 
-## See also 
+## See also
 
 [SVG_SET_TRANSFORM_FLIP](SVG_SET_TRANSFORM_FLIP.md)

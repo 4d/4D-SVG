@@ -18,7 +18,6 @@ If the optional [hide](# "True = Show, False = Hide") parameter is set to True o
 
 ### Example  
 
-
 ```4d
  $svg :=SVG_New   
  $object:=SVG_New_rect ($svg;10;10;200;200;0;0;"black";" white";2)  
@@ -26,4 +25,3 @@ If the optional [hide](# "True = Show, False = Hide") parameter is set to True o
 ```
 
 The object is described but will not be rendered.
- 

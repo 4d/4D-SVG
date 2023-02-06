@@ -149,7 +149,6 @@
 | color RGB yellowgreen | Longint | 10145074 | ![](https://doc.4d.com/4Dv19/picture/3641490/pict3641490.en.png)
  |
 
- ## See also
+## See also
 
  [SVG Colors (Names)](SVG%20Colors%20(Names).md)
- 

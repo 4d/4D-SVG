@@ -35,7 +35,6 @@ The optional [target](# "Target of link") parameter specifies the name of the ta
 A group of lines, all the same color:  
 ![](https://doc.4d.com/4Dv19/picture/196080/pict196080.en.png)  
 
-
 ```4d
  $SVG:=SVG_New   
  $group:=SVG_New_group ($SVG)  
@@ -43,6 +42,7 @@ A group of lines, all the same color:
 ```
 
 Assign a color to the group elements  
+
 ```4d
  SVG_SET_STROKE_BRUSH ($group;"firebrick")  
  $newobject:=SVG_New_line ($group;100;300;300;100;"";5)  
@@ -57,7 +57,6 @@ Assign a color to the group elements
 
 Clickable text:  
 ![](https://doc.4d.com/4Dv19/picture/196081/pict196081.en.png)  
-
 
 ```4d
  $SVG:=SVG_New   

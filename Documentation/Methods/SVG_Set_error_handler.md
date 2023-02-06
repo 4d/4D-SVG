@@ -35,19 +35,13 @@ Installation of the SVG_error_mgmt method (host database method) as the error-ha
 
 Method code:
 
-
 ```4d
 
  SVG_error_mgmt method  
  ALERT("Error No."+String($1)+" during execution of the command \""+$2+"\"")
 
 ```
- 
 
-
-  
-  
-
-## See also 
+## See also
 
 [SVG_Read_last_error](SVG_Read_last_error.md)

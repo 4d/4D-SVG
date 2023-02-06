@@ -38,6 +38,7 @@ Draw an arrow:
 ```
 
 Set the arrow  
+
 ```4d
  $arrow:=SVG_Define_marker ($SVG;"arrow";0;5;4;3;-1)  
  SVG_SET_VIEWBOX ($arrow;0;0;10;10)  
@@ -53,18 +54,17 @@ Set the arrow
  SVG_PATH_LINE_TO ($line;250;125)  
   
 ```
-Put an arrow at the end of a path 
-```4d 
+
+Put an arrow at the end of a path
+
+```4d
  SVG_SET_MARKER ($line;" arrow ")
 ```
- 
-
 
 ### Example 2  
 
 Draw a diagram with different markers at the beginning and end:  
 ![](https://doc.4d.com/4Dv19/picture/194080/pict194080.en.png)
- 
 
 ```4d
  $SVG:=SVG_New   
@@ -97,7 +97,7 @@ Set a triangle for the end point
  ARRAY LONGINT($tY;0)  
 ```
 
-X axis 
+X axis
 
 ```4d
  For($Lon_i;0;200;20)  
@@ -122,12 +122,13 @@ Data
 ```
 
 Arrange the markers:  
+
 ```4d
  SVG_SET_MARKER ($line;"startMarker";"start")  
  SVG_SET_MARKER ($line;"pointMarker";"middle")  
  SVG_SET_MARKER ($line;"endMarker";"end")
 ```
- 
-## See also 
+
+## See also
 
 [SVG_Define_marker](SVG_Define_marker.md)

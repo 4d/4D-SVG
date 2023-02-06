@@ -36,12 +36,12 @@ Create an SVG document of 4x8cm
 
 ```
 
-Declare the user coordinate system here as 1 cm = 250 user points 
+Declare the user coordinate system here as 1 cm = 250 user points
 
 ```4d
  SVG_SET_VIEWBOX ($svg;0;0;1000;2000;"true")
 ```
 
-## See also 
+## See also
 
 [SVG_SET_VIEWPORT_FILL](SVG_SET_VIEWPORT_FILL.md)

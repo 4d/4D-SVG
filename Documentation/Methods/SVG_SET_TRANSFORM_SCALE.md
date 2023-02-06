@@ -32,6 +32,6 @@ If the [scaleY](# "Value on Y axis") parameter is provided, the object is enlarg
 
 Zoom x*3 y*12
 
-## See also 
+## See also
 
 [SVG_SET_TRANSFORM_MATRIX](SVG_SET_TRANSFORM_MATRIX.md)

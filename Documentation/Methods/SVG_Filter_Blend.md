@@ -64,7 +64,7 @@ In a form, we display two identical SVG pictures then we create a "blend" filter
  <>pict2:=SVG_Export_to_picture ($root2) // display second picture
 ```
 
-Result (blur input filter = sourceGraphic): 
+Result (blur input filter = sourceGraphic):
 
 ![](https://doc.4d.com/4Dv19/picture/1756656/pict1756656.fr.png)
 

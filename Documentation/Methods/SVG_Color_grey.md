@@ -21,6 +21,6 @@ The SVG_Color_grey command returns a string expressing a gray color having a [pe
 
 $txtColor is "rgb(102,102,102)"
 
-## See also 
+## See also
 
 [SVG_Color_RGB_from_long](SVG_Color_RGB_from_long.md)

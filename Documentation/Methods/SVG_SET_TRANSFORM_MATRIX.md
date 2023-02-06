@@ -35,13 +35,14 @@ This type of transformation can be used to combine transformations like, for exa
   
 ```
 
-Is equivalent to applying the 3 following transformations: 
-```4d 
+Is equivalent to applying the 3 following transformations:
+
+```4d
  SVG_SET_TRANSFORM_TRANSLATE ($ID;50;90)  
  SVG_SET_TRANSFORM_ROTATE ($ID;-45)  
  SVG_SET_TRANSFORM_TRANSLATE ($ID;130;160)
 ```
 
-## See also 
+## See also
 
 [SVG_SET_TRANSFORM_ROTATE](SVG_SET_TRANSFORM_ROTATE.md)

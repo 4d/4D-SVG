@@ -64,7 +64,6 @@ Draw a Bezier curve:
 Arc commands in path data:  
 ![](https://doc.4d.com/4Dv19/picture/195200/pict195200.en.png)
 
-
 ```4d
  svgRef:=SVG_New   
  objectRef:=SVG_New_path (svgRef;20;300;"red";"none";2)  
@@ -72,6 +71,7 @@ Arc commands in path data:
 ```
 
 Change to relative coordinates  
+
 ```4d
  SVG_PATH_LINE_TO (objectRef;50;-25)  
  For($Lon_i;1;4;1)  
@@ -86,14 +86,13 @@ Change to relative coordinates
 Complex path (cubic Bezier curve):  
 ![](https://doc.4d.com/4Dv19/picture/195201/pict195201.en.png)
 
- 
-
 Create a new SVG tree  
 
 ```4d
  $Txt_svg:=SVG_New (174,96;125,04;"4D Logo";"";True)  
 
 ```
+
 Create a new path  
 
 ```4d
@@ -101,9 +100,9 @@ Create a new path
   
 ```
 
-Set colors 
+Set colors
 
-```4d 
+```4d
  SVG_SET_STROKE_BRUSH ($Txt_path;"#212a6f")  
  SVG_SET_FILL_BRUSH ($Txt_path;"#212a6f")  
  ...  
@@ -118,7 +117,6 @@ Set colors
  SVG_PATH_CURVE ($Txt_path;153,11;78,668;151,407;89,558;146,03;98,078)
 
 ```
-
 
 ### Example 5  
 
@@ -139,6 +137,7 @@ Reset stroke to black and set fill to none
 ```
 
 Draw a quadratic Bezier curve in red  
+
 ```4d
  $qCurve:=SVG_New_path ($svg;200;300)  
  SVG_SET_STROKE_BRUSH ($qCurve;"red")  
@@ -178,7 +177,7 @@ grey 50%
  SVG_New_circle ($g;800;550;10)
 ```
 
-## See also 
+## See also
 
 [SVG_PATH_CLOSE](SVG_PATH_CLOSE.md)  
 [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md)
