@@ -22,13 +22,13 @@
 
 ## Description
 
-The SVG_New_polygon_by_arrays command draws a closed form consisting of a set of straight connected segments in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_polygon_by_arrays command draws a closed form consisting of a set of straight connected segments in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 All the coordinate values are in the user coordinate system.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example  
 

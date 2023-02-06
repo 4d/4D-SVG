@@ -20,15 +20,15 @@
 
 ## Description
 
-The **SVG_New_embedded_image** command can be used to embed the [picture](# "Picture to be embedded") picture in the SVG container designated by [parentSVGObject](# "Reference of parent element") and to return its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The **SVG_New_embedded_image** command can be used to embed the [picture](## "Picture to be embedded") picture in the SVG container designated by [parentSVGObject](## "Reference of parent element") and to return its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 The picture will be encoded in base64 then embedded in the document.
 
-The [picture](# "Picture to be embedded") parameter is a 4D picture field or variable.
+The [picture](## "Picture to be embedded") parameter is a 4D picture field or variable.
 
-The optional [x](# "Coordinate on X axis of upper left corner") and [y](# "Coordinate on Y axis of upper left corner") parameters can be used to specify the position of the upper left corner of the picture in the SVG containers (default value 0).
+The optional [x](## "Coordinate on X axis of upper left corner") and [y](## "Coordinate on Y axis of upper left corner") parameters can be used to specify the position of the upper left corner of the picture in the SVG containers (default value 0).
 
-The optional [codec](# "Codec to use") parameter sets the codec to use for the [picture](# "Picture to be embedded"). By default, if this parameter is omitted, the codec is ".png".
+The optional [codec](## "Codec to use") parameter sets the codec to use for the [picture](## "Picture to be embedded"). By default, if this parameter is omitted, the codec is ".png".
 
 ### Example  
 

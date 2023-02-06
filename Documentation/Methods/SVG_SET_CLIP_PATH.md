@@ -12,7 +12,7 @@
 
 ## Description
 
-The SVG_SET_CLIP_PATH command sets the clip path named [clipPathID](# "Name of clip path") for the object passed in [svgObject](# "Reference of SVG element"). An error is generated if [svgObject](# "Reference of SVG element") is not a valid reference or if the clip path is not defined.
+The SVG_SET_CLIP_PATH command sets the clip path named [clipPathID](## "Name of clip path") for the object passed in [svgObject](## "Reference of SVG element"). An error is generated if [svgObject](## "Reference of SVG element") is not a valid reference or if the clip path is not defined.
 
 **See Also:** [http://www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath](http://www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath)
 

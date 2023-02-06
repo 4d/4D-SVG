@@ -12,9 +12,9 @@
 
 ## Description
 
-The SVG_SET_TEXT_WRITING_MODE command is used to set whether the writing direction for the text object designated by [svgObject](# "Reference of text element") will be left to right, right to left or bottom to top. If [svgObject](# "Reference of text element") is not an SVG text object, an error is generated.
+The SVG_SET_TEXT_WRITING_MODE command is used to set whether the writing direction for the text object designated by [svgObject](## "Reference of text element") will be left to right, right to left or bottom to top. If [svgObject](## "Reference of text element") is not an SVG text object, an error is generated.
 
-The [writingMode](# "Direction of writing") parameter can have one of the following values: "lr-tb", "rl-tb", "tb-rl", "lr", "rl", "tb" or "inherit ". Otherwise, an error is generated.
+The [writingMode](## "Direction of writing") parameter can have one of the following values: "lr-tb", "rl-tb", "tb-rl", "lr", "rl", "tb" or "inherit ". Otherwise, an error is generated.
 
 ### Example  
 

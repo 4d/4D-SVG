@@ -22,15 +22,15 @@
 
 ## Description
 
-The SVG_New_polyline_by_arrays command draws a broken line composed of straight segments connected together in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_polyline_by_arrays command draws a broken line composed of straight segments connected together in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 Usually, 'polyline' elements design open forms but they can be used for closed forms as well. In this case the last point must be set as equal to the first.
 
 All the coordinate values are in the user coordinate system.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 

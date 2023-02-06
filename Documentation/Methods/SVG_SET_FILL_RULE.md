@@ -12,9 +12,9 @@
 
 ## Description
 
-The SVG_SET_FILL_RULE command is used to specify the fill rule for the SVG object designated by [svgObject](# "Reference of SVG element"). An error is generated if [svgObject](# "Reference of SVG element") is not a valid reference.
+The SVG_SET_FILL_RULE command is used to specify the fill rule for the SVG object designated by [svgObject](## "Reference of SVG element"). An error is generated if [svgObject](## "Reference of SVG element") is not a valid reference.
 
-The [fillRule](# "Mode for filling object") parameter must contain one of the following values: "nonzero", "evenodd" or "inherit". Otherwise, an error is generated.
+The [fillRule](## "Mode for filling object") parameter must contain one of the following values: "nonzero", "evenodd" or "inherit". Otherwise, an error is generated.
 
 **See Also:** [http://www.w3.org/TR/SVG/painting.html#FillRuleProperty](http://www.w3.org/TR/SVG/painting.html#FillRuleProperty)
 

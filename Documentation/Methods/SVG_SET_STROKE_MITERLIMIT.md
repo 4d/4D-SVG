@@ -12,8 +12,8 @@
 
 ## Description
 
-The SVG_SET_STROKE_MITERLIMIT command is used to set the limit for the length of the miter join between the path and the outline of the SVG object designated by [svgObject](# "Reference of SVG element"). If [svgObject](# "Reference of SVG element") is not a valid SVG reference, an error is generated.
+The SVG_SET_STROKE_MITERLIMIT command is used to set the limit for the length of the miter join between the path and the outline of the SVG object designated by [svgObject](## "Reference of SVG element"). If [svgObject](## "Reference of SVG element") is not a valid SVG reference, an error is generated.
 
-If the [join](# "Value of join") parameter is -1, the value will be the default value (4). If the [join](# "Value of join") parameter is 0, then the definition of the attribute is removed. Any other value < 0 will cause an error.
+If the [join](## "Value of join") parameter is -1, the value will be the default value (4). If the [join](## "Value of join") parameter is 0, then the definition of the attribute is removed. Any other value < 0 will cause an error.
 
 **See Also:** [http://www.w3.org/TR/SVG/painting.html#StrokeProperties](http://www.w3.org/TR/SVG/painting.html#StrokeProperties)

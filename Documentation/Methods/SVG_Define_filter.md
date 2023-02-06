@@ -26,17 +26,17 @@
 
 ## Description
 
-The SVG_Define_filter command sets a new filter in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_Define_filter command sets a new filter in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 A filter is a succession of graphic operations that will be applied to the target element. The filter element is never rendered directly; it will be applied to an object using the [SVG_SET_FILTER](SVG_SET_FILTER.md)  command.
 
-The [id](# "Name of symbol") parameter specifies the name of the marker. The name will be used to associate a filter with an object. If an element with the same name exists, it will be replaced.
+The [id](## "Name of symbol") parameter specifies the name of the marker. The name will be used to associate a filter with an object. If an element with the same name exists, it will be replaced.
 
-The optional [frameX](# "Coordinate on X axis"), [frameY](# "Coordinate on Y axis"), [frameWidth](# "Width of target rectangle") and [frameHeight](# "Height of target rectangle") parameters set a rectangular region in the document to which this filter will be applied.
+The optional [frameX](## "Coordinate on X axis"), [frameY](## "Coordinate on Y axis"), [frameWidth](## "Width of target rectangle") and [frameHeight](## "Height of target rectangle") parameters set a rectangular region in the document to which this filter will be applied.
 
-The optional [frameUnit](# "Coordinate system of frame") parameter sets the coordinate system for the 4 previous parameters. Expected values: "userSpaceOnUse" or "objectBoundingBox" (default value).
+The optional [frameUnit](## "Coordinate system of frame") parameter sets the coordinate system for the 4 previous parameters. Expected values: "userSpaceOnUse" or "objectBoundingBox" (default value).
 
-The optional [filterUnit](# "Filter system of values") parameter sets the coordinate system for the lenths and the filter definition properties. Expected values: "userSpaceOnUse" (default value) or "objectBoundingBox".
+The optional [filterUnit](## "Filter system of values") parameter sets the coordinate system for the lenths and the filter definition properties. Expected values: "userSpaceOnUse" (default value) or "objectBoundingBox".
 
 ### Example  
 

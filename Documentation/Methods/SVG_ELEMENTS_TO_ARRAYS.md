@@ -16,15 +16,15 @@
 
 ## Description
 
-The SVG_ELEMENTS_TO_ARRAYS command fills the array pointed to by [refsArrayPointer](# "String array of object references") with the references of the graphic objects of the first level for the SVG reference passed in [svgObject](# "SVG reference").
+The SVG_ELEMENTS_TO_ARRAYS command fills the array pointed to by [refsArrayPointer](## "String array of object references") with the references of the graphic objects of the first level for the SVG reference passed in [svgObject](## "SVG reference").
 
-If the optional [typesArrayPointer](# "String array of object types") pointer is passed, the array will be filled with the object types.
+If the optional [typesArrayPointer](## "String array of object types") pointer is passed, the array will be filled with the object types.
 
-If the optional [namesArrayPointer](# "String array of object IDs") pointer is passed, the array will be filled with object IDs.
+If the optional [namesArrayPointer](## "String array of object IDs") pointer is passed, the array will be filled with object IDs.
 
 A group counts as one object. To find out this information for the graphic objects in a group, passed its reference to the command.
 
-If [svgObject](# "SVG reference") is not valid or if this attribute does not exist, an error is generated.
+If [svgObject](## "SVG reference") is not valid or if this attribute does not exist, an error is generated.
 
 ## See also
 

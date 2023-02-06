@@ -9,11 +9,11 @@
 
 ## Description
 
-The **SVG_SET_STROKE_VECTOR_EFFECT** command sets the vector-effect attribute for the lines of the [svgObj](# "Reference of SVG element"). The vector-effect attribute specifies the behavior of an object's stroke if the object is transformed, for example by zooming in or out.
+The **SVG_SET_STROKE_VECTOR_EFFECT** command sets the vector-effect attribute for the lines of the [svgObj](## "Reference of SVG element"). The vector-effect attribute specifies the behavior of an object's stroke if the object is transformed, for example by zooming in or out.
 
-In the [svgObj](# "Reference of SVG element") parameter, pass a reference to the SVG element whose vector-effect attribute will be set. If [svgObj](# "Reference of SVG element") does not reference an SVG element, an error is generated. If the vector-effect attribute has already been defined, its value is replaced by the [vectorEffect](# ""non-scaling-stroke", "none", "inherit"") parameter.
+In the [svgObj](## "Reference of SVG element") parameter, pass a reference to the SVG element whose vector-effect attribute will be set. If [svgObj](## "Reference of SVG element") does not reference an SVG element, an error is generated. If the vector-effect attribute has already been defined, its value is replaced by the [vectorEffect](## ""non-scaling-stroke", "none", "inherit"") parameter.
 
-The optional [vectorEffect](# ""non-scaling-stroke", "none", "inherit"") parameter indicates the value to be used for the attribute. The following values are available:
+The optional [vectorEffect](## ""non-scaling-stroke", "none", "inherit"") parameter indicates the value to be used for the attribute. The following values are available:
 
 |     |     |
 | --- | --- |
@@ -22,7 +22,7 @@ The optional [vectorEffect](# ""non-scaling-stroke", "none", "inherit"") paramet
 | "none" | No vector effect is applied |
 | "inherit" | The value of the element's parent is used |
 
-If [vectorEffect](# ""non-scaling-stroke", "none", "inherit"") is omitted, the vector-effect attribute is removed (equivalent to "none").
+If [vectorEffect](## ""non-scaling-stroke", "none", "inherit"") is omitted, the vector-effect attribute is removed (equivalent to "none").
 
 ### Example  
 

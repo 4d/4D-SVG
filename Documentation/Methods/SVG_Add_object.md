@@ -13,4 +13,4 @@
 
 ## Description
 
-The SVG_Add_object command is used to place an SVG object designated by [sourceSVGObject](# "Reference of object to be added") in the SVG container designated by [targetSVGObject](# "Reference of parent element") and return its reference. The SVG container can be the root of the document or any other reference to an SVG object that is able to contain this type of element.
+The SVG_Add_object command is used to place an SVG object designated by [sourceSVGObject](## "Reference of object to be added") in the SVG container designated by [targetSVGObject](## "Reference of parent element") and return its reference. The SVG container can be the root of the document or any other reference to an SVG object that is able to contain this type of element.

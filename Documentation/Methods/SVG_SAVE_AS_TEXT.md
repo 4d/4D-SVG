@@ -12,9 +12,9 @@
 
 ## Description
 
-The **SVG_SAVE_AS_TEXT** command writes the content of the SVG object specified by [svgObject](# "SVG object reference") into the disk file specified by [document](# "Document name or Full pathname of document"). If [svgObject](# "SVG object reference") is not an SVG document, an error is generated.
+The **SVG_SAVE_AS_TEXT** command writes the content of the SVG object specified by [svgObject](## "SVG object reference") into the disk file specified by [document](## "Document name or Full pathname of document"). If [svgObject](## "SVG object reference") is not an SVG document, an error is generated.
 
-In [document](# "Document name or Full pathname of document"), you can pass the full pathname of the file, or only the file name – in which case the file will be created next to the database structure file. If you pass an empty string ("") in document or omit this parameter, the standard Save file dialog box appears so that the user can specify the name, location and format of the file to be created.
+In [document](## "Document name or Full pathname of document"), you can pass the full pathname of the file, or only the file name – in which case the file will be created next to the database structure file. If you pass an empty string ("") in document or omit this parameter, the standard Save file dialog box appears so that the user can specify the name, location and format of the file to be created.
 
 The **SVG_SAVE_AS_TEXT** modifies the value of the variable (if any) designated by the [SVG_SET_DOCUMENT_VARIABLE](SVG_SET_DOCUMENT_VARIABLE.md) command.
 

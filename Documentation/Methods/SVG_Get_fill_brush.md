@@ -12,4 +12,4 @@
 
 ## Description
 
-The **SVG_Get_fill_brush** command returns the fill color of an SVG image whose reference is passed in the [svgObject](# "SVG object reference") parameter. If [svgObject](# "SVG object reference") does not have a "fill" attribute, the command returns an empty string.
+The **SVG_Get_fill_brush** command returns the fill color of an SVG image whose reference is passed in the [svgObject](## "SVG object reference") parameter. If [svgObject](## "SVG object reference") does not have a "fill" attribute, the command returns an empty string.

@@ -12,9 +12,9 @@
 
 ## Description
 
-The **SVG_SET_SATURATION** method sets a saturation value for the SVG element designated by the [svgObject](# "SVG object reference") parameter. [svgObject](# "SVG object reference") must be an SVG container (svg, group, symbol, pattern, marker, etc.) or an image; otherwise, an error is returned.
+The **SVG_SET_SATURATION** method sets a saturation value for the SVG element designated by the [svgObject](## "SVG object reference") parameter. [svgObject](## "SVG object reference") must be an SVG container (svg, group, symbol, pattern, marker, etc.) or an image; otherwise, an error is returned.
 
-In the [saturation](# "Saturation value") parameter, you pass a value between 0 and 100
+In the [saturation](## "Saturation value") parameter, you pass a value between 0 and 100
 
 ## See also
 

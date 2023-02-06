@@ -14,7 +14,7 @@
 
 The SVG_SET_VISIBILITY command hides or shows an SVG object having the objectRef reference. If objectRef is not the reference of an object that can be hidden, an error is generated.
 
-If the optional [hide](# "True = Show, False = Hide") parameter is set to True or omitted, the object will be shown. If it is False, the object will be hidden.
+If the optional [hide](## "True = Show, False = Hide") parameter is set to True or omitted, the object will be shown. If it is False, the object will be hidden.
 
 ### Example  
 

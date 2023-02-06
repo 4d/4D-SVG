@@ -18,15 +18,15 @@
 
 ## Description
 
-The SVG_Color_RGB_from_HLS command returns a string expressing the color corresponding to the [hue](# "Hue value"), [luminosity](# "Luminosity value") and [saturation](# "Saturation value
+The SVG_Color_RGB_from_HLS command returns a string expressing the color corresponding to the [hue](## "Hue value"), [luminosity](## "Luminosity value") and [saturation](## "Saturation value
 ") parameters passed as arguments. The string returned is in the form "RGB(red,green,blue)" by default, the syntax recognized by SVG rendering engines.
 
-[hue](# "Hue value") is a longint included between 0 and 360°.
+[hue](## "Hue value") is a longint included between 0 and 360°.
 
-[luminosity](# "Luminosity value") and [saturation](# "Saturation value
+[luminosity](## "Luminosity value") and [saturation](## "Saturation value
 ") are longints included between 0 and 100%.
 
-The optional [format](# "Color format") parameter is used to specify the desired format for the color string returned. The values are:  
+The optional [format](## "Color format") parameter is used to specify the desired format for the color string returned. The values are:  
 
 |     |     |
 | --- | --- |

@@ -11,7 +11,7 @@
 
 ## Description
 
-The SVG_Color_grey command returns a string expressing a gray color having a [percentage](# "Intensity of gray") intensity. The string returned is in "RGB(red, green, blue)" form where the 3 values are equal, the syntax recognized by SVG rendering engines.
+The SVG_Color_grey command returns a string expressing a gray color having a [percentage](## "Intensity of gray") intensity. The string returned is in "RGB(red, green, blue)" form where the 3 values are equal, the syntax recognized by SVG rendering engines.
 
 ### Example  
 

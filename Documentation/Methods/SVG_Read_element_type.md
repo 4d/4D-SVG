@@ -12,6 +12,6 @@
 
 ## Description
 
-The SVG_Read_element_type command returns the type of element whose reference is passed in the [svgObject](# "Reference of SVG element") parameter.
+The SVG_Read_element_type command returns the type of element whose reference is passed in the [svgObject](## "Reference of SVG element") parameter.
 
-If [svgObject](# "Reference of SVG element") is not a valid reference or if this attribute does not exist, an error is generated.
+If [svgObject](## "Reference of SVG element") is not a valid reference or if this attribute does not exist, an error is generated.

@@ -11,4 +11,4 @@
 
 ## Description
 
-The **SVG_Get_root_reference** returns the reference of the root element for the SVG object whose reference was passed in the [svgObject](# "SVG object reference") parameter.
+The **SVG_Get_root_reference** returns the reference of the root element for the SVG object whose reference was passed in the [svgObject](## "SVG object reference") parameter.

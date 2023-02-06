@@ -14,11 +14,11 @@
 
 ## Description
 
-The SVG_SET_TRANSFORM_SKEW command specifies a horizontal and/or vertical incline for the SVG object having the [svgObject](# "Reference of SVG element") reference.
+The SVG_SET_TRANSFORM_SKEW command specifies a horizontal and/or vertical incline for the SVG object having the [svgObject](## "Reference of SVG element") reference.
 
-If the value of the [horizontal](# "Value of incline along X axis") parameter is not null, the object will be inclined horizontally according to the number of units passed; otherwise, it is ignored.
+If the value of the [horizontal](## "Value of incline along X axis") parameter is not null, the object will be inclined horizontally according to the number of units passed; otherwise, it is ignored.
 
-If the value of the [vertical](# "Value of incline along Y axis") parameter is not null, the object will be inclined vertically according to the number of units passed.
+If the value of the [vertical](## "Value of incline along Y axis") parameter is not null, the object will be inclined vertically according to the number of units passed.
 
 ### Example  
 

@@ -12,7 +12,7 @@
 
 ## Description
 
-The SVG_Export_to_XML command returns the XML text of the description of the SVG structure referenced by [svgObject](# "SVG object reference").
+The SVG_Export_to_XML command returns the XML text of the description of the SVG structure referenced by [svgObject](## "SVG object reference").
 
 ### Example  
 

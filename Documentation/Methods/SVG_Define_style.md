@@ -19,16 +19,16 @@
 
 ## Description
 
-The SVG_Define_style command is used to set a new style sheet in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not (or does not belong to) an SVG document, an error is generated.
+The SVG_Define_style command is used to set a new style sheet in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not (or does not belong to) an SVG document, an error is generated.
 
-The [style](# "Definition of style OR Pathname of file to use
+The [style](## "Definition of style OR Pathname of file to use
 ") parameter is used to embed style sheets directly within SVG content:
 
-* If the [style](# "Definition of style OR Pathname of file to use
+* If the [style](## "Definition of style OR Pathname of file to use
     ") parameter contains a valid pathname to a CSS file, the style definition is done using a mechanism referencing external style sheets. The path, if it begins with the # character or by the string "file:", expresses a relative path whose root is the "Resources" folder of the database.
-* The [style](# "Definition of style OR Pathname of file to use
+* The [style](## "Definition of style OR Pathname of file to use
     ") parameter can also be a URL of the "… " type; in this case, the style sheet will be referenced as an external resource.
-* In addition, the [style](# "Definition of style OR Pathname of file to use
+* In addition, the [style](## "Definition of style OR Pathname of file to use
     ") parameter can be a URL relative to the "Resources/SVG/" subfolder of the database. This is particularly useful in client/server mode, when files are stored in the "Resources" folder. Relatives URLs can begin with:  
 
   * "**/**", to indicate the "~/Resources/SVG/" path
@@ -37,9 +37,9 @@ The [style](# "Definition of style OR Pathname of file to use
 
     For examples of relative URLs, refer to the [SVG_New_image](SVG_New_image.md) command.
 
-The optional [type](# "Type of content") parameter specifies the language of the style sheet for the contents of the element. The default value is "text/css".
+The optional [type](## "Type of content") parameter specifies the language of the style sheet for the contents of the element. The default value is "text/css".
 
-The optional [media](# "Media descriptor") parameter specifies the intended destination media for the style information. If you omit this parameter, the default value used is "all". If the value is not included in the list of media types recognized by CSS2, an error is generated.
+The optional [media](## "Media descriptor") parameter specifies the intended destination media for the style information. If you omit this parameter, the default value used is "all". If the value is not included in the list of media types recognized by CSS2, an error is generated.
 
 **See Also:** [http://www.w3.org/TR/SVG/styling.html#StyleElement](http://www.w3.org/TR/SVG/styling.html#StyleElement)
 

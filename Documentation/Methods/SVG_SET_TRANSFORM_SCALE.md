@@ -14,11 +14,11 @@
 
 ## Description
 
-The SVG_SET_TRANSFORM_SCALE command applies a change of horizontal and/or vertical scale to an SVG object having the [svgObject](# "Reference of SVG element") reference.
+The SVG_SET_TRANSFORM_SCALE command applies a change of horizontal and/or vertical scale to an SVG object having the [svgObject](## "Reference of SVG element") reference.
 
-If the [scaleX](# "Value on X axis") value is not null, the object is enlarged (value >1) or reduced (0 < value < 1) horizontally for the number of units passed. The value 1 is equal to no change to the object scale.
+If the [scaleX](## "Value on X axis") value is not null, the object is enlarged (value >1) or reduced (0 < value < 1) horizontally for the number of units passed. The value 1 is equal to no change to the object scale.
 
-If the [scaleY](# "Value on Y axis") parameter is provided, the object is enlarged (value >1) or reduced (0 < value < 1) vertically for the number of units passed. The value 1 is equal to no change to the object scale. If this parameter is omitted, its value is supposed to be equal to [scaleX](# "Value on X axis").
+If the [scaleY](## "Value on Y axis") parameter is provided, the object is enlarged (value >1) or reduced (0 < value < 1) vertically for the number of units passed. The value 1 is equal to no change to the object scale. If this parameter is omitted, its value is supposed to be equal to [scaleX](## "Value on X axis").
 
 ### Example  
 

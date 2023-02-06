@@ -12,7 +12,7 @@
 
 ## Description
 
-The SVG_SET_TEXTAREA_TEXT command can be used to set/replace the textual content of the text object designated by [svgObject](# "Reference of text element"). If [svgObject](# "Reference of text element") is not a "textArea" object, an error is generated.
+The SVG_SET_TEXTAREA_TEXT command can be used to set/replace the textual content of the text object designated by [svgObject](## "Reference of text element"). If [svgObject](## "Reference of text element") is not a "textArea" object, an error is generated.
 
 The line return characters are automatically replaced by "&lt;tbreak/&gt;" elements.
 

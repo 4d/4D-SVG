@@ -14,7 +14,7 @@
 
 The SVG_SET_DEFAULT_BRUSHES command can be used to set the default colors used by the component.
 
-The [line](# "Color") parameter contains the new color that will be used for lines. The optional [background](# "Color") parameter contains the new color to be used for drawing backgrounds.
+The [line](## "Color") parameter contains the new color that will be used for lines. The optional [background](## "Color") parameter contains the new color to be used for drawing backgrounds.
 
 You can pass an empty string in either of these parameters in order to reset the default value of the component; in other words, black for the lines and white for the background.
 

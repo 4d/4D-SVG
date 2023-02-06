@@ -23,15 +23,15 @@
 
 ## Description
 
-The SVG_Use command places an occurrence of the symbol in the SVG container designated by parentSVGObject and returns its reference. If parentSVGObject is not an SVG document or if [id](# "Name of symbol") is not the object name of an SVG document, an error is generated.
+The SVG_Use command places an occurrence of the symbol in the SVG container designated by parentSVGObject and returns its reference. If parentSVGObject is not an SVG document or if [id](## "Name of symbol") is not the object name of an SVG document, an error is generated.
 
 A symbol is used to specify graphic objects; it is never rendered directly but may be instantiated using the SVG_Use command.
 
-The [id](# "Name of symbol") parameter specifies the name of the symbol.
+The [id](## "Name of symbol") parameter specifies the name of the symbol.
 
-The optional [x](# "X position of viewbox"), [y](# "Y position of viewbox"), [width](# "Width of viewbox") and [height](# "Height of viewbox") parameters specify the viewbox rectangle ('viewBox' attribute).
+The optional [x](## "X position of viewbox"), [y](## "Y position of viewbox"), [width](## "Width of viewbox") and [height](## "Height of viewbox") parameters specify the viewbox rectangle ('viewBox' attribute).
 
-The optional [mode](# "Adjustment to viewbox") parameter can be used to indicate if the graphic must be fitted, and how so, to the size of the viewbox. (see the [SVG_New](SVG_New.md)  command).
+The optional [mode](## "Adjustment to viewbox") parameter can be used to indicate if the graphic must be fitted, and how so, to the size of the viewbox. (see the [SVG_New](SVG_New.md)  command).
 
 ### Example  
 

@@ -18,15 +18,15 @@
 
 ## Description
 
-The SVG_New_group command creates a group in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not a valid SVG group or document, an error is generated.
+The SVG_New_group command creates a group in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not a valid SVG group or document, an error is generated.
 
 The group ('g' element) can be used to group together several linked graphic elements, which will inherit the properties of the group.
 
-The optional [id](# "Name of group") parameter can be used to assign a name to the group. Named groups are necessary for several purposes such as animation and reusable objects.
+The optional [id](## "Name of group") parameter can be used to assign a name to the group. Named groups are necessary for several purposes such as animation and reusable objects.
 
-The optional [url](# "External link") parameter can be used to associate an external link. Group objects are then clickable (similar to the 'a' element of HTML).
+The optional [url](## "External link") parameter can be used to associate an external link. Group objects are then clickable (similar to the 'a' element of HTML).
 
-The optional [target](# "Target of link") parameter specifies the name of the target where the document will open when the link is activated. The values expected are those of the HTML specification to which are added the 'new' value for opening a new window and the 'none' value which is equivalent to not processing this attribute.
+The optional [target](## "Target of link") parameter specifies the name of the target where the document will open when the link is activated. The values expected are those of the HTML specification to which are added the 'new' value for opening a new window and the 'none' value which is equivalent to not processing this attribute.
 
 **Note:** External links are ignored when the SVG is displayed in a picture object (variable or field) of a 4D form. Management of external references is handled by the rendering engine. Under these conditions, the result may depend on the platform and the viewing software.
 

@@ -11,7 +11,7 @@
 
 ## Description
 
-The SVG_Estimate_weight command returns the size in bytes of the SVG tree whose reference is passed as in the [svgObject](# "Reference of SVG document") parameter. If [svgObject](# "Reference of SVG document") is not a valid reference, an error is generated.
+The SVG_Estimate_weight command returns the size in bytes of the SVG tree whose reference is passed as in the [svgObject](## "Reference of SVG document") parameter. If [svgObject](## "Reference of SVG document") is not a valid reference, an error is generated.
 
 ## See also
 

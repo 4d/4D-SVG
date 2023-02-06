@@ -12,9 +12,9 @@
 
 ## Description
 
-The SVG_GET_DEFAULT_BRUSHES command returns, in the variable pointed to by [line](# "Alpha variable"), the current default color for drawing lines.
+The SVG_GET_DEFAULT_BRUSHES command returns, in the variable pointed to by [line](## "Alpha variable"), the current default color for drawing lines.
 
-If the optional [background](# "Alpha variable") parameter is passed, the variable pointed to by this parameter will receive the current default color used for backgrounds.
+If the optional [background](## "Alpha variable") parameter is passed, the variable pointed to by this parameter will receive the current default color used for backgrounds.
 
 If they have not been modified, these colors are, respectively, black and white.
 

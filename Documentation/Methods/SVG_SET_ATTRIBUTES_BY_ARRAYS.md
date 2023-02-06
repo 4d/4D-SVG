@@ -14,9 +14,9 @@
 
 ## Description
 
-The SVG_SET_ATTRIBUTES_BY_ARRAYS command can be used to assign one or more custom attributes to an SVG object having the [svgObject](# "Reference of SVG element") reference. If one or more of these attributes already exist, their values will be replaced by those passed as parameters.
+The SVG_SET_ATTRIBUTES_BY_ARRAYS command can be used to assign one or more custom attributes to an SVG object having the [svgObject](## "Reference of SVG element") reference. If one or more of these attributes already exist, their values will be replaced by those passed as parameters.
 
-The attributes and their values are passed using two arrays, to which [namesArrayPointer](# "Names of attributes") and [valuesArrayPointer](# "Synchronized values of attributes") point.
+The attributes and their values are passed using two arrays, to which [namesArrayPointer](## "Names of attributes") and [valuesArrayPointer](## "Synchronized values of attributes") point.
 
 ### Example  
 

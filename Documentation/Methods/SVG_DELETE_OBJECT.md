@@ -10,4 +10,4 @@
 
 ## Description
 
-The SVG_DELETE_OBJECT command deletes the SVG object designated by [svgObject](# "Reference of SVG element") from the document to which it belongs. An error is generated when [svgObject](# "Reference of SVG element") is not a valid reference.
+The SVG_DELETE_OBJECT command deletes the SVG object designated by [svgObject](## "Reference of SVG element") from the document to which it belongs. An error is generated when [svgObject](## "Reference of SVG element") is not a valid reference.

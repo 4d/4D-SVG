@@ -20,15 +20,15 @@
 
 ## Description
 
-The SVG_Define_shadow command sets a new shadow filter in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_Define_shadow command sets a new shadow filter in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 This filter will be applied to objects for which a shadow is desired using the [SVG_SET_FILTER](SVG_SET_FILTER.md)  command.
 
-The [id](# "Name of filter") parameter specifies the name of the filter. This name will be used to associate a filter with an object. If an element with the same name exists, it will be replaced.
+The [id](## "Name of filter") parameter specifies the name of the filter. This name will be used to associate a filter with an object. If an element with the same name exists, it will be replaced.
 
-The optional [deviation](# "Value of shadow dispersion") parameter sets the intensity of the shadow dispersion. Default value: 4.
+The optional [deviation](## "Value of shadow dispersion") parameter sets the intensity of the shadow dispersion. Default value: 4.
 
-The optional [offsetX](# "Offset on X axis") and [offsetY](# "Offset on Y axis") parameters specify, respectively, the horizontal and vertical offset of the shadow with respect to the object. Default value: 4.
+The optional [offsetX](## "Offset on X axis") and [offsetY](## "Offset on Y axis") parameters specify, respectively, the horizontal and vertical offset of the shadow with respect to the object. Default value: 4.
 
 ### Example  
 

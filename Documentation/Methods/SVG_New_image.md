@@ -22,20 +22,20 @@
 
 ## Description
 
-The SVG_New_image command can be used to reference a picture at the [url](# "Address of picture") address in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_image command can be used to reference a picture at the [url](## "Address of picture") address in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
-The [url](# "Address of picture") parameter specifies the location of the picture and can take several forms:
+The [url](## "Address of picture") parameter specifies the location of the picture and can take several forms:
 
-* A **local URL** (a pathname in the form: file:// …): in this case, the picture will only be displayed if the file is actually accessible at the time the picture is rendered. This local URL can be relative (in the form: “#Pictures/myPicture.png”); in this case the command prefixes the pathname with that of the **Resources** folder of the host database. If the [width](# "Width of picture") and [height](# "Height of picture") parameters are omitted, they will be calculated by the command (to be avoided since this is slower than when the sizes are known). In the case of a relative path, if it is not valid, an error is generated.
-* A **non-local URL** (mySite.com/pictures/myPicture.jpeg ). In this case, no verification is carried out concerning the validity of the link and an error will be generated if the [width](# "Width of picture") and [height](# "Height of picture") parameters are omitted.
+* A **local URL** (a pathname in the form: file:// …): in this case, the picture will only be displayed if the file is actually accessible at the time the picture is rendered. This local URL can be relative (in the form: “#Pictures/myPicture.png”); in this case the command prefixes the pathname with that of the **Resources** folder of the host database. If the [width](## "Width of picture") and [height](## "Height of picture") parameters are omitted, they will be calculated by the command (to be avoided since this is slower than when the sizes are known). In the case of a relative path, if it is not valid, an error is generated.
+* A **non-local URL** (mySite.com/pictures/myPicture.jpeg ). In this case, no verification is carried out concerning the validity of the link and an error will be generated if the [width](## "Width of picture") and [height](## "Height of picture") parameters are omitted.
 * A **relative URL** ("../picture.png"). This is particularly useful in client/server mode, when files are stored in the "Resources" folder. Relatives URLs can begin with:  
   * "**/**", to indicate the "~/Resources/SVG/" path
   * "**./**", to indicate the "~/Resources/" path
   * "**../**", to indicate the database folder.
 
-The optional [x](# "Coordinate on X axis of upper left corner") and [y](# "Coordinate on Y axis of upper left corner") parameters can be used to specify the position of the upper left corner of the picture in the SVG containers (default value 0).
+The optional [x](## "Coordinate on X axis of upper left corner") and [y](## "Coordinate on Y axis of upper left corner") parameters can be used to specify the position of the upper left corner of the picture in the SVG containers (default value 0).
 
-The [width](# "Width of picture") and [height](# "Height of picture") parameters specify the size of the rectangle in which the picture will be displayed and thus determine the size and aspect ratio of the picture. These parameter are only optional in the case of a picture referenced by a relative path in the **Resources** folder of the host database. If [width](# "Width of picture") and/or [height](# "Height of picture") equal 0 then the picture is not rendered.
+The [width](## "Width of picture") and [height](## "Height of picture") parameters specify the size of the rectangle in which the picture will be displayed and thus determine the size and aspect ratio of the picture. These parameter are only optional in the case of a picture referenced by a relative path in the **Resources** folder of the host database. If [width](## "Width of picture") and/or [height](## "Height of picture") equal 0 then the picture is not rendered.
 
 ### Example 1  
 

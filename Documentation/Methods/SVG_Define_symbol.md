@@ -24,15 +24,15 @@
 
 ## Description
 
-The SVG_Define_symbol command creates a symbol in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_Define_symbol command creates a symbol in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 A symbol object is used to specify graphic objects that may be instantiated using the [SVG_Use](SVG_Use.md)  command.
 
-The [id](# "Name of symbol") parameter specifies the name of the symbol.
+The [id](## "Name of symbol") parameter specifies the name of the symbol.
 
-The optional [x](# "X position of viewbox"), [y](# "Y position of viewbox"), [width](# "Width of viewbox") and [height](# "Height of viewbox") parameters specify the viewbox rectangle ('viewBox' attribute).
+The optional [x](## "X position of viewbox"), [y](## "Y position of viewbox"), [width](## "Width of viewbox") and [height](## "Height of viewbox") parameters specify the viewbox rectangle ('viewBox' attribute).
 
-The optional [mode](# "Adjustment to viewbox") parameter can be used to indicate if the graphic must be fitted, and how so, to the size of the viewbox. For more information about this point, please refer to the description of the [SVG_New](SVG_New.md)  command.
+The optional [mode](## "Adjustment to viewbox") parameter can be used to indicate if the graphic must be fitted, and how so, to the size of the viewbox. For more information about this point, please refer to the description of the [SVG_New](SVG_New.md)  command.
 
 ### Example  
 

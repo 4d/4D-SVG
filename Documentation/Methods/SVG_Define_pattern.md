@@ -25,11 +25,11 @@
 
 ## Description
 
-The SVG_Define_pattern command is used to set a new custom pattern in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not (or does not belong to) an SVG document, an error is generated.
+The SVG_Define_pattern command is used to set a new custom pattern in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not (or does not belong to) an SVG document, an error is generated.
 
-The [patternID](# "Name of pattern") parameter specifies the name of the pattern. This name will be used to associate the pattern with an object. If an element with the same name already exists, an error is generated.
+The [patternID](## "Name of pattern") parameter specifies the name of the pattern. This name will be used to associate the pattern with an object. If an element with the same name already exists, an error is generated.
 
-The optional [width](# "Width of pattern"), [height](# "Height of pattern"), [x](# "Position X of pattern"), [y](# "Position Y of pattern"), [unit](# "Unit of lengths and positions") and [viewBox](# "Viewbox rectangle") parameters define the reference rectangle of the pattern, in other words, the way the pattern tiles will be placed and spaced.
+The optional [width](## "Width of pattern"), [height](## "Height of pattern"), [x](## "Position X of pattern"), [y](## "Position Y of pattern"), [unit](## "Unit of lengths and positions") and [viewBox](## "Viewbox rectangle") parameters define the reference rectangle of the pattern, in other words, the way the pattern tiles will be placed and spaced.
 
 The pattern will be associated as fill or stroke paint by passing the "url(#id)" string as the value when a color expression is expected.
 

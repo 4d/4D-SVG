@@ -25,14 +25,14 @@
 
 The **SVG_DEFINE_STYLE_WITH_ARRAYS** method defines styles (using arrays) for the SVG object designated in the svgObject. parameter.
 
-* If the [svgObject](# "SVG object reference") parameter designates the root element, styles are set as "style" elements included in the "defs" section (Internal Style Sheet). In this case, the [className](# "CSS class name") parameter is mandatory (if it is missing, an error is returned). You can then assign the [className](# "CSS class name") style sheet to the SVG objects by passing its name to the [SVG_SET_CLASS](SVG_SET_CLASS.md) method (see example 1).
-* If the [svgObject](# "SVG object reference") parameter designates an SVG element other than the root element, the style is set as a style attribute for this element (Inline Style Sheet) (see example 2).
+* If the [svgObject](## "SVG object reference") parameter designates the root element, styles are set as "style" elements included in the "defs" section (Internal Style Sheet). In this case, the [className](## "CSS class name") parameter is mandatory (if it is missing, an error is returned). You can then assign the [className](## "CSS class name") style sheet to the SVG objects by passing its name to the [SVG_SET_CLASS](SVG_SET_CLASS.md) method (see example 1).
+* If the [svgObject](## "SVG object reference") parameter designates an SVG element other than the root element, the style is set as a style attribute for this element (Inline Style Sheet) (see example 2).
 
-The optional [type](# "Type of contents") parameter specifies the language of the style sheet for the contents of the element. The default value is "text/css".
+The optional [type](## "Type of contents") parameter specifies the language of the style sheet for the contents of the element. The default value is "text/css".
 
-The optional [media](# "Media descriptor") parameter indicates the desired destination media for the style information. If you omit this parameter, the default value used is "all". If the value is not included in the list of media types recognized by CSS2, an error is generated.
+The optional [media](## "Media descriptor") parameter indicates the desired destination media for the style information. If you omit this parameter, the default value used is "all". If the value is not included in the list of media types recognized by CSS2, an error is generated.
 
-The optional [title](# "Style name") parameter adds an attribute of the "title" type.
+The optional [title](## "Style name") parameter adds an attribute of the "title" type.
 
 ### Example 1  
 

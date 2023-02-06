@@ -34,16 +34,16 @@
 
 ## Description
 
-The **SVG_New_text** command inserts the text in text in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The **SVG_New_text** command inserts the text in text in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 **Note:** Starting with 4D v15, the **SVG_New_text** command supports simple Styled text (the text can contain different styles, but SPAN attributes must not be nested). See example 5.
 
-The optional [x](# "Coordinate on X axis") and [y](# "Coordinate on Y axis") parameters can be used to specify the position on the X and Y axis of the upper corner of the first character of text. This point is situated differently according to the alignment value: to the left for a left alignment, to the right for a right alignment or in the center when the text is centered.
+The optional [x](## "Coordinate on X axis") and [y](## "Coordinate on Y axis") parameters can be used to specify the position on the X and Y axis of the upper corner of the first character of text. This point is situated differently according to the alignment value: to the left for a left alignment, to the right for a right alignment or in the center when the text is centered.
 
 The **SVG_New_text** command accepts two different syntaxes for setting characters:
 
-* You can pass various values in the [font](# "Font name or Style definition"), [size](# "Size of characters in points"), [style](# "Style of characters") and [alignment](# "Alignment") parameters: [font](# "Font name or Style definition") and [size](# "Size of characters in points") can be used to specify the font and size, in points, to be used. When these parameters are omitted, the text will be written in Times New Roman 12 pts.  
-    The optional [style](# "Style of characters") parameter gives information about the character style used. In the [style](# "Style of characters") parameter, you must pass one of the following values or a combination of several of them (or you can also use the corresponding 4D constants from the [Font Styles](https://doc.4d.com/4Dv19/4D/19.5/Font-Styles.302-6103262.en.html) theme):  
+* You can pass various values in the [font](## "Font name or Style definition"), [size](## "Size of characters in points"), [style](## "Style of characters") and [alignment](## "Alignment") parameters: [font](## "Font name or Style definition") and [size](## "Size of characters in points") can be used to specify the font and size, in points, to be used. When these parameters are omitted, the text will be written in Times New Roman 12 pts.  
+    The optional [style](## "Style of characters") parameter gives information about the character style used. In the [style](## "Style of characters") parameter, you must pass one of the following values or a combination of several of them (or you can also use the corresponding 4D constants from the [Font Styles](https://doc.4d.com/4Dv19/4D/19.5/Font-Styles.302-6103262.en.html) theme):  
 
     > 0 = Plain  
     > 1 = Bold  
@@ -51,18 +51,18 @@ The **SVG_New_text** command accepts two different syntaxes for setting characte
     > 4 = Underline  
     > 8 = Strikethrough
 
-    The optional [alignment](# "Alignment") parameter can be used to set the type of alignment to be applied to the drawn text. You can pass one of the following values:  
+    The optional [alignment](## "Alignment") parameter can be used to set the type of alignment to be applied to the drawn text. You can pass one of the following values:  
 
     > 2 = Align left  
     > 3 = Center  
     > 4 = Align right  
 
-    The optional [color](# "Text color") parameter contains the name of the font color. (For more information about colors, please refer to the [Colors and Gradients](../Colors%20and%20Gradients.md) section).  
-    The optional [rotation](# "Angle of rotation of text") parameter can be used to specify the rotation to be applied to the text.  
-    The optional [lineSpacing](# "Line spacing in points") parameter can be used to specify the value of the line spacing if the text has more than one line. Default value = 1.  
-    The optional [stretching](# "Horizontal stretch factor") parameter can be used to specify a horizontal stretching (value >1) or condensing (value included between 0 and 1) factor of the text.
+    The optional [color](## "Text color") parameter contains the name of the font color. (For more information about colors, please refer to the [Colors and Gradients](../Colors%20and%20Gradients.md) section).  
+    The optional [rotation](## "Angle of rotation of text") parameter can be used to specify the rotation to be applied to the text.  
+    The optional [lineSpacing](## "Line spacing in points") parameter can be used to specify the value of the line spacing if the text has more than one line. Default value = 1.  
+    The optional [stretching](## "Horizontal stretch factor") parameter can be used to specify a horizontal stretching (value >1) or condensing (value included between 0 and 1) factor of the text.
 
-* Or you can pass a style definition in the styleDef parameter (instead of the [font](# "Font name or Style definition") parameter) and then omit the following parameters. For example, you can pass:  
+* Or you can pass a style definition in the styleDef parameter (instead of the [font](## "Font name or Style definition") parameter) and then omit the following parameters. For example, you can pass:  
 
 ```4d
  SVG_New_textArea ($Dom_svg;"Hello World !";x;y;vWidth;vHeight;style_definition)

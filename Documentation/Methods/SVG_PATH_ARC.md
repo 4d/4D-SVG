@@ -22,11 +22,11 @@
 
 ## Description
 
-The SVG_PATH_ARC command draws an elliptical arc, from the current point to the point ([x](# "Coordinate on X axis of destination point"), [y](# "Coordinate on Y axis of destination point")), at the end of the path referenced by [parentSVGObject](# "Reference of path element"). If [parentSVGObject](# "Reference of path element") is not a path reference (‘path’ element), an error is generated.
+The SVG_PATH_ARC command draws an elliptical arc, from the current point to the point ([x](## "Coordinate on X axis of destination point"), [y](## "Coordinate on Y axis of destination point")), at the end of the path referenced by [parentSVGObject](## "Reference of path element"). If [parentSVGObject](## "Reference of path element") is not a path reference (‘path’ element), an error is generated.
 
-The size and orientation of the ellipse are set by two radii ([xRadius](# "Radius of ellipse on X axis"), [yRadius](# "Radius of ellipse on Y axis")) and a [rotation](# "Value of rotation") value on the X axis that indicates the rotation of the ellipse as a whole with respect to the current coordinate system.
+The size and orientation of the ellipse are set by two radii ([xRadius](## "Radius of ellipse on X axis"), [yRadius](## "Radius of ellipse on Y axis")) and a [rotation](## "Value of rotation") value on the X axis that indicates the rotation of the ellipse as a whole with respect to the current coordinate system.
 
-The optional [arcpath](# "Sets the way the arc will be drawn") parameter can be used to apply a combination of constraints which will determine how the arc will be drawn. The large-arc-flag constraint is used to choose (or not) the larger of the two possible arcs (greater than 180°) and the sweep-flag constraint chooses the direction it will be drawn (positive angle or negative angle).
+The optional [arcpath](## "Sets the way the arc will be drawn") parameter can be used to apply a combination of constraints which will determine how the arc will be drawn. The large-arc-flag constraint is used to choose (or not) the larger of the two possible arcs (greater than 180°) and the sweep-flag constraint chooses the direction it will be drawn (positive angle or negative angle).
 
 The following values, representing the four possible combinations of the two constraints, can be passed:
 

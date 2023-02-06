@@ -12,7 +12,7 @@
 
 ## Description
 
-The SVG_Get_ID command returns the value of the 'id' attribute of the element whose reference is passed in the [svgObject](# "Reference of SVG element") parameter. If [svgObject](# "Reference of SVG element") is not valid or if this attribute does not exist, an error is generated.
+The SVG_Get_ID command returns the value of the 'id' attribute of the element whose reference is passed in the [svgObject](## "Reference of SVG element") parameter. If [svgObject](## "Reference of SVG element") is not valid or if this attribute does not exist, an error is generated.
 
 ## See also
 

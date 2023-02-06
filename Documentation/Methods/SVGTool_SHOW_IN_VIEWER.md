@@ -12,11 +12,11 @@
 
 ## Description
 
-The SVGTool_SHOW_IN_VIEWER command displays the SVG picture specified by [svgObject](# "Reference of picture to be displayed") in an SVG Viewer window. This tool is provided with the SVG component:
+The SVGTool_SHOW_IN_VIEWER command displays the SVG picture specified by [svgObject](## "Reference of picture to be displayed") in an SVG Viewer window. This tool is provided with the SVG component:
 
 ![](https://doc.4d.com/4Dv19/picture/196657/pict196657.en.png)
 
-If you pass the optional [sources](# "Opens viewer directly on the source page") parameter (added in v14), the viewer is opened directly on the source page.
+If you pass the optional [sources](## "Opens viewer directly on the source page") parameter (added in v14), the viewer is opened directly on the source page.
 
 For more information about the SVG Viewer, please refer to the [Development tools](../Development%20tools.md) section.
 

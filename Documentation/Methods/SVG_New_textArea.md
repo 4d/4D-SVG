@@ -30,7 +30,7 @@
 
 ## Description
 
-The **SVG_New_textArea** command inserts a text area in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The **SVG_New_textArea** command inserts a text area in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 The "textArea" element is recommended by the SVG tiny 1.2 standard and implemented in 4D v11 SQL beginning with version 11.3 (see [http://www.w3.org/TR/SVGMobile12/text.html#TextAreaElement](http://www.w3.org/TR/SVGMobile12/text.html#TextAreaElement)). This element implements a text area that, unlike the "text" element, automatically handles the line feed when the text exceeds the width requested.
 
@@ -39,14 +39,14 @@ The "textArea" element is recommended by the SVG tiny 1.2 standard and implement
 * In the "textArea" element, &lt;tbreak/&gt; elements replace line returns.
 * Starting with 4D v15, the **SVG_New_textArea** command supports simple Styled text (the text can contain different styles, but SPAN attributes must not be nested). See example 2.
 
-The optional [x](# "Coordinate on X axis") and [y](# "Coordinate on Y axis") parameters can be used to specify the position on the X and Y axes of the top left corner of the area.
+The optional [x](## "Coordinate on X axis") and [y](## "Coordinate on Y axis") parameters can be used to specify the position on the X and Y axes of the top left corner of the area.
 
-The optional [textWidth](# "Width of text area") and [textHeight](# "Height of text area") parameters specify the size of the area in the user coordinate space. If one or the other of these parameters is not provided, the text area will automatically be fitted to its contents.
+The optional [textWidth](## "Width of text area") and [textHeight](## "Height of text area") parameters specify the size of the area in the user coordinate space. If one or the other of these parameters is not provided, the text area will automatically be fitted to its contents.
 
 The **SVG_New_textArea** command accepts two different syntaxes for setting characters:
 
-* You can pass various values in the [font](# "Font name or Style definition") , [size](# "Size of characters in points") , [style](# "Style of characters") and [alignment](# "Alignment") parameters: [font](# "Font name or Style definition") and [size](# "Size of characters in points") can be used to specify the font and size, in points, to be used. When these parameters are omitted, the text will be written in Times New Roman 12 pts.  
-    The optional [style](# "Style of characters") parameter gives information about the character style used. In the [style](# "Style of characters") parameter, you must pass one of the following values or a combination of several of them (or you can also use the corresponding 4D constants from the [Font Styles](https://doc.4d.com/4Dv19/4D/19.5/Font-Styles.302-6103262.en.html) theme):  
+* You can pass various values in the [font](## "Font name or Style definition") , [size](## "Size of characters in points") , [style](## "Style of characters") and [alignment](## "Alignment") parameters: [font](## "Font name or Style definition") and [size](## "Size of characters in points") can be used to specify the font and size, in points, to be used. When these parameters are omitted, the text will be written in Times New Roman 12 pts.  
+    The optional [style](## "Style of characters") parameter gives information about the character style used. In the [style](## "Style of characters") parameter, you must pass one of the following values or a combination of several of them (or you can also use the corresponding 4D constants from the [Font Styles](https://doc.4d.com/4Dv19/4D/19.5/Font-Styles.302-6103262.en.html) theme):  
 
     > 0 = Plain  
     > 1 = Bold  
@@ -54,7 +54,7 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
     > 4 = Underline  
     > 8 = Strikethrough
 
-    The optional [alignment](# "Alignment") parameter can be used to set the type of alignment to be applied to the drawn text. You can pass one of the following values:  
+    The optional [alignment](## "Alignment") parameter can be used to set the type of alignment to be applied to the drawn text. You can pass one of the following values:  
 
     > 1 = Align default (left)  
     > 2 = Align left  
@@ -62,7 +62,7 @@ The **SVG_New_textArea** command accepts two different syntaxes for setting char
     > 4 = Align right  
     > 5 = Justify
 
-* Or you can pass a style definition in the styleDef parameter (instead of the [font](# "Font name or Style definition") parameter) and then omit the following parameters. For example, you can pass:  
+* Or you can pass a style definition in the styleDef parameter (instead of the [font](## "Font name or Style definition") parameter) and then omit the following parameters. For example, you can pass:  
 
 ```4d
  SVG_New_textArea ($Dom_svg;"Hello World !";x;y;vWidth;vHeight;style_definition)

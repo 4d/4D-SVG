@@ -30,15 +30,15 @@
 
 ## Description
 
-The SVG_New_rect command creates a new rectangle in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_rect command creates a new rectangle in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
-The rectangle is positioned and sized according to the values of [x](# "X of upper left corner"), [y](# "Y of upper left corner"), [width](# "Width of rectangle") and [height](# "Height of rectangle").
+The rectangle is positioned and sized according to the values of [x](## "X of upper left corner"), [y](## "Y of upper left corner"), [width](## "Width of rectangle") and [height](## "Height of rectangle").
 
-The optional [roundedX](# "Horizontal curve") and [roundedY](# "Vertical curve") parameters can be used to round off the angles according to the indicated values. If the [roundedY](# "Vertical curve") parameter is omitted (or is -1), the curve will be regular. Pass -1 in these parameters if you want them to be ignored by the command.
+The optional [roundedX](## "Horizontal curve") and [roundedY](## "Vertical curve") parameters can be used to round off the angles according to the indicated values. If the [roundedY](## "Vertical curve") parameter is omitted (or is -1), the curve will be regular. Pass -1 in these parameters if you want them to be ignored by the command.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 

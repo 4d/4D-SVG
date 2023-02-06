@@ -12,4 +12,4 @@
 
 ## Description
 
-The SVG_Validate_file command attempts to validate the document specified in [path](# "Pathname of SVG document to validate") on disk with the DTD (1.0). The command returns True if the document is well formed and False otherwise.
+The SVG_Validate_file command attempts to validate the document specified in [path](## "Pathname of SVG document to validate") on disk with the DTD (1.0). The command returns True if the document is well formed and False otherwise.

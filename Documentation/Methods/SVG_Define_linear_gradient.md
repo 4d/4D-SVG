@@ -29,17 +29,17 @@
 
 ## Description
 
-The **SVG_Define_linear_gradient** command sets a new linear gradient in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The **SVG_Define_linear_gradient** command sets a new linear gradient in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 A gradient consists in a continuous progressive color transition from one color to another along a vector. Once specified, gradients are called on a given graphic element, while indicating whether this element must be filled or edged with the gradient called.
 
-The [id](# "Name of gradient") parameter specifies the name of the gradient. If an element with the same name exists, it will be replaced. This is the name that will be used to call the gradient each time a that a color expression is expected by using the syntax "url(#ID)".
+The [id](## "Name of gradient") parameter specifies the name of the gradient. If an element with the same name exists, it will be replaced. This is the name that will be used to call the gradient each time a that a color expression is expected by using the syntax "url(#ID)".
 
-The [startColor](# "Start color") and [endColor](# "End color") parameters specify the colors used to begin and end the gradient.
+The [startColor](## "Start color") and [endColor](## "End color") parameters specify the colors used to begin and end the gradient.
 
-The optional [rotation](# "Rotation of gradient vector") parameter sets the position and direction of the gradient vector (see example).
+The optional [rotation](## "Rotation of gradient vector") parameter sets the position and direction of the gradient vector (see example).
 
-The optional [spreadMethod](# "Gradient spread method (pad, reflect or repeat)") parameter defines the filling to be used when the gradient begins or ends within the bounds of the [parentSVGObject](# "Reference of parent element"). You can pass one of the following strings in this parameter:
+The optional [spreadMethod](## "Gradient spread method (pad, reflect or repeat)") parameter defines the filling to be used when the gradient begins or ends within the bounds of the [parentSVGObject](## "Reference of parent element"). You can pass one of the following strings in this parameter:
 
 * "pad": use the terminal colors of the gradient to fill the remainder of the area.
 * "reflect": reflect the gradient pattern start-to-end, end-to-start, start-to-end, etc. continuously until the object is filled.
@@ -48,11 +48,11 @@ The optional [spreadMethod](# "Gradient spread method (pad, reflect or repeat)")
 
 If this parameter is omitted, the "pad" value effect is used.
 
-The optional [x1](# "x1 coordinate of gradient vector (If omitted = 0)"), [y1](# "y1 coordinate of gradient vector (If omitted = 1)"), [x2](# "x2 coordinate of gradient vector (If omitted = 0)") and [y2](# "y2 coordinate of gradient vector (If omitted = 1)") parameters define the gradient vector. This vector provides the starting and ending points used by the rendering engine. You can pass percentages expressed as ratios (0...1) in these parameters.
+The optional [x1](## "x1 coordinate of gradient vector (If omitted = 0)"), [y1](## "y1 coordinate of gradient vector (If omitted = 1)"), [x2](## "x2 coordinate of gradient vector (If omitted = 0)") and [y2](## "y2 coordinate of gradient vector (If omitted = 1)") parameters define the gradient vector. This vector provides the starting and ending points used by the rendering engine. You can pass percentages expressed as ratios (0...1) in these parameters.
 
-Starting with V14, you can pass the optional [startColorOffset](# "Percentage value of offset for start color") and [endColorOffset](# "Percentage value of offset for end color") parameters to define the percentage value, respectively, of the start color and end color offset. You can pass either a real value < 1, or a value between 0 and 100 to set the percentage, i.e. "0.1" and/or "10" are both interpreted as 10%.
+Starting with V14, you can pass the optional [startColorOffset](## "Percentage value of offset for start color") and [endColorOffset](## "Percentage value of offset for end color") parameters to define the percentage value, respectively, of the start color and end color offset. You can pass either a real value < 1, or a value between 0 and 100 to set the percentage, i.e. "0.1" and/or "10" are both interpreted as 10%.
 
-Passing a negative value is interpreted as 0% for the [startColorOffset](# "Percentage value of offset for start color") parameter and as 100% for the [endColorOffset](# "Percentage value of offset for end color") parameter. If you pass a value > 100, it is interpreted as 100%.
+Passing a negative value is interpreted as 0% for the [startColorOffset](## "Percentage value of offset for start color") parameter and as 100% for the [endColorOffset](## "Percentage value of offset for end color") parameter. If you pass a value > 100, it is interpreted as 100%.
 
 ### Example 1  
 
@@ -94,7 +94,7 @@ Draw 6 solid squares where each uses a linear gradient paint server while varyin
 
 ### Example 2  
 
-Example using the [startColorOffset](# "Percentage value of offset for start color") and [endColorOffset](# "Percentage value of offset for end color") parameters (added in v14):
+Example using the [startColorOffset](## "Percentage value of offset for start color") and [endColorOffset](## "Percentage value of offset for end color") parameters (added in v14):
 
 ```4d
  $Dom_node:=SVG_Define_linear_gradient ($Dom_svg;"clicked";"black:50";"black:20";-90;"reflect";0;80)
@@ -109,7 +109,7 @@ will give the definition:
 
 ### Example 3  
 
-This example illustrates the effect of the [startColorOffset](# "Percentage value of offset for start color") and [endColorOffset](# "Percentage value of offset for end color") parameters:
+This example illustrates the effect of the [startColorOffset](## "Percentage value of offset for start color") and [endColorOffset](## "Percentage value of offset for end color") parameters:
 
 ```4d
  $svg:=SVG_New   

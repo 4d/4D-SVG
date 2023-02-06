@@ -20,11 +20,11 @@
 
 ## Description
 
-The SVG_SET_VIEWBOX command can be used to specify the viewbox of the SVG object having the [svgObject](# "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
+The SVG_SET_VIEWBOX command can be used to specify the viewbox of the SVG object having the [svgObject](## "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
 
 The values are expected in the user coordinate system.
 
-The optional [mode](# "Adjustment to viewbox") parameter can be used to indicate if the graphic must be fitted, and how so, to the size of the viewbox. The value expected for [mode](# "Adjustment to viewbox") must be one recognized by SVG: ‘none’, ‘xMinYMin’, ‘xMidYMin’, ‘xMaxYMin’, ‘xMinYMid’, ‘xMidYMid’, ‘xMaxYMid’, ‘xMinYMax’, ‘xMidYMax’, ‘xMaxYMax’ and ‘true’ (for xMidYMid).
+The optional [mode](## "Adjustment to viewbox") parameter can be used to indicate if the graphic must be fitted, and how so, to the size of the viewbox. The value expected for [mode](## "Adjustment to viewbox") must be one recognized by SVG: ‘none’, ‘xMinYMin’, ‘xMidYMin’, ‘xMaxYMin’, ‘xMinYMid’, ‘xMidYMid’, ‘xMaxYMid’, ‘xMinYMax’, ‘xMidYMax’, ‘xMaxYMax’ and ‘true’ (for xMidYMid).
 
 ### Example  
 

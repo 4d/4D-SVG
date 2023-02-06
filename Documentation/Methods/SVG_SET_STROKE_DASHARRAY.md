@@ -14,15 +14,15 @@
 
 ## Description
 
-The SVG_SET_STROKE_DASHARRAY command is used to set the pattern of dashes and gaps used to outline the path of the SVG object passed in [svgObject](# "Reference of SVG element"). If [svgObject](# "Reference of SVG element") is not a valid SVG reference, an error is generated.
+The SVG_SET_STROKE_DASHARRAY command is used to set the pattern of dashes and gaps used to outline the path of the SVG object passed in [svgObject](## "Reference of SVG element"). If [svgObject](## "Reference of SVG element") is not a valid SVG reference, an error is generated.
 
-The whole value of the [dash](# "Length of first dash") parameter indicates the length of the first dash of the dotted pattern. If the [value](# "Length of spaces and dashes") parameters are omitted, the dotted line will consists of a series of dashes and gaps of the same length.
+The whole value of the [dash](## "Length of first dash") parameter indicates the length of the first dash of the dotted pattern. If the [value](## "Length of spaces and dashes") parameters are omitted, the dotted line will consists of a series of dashes and gaps of the same length.
 
-The decimal value of the [dash](# "Length of first dash") parameter, if it is not null, indicates the distance into the pattern from which the dashes will start.
+The decimal value of the [dash](## "Length of first dash") parameter, if it is not null, indicates the distance into the pattern from which the dashes will start.
 
-If [dash](# "Length of first dash") is 0, the dotted pattern is removed.
+If [dash](## "Length of first dash") is 0, the dotted pattern is removed.
 
-The [value](# "Length of spaces and dashes") parameters alternately specify the lengths of the gaps and dashes that follow the first dash. If an odd number of values is given (including the first dash), the list of values is repeated until it produces an even number of values.
+The [value](## "Length of spaces and dashes") parameters alternately specify the lengths of the gaps and dashes that follow the first dash. If an odd number of values is given (including the first dash), the list of values is repeated until it produces an even number of values.
 
 **See Also:** [http://www.w3.org/TR/SVG/painting.html#StrokeProperties](http://www.w3.org/TR/SVG/painting.html#StrokeProperties)
 

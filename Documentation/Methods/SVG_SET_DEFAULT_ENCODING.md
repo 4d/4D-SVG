@@ -12,7 +12,7 @@
 
 The SVG_SET_DEFAULT_ENCODING command is used to set the encoding that will be used when subsequent documents are created.
 
-If the [encoding](# "Character set") parameter is omitted, the command reestablishes the default character set: "UTF-8".
+If the [encoding](## "Character set") parameter is omitted, the command reestablishes the default character set: "UTF-8".
 
 ## See also
 

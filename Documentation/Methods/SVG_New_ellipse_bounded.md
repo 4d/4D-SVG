@@ -26,13 +26,13 @@
 
 ## Description
 
-The SVG_New_ellipse_bounded command creates a new ellipse in the SVG container designated by [parentSVGObject](# "Reference of parent element"). If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_ellipse_bounded command creates a new ellipse in the SVG container designated by [parentSVGObject](## "Reference of parent element"). If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
-The ellipse created fits into the rectangle set by [x](# "Coordinate on X axis of upper left corner"), [y](# "Coordinate on Y axis of upper left corner"), [width](# "Width of bounding rectangle") and [height](# "Height of bounding rectangle").
+The ellipse created fits into the rectangle set by [x](## "Coordinate on X axis of upper left corner"), [y](## "Coordinate on Y axis of upper left corner"), [width](## "Width of bounding rectangle") and [height](## "Height of bounding rectangle").
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 

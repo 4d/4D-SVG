@@ -12,8 +12,8 @@
 
 ## Description
 
-The SVG_SET_TEXT_RENDERING command is used to define the tradeoffs to make regarding the rendering of text for the text object designated by [svgObject](# "Reference of text element"). If [svgObject](# "Reference of text element") is not an SVG text object, an error is generated.
+The SVG_SET_TEXT_RENDERING command is used to define the tradeoffs to make regarding the rendering of text for the text object designated by [svgObject](## "Reference of text element"). If [svgObject](## "Reference of text element") is not an SVG text object, an error is generated.
 
-The [rendering](# "Value of rendering") parameter can have one of the following values: "auto", "optimizeSpeed", "optimizeLegibility", "geometricPrecision" or "inherit". Otherwise, an error is generated.
+The [rendering](## "Value of rendering") parameter can have one of the following values: "auto", "optimizeSpeed", "optimizeLegibility", "geometricPrecision" or "inherit". Otherwise, an error is generated.
 
 **See Also:** [http://www.w3.org/TR/2001/REC-SVG-20010904/painting.html#TextRenderingProperty](http://www.w3.org/TR/2001/REC-SVG-20010904/painting.html#TextRenderingProperty)

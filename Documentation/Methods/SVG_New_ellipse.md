@@ -26,13 +26,13 @@
 
 ## Description
 
-The SVG_New_ellipse command creates a new ellipse in the SVG container designated by [parentSVGObject](# "Reference of parent element"). If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_ellipse command creates a new ellipse in the SVG container designated by [parentSVGObject](## "Reference of parent element"). If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
-The ellipse is positioned and sized according to the values of [x](# "Coordinate on center X axis of ellipse"), [y](# "Coordinate on center Y axis of ellipse"), width and height.
+The ellipse is positioned and sized according to the values of [x](## "Coordinate on center X axis of ellipse"), [y](## "Coordinate on center Y axis of ellipse"), width and height.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 

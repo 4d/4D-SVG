@@ -29,17 +29,17 @@
 
 ## Description
 
-The SVG_Define_radial_gradient command sets a new radial gradient in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_Define_radial_gradient command sets a new radial gradient in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 A gradient consists in a continuous progressive color transition from one color to another along a vector. Once specified, gradients are called on a given graphic element, while indicating whether this element must be filled or edged with the gradient called.
 
-The [id](# "Name of gradient") parameter specifies the name of the gradient. If an element with the same name exists, it will be replaced. This is the name that will be used to call the gradient each time a that a color expression is expected by using the syntax "url(#ID)".
+The [id](## "Name of gradient") parameter specifies the name of the gradient. If an element with the same name exists, it will be replaced. This is the name that will be used to call the gradient each time a that a color expression is expected by using the syntax "url(#ID)".
 
-The [startColor](# "Start color") and [endColor](# "End color") parameters specify the colors used to begin and end the gradient.
+The [startColor](## "Start color") and [endColor](## "End color") parameters specify the colors used to begin and end the gradient.
 
-The optional [cx](# "Coordinate on X axis of center of endColor"), [cy](# "Coordinate on Y axis of center of endColor") and [r](# "Radius of endColor") parameters specify, in percent, the external border circle of the endColor of the gradient. Their values must be included between 0 and 100.
+The optional [cx](## "Coordinate on X axis of center of endColor"), [cy](## "Coordinate on Y axis of center of endColor") and [r](## "Radius of endColor") parameters specify, in percent, the external border circle of the endColor of the gradient. Their values must be included between 0 and 100.
 
-The optional [fx](# "Coordinate on X axis of center of startColor") and [fy](# "Coordinate on Y axis of center of startColor") parameters specify, in percent, the focus point of the gradient. The [startColor](# "Start color") begins at the point \[[fx](# "Coordinate on X axis of center of startColor"),[fy](# "Coordinate on Y axis of center of startColor")\]. Their values must be included between 0 and 100. If these arguments are omitted, this point coincides with \[[cx](# "Coordinate on X axis of center of endColor"),[cy](# "Coordinate on Y axis of center of endColor")\].
+The optional [fx](## "Coordinate on X axis of center of startColor") and [fy](## "Coordinate on Y axis of center of startColor") parameters specify, in percent, the focus point of the gradient. The [startColor](## "Start color") begins at the point \[[fx](## "Coordinate on X axis of center of startColor"),[fy](## "Coordinate on Y axis of center of startColor")\]. Their values must be included between 0 and 100. If these arguments are omitted, this point coincides with \[[cx](## "Coordinate on X axis of center of endColor"),[cy](## "Coordinate on Y axis of center of endColor")\].
 
 ### Example  
 

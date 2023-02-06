@@ -16,9 +16,9 @@
 
 ## Description
 
-The SVG_SET_DIMENSIONS command can be used to set the dimensions for the SVG object having the [svgObject](# "Reference of SVG element") reference. If these attributes already exist, their values are replaced by those passed as parameters.
+The SVG_SET_DIMENSIONS command can be used to set the dimensions for the SVG object having the [svgObject](## "Reference of SVG element") reference. If these attributes already exist, their values are replaced by those passed as parameters.
 
-If the [unit](# "Unit of measurement") parameter is passed, it will be used. The expected values are: px, pt, pc, cm, mm, in, em, ex or %. An incorrect [unit](# "Unit of measurement") value generates an error. If the parameter is omitted, the values of the [width](# "Dimension on the X axis") and [height](# "Dimension on the Y axis") parameters are expected in the user coordinate system.
+If the [unit](## "Unit of measurement") parameter is passed, it will be used. The expected values are: px, pt, pc, cm, mm, in, em, ex or %. An incorrect [unit](## "Unit of measurement") value generates an error. If the parameter is omitted, the values of the [width](## "Dimension on the X axis") and [height](## "Dimension on the Y axis") parameters are expected in the user coordinate system.
 
 ### Example  
 

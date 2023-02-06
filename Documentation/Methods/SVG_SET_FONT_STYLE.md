@@ -12,9 +12,9 @@
 
 ## Description
 
-The SVG_SET_FONT_STYLE command can be used to specify the text style for the SVG object having the [svgObject](# "Reference of SVG element") reference. If [svgObject](# "Reference of SVG element") does not reference a valid element, an error is generated.
+The SVG_SET_FONT_STYLE command can be used to specify the text style for the SVG object having the [svgObject](## "Reference of SVG element") reference. If [svgObject](## "Reference of SVG element") does not reference a valid element, an error is generated.
 
-In the [style](# "Style of characters") parameter, you must pass one of the following values or a combination of several values:
+In the [style](## "Style of characters") parameter, you must pass one of the following values or a combination of several values:
 
 > 0 = Plain  
 > 1 = Bold  

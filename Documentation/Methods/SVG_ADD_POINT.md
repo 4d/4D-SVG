@@ -13,7 +13,7 @@
 
 ## Description
 
-The SVG_ADD_POINT command adds one or more segments to the path referenced by [parentSVGObject](# "Reference of parent element"). The path may be of the ‘path’, ‘polyline’ or ‘polygon’ type. If [parentSVGObject](# "Reference of parent element") is not a path reference of this type, an error is generated.
+The SVG_ADD_POINT command adds one or more segments to the path referenced by [parentSVGObject](## "Reference of parent element"). The path may be of the ‘path’, ‘polyline’ or ‘polygon’ type. If [parentSVGObject](## "Reference of parent element") is not a path reference of this type, an error is generated.
 
 If several pairs of coordinates are passed, the different points will be added successively. In this case, if the last pair of coordinates is incomplete (missing y), it will be ignored.
 

@@ -22,16 +22,16 @@
 
 ## Description
 
-The SVG_New_path command starts a new path in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_path command starts a new path in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
 A path represents the outline of a shape. A path is depicted by calling upon the concept of a current point. By analogy with a drawing on paper, the current point can be assimilated to the position of the pen. This point can change and the outline of a shape (open or closed) can be traced by moving the pen along a straight or curved line.  
 Paths represent the geometry of the outline of an object, defined according to the statements of the following elements: SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md) (etablish a new current point), [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) (draw a straight line), [SVG_PATH_CURVE](SVG_PATH_CURVE.md) (draw a curve using a cubic Bezier curve), [SVG_PATH_ARC](SVG_PATH_ARC.md) (draw a circular or elliptical arc) and [SVG_PATH_CLOSE](SVG_PATH_MOVE_TO](SVG_PATH_MOVE_TO.md) (etablish a new current point), [SVG_PATH_LINE_TO](SVG_PATH_LINE_TO.md) (draw a straight line), [SVG_PATH_CURVE](SVG_PATH_CURVE.md) (draw a curve using a cubic Bezier curve), [SVG_PATH_ARC (draw a circular or elliptical arc) and [SVG_PATH_CLOSE.md)  (close the current form by drawing a line to the last beginning of the path). It is possible to have compound paths (in other words, a path with several subpaths) that can be used for effects such as a "doughnut hole" in objects.
 
-The [x](# "Coordinate on X axis of start of path") and [y](# "Coordinate on Y axis of start of path") parameters can be used to specify the start position of a path in the SVG container.
+The [x](## "Coordinate on X axis of start of path") and [y](## "Coordinate on Y axis of start of path") parameters can be used to specify the start position of a path in the SVG container.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 

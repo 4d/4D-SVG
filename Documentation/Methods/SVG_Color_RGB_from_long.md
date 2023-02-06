@@ -14,9 +14,9 @@
 
 ## Description
 
-The SVG_Color_RGB_from_long command returns a string expressing the [color](# "Value of color") color passed as an argument. The string returned is in "RGB(red, green, blue)" form, the syntax recognized by SVG rendering engines.
+The SVG_Color_RGB_from_long command returns a string expressing the [color](## "Value of color") color passed as an argument. The string returned is in "RGB(red, green, blue)" form, the syntax recognized by SVG rendering engines.
 
-The [color](# "Value of color") parameter is a 4-byte longint whose format (0x00RRGGBB) is described below (the bytes are numbered from 0 to 3, from right to left):
+The [color](## "Value of color") parameter is a 4-byte longint whose format (0x00RRGGBB) is described below (the bytes are numbered from 0 to 3, from right to left):
 
 |     |     |
 | --- | --- |
@@ -25,7 +25,7 @@ The [color](# "Value of color") parameter is a 4-byte longint whose format (0x00
 | 1   | Green component of the color (0..255) |
 | 0   | Blue component of the color (0..255) |
 
-The optional [format](# "Format of color") parameter can be used to specify the desired format for the color string returned. The values are:
+The optional [format](## "Format of color") parameter can be used to specify the desired format for the color string returned. The values are:
 
 |     |     |
 | --- | --- |

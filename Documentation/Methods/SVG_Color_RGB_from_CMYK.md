@@ -20,11 +20,11 @@
 
 ## Description
 
-The SVG_Color_RGB_from_CMYK command returns a string expressing the color corresponding to the four color parameters, [cyan](# "Cyan value"), [magenta](# "Magenta value"), [yellow](# "Yellow value") and [black](# "Black value"), passed as arguments. The string returned is in the form "RGB(red,greeen,blue)" by default, the syntax recognized by SVG rendering engines.
+The SVG_Color_RGB_from_CMYK command returns a string expressing the color corresponding to the four color parameters, [cyan](## "Cyan value"), [magenta](## "Magenta value"), [yellow](## "Yellow value") and [black](## "Black value"), passed as arguments. The string returned is in the form "RGB(red,greeen,blue)" by default, the syntax recognized by SVG rendering engines.
 
-[cyan](# "Cyan value"), [magenta](# "Magenta value"), [yellow](# "Yellow value") and [black](# "Black value") are longints included between 0 and 100%.
+[cyan](## "Cyan value"), [magenta](## "Magenta value"), [yellow](## "Yellow value") and [black](## "Black value") are longints included between 0 and 100%.
 
-The optional [format](# "Color format") parameter is used to specify the desired format for the color string returned. The values are:  
+The optional [format](## "Color format") parameter is used to specify the desired format for the color string returned. The values are:  
 
 |     |     |
 | --- | --- |

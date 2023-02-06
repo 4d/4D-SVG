@@ -28,7 +28,7 @@
 
 ## Description
 
-The **SVG_New_tspan** command creates a new element in the 'text', ‘tspan’ or 'textArea' element designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not a reference to a 'text', ‘tspan’ or 'textArea' element, an error is generated.
+The **SVG_New_tspan** command creates a new element in the 'text', ‘tspan’ or 'textArea' element designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not a reference to a 'text', ‘tspan’ or 'textArea' element, an error is generated.
 
 The different optional parameters are described with the [SVG_New_text](SVG_New_text.md) command. If certain optional parameters are omitted, their values are inherited from parent element(s).
 

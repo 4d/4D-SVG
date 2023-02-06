@@ -12,9 +12,9 @@
 
 ## Description
 
-The SVG_SET_FONT_SIZE command can be used to specify the font [size](# "Size of characters in points") for the SVG object having the [svgObject](# "Reference of SVG element") reference. If [svgObject](# "Reference of SVG element") does not reference a valid element, an error is generated.
+The SVG_SET_FONT_SIZE command can be used to specify the font [size](## "Size of characters in points") for the SVG object having the [svgObject](## "Reference of SVG element") reference. If [svgObject](## "Reference of SVG element") does not reference a valid element, an error is generated.
 
-The [size](# "Size of characters in points") parameter contains the font size in points.
+The [size](## "Size of characters in points") parameter contains the font size in points.
 
 ## See also
 

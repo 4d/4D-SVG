@@ -14,12 +14,12 @@
 
 ## Description
 
-The **SVG_SET_MARKER** command can be used to associate a marker with the object having the [svgObject](# "Reference of SVG element") reference or to remove an existing marker. If [svgObject](# "Reference of SVG element") is not the reference of a 'line', 'path', 'polyline' or 'polygon' element, an error is generated. If the attribute already exists, its value is replaced.
+The **SVG_SET_MARKER** command can be used to associate a marker with the object having the [svgObject](## "Reference of SVG element") reference or to remove an existing marker. If [svgObject](## "Reference of SVG element") is not the reference of a 'line', 'path', 'polyline' or 'polygon' element, an error is generated. If the attribute already exists, its value is replaced.
 
-The [id](# "Name of marker") parameter is the name of the marker element to be used as specified by the [SVG_Define_marker](SVG_Define_marker.md)  command. If this name does not exist, an error is generated.  
-In order to remove an existing marker, pass "none" or an empty string in the [id](# "Name of marker") parameter.
+The [id](## "Name of marker") parameter is the name of the marker element to be used as specified by the [SVG_Define_marker](SVG_Define_marker.md)  command. If this name does not exist, an error is generated.  
+In order to remove an existing marker, pass "none" or an empty string in the [id](## "Name of marker") parameter.
 
-The optional [position](# "Position of marker") parameter can be used to set the position of the marker with respect to the object. It is possible to place different markers (if desired) at the beginning, end or any other peak of a path. The values may be as follows:
+The optional [position](## "Position of marker") parameter can be used to set the position of the marker with respect to the object. It is possible to place different markers (if desired) at the beginning, end or any other peak of a path. The values may be as follows:
 
 * start to place a marker at the beginning of the path
 * end to place a marker at the end of the path

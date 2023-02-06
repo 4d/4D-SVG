@@ -20,9 +20,9 @@
 
 ## Description
 
-The **SVG_Filter_ColorMatrix** command applies a color matrix transformation to each pixel in the source image passed in the [svgObject](# "SVG object reference") parameter to produce a result with a new set of color values.
+The **SVG_Filter_ColorMatrix** command applies a color matrix transformation to each pixel in the source image passed in the [svgObject](## "SVG object reference") parameter to produce a result with a new set of color values.
 
-In the [in](# "Identifies input for the given filter primitive") parameter, you can either pass a string which matches a previous ‘result’ value or one of the six following keywords:
+In the [in](## "Identifies input for the given filter primitive") parameter, you can either pass a string which matches a previous ‘result’ value or one of the six following keywords:
 
 * _SourceGraphic_: the target element (image, shape, group etc.) that references the filter. This keyword epresents the graphics elements that were the original input into the ‘filter’ element
 * _SourceAlpha_: the canvas beneath the _SourceGraphic_. This keyword represents the graphics elements that were the original input into the ‘filter’ element.
@@ -33,25 +33,25 @@ In the [in](# "Identifies input for the given filter primitive") parameter, you 
 
 If no value is passed and this is the first filter primitive, then the _SourceGraphic_ is used as its input. If no value is provided and this is a subsequent filter primitive, then this filter primitive will use the result from the previous filter primitive as its input.
 
-In the [result](# "Provides a reference for the output result of a filter") parameter, you pass a reference for the output result of a filter which can be referenced by the [in](# "Identifies input for the given filter primitive") parameter on a subsequent use of this command within the same ‘filter’ element. If no value is provided, the output is only available for re-use as the implicit input for the next filter primitive if that filter primitive provides no value for its [in](# "Identifies input for the given filter primitive") parameter.
+In the [result](## "Provides a reference for the output result of a filter") parameter, you pass a reference for the output result of a filter which can be referenced by the [in](## "Identifies input for the given filter primitive") parameter on a subsequent use of this command within the same ‘filter’ element. If no value is provided, the output is only available for re-use as the implicit input for the next filter primitive if that filter primitive provides no value for its [in](## "Identifies input for the given filter primitive") parameter.
 
 In the type parameter, you can specify the type of matrix operation by passing one of the following keywords:
 
-* _saturate_: adjusts the saturation of all RGB color channels using a real number value of 0 to 1 that is passed in the [values](# "Numeric values for the transformation matrix") parameter.
-* _hueRotate_: rotates the pixel hue of all RGB color channels by the angle specified (in degree) in the [values](# "Numeric values for the transformation matrix") parameter,
+* _saturate_: adjusts the saturation of all RGB color channels using a real number value of 0 to 1 that is passed in the [values](## "Numeric values for the transformation matrix") parameter.
+* _hueRotate_: rotates the pixel hue of all RGB color channels by the angle specified (in degree) in the [values](## "Numeric values for the transformation matrix") parameter,
 * _luminanceToAlpha_: converts the red, green and blue channels into a luminance value. The RGB channels are set to black (0,0,0).)
-* _matrix_: sets the color using the list of values passed in the [values](# "Numeric values for the transformation matrix") parameter. Allows the value of each channel in the output to be specified from a combination of its existing color and alpha channels.
+* _matrix_: sets the color using the list of values passed in the [values](## "Numeric values for the transformation matrix") parameter. Allows the value of each channel in the output to be specified from a combination of its existing color and alpha channels.
 
 If you do not pass a type parameter, by default the effect is as if a value of _matrix_ were specified.
 
-In the [values](# "Numeric values for the transformation matrix") parameter, you pass numeric values based on the keyword passed in the type parameter:
+In the [values](## "Numeric values for the transformation matrix") parameter, you pass numeric values based on the keyword passed in the type parameter:
 
 * With the "_matrix_" keyword: you pass a list of 20 matrix values, separated by whitespace and/or a comma.
 * With the "_saturate_" keyword: you pass a single real number value (0 to 1). The permitted value according to the specification is 0-1, but many browsers accept higher values >1 to allow over-saturation.
 * With the "_hueRotate_" keyword: you pass a single real number value (to indicate degrees of rotation).
-* With the "_luminanceToAlpha_" keyword: you do not pass a numeric value. The [values](# "Numeric values for the transformation matrix") parameter is not used with this type, which discards the alpha channel and replaces it with values equal to the input's luminance.
+* With the "_luminanceToAlpha_" keyword: you do not pass a numeric value. The [values](## "Numeric values for the transformation matrix") parameter is not used with this type, which discards the alpha channel and replaces it with values equal to the input's luminance.
 
-If you do not pass a [values](# "Numeric values for the transformation matrix") parameter, the default behavior depends on the keyword passed in the type parameter:
+If you do not pass a [values](## "Numeric values for the transformation matrix") parameter, the default behavior depends on the keyword passed in the type parameter:
 
 * With the "_matrix_" keyword: by default the values of the identity matrix are used
 * With the "_saturate_" keyword: by default, the value is 1 (no change).

@@ -20,13 +20,13 @@
 
 ## Description
 
-The SVG_Filter_Blend command sets a blend filter for the [filterRef](# "Reference of filter") filter and returns its reference. If [filterRef](# "Reference of filter") is not a filter reference, an error is generated.
+The SVG_Filter_Blend command sets a blend filter for the [filterRef](## "Reference of filter") filter and returns its reference. If [filterRef](## "Reference of filter") is not a filter reference, an error is generated.
 
-This filter is made up of two sources, [backgroundPict](# "Background picture source") and [picture](# "Picture source"), with the help of the mixing modes currently used by the imaging software.
+This filter is made up of two sources, [backgroundPict](## "Background picture source") and [picture](## "Picture source"), with the help of the mixing modes currently used by the imaging software.
 
-The optional [mode](# "Mixing mode") parameter can be used to set the combination mode of the pixels used for the blend (see the specification). Its value must be: "normal" (default value), "multiply", "screen", "darken" or "lighten".
+The optional [mode](## "Mixing mode") parameter can be used to set the combination mode of the pixels used for the blend (see the specification). Its value must be: "normal" (default value), "multiply", "screen", "darken" or "lighten".
 
-The optional [name](# "Target of filter primitive") parameter is the name, if any, assigned to the result of this filter primitive.
+The optional [name](## "Target of filter primitive") parameter is the name, if any, assigned to the result of this filter primitive.
 
 **Note:** Starting with 4D v14 R5, this command works under Windows with Direct2D enabled in software mode (see the Direct2D software constant in the description of the [SET DATABASE PARAMETER](https://developer.4d.com/docs/Desktop/user-settings/#set-database-parameter-and-user-settings) command).
 

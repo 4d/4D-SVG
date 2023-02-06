@@ -14,10 +14,10 @@
 
 ## Description
 
-The SVG_SET_TRANSFORM_TRANSLATE command specifies a horizontal and/or vertical relocation of the SVG object having the [svgObject](# "Reference of SVG element") reference.
+The SVG_SET_TRANSFORM_TRANSLATE command specifies a horizontal and/or vertical relocation of the SVG object having the [svgObject](## "Reference of SVG element") reference.
 
-If the [x](# "Coordinate on X axis") value is not null, the object will be moved horizontally for the number of units passed; otherwise, it will be ignored.  
-If the [y](# "Coordinate on Y axis") parameter is provided, the object will be moved vertically for the number of units passed.
+If the [x](## "Coordinate on X axis") value is not null, the object will be moved horizontally for the number of units passed; otherwise, it will be ignored.  
+If the [y](## "Coordinate on Y axis") parameter is provided, the object will be moved vertically for the number of units passed.
 
 ### Example  
 

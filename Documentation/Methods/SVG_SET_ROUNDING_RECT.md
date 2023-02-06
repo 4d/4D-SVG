@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_SET_ROUNDING_RECT command can be used to set the radii of the ellipse used to round the corners of a rectangle having the [svgObject](# "Reference of SVG element") reference. If these attributes already exist, their values are replaced by those passed as parameters. If [svgObject](# "Reference of SVG element") is not the reference of a rectangle, an error is generated.
+The SVG_SET_ROUNDING_RECT command can be used to set the radii of the ellipse used to round the corners of a rectangle having the [svgObject](## "Reference of SVG element") reference. If these attributes already exist, their values are replaced by those passed as parameters. If [svgObject](## "Reference of SVG element") is not the reference of a rectangle, an error is generated.
 
 The values are expected in the user coordinate system.
 

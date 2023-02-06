@@ -14,11 +14,11 @@
 
 ## Description
 
-The [SVG_Get_text](SVG_Get_text.md)  command is used to modify the kerning for the text object designated by [svgObject](# "Reference of text element"). If [svgObject](# "Reference of text element") is not an SVG text object, an error is generated.
+The [SVG_Get_text](SVG_Get_text.md)  command is used to modify the kerning for the text object designated by [svgObject](## "Reference of text element"). If [svgObject](## "Reference of text element") is not an SVG text object, an error is generated.
 
-The optional [unit](# "Unit of spacing value") parameter is used to specify the unit of the kerning value. The default value is "%".
+The optional [unit](## "Unit of spacing value") parameter is used to specify the unit of the kerning value. The default value is "%".
 
-If [kerning](# "Letter spacing") is -1, the kerning value is set to 'auto'.
+If [kerning](## "Letter spacing") is -1, the kerning value is set to 'auto'.
 
 **Note:** Under Windows, the implementation is limited to text from left to right and top to bottom (disabled for right to left text) and to the 'text' and 'tspan' elements; under Mac OS, support is not limited.
 

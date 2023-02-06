@@ -18,13 +18,13 @@
 
 ## Description
 
-The SVG_Define_solidColor command sets a new custom color in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_Define_solidColor command sets a new custom color in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
-The [id](# "Color name") parameter specifies the color name. The name will be used to associate a color with an object. If an element with the same name exists, it will be replaced.
+The [id](## "Color name") parameter specifies the color name. The name will be used to associate a color with an object. If an element with the same name exists, it will be replaced.
 
-The [color](# "Color expression") parameter is a color expression recognized by SVG (see [Colors and Gradients](../Colors%20and%20Gradients.md)).
+The [color](## "Color expression") parameter is a color expression recognized by SVG (see [Colors and Gradients](../Colors%20and%20Gradients.md)).
 
-The optional [opacity](# "Opacity") parameter can be used to specify an opacity (from 0 to 100) for this color. If the parameter is omitted, the opacity will be 100%.
+The optional [opacity](## "Opacity") parameter can be used to specify an opacity (from 0 to 100) for this color. If the parameter is omitted, the opacity will be 100%.
 
 The color set in this way will be associated with the fill or stroke paint by passing the string "url(#ID)" as the value when a color expression is expected.
 

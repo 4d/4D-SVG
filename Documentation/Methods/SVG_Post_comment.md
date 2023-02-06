@@ -13,7 +13,7 @@
 
 ## Description
 
-The **SVG_Post_comment** adds the text passed in comment as an XML comment to the SVG object designated by the [svgObject](# "SVG object reference") parameter.
+The **SVG_Post_comment** adds the text passed in comment as an XML comment to the SVG object designated by the [svgObject](## "SVG object reference") parameter.
 
 The method returns the SVG reference of the comment.
 

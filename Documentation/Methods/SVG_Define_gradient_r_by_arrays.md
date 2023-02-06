@@ -8,4 +8,4 @@
  -> cy (Long Integer)
  -> Param_8 ; … ; N (Text)-->
 
-## Description
+# SVG_Define_gradient_r_by_arrays

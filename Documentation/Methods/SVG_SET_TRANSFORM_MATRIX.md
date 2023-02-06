@@ -22,7 +22,7 @@
 
 ## Description
 
-The SVG_SET_TRANSFORM_MATRIX command applies a matrix transformation to the SVG object having the [svgObject](# "Reference of SVG element") reference.
+The SVG_SET_TRANSFORM_MATRIX command applies a matrix transformation to the SVG object having the [svgObject](## "Reference of SVG element") reference.
 
 This type of transformation can be used to combine transformations like, for example, a rotation and a translation.
 

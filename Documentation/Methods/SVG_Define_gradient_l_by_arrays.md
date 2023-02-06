@@ -7,4 +7,4 @@
  -> y2 (Long Integer)
  -> Param_7 ; … ; N (Text)-->
 
-## Description
+# SVG_Define_gradient_l_by_arrays

@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_Set_description command sets a text for the SVG element designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG element, an error is generated.
+The SVG_Set_description command sets a text for the SVG element designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG element, an error is generated.
 
 A description is often used to insert a comment or explanatory text in the SVG code.
 

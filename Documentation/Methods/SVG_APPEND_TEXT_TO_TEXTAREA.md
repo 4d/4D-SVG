@@ -12,7 +12,7 @@
 
 ## Description
 
-The SVG_APPEND_TEXT_TO_TEXTAREA command is used to append text to the textual content of the text object designated by [svgObject](# "Reference of text element"). If [svgObject](# "Reference of text element") is not a "textArea" object, an error is generated.
+The SVG_APPEND_TEXT_TO_TEXTAREA command is used to append text to the textual content of the text object designated by [svgObject](## "Reference of text element"). If [svgObject](## "Reference of text element") is not a "textArea" object, an error is generated.
 
 Line return characters are automatically replaced by "&lt;tbreak/&gt;" elements.
 

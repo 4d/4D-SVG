@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_Find_ID command returns the reference of the element whose ID is passed in the [name](# "ID of SVG element") parameter, belonging to the SVG structure whose root element is passed in [svgObject](# "Reference of SVG object").  
+The SVG_Find_ID command returns the reference of the element whose ID is passed in the [name](## "ID of SVG element") parameter, belonging to the SVG structure whose root element is passed in [svgObject](## "Reference of SVG object").  
 If the element is not found, an error is generated.
 
 ## See also

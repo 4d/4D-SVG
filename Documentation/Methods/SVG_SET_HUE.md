@@ -12,9 +12,9 @@
 
 ## Description
 
-The **SVG_SET_HUE** method sets a hue value for the SVG object designated by the [svgObject](# "SVG object reference") parameter. [svgObject](# "SVG object reference") must be an SVG container (svg, group, symbol, pattern, marker, etc.) or an image; otherwise, an error is returned.
+The **SVG_SET_HUE** method sets a hue value for the SVG object designated by the [svgObject](## "SVG object reference") parameter. [svgObject](## "SVG object reference") must be an SVG container (svg, group, symbol, pattern, marker, etc.) or an image; otherwise, an error is returned.
 
-In the [hue](# "Hue value") parameter, you pass a value between 0 and 360.
+In the [hue](## "Hue value") parameter, you pass a value between 0 and 360.
 
 ## See also
 

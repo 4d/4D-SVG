@@ -10,11 +10,11 @@
 
 ## Description
 
-The SVG_SET_OPTIONS command can be used to set the options of the 4D SVG component with the [options](# "4D SVG component options") longint. For more information about the contents of [options](# "4D SVG component options"), please refer to the description of the [SVG_Get_options](SVG_Get_options.md)  command.
+The SVG_SET_OPTIONS command can be used to set the options of the 4D SVG component with the [options](## "4D SVG component options") longint. For more information about the contents of [options](## "4D SVG component options"), please refer to the description of the [SVG_Get_options](SVG_Get_options.md)  command.
 
 Since all options will be set at once, this command must have been preceded with a call to the [SVG_Get_options](SVG_Get_options.md)  command, followed by the use of the `Bitwise Operators` of 4D.
 
-If the [options](# "4D SVG component options") parameter is not passed, all the options are reset to their default value (see the [SVG_Get_options](SVG_Get_options.md)  command).
+If the [options](## "4D SVG component options") parameter is not passed, all the options are reset to their default value (see the [SVG_Get_options](SVG_Get_options.md)  command).
 
 ### Example 1  
 

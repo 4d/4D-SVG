@@ -17,9 +17,9 @@
 ## Description
 
 The SVG_SET_TRANSFORM_ROTATE command applies a rotation of the value angle in degrees to the SVG object having the objectRef reference.  
-The [angle](# "Angle of rotation") of rotation is expected in degrees; the rotation is made clockwise.
+The [angle](## "Angle of rotation") of rotation is expected in degrees; the rotation is made clockwise.
 
-If the optional [x](# "Coordinate on X axis of center of rotation") and [y](# "Coordinate on Y axis of center of rotation") parameters are not passed, the rotation is carried out with respect to the origin of the current user coordinate system.If these parameters are provided, the rotation is carried out with respect to the coordinates passed ([x](# "Coordinate on X axis of center of rotation"), [y](# "Coordinate on Y axis of center of rotation")).
+If the optional [x](## "Coordinate on X axis of center of rotation") and [y](## "Coordinate on Y axis of center of rotation") parameters are not passed, the rotation is carried out with respect to the origin of the current user coordinate system.If these parameters are provided, the rotation is carried out with respect to the coordinates passed ([x](## "Coordinate on X axis of center of rotation"), [y](## "Coordinate on Y axis of center of rotation")).
 
 ### Example  
 

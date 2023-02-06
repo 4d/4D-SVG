@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_PATH_MOVE_TO command begins a new subpath at the point of the given coordinates ([x](# "Coordinate on X axis"), [y](# "Coordinate on Y axis")) in the path referenced by [parentSVGObject](# "Reference of path"). If [parentSVGObject](# "Reference of path") is not a path reference (‘path’ element), an error is generated.
+The SVG_PATH_MOVE_TO command begins a new subpath at the point of the given coordinates ([x](## "Coordinate on X axis"), [y](## "Coordinate on Y axis")) in the path referenced by [parentSVGObject](## "Reference of path"). If [parentSVGObject](## "Reference of path") is not a path reference (‘path’ element), an error is generated.
 
 The effect produced is as if the “pen” were lifted and moved to a new location. The current point becomes the new starting point which will be taken into account by the [SVG_PATH_CLOSE](SVG_PATH_CLOSE.md)  command.
 

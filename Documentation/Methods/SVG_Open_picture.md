@@ -12,7 +12,7 @@
 
 ## Description
 
-The SVG_Open_picture command analyzes an SVG picture and returns an SVG reference for this picture. If [picture](# "4D picture field or variable") does not contain an SVG picture, the command returns an empty string.
+The SVG_Open_picture command analyzes an SVG picture and returns an SVG reference for this picture. If [picture](## "4D picture field or variable") does not contain an SVG picture, the command returns an empty string.
 
 **Important:** Once you no longer need it, remember to call the [SVG_CLEAR](SVG_CLEAR.md)  command with this reference in order to free up the memory.
 

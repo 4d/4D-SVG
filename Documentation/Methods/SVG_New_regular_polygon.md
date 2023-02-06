@@ -26,13 +26,13 @@
 
 ## Description
 
-The SVG_New_regular_polygon command draws a regular polygon with number of sides fit into a circle with a diameter of [width](# "Diameter of surrounding circle") in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
+The SVG_New_regular_polygon command draws a regular polygon with number of sides fit into a circle with a diameter of [width](## "Diameter of surrounding circle") in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not an SVG document, an error is generated.
 
-The optional [x](# "Coordinate on center X axis") and [y](# "Coordinate on center Y axis") parameters can be used to specify the center of the circle. If they are omitted, the figure will be drawn in the upper left corner of the document.
+The optional [x](## "Coordinate on center X axis") and [y](## "Coordinate on center Y axis") parameters can be used to specify the center of the circle. If they are omitted, the figure will be drawn in the upper left corner of the document.
 
-The optional [foregroundColor](# "Color or gradient name") and [backgroundColor](# "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
+The optional [foregroundColor](## "Color or gradient name") and [backgroundColor](## "Color or gradient name") parameters contain, respectively, the name of the line color and of the background color. (For more information about colors, please refer to the commands of the [Colors and Gradients](../Colors%20and%20Gradients.md) theme).
 
-The optional [strokeWidth](# "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
+The optional [strokeWidth](## "Line thickness") parameter contains the size of the pen expressed in pixels. Its default value is 1.
 
 ### Example 1  
 

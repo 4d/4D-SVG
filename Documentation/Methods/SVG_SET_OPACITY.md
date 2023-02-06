@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_SET_OPACITY command can be used to set the opacity of the filling and the line of the object having the [svgObject](# "Reference of SVG element") reference. If these attributes already exist, their values are replaced by those passed as parameters.
+The SVG_SET_OPACITY command can be used to set the opacity of the filling and the line of the object having the [svgObject](## "Reference of SVG element") reference. If these attributes already exist, their values are replaced by those passed as parameters.
 
 The values expected must be included between 0 and 100.
 

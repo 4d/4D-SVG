@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_GET_ATTRIBUTES command fills the arrays pointed to by [namesArrayPointer](# "Alpha array of attribute names") and [valuesArrayPointer](# "Alpha array of attribute values") respectively with the names and values of the attributes of the element whose reference is passed in the [svgObject](# "SVG reference") parameter. If [svgObject](# "SVG reference") is not valid or if this attribute does not exist, an error is generated.
+The SVG_GET_ATTRIBUTES command fills the arrays pointed to by [namesArrayPointer](## "Alpha array of attribute names") and [valuesArrayPointer](## "Alpha array of attribute values") respectively with the names and values of the attributes of the element whose reference is passed in the [svgObject](## "SVG reference") parameter. If [svgObject](## "SVG reference") is not valid or if this attribute does not exist, an error is generated.
 
 ## See also
 

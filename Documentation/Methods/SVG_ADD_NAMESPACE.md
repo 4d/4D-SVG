@@ -15,16 +15,16 @@
 
 ## Description
 
-The **SVG_ADD_NAMESPACE** method adds an XML namespace attribute to the root of the DOM Tree for the SVG object designated by the [svgObject](# "SVG object reference") parameter. You can use this method, more specifically, to add a namespace to an SVG code snippet.
+The **SVG_ADD_NAMESPACE** method adds an XML namespace attribute to the root of the DOM Tree for the SVG object designated by the [svgObject](## "SVG object reference") parameter. You can use this method, more specifically, to add a namespace to an SVG code snippet.
 
-In [prefix](# "Prefix of namespace"), pass a string containing the prefix of the namespace attribute. You can use one of the following constants:
+In [prefix](## "Prefix of namespace"), pass a string containing the prefix of the namespace attribute. You can use one of the following constants:
 
 * "svgNS" for a standard SVG namespace ([http://www.w3.org/2000/svg](http://www.w3.org/2000/svg))
 * "xlinkNS" for a standard XLink namespace ([http://www.w3.org/1999/xlink](http://www.w3.org/1999/xlink))
 
-In this case, the [URI](# "URI of namespace") parameter is unnecessary.
+In this case, the [URI](## "URI of namespace") parameter is unnecessary.
 
-You can also pass the prefix of a custom namespace in the [prefix](# "Prefix of namespace") parameter and its URI in the corresponding parameter. In this case, the [URI](# "URI of namespace") parameter is mandatory and if it is omitted, an error is generated.
+You can also pass the prefix of a custom namespace in the [prefix](## "Prefix of namespace") parameter and its URI in the corresponding parameter. In this case, the [URI](## "URI of namespace") parameter is mandatory and if it is omitted, an error is generated.
 
 ### Example  
 

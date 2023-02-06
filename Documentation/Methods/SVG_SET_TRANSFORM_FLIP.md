@@ -14,10 +14,10 @@
 
 ## Description
 
-The SVG_SET_TRANSFORM_FLIP command can be used to apply a horizontal and/or vertical flip to an SVG object having the [svgObject](# "Reference of SVG element") reference.
+The SVG_SET_TRANSFORM_FLIP command can be used to apply a horizontal and/or vertical flip to an SVG object having the [svgObject](## "Reference of SVG element") reference.
 
-If the [horizontal](# "Horizontal flip") parameter is set to True, a horizontal flip is applied.  
-If the [vertical](# "Vertical flip") parameter is set to True, a vertical flip is applied.
+If the [horizontal](## "Horizontal flip") parameter is set to True, a horizontal flip is applied.  
+If the [vertical](## "Vertical flip") parameter is set to True, a vertical flip is applied.
 
 ### Example  
 

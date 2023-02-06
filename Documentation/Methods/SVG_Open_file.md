@@ -13,7 +13,7 @@
 
 ## Description
 
-The SVG_Open_file command parses (and validates with the DTD) the SVG document found at the location designated by the [path](# "Pathname of SVG document to open") parameter and returns an SVG reference (32-character string) for this document.
+The SVG_Open_file command parses (and validates with the DTD) the SVG document found at the location designated by the [path](## "Pathname of SVG document to open") parameter and returns an SVG reference (32-character string) for this document.
 
 **Important:** Once you no longer need it, do not forget to call the [SVG_CLEAR](SVG_CLEAR.md)  command with this reference in order to free up the memory.
 

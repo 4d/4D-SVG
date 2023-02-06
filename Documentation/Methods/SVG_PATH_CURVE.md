@@ -22,11 +22,11 @@
 
 ## Description
 
-The SVG_PATH_CURVE command adds a cubic Bezier curve to the path referenced by [parentSVGObject](# "Reference of parent element") starting from the current point to the point whose coordinates are passed ([x](# "Coordinate on X axis of destination point"), [y](# "Coordinate on Y axis of destination point")). If [parentSVGObject](# "Reference of parent element") is not a path reference (‘path’ element), an error is generated.
+The SVG_PATH_CURVE command adds a cubic Bezier curve to the path referenced by [parentSVGObject](## "Reference of parent element") starting from the current point to the point whose coordinates are passed ([x](## "Coordinate on X axis of destination point"), [y](## "Coordinate on Y axis of destination point")). If [parentSVGObject](## "Reference of parent element") is not a path reference (‘path’ element), an error is generated.
 
-The optional [controlStartX](# "Coordinate on X axis of control point") and [controlStartY](# "Coordinate on Y axis of control point") parameters can be used to specify the position of the control point at the start of the curve. If they are omitted, the first control point is supposed to be the reflection of the second control point of the previous command with respect to the current point.
+The optional [controlStartX](## "Coordinate on X axis of control point") and [controlStartY](## "Coordinate on Y axis of control point") parameters can be used to specify the position of the control point at the start of the curve. If they are omitted, the first control point is supposed to be the reflection of the second control point of the previous command with respect to the current point.
 
-The [controlEndX](# "Coordinate on X axis of control point") and [controlEndY](# "Coordinate on Y axis of control point") parameters are used to specify the position of the control point at the end of the curve.
+The [controlEndX](## "Coordinate on X axis of control point") and [controlEndY](## "Coordinate on Y axis of control point") parameters are used to specify the position of the control point at the end of the curve.
 
 ### Example  
 

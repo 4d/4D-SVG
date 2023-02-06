@@ -14,11 +14,11 @@
 
 ## Description
 
-The SVG_SET_TEXT_LETTER_SPACING command is used to modify the letter spacing for the text object designated by [svgObject](# "Reference of text element") in addition to the spacing due to the 'kerning' property. If [svgObject](# "Reference of text element") is not an SVG text object, an error is generated.
+The SVG_SET_TEXT_LETTER_SPACING command is used to modify the letter spacing for the text object designated by [svgObject](## "Reference of text element") in addition to the spacing due to the 'kerning' property. If [svgObject](## "Reference of text element") is not an SVG text object, an error is generated.
 
-The optional [unit](# "Unit of value") parameter is used to specify the unit of the spacing value. The default value is "%".
+The optional [unit](## "Unit of value") parameter is used to specify the unit of the spacing value. The default value is "%".
 
-If [spacing](# "Letter spacing") is -1, the spacing value is set to 'normal'.
+If [spacing](## "Letter spacing") is -1, the spacing value is set to 'normal'.
 
 **See Also:** [http://www.w3.org/TR/SVG/text.html#LetterSpacingProperty](http://www.w3.org/TR/SVG/text.html#LetterSpacingProperty)
 

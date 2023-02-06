@@ -14,7 +14,7 @@
 
 ## Description
 
-The SVG_SET_XY command can be used to set the coordinates of the top left corner of the rectangular area where the SVG object having the [svgObject](# "Reference of SVG element") reference is placed. If these attributes already exist, their values are replaced by those passed as parameters. If [svgObject](# "Reference of SVG element") is an SVG element that does not accept this attribute, an error is generated.
+The SVG_SET_XY command can be used to set the coordinates of the top left corner of the rectangular area where the SVG object having the [svgObject](## "Reference of SVG element") reference is placed. If these attributes already exist, their values are replaced by those passed as parameters. If [svgObject](## "Reference of SVG element") is an SVG element that does not accept this attribute, an error is generated.
 
 The values are expected in the user coordinate system.
 

@@ -14,9 +14,9 @@
 
 ## Description
 
-The **SVG_Get_class** command returns the class name(s) for an SVG image whose reference is passed in the [svgObject](# "SVG object reference") parameter. Class name(s) are returned as a string, with each name separated by a space.
+The **SVG_Get_class** command returns the class name(s) for an SVG image whose reference is passed in the [svgObject](## "SVG object reference") parameter. Class name(s) are returned as a string, with each name separated by a space.
 
-In the optional [classNames](# "Pointer to array of class names") parameter, you can pass a pointer to an array, whose elements will be filled with the class name(s).
+In the optional [classNames](## "Pointer to array of class names") parameter, you can pass a pointer to an array, whose elements will be filled with the class name(s).
 
 ### Example  
 

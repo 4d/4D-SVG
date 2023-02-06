@@ -14,9 +14,9 @@
 
 ## Description
 
-The SVG_SET_STROKE_WIDTH command can be used to set the thickness of lines for the SVG object having the [svgObject](# "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
+The SVG_SET_STROKE_WIDTH command can be used to set the thickness of lines for the SVG object having the [svgObject](## "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
 
-Pass the value of the line thickness in [strokeWidth](# "Line thickness"). The optional [unit](# "Unit of measurement") parameter can be used to specify the unit to be used. You can pass one of the following values: px, pt, pc, cm, mm, in, em, ex or %. If the [unit](# "Unit of measurement") parameter is omitted, the[strokeWidth](# "Line thickness") parameter is expected in the user coordinate system
+Pass the value of the line thickness in [strokeWidth](## "Line thickness"). The optional [unit](## "Unit of measurement") parameter can be used to specify the unit to be used. You can pass one of the following values: px, pt, pc, cm, mm, in, em, ex or %. If the [unit](## "Unit of measurement") parameter is omitted, the[strokeWidth](## "Line thickness") parameter is expected in the user coordinate system
 
 ### Example  
 

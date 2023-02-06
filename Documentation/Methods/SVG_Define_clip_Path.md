@@ -13,9 +13,9 @@
 
 ## Description
 
-The SVG_Define_clip_path command specifies a new clip path in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not (or does not belong to) an SVG document, an error is generated.
+The SVG_Define_clip_path command specifies a new clip path in the SVG container designated by [parentSVGObject](## "Reference of parent element") and returns its reference. If [parentSVGObject](## "Reference of parent element") is not (or does not belong to) an SVG document, an error is generated.
 
-The [clipPathID](# "Name of clip path") parameter designates the name of the clip path. This name will be used to associate a clip path with an object. If an element with the same name already exists in the document, an error is generated.
+The [clipPathID](## "Name of clip path") parameter designates the name of the clip path. This name will be used to associate a clip path with an object. If an element with the same name already exists in the document, an error is generated.
 
 **See Also:** [http://www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath](http://www.w3.org/TR/2001/REC-SVG-20010904/masking.html#EstablishingANewClippingPath)
 

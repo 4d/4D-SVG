@@ -15,12 +15,12 @@
 
 ## Description
 
-The SVG_PATH_LINE_TO command adds one or more straight segments to the path referred by [parentSVGObject](# "Reference of parent element"). If [parentSVGObject](# "Reference of parent element") is not a path reference (‘path’ element), an error is generated.
+The SVG_PATH_LINE_TO command adds one or more straight segments to the path referred by [parentSVGObject](## "Reference of parent element"). If [parentSVGObject](## "Reference of parent element") is not a path reference (‘path’ element), an error is generated.
 
-The [x](# "Coordinate on X axis of new point(s)") and [y](# "Coordinate on Y axis of new point(s)") parameters can be used to specify the start position of the path in the SVG container.
+The [x](## "Coordinate on X axis of new point(s)") and [y](## "Coordinate on Y axis of new point(s)") parameters can be used to specify the start position of the path in the SVG container.
 
-* If only the [x](# "Coordinate on X axis of new point(s)") parameter is provided, the line will be drawn horizontally from the current point (xc, yc) to the point (x, yc).
-* If both [x](# "Coordinate on X axis of new point(s)") and [y](# "Coordinate on Y axis of new point(s)") are passed, a line will be drawn from the current point (xc, yc) to the point (x, y).
+* If only the [x](## "Coordinate on X axis of new point(s)") parameter is provided, the line will be drawn horizontally from the current point (xc, yc) to the point (x, yc).
+* If both [x](## "Coordinate on X axis of new point(s)") and [y](## "Coordinate on Y axis of new point(s)") are passed, a line will be drawn from the current point (xc, yc) to the point (x, y).
 * If several pairs of coordinates are passed, the different points will be added successively. In this case, if the last pair of coordinates is incomplete (missing y), it will be ignored.
 
 ### Example  

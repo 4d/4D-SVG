@@ -13,7 +13,7 @@
 
 ## Description
 
-The SVG_SET_STROKE_BRUSH command can be used to set the color used for the lines of the SVG object having the [svgObject](# "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
+The SVG_SET_STROKE_BRUSH command can be used to set the color used for the lines of the SVG object having the [svgObject](## "Reference of SVG element") reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
 
 For more information about colors, please refer to the “[SVG Colors](../SVG%20Colors.md)” section.
 

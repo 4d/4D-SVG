@@ -12,9 +12,9 @@
 
 ## Description
 
-The SVG_SET_TEXT_ANCHOR command can be used to modify the alignment of the SVG object having the [svgObject](# "Reference of SVG element") reference. If [svgObject](# "Reference of SVG element") does not reference a valid element, an error is generated.
+The SVG_SET_TEXT_ANCHOR command can be used to modify the alignment of the SVG object having the [svgObject](## "Reference of SVG element") reference. If [svgObject](## "Reference of SVG element") does not reference a valid element, an error is generated.
 
-In the [alignment](# "Alignment") parameter, you must pass one of the following values:
+In the [alignment](## "Alignment") parameter, you must pass one of the following values:
 
 > 1 = Align default (left)  
 > 2 = Align left  

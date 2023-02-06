@@ -20,18 +20,18 @@
 
 ## Description
 
-The SVG_Filter_Offset command sets an offset for the [filterRef](# "Reference of filter") filter and returns its reference. If [filterRef](# "Reference of filter") is not a filter reference, an error is generated.
+The SVG_Filter_Offset command sets an offset for the [filterRef](## "Reference of filter") filter and returns its reference. If [filterRef](## "Reference of filter") is not a filter reference, an error is generated.
 
-The [dx](# "Offset on X axis") parameter is the value of the horizontal offset.
+The [dx](## "Offset on X axis") parameter is the value of the horizontal offset.
 
-The optional [dy](# "Offset on Y axis") parameter is the value of the vertical offset.
+The optional [dy](## "Offset on Y axis") parameter is the value of the vertical offset.
 
-The optional [input](# "Source of filter primitive") parameter identifies the graphic source of the filter primitive. You can pass:
+The optional [input](## "Source of filter primitive") parameter identifies the graphic source of the filter primitive. You can pass:
 
 * either "sourceGraphic", indicating that the graphic is the filter source (default),
 * or "sourceAlpha", which indicates that the alpha channel is the filter source.
 
-The optional [name](# "Target of filter primitive") is the name, if any, assigned to the result of this filter primitive.
+The optional [name](## "Target of filter primitive") is the name, if any, assigned to the result of this filter primitive.
 
 **Note:** Starting with 4D v14 R5, this command works under Windows with Direct2D enabled in software mode (see the Direct2D software constant in the description of the [SET DATABASE PARAMETER](https://developer.4d.com/docs/Desktop/user-settings/#set-database-parameter-and-user-settings) command).
 
