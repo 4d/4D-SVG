@@ -22,7 +22,7 @@ If [kerning](# "Letter spacing") is -1, the kerning value is set to 'auto'.
 
 **Note:** Under Windows, the implementation is limited to text from left to right and top to bottom (disabled for right to left text) and to the 'text' and 'tspan' elements; under Mac OS, support is not limited.
 
-**See Also:** [www.w3.org/TR/SVG/text.html#KerningProperty](www.w3.org/TR/SVG/text.html#KerningProperty)
+**See Also:** [http://www.w3.org/TR/SVG/text.html#KerningProperty](http://www.w3.org/TR/SVG/text.html#KerningProperty)
 
 ### Example  
 

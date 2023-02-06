@@ -32,7 +32,7 @@
 
 The **SVG_New_textArea** command inserts a text area in the SVG container designated by [parentSVGObject](# "Reference of parent element") and returns its reference. If [parentSVGObject](# "Reference of parent element") is not an SVG document, an error is generated.
 
-The "textArea" element is recommended by the SVG tiny 1.2 standard and implemented in 4D v11 SQL beginning with version 11.3 (see [www.w3.org/TR/SVGMobile12/text.html#TextAreaElement](www.w3.org/TR/SVGMobile12/text.html#TextAreaElement)). This element implements a text area that, unlike the "text" element, automatically handles the line feed when the text exceeds the width requested.
+The "textArea" element is recommended by the SVG tiny 1.2 standard and implemented in 4D v11 SQL beginning with version 11.3 (see [http://www.w3.org/TR/SVGMobile12/text.html#TextAreaElement](http://www.w3.org/TR/SVGMobile12/text.html#TextAreaElement)). This element implements a text area that, unlike the "text" element, automatically handles the line feed when the text exceeds the width requested.
 
 **Notes:**
 

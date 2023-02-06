@@ -19,8 +19,8 @@ The **SVG_ADD_NAMESPACE** method adds an XML namespace attribute to the root of 
 
 In [prefix](# "Prefix of namespace"), pass a string containing the prefix of the namespace attribute. You can use one of the following constants:
 
-* "svgNS" for a standard SVG namespace ([www.w3.org/2000/svg](www.w3.org/2000/svg))
-* "xlinkNS" for a standard XLink namespace ([www.w3.org/1999/xlink](www.w3.org/1999/xlink))
+* "svgNS" for a standard SVG namespace ([http://www.w3.org/2000/svg](http://www.w3.org/2000/svg))
+* "xlinkNS" for a standard XLink namespace ([http://www.w3.org/1999/xlink](http://www.w3.org/1999/xlink))
 
 In this case, the [URI](# "URI of namespace") parameter is unnecessary.
 

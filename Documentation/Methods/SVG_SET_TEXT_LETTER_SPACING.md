@@ -20,7 +20,7 @@ The optional [unit](# "Unit of value") parameter is used to specify the unit of 
 
 If [spacing](# "Letter spacing") is -1, the spacing value is set to 'normal'.
 
-**See Also:** [www.w3.org/TR/SVG/text.html#LetterSpacingProperty](www.w3.org/TR/SVG/text.html#LetterSpacingProperty)
+**See Also:** [http://www.w3.org/TR/SVG/text.html#LetterSpacingProperty](http://www.w3.org/TR/SVG/text.html#LetterSpacingProperty)
 
 ### Example  
 

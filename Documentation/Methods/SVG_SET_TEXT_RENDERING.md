@@ -16,4 +16,4 @@ The SVG_SET_TEXT_RENDERING command is used to define the tradeoffs to make regar
 
 The [rendering](# "Value of rendering") parameter can have one of the following values: "auto", "optimizeSpeed", "optimizeLegibility", "geometricPrecision" or "inherit". Otherwise, an error is generated.
 
-**See Also:** [www.w3.org/TR/2001/REC-SVG-20010904/painting.html#TextRenderingProperty](www.w3.org/TR/2001/REC-SVG-20010904/painting.html#TextRenderingProperty)
+**See Also:** [http://www.w3.org/TR/2001/REC-SVG-20010904/painting.html#TextRenderingProperty](http://www.w3.org/TR/2001/REC-SVG-20010904/painting.html#TextRenderingProperty)

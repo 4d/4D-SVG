@@ -24,7 +24,7 @@ If [dash](# "Length of first dash") is 0, the dotted pattern is removed.
 
 The [value](# "Length of spaces and dashes") parameters alternately specify the lengths of the gaps and dashes that follow the first dash. If an odd number of values is given (including the first dash), the list of values is repeated until it produces an even number of values.
 
-**See Also:** [www.w3.org/TR/SVG/painting.html#StrokeProperties](www.w3.org/TR/SVG/painting.html#StrokeProperties)
+**See Also:** [http://www.w3.org/TR/SVG/painting.html#StrokeProperties](http://www.w3.org/TR/SVG/painting.html#StrokeProperties)
 
 ### Example  
 

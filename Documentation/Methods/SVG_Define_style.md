@@ -41,7 +41,7 @@ The optional [type](# "Type of content") parameter specifies the language of the
 
 The optional [media](# "Media descriptor") parameter specifies the intended destination media for the style information. If you omit this parameter, the default value used is "all". If the value is not included in the list of media types recognized by CSS2, an error is generated.
 
-**See Also:** [www.w3.org/TR/SVG/styling.html#StyleElement](www.w3.org/TR/SVG/styling.html#StyleElement)
+**See Also:** [http://www.w3.org/TR/SVG/styling.html#StyleElement](http://www.w3.org/TR/SVG/styling.html#StyleElement)
 
 ### Example 1  
 

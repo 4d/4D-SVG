@@ -16,7 +16,7 @@ The SVG_SET_PATTERN_UNITS command is used to set the system coordinates for the 
 
 The [sysCoord](# "System of coordinates to be used") parameter specifies the name of the system to be used. It must be set to "userSpaceOnUse" or "objectBoundingBox", otherwise an error is generated.
 
-**See Also:** [www.w3.org/TR/SVG/pservers.html#Patterns](www.w3.org/TR/SVG/pservers.html#Patterns)
+**See Also:** [http://www.w3.org/TR/SVG/pservers.html#Patterns](http://www.w3.org/TR/SVG/pservers.html#Patterns)
 
 ## See also
 

@@ -33,7 +33,7 @@ The optional [width](# "Width of pattern"), [height](# "Height of pattern"), [x]
 
 The pattern will be associated as fill or stroke paint by passing the "url(#id)" string as the value when a color expression is expected.
 
-**See Also:** [www.w3.org/TR/SVG/pservers.html#Patterns](www.w3.org/TR/SVG/pservers.html#Patterns)
+**See Also:** [http://www.w3.org/TR/SVG/pservers.html#Patterns](http://www.w3.org/TR/SVG/pservers.html#Patterns)
 
 ### Example 1  
 

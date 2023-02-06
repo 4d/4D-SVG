@@ -16,7 +16,7 @@ The SVG_SET_FILL_RULE command is used to specify the fill rule for the SVG objec
 
 The [fillRule](# "Mode for filling object") parameter must contain one of the following values: "nonzero", "evenodd" or "inherit". Otherwise, an error is generated.
 
-**See Also:** [www.w3.org/TR/SVG/painting.html#FillRuleProperty](www.w3.org/TR/SVG/painting.html#FillRuleProperty)
+**See Also:** [http://www.w3.org/TR/SVG/painting.html#FillRuleProperty](http://www.w3.org/TR/SVG/painting.html#FillRuleProperty)
 
 ### Example  
 
