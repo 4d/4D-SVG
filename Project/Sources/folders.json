@@ -113,15 +113,21 @@
 	},
 	"4DPop": {
 		"methods": [
+			"_4DPopSVG",
+			"about",
 			"Color_main",
+			"colors",
+			"COMPILER_4DPop",
 			"SVGTool_Display_colors",
 			"SVGTool_Display_syntax",
 			"SVGTool_Display_viewer",
+			"syntax",
 			"syntax_EXPAND",
 			"Syntax_help",
 			"syntax_List",
 			"Syntax_main",
 			"Syntax_objectMethod",
+			"viewer",
 			"Viewer_main"
 		],
 		"forms": [

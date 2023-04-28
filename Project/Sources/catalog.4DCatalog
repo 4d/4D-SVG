@@ -2,7 +2,7 @@
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
 <base name="4D SVG" uuid="008BCD051AC5442BB58AE84FC300497C" collation_locale="fr">
 	<schema name="DEFAULT_SCHEMA"/>
-	<base_extra package_name="4D SVG" structure_file_name="4D SVG" data_file_path=":4D SVG.4DD" __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+	<base_extra package_name="4D SVG" structure_file_name="4D SVG" data_file_path=":4D SVG.4DD" __stringCompHash="icu:72.1.0" __keywordBuildingHash="icu:72.1.0">
 		<temp_folder folder_selector="system"/>
 		<journal_file journal_file_enabled="false"/>
 	</base_extra>
