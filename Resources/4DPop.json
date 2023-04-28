@@ -1,0 +1,28 @@
+{
+  "name": ":xliff:syntaxPaletteTitle",
+  "media": "4DPop.png",
+  "handler": "_4DPopSVG",
+  "default": "viewer",
+  "popup": true,
+  "tools": [
+    {
+      "name": ":xliff:about",
+      "method": "about"
+    },
+    {
+      "name": "-"
+    },
+    {
+      "name": ":xliff:menuSyntax",
+      "method": "syntax"
+    },
+    {
+      "name": ":xliff:menuColor",
+      "method": "colors"
+    },
+    {
+      "name": ":xliff:menuViewer",
+      "method": "viewer"
+    }
+  ]
+}
