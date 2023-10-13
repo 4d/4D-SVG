@@ -65,36 +65,6 @@
 					"sizingY": "grow",
 					"fill": "automatic"
 				},
-				"viewerPicture": {
-					"type": "input",
-					"top": 40,
-					"left": 10,
-					"width": 821,
-					"height": 505,
-					"sizingX": "grow",
-					"sizingY": "grow",
-					"dataSource": "<>SVG_viewerPicture",
-					"dataSourceTypeHint": "picture",
-					"fontFamily": "Lucida Grande",
-					"fontSize": 13,
-					"fill": "transparent",
-					"hideFocusRing": true,
-					"scrollbarVertical": "automatic",
-					"scrollbarHorizontal": "automatic",
-					"dragging": "custom",
-					"dropping": "custom",
-					"method": "ObjectMethods/viewerPicture.4dm",
-					"events": [
-						"onClick",
-						"onDrop",
-						"onDragOver",
-						"onMouseEnter",
-						"onMouseLeave",
-						"onMouseMove",
-						"onBeginDragOver"
-					],
-					"enterable": false
-				},
 				"Texte": {
 					"type": "text",
 					"top": 561,
@@ -241,6 +211,47 @@
 					"dragging": "none",
 					"dropping": "none"
 				},
+				"_background": {
+					"type": "picture",
+					"top": 40,
+					"left": 10,
+					"width": 821,
+					"height": 505,
+					"picture": "/RESOURCES/Images/bg.png",
+					"pictureFormat": "tiled",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"viewerPicture": {
+					"type": "input",
+					"top": 40,
+					"left": 10,
+					"width": 821,
+					"height": 505,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "<>SVG_viewerPicture",
+					"dataSourceTypeHint": "picture",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 13,
+					"fill": "transparent",
+					"hideFocusRing": true,
+					"scrollbarVertical": "automatic",
+					"scrollbarHorizontal": "automatic",
+					"dragging": "custom",
+					"dropping": "custom",
+					"method": "ObjectMethods/viewerPicture.4dm",
+					"events": [
+						"onClick",
+						"onDrop",
+						"onDragOver",
+						"onMouseEnter",
+						"onMouseLeave",
+						"onMouseMove",
+						"onBeginDragOver"
+					],
+					"enterable": false
+				},
 				"_grigri": {
 					"type": "picture",
 					"top": 69,
@@ -336,7 +347,7 @@
 		"kind": "form"
 	},
 	"memorizeGeometry": false,
-	"geometryStamp": 1,
+	"geometryStamp": 25,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
