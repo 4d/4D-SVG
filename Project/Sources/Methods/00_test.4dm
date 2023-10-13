@@ -27,6 +27,67 @@ $Dom_svg:=SVG_New
 
 Case of 
 		
+		//______________________________________________________
+	: (True:C214)  //ACI0104291
+		
+		$Dom_g:=SVG_New_group($Dom_svg; "bloc")
+		SVG_SET_FONT_FAMILY($Dom_g; "times")
+		SVG_SET_FONT_SIZE($Dom_g; 24)
+		$Txt_buffer:=SVG_New_text($Dom_g; "Normal text"; 0; 20; "times"; 24; Normal:K14:15)
+		$Txt_buffer:=SVG_New_text($Dom_g; "Bold text"; 0; 50; "times"; 24; 1)
+		$Txt_buffer:=SVG_New_text($Dom_g; "Italic font style"; 0; 80; "times"; 24; 2)
+		$Txt_buffer:=SVG_New_text($Dom_g; "Bold text + Italic font style"; 0; 110; "times"; 24; 1+2)
+		
+		//______________________________________________________
+	: (True:C214)  // Marker - delete marker - delete element with SVG_CLEAR
+		
+		SVG_SET_DEFAULT_BRUSHES("red"; "red")
+		
+		// Définir un cercle pour marquer les points
+		$Dom_point:=SVG_Define_marker($Dom_svg; "pointMarker"; 2; 2; 3; 3)
+		SVG_SET_VIEWBOX($Dom_point; 0; 0; 4; 4)
+		SVG_New_circle($Dom_point; 2; 2; 1)
+		
+		// Définir un carré pour le point de début
+		$Dom_start:=SVG_Define_marker($Dom_svg; "startMarker"; 1; 1; 2; 2)
+		SVG_New_rect($Dom_start; 0; 0; 2; 2)
+		
+		// Définir un triangle pour le point de fin
+		$Dom_end:=SVG_Define_marker($Dom_svg; "endMarker"; 5; 5; 3; 3; 60)
+		SVG_SET_VIEWBOX($Dom_end; 0; 0; 10; 10)
+		SVG_New_regular_polygon($Dom_end; 10; 3)
+		
+		// Axe des x
+		For ($Lon_i; 0; 200; 20)
+			
+			APPEND TO ARRAY:C911($tLon_X; $Lon_i+10)
+			
+		End for 
+		
+		// Données
+		APPEND TO ARRAY:C911($tLon_Y; 100)
+		APPEND TO ARRAY:C911($tLon_Y; 100)
+		APPEND TO ARRAY:C911($tLon_Y; 30)
+		APPEND TO ARRAY:C911($tLon_Y; 30)
+		APPEND TO ARRAY:C911($tLon_Y; 80)
+		APPEND TO ARRAY:C911($tLon_Y; 60)
+		APPEND TO ARRAY:C911($tLon_Y; 10)
+		APPEND TO ARRAY:C911($tLon_Y; 40)
+		APPEND TO ARRAY:C911($tLon_Y; 50)
+		APPEND TO ARRAY:C911($tLon_Y; 70)
+		$Dom_line:=SVG_New_polyline_by_arrays($Dom_svg; ->$tLon_X; ->$tLon_Y; "red"; "none"; 5)
+		
+		// Disposer les marqueurs :
+		SVG_SET_MARKER($Dom_line; "startMarker"; "start")
+		SVG_SET_MARKER($Dom_line; "pointMarker"; "middle")
+		SVG_SET_MARKER($Dom_line; "endMarker"; "end")
+		
+		// Clear the pointMarker
+		SVG_CLEAR($Dom_point)
+		
+		// Delete middle marker
+		SVG_SET_MARKER($Dom_line; ""; "middle")
+		
 		//________________________________________ ACI0103472
 	: (True:C214)
 		
@@ -1318,55 +1379,6 @@ Case of
 		SVG_Post_comment($Dom_svg; $Dom_svg)
 		SVG_New_text($Dom_svg; SVG_Get_root_reference($Dom_g))
 		
-		//______________________________________________________
-	: (False:C215)  // Marker - delete marker - delete element with SVG_CLEAR
-		
-		SVG_SET_DEFAULT_BRUSHES("red"; "red")
-		
-		// Définir un cercle pour marquer les points
-		$Dom_point:=SVG_Define_marker($Dom_svg; "pointMarker"; 2; 2; 3; 3)
-		SVG_SET_VIEWBOX($Dom_point; 0; 0; 4; 4)
-		SVG_New_circle($Dom_point; 2; 2; 1)
-		
-		// Définir un carré pour le point de début
-		$Dom_start:=SVG_Define_marker($Dom_svg; "startMarker"; 1; 1; 2; 2)
-		SVG_New_rect($Dom_start; 0; 0; 2; 2)
-		
-		// Définir un triangle pour le point de fin
-		$Dom_end:=SVG_Define_marker($Dom_svg; "endMarker"; 5; 5; 3; 3; 60)
-		SVG_SET_VIEWBOX($Dom_end; 0; 0; 10; 10)
-		SVG_New_regular_polygon($Dom_end; 10; 3)
-		
-		// Axe des x
-		For ($Lon_i; 0; 200; 20)
-			
-			APPEND TO ARRAY:C911($tLon_X; $Lon_i+10)
-			
-		End for 
-		
-		// Données
-		APPEND TO ARRAY:C911($tLon_Y; 100)
-		APPEND TO ARRAY:C911($tLon_Y; 100)
-		APPEND TO ARRAY:C911($tLon_Y; 30)
-		APPEND TO ARRAY:C911($tLon_Y; 30)
-		APPEND TO ARRAY:C911($tLon_Y; 80)
-		APPEND TO ARRAY:C911($tLon_Y; 60)
-		APPEND TO ARRAY:C911($tLon_Y; 10)
-		APPEND TO ARRAY:C911($tLon_Y; 40)
-		APPEND TO ARRAY:C911($tLon_Y; 50)
-		APPEND TO ARRAY:C911($tLon_Y; 70)
-		$Dom_line:=SVG_New_polyline_by_arrays($Dom_svg; ->$tLon_X; ->$tLon_Y; "red"; "none"; 5)
-		
-		// Disposer les marqueurs :
-		SVG_SET_MARKER($Dom_line; "startMarker"; "start")
-		SVG_SET_MARKER($Dom_line; "pointMarker"; "middle")
-		SVG_SET_MARKER($Dom_line; "endMarker"; "end")
-		
-		// Clear the pointMarker
-		SVG_CLEAR($Dom_point)
-		
-		// Delete middle marker
-		SVG_SET_MARKER($Dom_line; ""; "middle")
 		
 		//______________________________________________________
 	: (False:C215)
