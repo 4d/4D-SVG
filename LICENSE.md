@@ -76,7 +76,7 @@ Consequently to distribute a Modified Software according to the provision of sec
 
 ### 5.3 RIGHT OF DISTRIBUTION
 
-In particular, the right of distribution includes the right to publish, transmit and communicate the Modified Software to the general public on any or all medium, and by any or all means, and the right to market, either in consideration of a fee, or 
+In particular, the right of distribution includes the right to publish, transmit and communicate the Modified Software to the general public on any or all medium, and by any or all means, and the right to market, either in consideration of a fee, or free of charge, one or more copies of the Modified Software by any means. 
 
 #### 5.3.1 DISTRIBUTION OF SOFTWARE WITHOUT MODIFICATION
 
