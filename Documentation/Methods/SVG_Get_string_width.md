@@ -1,1 +1,13 @@
-﻿<!-- width := SVG_Get_string_width ( string ; fontName ; fontSize ; fonStyle ) -> string (Text) -> fontName (Text) -> fontSize (Long Integer) -> fonStyle (Long Integer) <- width (Real)-->## Description
+<!-- width := SVG_Get_string_width ( string ; fontName ; fontSize ; fonStyle )
+ -> string (Text)
+ -> fontName (Text)
+ -> fontSize (Long Integer)
+ -> fonStyle (Long Integer)
+ <- width (Real)-->
+﻿<!-- width := SVG_Get_string_width ( string ; fontName ; fontSize ; fonStyle )
+ -> string (Text)
+ -> fontName (Text)
+ -> fontSize (Long Integer)
+ -> fonStyle (Long Integer)
+ <- width (Real)-->
+## Description
