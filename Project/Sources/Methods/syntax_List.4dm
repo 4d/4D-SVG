@@ -1,104 +1,78 @@
 //%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Project method : syntax_List
-  // Database: 4D SVG
-  // ID[57E1469DC7E14BD1B76BFF65ADC82BAB]
-  // Created #23-5-2013 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description:
-  //
-  // ----------------------------------------------------
-  // Declarations
-C_LONGINT:C283($0)
+// ----------------------------------------------------
+// Project method : syntax_List
+// Database: 4D SVG
+// ID[57E1469DC7E14BD1B76BFF65ADC82BAB]
+// Created #23-5-2013 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE() : Integer
 
-C_LONGINT:C283($Lon_count;$Lon_i;$Lon_parameters;$Lon_x;$Lst_command;$Lst_syntax)
-C_TEXT:C284($Dom_node;$Dom_root;$File_rsrc;$Txt_buffer)
+var $node; $pathname; $root; $t : Text
+var $commands; $i; $id; $list; $Lon_parameters; $size : Integer
 
-ARRAY TEXT:C222($tDom_nodes;0)
+ARRAY TEXT:C222($_nodes; 0)
 
-If (False:C215)
-	C_LONGINT:C283(syntax_List ;$0)
-End if 
+$pathname:=Localized document path:C1105("4DPop.xlf")
 
-  // ----------------------------------------------------
-  // Initialisations
-$Lon_parameters:=Count parameters:C259
-
-If (Asserted:C1132($Lon_parameters>=0;"Missing parameter"))
+If (Asserted:C1132(Test path name:C476($pathname)=Is a document:K24:1))
 	
-	  //NO PARAMETERS REQUIRED
-	
-	$File_rsrc:=Get localized document path:C1105("4DPop.xlf")
-	
-Else 
-	
-	ABORT:C156
-	
-End if 
-
-  // ----------------------------------------------------
-If (Asserted:C1132(Test path name:C476($File_rsrc)=Is a document:K24:1))
-	
-	$Dom_root:=DOM Parse XML source:C719($File_rsrc)
+	$root:=DOM Parse XML source:C719($pathname)
 	
 	If (OK=1)
 		
-		$Dom_node:=DOM Find XML element by ID:C1010($Dom_root;"commands")
+		$node:=DOM Find XML element by ID:C1010($root; "commands")
 		
 		If (OK=1)
 			
-			$tDom_nodes{0}:=DOM Find XML element:C864($Dom_node;"group/trans-unit";$tDom_nodes)
-			$Lon_count:=Size of array:C274($tDom_nodes)
+			$_nodes{0}:=DOM Find XML element:C864($node; "group/trans-unit"; $_nodes)
+			$size:=Size of array:C274($_nodes)
 			
-			ARRAY TEXT:C222($tTxt_names;$Lon_count)
-			ARRAY TEXT:C222($tTxt_theme;$Lon_count)
-			ARRAY LONGINT:C221($tLon_command;$Lon_count)
+			ARRAY TEXT:C222($tTxt_names; $size)
+			ARRAY TEXT:C222($tTxt_theme; $size)
+			ARRAY LONGINT:C221($tLon_command; $size)
 			
-			For ($Lon_i;1;$Lon_count;1)
+			For ($i; 1; $size; 1)
 				
-				DOM GET XML ATTRIBUTE BY NAME:C728($tDom_nodes{$Lon_i};"extradata";$tTxt_theme{$Lon_i})
-				DOM GET XML ATTRIBUTE BY NAME:C728($tDom_nodes{$Lon_i};"resname";$tTxt_names{$Lon_i})
-				DOM GET XML ATTRIBUTE BY NAME:C728($tDom_nodes{$Lon_i};"help-id";$tLon_command{$Lon_i})
+				DOM GET XML ATTRIBUTE BY NAME:C728($_nodes{$i}; "extradata"; $tTxt_theme{$i})
+				DOM GET XML ATTRIBUTE BY NAME:C728($_nodes{$i}; "resname"; $tTxt_names{$i})
+				DOM GET XML ATTRIBUTE BY NAME:C728($_nodes{$i}; "help-id"; $tLon_command{$i})
 				
 			End for 
 		End if 
 		
-		SORT ARRAY:C229($tTxt_theme;$tTxt_names;$tLon_command)
+		SORT ARRAY:C229($tTxt_theme; $tTxt_names; $tLon_command)
 		
-		$Lst_syntax:=New list:C375
+		$list:=New list:C375
 		
-		For ($Lon_i;1;$Lon_count;1)
+		For ($i; 1; $size; 1)
 			
-			If ($tTxt_theme{$Lon_i}#$tTxt_theme{0})  //new theme
+			If ($tTxt_theme{$i}#$tTxt_theme{0})  //new theme
 				
-				$tTxt_theme{0}:=$tTxt_theme{$Lon_i}
-				$Txt_buffer:=$tTxt_theme{0}
+				$tTxt_theme{0}:=$tTxt_theme{$i}
+				$t:=$tTxt_theme{0}
 				
-				$Dom_node:=DOM Find XML element by ID:C1010($Dom_root;$Txt_buffer)
+				$node:=DOM Find XML element by ID:C1010($root; $t)
 				
 				If (OK=1)
 					
-					DOM GET XML ATTRIBUTE BY NAME:C728($Dom_node;"help-id";$Lon_x)
+					DOM GET XML ATTRIBUTE BY NAME:C728($node; "help-id"; $id)
 					
-					$Lst_command:=New list:C375
-					APPEND TO LIST:C376($Lst_syntax;Get localized string:C991($Txt_buffer);$Lon_x;$Lst_command;False:C215)
-					SET LIST ITEM PROPERTIES:C386($Lst_syntax;$Lon_x;False:C215;Bold:K14:2;0)
+					$commands:=New list:C375
+					APPEND TO LIST:C376($list; Localized string:C991($t); $id; $commands; False:C215)
+					SET LIST ITEM PROPERTIES:C386($list; $id; False:C215; Bold:K14:2; 0)
 					
 				End if 
 			End if 
 			
-			APPEND TO LIST:C376($Lst_command;$tTxt_names{$Lon_i};Choose:C955($tLon_command{$Lon_i}#0;$tLon_command{$Lon_i};$Lon_x))
+			APPEND TO LIST:C376($commands; $tTxt_names{$i}; Choose:C955($tLon_command{$i}#0; $tLon_command{$i}; $id))
 			
 		End for 
 		
-		DOM CLOSE XML:C722($Dom_root)
+		DOM CLOSE XML:C722($root)
 		
-		SORT LIST:C391($Lst_syntax)
+		SORT LIST:C391($list)
 		
 	End if 
 End if 
 
-$0:=$Lst_syntax
-
-  // ----------------------------------------------------
-  // End
+return $list

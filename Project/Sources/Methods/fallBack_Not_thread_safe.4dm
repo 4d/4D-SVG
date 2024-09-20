@@ -1,44 +1,37 @@
 //%attributes = {"invisible":true,"preemptive":"incapable"}
-C_OBJECT:C1216($1)
+#DECLARE($properties : Object)
 
-C_TEXT:C284($Txt_property)
+var $property : Text
 
-If (False:C215)
-	C_OBJECT:C1216(fallBack_Not_thread_safe ;$1)
-End if 
-
-For each ($Txt_property;$1)
+For each ($property; $properties)
 	
 	Case of 
 			
-			  //______________________________________________________
-		: ($Txt_property="set")
+			//______________________________________________________
+		: ($property="set")
 			
-			<>Ptr_Document:=$1[$Txt_property]
+			<>Ptr_Document:=$properties[$property]
 			
 			Use (Storage:C1525.svg)
 				
 				If (Is nil pointer:C315(<>Ptr_Document))
 					
-					  // Decrement usage
+					// Decrement usage
 					Storage:C1525.svg.variableDocument:=Storage:C1525.svg.variableDocument-1
 					
 				Else 
 					
-					  // Increment usage
+					// Increment usage
 					Storage:C1525.svg.variableDocument:=Num:C11(Storage:C1525.svg.variableDocument)+1
 					
 				End if 
 			End use 
 			
-			  //______________________________________________________
-		: ($Txt_property="document")
+			//______________________________________________________
+		: ($property="document")
 			
-			<>Ptr_Document->:=$1[$Txt_property]
+			<>Ptr_Document->:=$properties[$property]
 			
-			  //______________________________________________________
-		Else 
-			
-			  //______________________________________________________
+			//______________________________________________________
 	End case 
 End for each 

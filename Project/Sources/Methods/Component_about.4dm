@@ -3,14 +3,7 @@
 // Method : Component_about
 // Created 17/09/08 by Vincent de Lachaux
 // ----------------------------------------------------
-// Description
-//
-// ----------------------------------------------------
-var $1 : Text
-
-If (False:C215)
-	C_TEXT:C284(Component_about; $1)
-End if 
+#DECLARE($action : Text)
 
 var $window : Integer
 

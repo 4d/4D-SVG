@@ -15,7 +15,6 @@
 	"00_DEV": {
 		"methods": [
 			"00_test",
-			"Compiler_test",
 			"testCallbackMethod"
 		]
 	},
@@ -117,7 +116,6 @@
 			"about",
 			"Color_main",
 			"colors",
-			"COMPILER_4DPop",
 			"SVGTool_Display_colors",
 			"SVGTool_Display_syntax",
 			"SVGTool_Display_viewer",

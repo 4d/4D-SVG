@@ -28,6 +28,12 @@ $Dom_svg:=SVG_New
 Case of 
 		
 		//______________________________________________________
+	: (True:C214)
+		
+		$Dom_picture:=SVG_New_image($Dom_svg; "#4DPop.png")
+		SVG_FADE_TO_GREY_SCALE($Dom_picture)
+		
+		//______________________________________________________
 	: (True:C214)  //ACI0104291
 		
 		$Dom_g:=SVG_New_group($Dom_svg; "bloc")

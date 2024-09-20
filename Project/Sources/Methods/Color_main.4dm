@@ -6,26 +6,14 @@
 // Description
 //
 // ----------------------------------------------------
-C_TEXT:C284($1)
+#DECLARE($Txt_entryPoint : Text)
 
-C_BLOB:C604($x)
-C_BOOLEAN:C305($Boo_White)
-C_LONGINT:C283($Lon_column; $Lon_currentPage; $Lon_formEvent; $Lon_i; $Lon_index; $Lon_line)
-C_LONGINT:C283($Lon_parameters; $Lon_timerEvent; $Lon_windowRef)
-C_PICTURE:C286($p)
-C_TEXT:C284($Txt_color; $Txt_ColorThemeCode; $Txt_entryPoint; $Dom_svg; $t)
-
-If (False:C215)
-	C_TEXT:C284(Color_main; $1)
-End if 
-
-$Lon_parameters:=Count parameters:C259
-
-If ($Lon_parameters>=1)
-	
-	$Txt_entryPoint:=$1
-	
-End if 
+var $Dom_svg; $t; $Txt_color; $Txt_ColorThemeCode : Text
+var $p : Picture
+var $Boo_White : Boolean
+var $Lon_column; $Lon_currentPage; $Lon_formEvent; $Lon_i; $Lon_index; $Lon_line : Integer
+var $Lon_timerEvent; $Lon_windowRef : Integer
+var $x : Blob
 
 Case of 
 		
@@ -40,13 +28,14 @@ Case of
 				//……………………………………………………………………
 			Else 
 				
-				//This method must be executed in a new process
+				// This method must be executed in a new process
 				BRING TO FRONT:C326(New process:C317(Current method name:C684; 0; "$"+Current method name:C684; "_run"; *))
 				
 				//……………………………………………………………………
 		End case 
 		
 		//___________________________________________________________
+		
 	: ($Txt_entryPoint="onDrag")
 		
 		LISTBOX GET CELL POSITION:C971(<>tBoo_listbox; $Lon_column; $Lon_line)
@@ -62,6 +51,7 @@ Case of
 			End if 
 			
 			SET TEXT TO PASTEBOARD:C523("\""+$Txt_color+"\"")
+			
 			$Dom_svg:=SVG_New(40; 40)
 			$t:=SVG_New_rect($Dom_svg; 0; 0; 40; 40; 0; 0; "none"; $Txt_color; 0)
 			$p:=SVG_Export_to_picture($Dom_svg)
@@ -71,6 +61,7 @@ Case of
 		End if 
 		
 		//___________________________________________________________
+		
 	: ($Txt_entryPoint="formMethod")
 		
 		$Lon_formEvent:=Form event code:C388
@@ -88,7 +79,7 @@ Case of
 				Case of 
 						
 						//.....................................................
-					: ($Lon_timerEvent=-1)  //INIT
+					: ($Lon_timerEvent=-1)  // INIT
 						
 						ARRAY PICTURE:C279(<>tPic_Colors; 0x0000)
 						ARRAY TEXT:C222(<>tTxt_colorNames; 0x0000)
@@ -97,20 +88,20 @@ Case of
 							
 							$Dom_svg:=SVG_New(245; 30)
 							$t:=SVG_New_rect($Dom_svg; 0; 0; 245; 30; 0; 0; "none"; "none"; 0)
-							$t:=SVG_New_text($Dom_svg; Get localized string:C991("ColorTheme_"+String:C10($Lon_i)); 5; 8; "'lucida grande' 'arial'"; 12; Bold:K14:2; Align left:K42:2; "cadetblue")
+							$t:=SVG_New_text($Dom_svg; Localized string:C991("ColorTheme_"+String:C10($Lon_i)); 5; 8; "'lucida grande' 'arial'"; 12; Bold:K14:2; Align left:K42:2; "cadetblue")
 							$p:=SVG_Export_to_picture($Dom_svg)
 							SVG_CLEAR($Dom_svg)
 							
 							APPEND TO ARRAY:C911(<>tPic_Colors; $p)
 							APPEND TO ARRAY:C911(<>tTxt_colorNames; "")
 							
-							$Txt_ColorThemeCode:=Get localized string:C991("ColorThemeCode_"+String:C10($Lon_i))
+							$Txt_ColorThemeCode:=Localized string:C991("ColorThemeCode_"+String:C10($Lon_i))
 							$Lon_index:=0
 							
 							Repeat 
 								
 								$Lon_index:=$Lon_index+1
-								$Txt_color:=Get localized string:C991($Txt_ColorThemeCode+String:C10($Lon_index; "00"))
+								$Txt_color:=Localized string:C991($Txt_ColorThemeCode+String:C10($Lon_index; "00"))
 								
 								If (OK=1)
 									
@@ -126,6 +117,7 @@ Case of
 									End if 
 									
 									APPEND TO ARRAY:C911(<>tTxt_colorNames; $Txt_color)
+									
 									$Dom_svg:=SVG_New(245; 30)
 									$t:=SVG_New_rect($Dom_svg; 0; 0; 245; 28; 0; 0; $Txt_color; $Txt_color; 0)
 									
@@ -157,7 +149,7 @@ Case of
 						<>Lon_timerEvent:=1
 						
 						//.....................................................
-					: ($Lon_timerEvent=1)  //Display
+					: ($Lon_timerEvent=1)  // Display
 						
 						//.....................................................
 					Else 
@@ -172,6 +164,7 @@ Case of
 				End if 
 				
 				//……………………………………………………………………………
+				
 			: ($Lon_formEvent=On Resize:K2:27)
 				
 				//……………………………………………………………………………
@@ -199,6 +192,7 @@ Case of
 		End case 
 		
 		//___________________________________________________________
+		
 	: ($Txt_entryPoint="_run")
 		
 		// First launch of this method executed in a new process
