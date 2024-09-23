@@ -1,59 +1,47 @@
 //%attributes = {"invisible":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : Component_errorHandler
-  // Created 16/04/08 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  // 8850 = Parameters Missing
-  // 8851 = Invalid Type for an Argument
-  // 8852 = Invalid Node Reference
-  // 8853 = Invalid Value for an Attribute
-  // 8854 = Impossible to apply this Command for this Node
-  // 8855 = The ID passed was not found
-  // 8856 = The DTD file was not found
-  // 8857 = Invalid Value for an Argument
-  // 8858 = Unknown error
-  // 8859 = Duplicate ID
-  // 8860 = Deprecated
-  // ----------------------------------------------------
-C_BOOLEAN:C305($0)
-C_TEXT:C284($1)
-C_TEXT:C284($2)
-C_TEXT:C284($3)
+// ----------------------------------------------------
+// Method : Component_errorHandler
+// Created 16/04/08 by Vincent de Lachaux
+// ----------------------------------------------------
+// Description
+// 8850 = Parameters Missing
+// 8851 = Invalid Type for an Argument
+// 8852 = Invalid Node Reference
+// 8853 = Invalid Value for an Attribute
+// 8854 = Impossible to apply this Command for this Node
+// 8855 = The ID passed was not found
+// 8856 = The DTD file was not found
+// 8857 = Invalid Value for an Argument
+// 8858 = Unknown error
+// 8859 = Duplicate ID
+// 8860 = Deprecated
+// ----------------------------------------------------
+#DECLARE($action : Text; $command : Text; $currentMethod : Text) : Boolean
 
-C_LONGINT:C283($Lon_parameters)
-C_TEXT:C284($Txt_Current_Method;$Txt_Error_Method)
+var $methodCallerdOnError : Text
+var $countParameters : Integer
 
-If (False:C215)
-	C_BOOLEAN:C305(Component_errorHandler ;$0)
-	C_TEXT:C284(Component_errorHandler ;$1)
-	C_TEXT:C284(Component_errorHandler ;$2)
-	C_TEXT:C284(Component_errorHandler ;$3)
-End if 
-
-$Lon_parameters:=Count parameters:C259
-
-$0:=True:C214  //enable use with ASSERTIONS
+$countParameters:=Count parameters:C259
 
 Case of 
 		
-		  //________________________________________
-	: ($Lon_parameters=0)  //Error-handling
+		//________________________________________
+	: ($countParameters=0)  // Error-handling
 		
 		SVG_Lon_Error:=ERROR
 		
-		  // Added by Vincent de Lachaux (12/04/12)
+		// Added by Vincent de Lachaux (12/04/12)
 		If (Storage:C1525.svg.options ?? 12)  // Debug mode
 			
-			  // Call the installed host error-handling method
+			// Call the installed host error-handling method
 			If (Length:C16(String:C10(Storage:C1525.svg.Host_Error_Method))>0)
 				
-				$Txt_Error_Method:=Method called on error:C704
-				ON ERR CALL:C155("xToolBox_NO_ERROR")  //=========================== < NO ERROR >
+				$methodCallerdOnError:=Method called on error:C704
+				ON ERR CALL:C155("xToolBox_NO_ERROR")  // =========================== < NO ERROR >
 				
-				EXECUTE METHOD:C1007(Storage:C1525.svg.Host_Error_Method;*;SVG_Lon_Error;SVG_Txt_Command)
+				EXECUTE METHOD:C1007(Storage:C1525.svg.Host_Error_Method; *; SVG_Lon_Error; SVG_Txt_Command)
 				
-				ON ERR CALL:C155($Txt_Error_Method)  //================================ </ NO ERROR >
+				ON ERR CALL:C155($methodCallerdOnError)  // ================================ </ NO ERROR >
 				
 			Else 
 				
@@ -65,51 +53,42 @@ Case of
 			End if 
 		End if 
 		
-		  //______________________________________________________
-	: ($Lon_parameters<1)
+		//______________________________________________________
+	: ($countParameters<1)
 		
 		BEEP:C151
 		
-		  //______________________________________________________
-	: ($1="init")  //Installs the current method as error-handling method
+		//______________________________________________________
+	: ($action="init")  // Installs the current method as error-handling method
 		
 		If (Not:C34(Storage:C1525.svg.options ?? 12))
 			
 			If (Storage:C1525.svg.options ?? 7)
 				
-				  // Turn on the error message
+				// Turn on the error message
 				
 			Else 
 				
-				$Txt_Error_Method:=Method called on error:C704
+				$methodCallerdOnError:=Method called on error:C704
+				$currentMethod:=$currentMethod || "Component_errorHandler"
 				
-				If ($Lon_parameters>=3)
+				If ($methodCallerdOnError#$currentMethod)
 					
-					$Txt_Current_Method:=$3
-					
-				Else 
-					
-					$Txt_Current_Method:="Component_errorHandler"  //Current method name
-					
-				End if 
-				
-				If ($Txt_Error_Method#$Txt_Current_Method)
-					
-					  // Keep the current error-handling method
+					// Keep the current error-handling method
 					Use (Storage:C1525.svg)
 						
-						Storage:C1525.svg.Current_Error_Method:=$Txt_Error_Method
+						Storage:C1525.svg.Current_Error_Method:=$methodCallerdOnError
 						
 					End use 
 					
-					ON ERR CALL:C155($Txt_Current_Method)
+					ON ERR CALL:C155($currentMethod)
 					
 				End if 
 			End if 
 			
-			If ($Lon_parameters>=2)
+			If ($countParameters>=2)
 				
-				SVG_Txt_Command:=$2
+				SVG_Txt_Command:=$command
 				
 			End if 
 		End if 
@@ -118,15 +97,15 @@ Case of
 		
 		OK:=1
 		
-		  //______________________________________________________
-	: ($1="deinit")
+		//______________________________________________________
+	: ($action="deinit")
 		
-		$Txt_Error_Method:=Method called on error:C704
-		$Txt_Current_Method:="Component_errorHandler"  //Current method name
+		$methodCallerdOnError:=Method called on error:C704
+		$currentMethod:="Component_errorHandler"  // Current method name
 		
-		If ($Txt_Error_Method#$Txt_Current_Method)
+		If ($methodCallerdOnError#$currentMethod)
 			
-			  // Restore the previous error-handling method
+			// Restore the previous error-handling method
 			ON ERR CALL:C155(String:C10(Storage:C1525.svg.Current_Error_Method))
 			
 			Use (Storage:C1525.svg)
@@ -136,30 +115,33 @@ Case of
 			End use 
 		End if 
 		
-		  //______________________________________________________
-	: ($1="ERROR_OFF")
+		//______________________________________________________
+	: ($action="ERROR_OFF")
 		
 		ON ERR CALL:C155("xToolBox_NO_ERROR")
 		
-		  //______________________________________________________
-	: ($1="ERROR_ON")
+		//______________________________________________________
+	: ($action="ERROR_ON")
 		
 		ERROR:=0
 		ON ERR CALL:C155(Current method name:C684)
 		
-		  //______________________________________________________
-	: ($1="keep")
+		//______________________________________________________
+	: ($action="keep")
 		
 		If (SVG_Lon_Error=0)
 			
-			SVG_Lon_Error:=8858  //Unknown error
+			SVG_Lon_Error:=8858  // Unknown error
 			
 		End if 
 		
-		  //______________________________________________________
+		//______________________________________________________
+		
 	Else 
 		
 		TRACE:C157
 		
-		  //______________________________________________________
+		//______________________________________________________
 End case 
+
+return True:C214  // Enable use with ASSERTIONS

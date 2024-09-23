@@ -1,162 +1,151 @@
 //%attributes = {"invisible":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : PREFERENCES
-  // Created 06/10/08 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
-C_TEXT:C284($1)
-C_POINTER:C301(${2})
+// ----------------------------------------------------
+// Method : PREFERENCES
+// Created 06/10/08 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($action : Text;  ...  : Pointer)
 
-C_BOOLEAN:C305($Boo_Set)
-C_LONGINT:C283($Lon_bottom;$Lon_i;$Lon_left;$Lon_right;$Lon_top)
-C_TEXT:C284($kTxt_Tool;$Txt_buffer;$Txt_elementRef;$Txt_EntryPoint;$Txt_onErrorCallMethod;$Txt_Path)
-C_TEXT:C284($Txt_Reference;$Txt_root;$Txt_value;$Txt_Xpath)
+var $set : Boolean
+var $bottom; $i; $left; $right; $top : Integer
+var $TOOL; $t; $node; $pathname : Text
+var $root; $value; $XPATH : Text
 
-If (False:C215)
-	C_TEXT:C284(PREFERENCES ;$1)
-	C_POINTER:C301(PREFERENCES ;${2})
-End if 
+$pathname:=Get 4D folder:C485+"4dPop v11 preference.xml"
 
-$Txt_EntryPoint:=$1
+$TOOL:="SVG4D"
 
-$Txt_Path:=Get 4D folder:C485+"4dPop v11 preference.xml"
-
-$kTxt_Tool:="SVG4D"
-
-If (Test path name:C476($Txt_Path)#Is a document:K24:1)
+If (Test path name:C476($pathname)#Is a document:K24:1)
 	
-	  //open
-	$Txt_root:=DOM Create XML Ref:C861("preference")
+	// Open
+	$root:=DOM Create XML Ref:C861("preference")
 	
 Else 
 	
-	  //create
-	$Txt_root:=DOM Parse XML source:C719($Txt_Path)
+	// Create
+	$root:=DOM Parse XML source:C719($pathname)
 	
 End if 
 
 If (OK=1)
 	
-	If ($Txt_EntryPoint="@.set")
+	If ($action="@.set")
 		
-		$Boo_Set:=True:C214
-		$Txt_EntryPoint:=Replace string:C233($Txt_EntryPoint;".set";"")
+		$set:=True:C214
+		$action:=Replace string:C233($action; ".set"; "")
 		
 	Else 
 		
-		$Txt_EntryPoint:=Replace string:C233($Txt_EntryPoint;".get";"")
+		$action:=Replace string:C233($action; ".get"; "")
 		
 	End if 
 	
-	$Txt_Xpath:="preference/"+$kTxt_Tool+"/"+$Txt_EntryPoint
-	$Txt_elementRef:=DOM Find XML element:C864($Txt_root;$Txt_Xpath)
+	$XPATH:="preference/"+$TOOL+"/"+$action
+	
+	$node:=DOM Find XML element:C864($root; $XPATH)
 	
 	Case of 
 			
-			  //______________________________________________________
-		: ($Txt_EntryPoint="openRecent")
+			//______________________________________________________
+		: ($action="openRecent")
 			
-			If ($Boo_Set)
+			If ($set)
 				
 				If (OK=1)
 					
-					DOM REMOVE XML ELEMENT:C869($Txt_elementRef)
+					DOM REMOVE XML ELEMENT:C869($node)
 					
 				End if 
 				
-				$Txt_elementRef:=DOM Create XML element:C865($Txt_root;$Txt_Xpath)
+				$node:=DOM Create XML element:C865($root; $XPATH)
 				
-				For ($Lon_i;1;Size of array:C274($2->);1)
+				For ($i; 1; Size of array:C274($2->); 1)
 					
-					DOM SET XML ELEMENT VALUE:C868(DOM Create XML element:C865($Txt_elementRef;"path");\
-						$2->{$Lon_i})
+					DOM SET XML ELEMENT VALUE:C868(DOM Create XML element:C865($node; "path"); \
+						$2->{$i})
 					
 				End for 
 				
 			Else 
 				
-				DELETE FROM ARRAY:C228($2->;Num:C11(Size of array:C274($2->)>0);Size of array:C274($2->))
+				DELETE FROM ARRAY:C228($2->; Num:C11(Size of array:C274($2->)>0); Size of array:C274($2->))
 				
 				If (OK=1)
 					
-					$Txt_Reference:=DOM Get first child XML element:C723($Txt_elementRef;$Txt_buffer;$Txt_value)
+					$node:=DOM Get first child XML element:C723($node; $t; $value)
 					
 					Repeat 
 						
 						If (OK=1)
 							
-							If (Test path name:C476($Txt_value)=Is a document:K24:1)
+							If (Test path name:C476($value)=Is a document:K24:1)
 								
-								APPEND TO ARRAY:C911($2->;$Txt_value)
+								APPEND TO ARRAY:C911($2->; $value)
 								
 							End if 
 							
-							$Txt_Reference:=DOM Get next sibling XML element:C724($Txt_Reference;$Txt_buffer;$Txt_value)
+							$node:=DOM Get next sibling XML element:C724($node; $t; $value)
 							
 						End if 
 					Until (OK=0)
 				End if 
 			End if 
 			
-			  //______________________________________________________
-		: ($Txt_EntryPoint="viewerOptions")
+			//______________________________________________________
+		: ($action="viewerOptions")
 			
-			If ($Boo_Set)
+			If ($set)
 				
 				If (OK=0)
 					
-					$Txt_elementRef:=DOM Create XML element:C865($Txt_root;$Txt_Xpath)
+					$node:=DOM Create XML element:C865($root; $XPATH)
 					
 				End if 
 				
-				DOM SET XML ATTRIBUTE:C866($Txt_elementRef;\
-					"showColoredBackground";$2->;\
-					"backgroundColor";$3->;\
-					"automaticallyResize";$4->;\
-					"font-size";$5->)
+				DOM SET XML ATTRIBUTE:C866($node; \
+					"showColoredBackground"; $2->; \
+					"backgroundColor"; $3->; \
+					"automaticallyResize"; $4->; \
+					"font-size"; $5->)
 				
 			Else 
 				
-				If (OK=1)
+				If (Bool:C1537(OK))
 					
-					$Txt_onErrorCallMethod:=Method called on error:C704
-					ON ERR CALL:C155("xml_noError")  //=========================== < NO ERROR >
-					
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"showColoredBackground";$2->)
-					
-					If (OK=0)
+					Try
 						
-						$2->:=False:C215
+						DOM GET XML ATTRIBUTE BY NAME:C728($node; "showColoredBackground"; $2->)
 						
-					End if 
-					
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"backgroundColor";$3->)
-					
-					If (OK=0)
+						If (OK=0)
+							
+							$2->:=False:C215
+							
+						End if 
 						
-						$3->:=0x00FFFFFF
+						DOM GET XML ATTRIBUTE BY NAME:C728($node; "backgroundColor"; $3->)
 						
-					End if 
-					
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"automaticallyResize";$4->)
-					
-					If (OK=0)
+						If (OK=0)
+							
+							$3->:=0x00FFFFFF
+							
+						End if 
 						
-						$4->:=False:C215
+						DOM GET XML ATTRIBUTE BY NAME:C728($node; "automaticallyResize"; $4->)
 						
-					End if 
-					
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"font-size";$5->)
-					
-					If (OK=0)
+						If (OK=0)
+							
+							$4->:=False:C215
+							
+						End if 
 						
-						$5->:=12
+						DOM GET XML ATTRIBUTE BY NAME:C728($node; "font-size"; $5->)
 						
-					End if 
-					
-					ON ERR CALL:C155($Txt_onErrorCallMethod)  //=================== </ NO ERROR >
+						If (OK=0)
+							
+							$5->:=12
+							
+						End if 
+						
+					End try
 					
 				Else 
 					
@@ -168,31 +157,31 @@ If (OK=1)
 				End if 
 			End if 
 			
-			  //______________________________________________________
-		: ($Txt_EntryPoint="@WindowPosition")
+			//______________________________________________________
+		: ($action="@WindowPosition")
 			
-			If ($Boo_Set)
+			If ($set)
 				
-				$Lon_left:=$2->
-				$Lon_top:=$3->
-				$Lon_right:=$4->
-				$Lon_bottom:=$5->
+				$left:=$2->
+				$top:=$3->
+				$right:=$4->
+				$bottom:=$5->
 				
 				If (OK=0)
 					
-					$Txt_elementRef:=DOM Create XML element:C865($Txt_root;$Txt_Xpath;\
-						"left";$Lon_left;\
-						"top";$Lon_top;\
-						"right";$Lon_right;\
-						"bottom";$Lon_bottom)
+					$node:=DOM Create XML element:C865($root; $XPATH; \
+						"left"; $left; \
+						"top"; $top; \
+						"right"; $right; \
+						"bottom"; $bottom)
 					
 				Else 
 					
-					DOM SET XML ATTRIBUTE:C866($Txt_elementRef;\
-						"left";$Lon_left;\
-						"top";$Lon_top;\
-						"right";$Lon_right;\
-						"bottom";$Lon_bottom)
+					DOM SET XML ATTRIBUTE:C866($node; \
+						"left"; $left; \
+						"top"; $top; \
+						"right"; $right; \
+						"bottom"; $bottom)
 					
 				End if 
 				
@@ -200,10 +189,10 @@ If (OK=1)
 				
 				If (OK=1)
 					
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"left";$2->)
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"top";$3->)
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"right";$4->)
-					DOM GET XML ATTRIBUTE BY NAME:C728($Txt_elementRef;"bottom";$5->)
+					DOM GET XML ATTRIBUTE BY NAME:C728($node; "left"; $2->)
+					DOM GET XML ATTRIBUTE BY NAME:C728($node; "top"; $3->)
+					DOM GET XML ATTRIBUTE BY NAME:C728($node; "right"; $4->)
+					DOM GET XML ATTRIBUTE BY NAME:C728($node; "bottom"; $5->)
 					
 				End if 
 				
@@ -217,16 +206,16 @@ If (OK=1)
 				End if 
 			End if 
 			
-			  //________________________________________
+			//________________________________________
 	End case 
 	
-	If ($Boo_Set)
+	If ($set)
 		
-		DOM SET XML DECLARATION:C859($Txt_root;"UTF-8";True:C214;True:C214)
-		DOM EXPORT TO FILE:C862($Txt_root;$Txt_Path)
+		DOM SET XML DECLARATION:C859($root; "UTF-8"; True:C214; True:C214)
+		DOM EXPORT TO FILE:C862($root; $pathname)
 		
 	End if 
 	
-	DOM CLOSE XML:C722($Txt_root)
+	DOM CLOSE XML:C722($root)
 	
 End if 

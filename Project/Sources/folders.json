@@ -7,7 +7,6 @@
 		],
 		"methods": [
 			"Compiler_SVG",
-			"Compiler_SVG_Private",
 			"Compiler_SVG_Public"
 		]
 	},

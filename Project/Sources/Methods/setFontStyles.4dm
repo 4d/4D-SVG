@@ -1,11 +1,6 @@
 //%attributes = {"invisible":true,"preemptive":"capable"}
 #DECLARE($target : Text; $style : Integer)
 
-If (False:C215)
-	C_TEXT:C284(setFontStyles; $1)
-	C_LONGINT:C283(setFontStyles; $2)
-End if 
-
 var $c : Collection
 
 // Mark:font-weight
