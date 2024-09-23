@@ -305,7 +305,6 @@
 	},
 	"xml": {
 		"methods": [
-			"COMPILER_xml",
 			"xml_COPY_ELEMENT",
 			"xml_Duplicate_element",
 			"xml_Escape_characters",

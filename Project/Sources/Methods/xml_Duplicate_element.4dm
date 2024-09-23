@@ -1,59 +1,44 @@
 //%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Method : xml_DUPLICATE_ELEMENT
-  // Created 05/09/08 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
-C_TEXT:C284($0)
-C_TEXT:C284($1)
-C_TEXT:C284($2)
+// ----------------------------------------------------
+// Method : xml_DUPLICATE_ELEMENT
+// Created 05/09/08 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($src : Text; $tgt : Text) : Text
 
-C_BLOB:C604($Blb_xml)
-C_LONGINT:C283($Lon_i)
-C_TEXT:C284($Txt_Name;$Txt_nameBuffer;$Txt_sourceRef;$Txt_sourceRoot;$Txt_targetRef;$Txt_targetRoot)
-C_TEXT:C284($Txt_valueBuffer)
+var $srcRoot; $tgtName; $tgtRoot; $tgtValue : Text
+var $i : Integer
+var $blb : Blob
 
-If (False:C215)
-	C_TEXT:C284(xml_Duplicate_element ;$0)
-	C_TEXT:C284(xml_Duplicate_element ;$1)
-	C_TEXT:C284(xml_Duplicate_element ;$2)
-End if 
-
-$Txt_sourceRef:=$1
-$Txt_targetRef:=$2
-
-If (Asserted:C1132(xml_referenceValid ($Txt_sourceRef) & xml_referenceValid ($Txt_targetRef);Get localized string:C991("error_badReference")))
+If (Asserted:C1132(xml_referenceValid($src) & xml_referenceValid($tgt); Localized string:C991("error_badReference")))
 	
-	DOM EXPORT TO VAR:C863($Txt_sourceRef;$Blb_xml)
+	DOM EXPORT TO VAR:C863($src; $blb)
 	
-	If (OK=1)
+	If (Bool:C1537(OK))
 		
-		$Txt_sourceRoot:=DOM Parse XML variable:C720($Blb_xml;False:C215)
+		$srcRoot:=DOM Parse XML variable:C720($blb; False:C215)
 		
-		If (OK=1)
+		If (Bool:C1537(OK))
 			
-			DOM GET XML ELEMENT NAME:C730($Txt_sourceRoot;$Txt_Name)
+			DOM GET XML ELEMENT NAME:C730($srcRoot; $tgtName)
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				$Txt_targetRoot:=DOM Create XML element:C865($Txt_targetRef;$Txt_Name)
+				$tgtRoot:=DOM Create XML element:C865($tgt; $tgtName)
 				
-				If (OK=1)
+				If (Bool:C1537(OK))
 					
-					For ($Lon_i;1;DOM Count XML attributes:C727($Txt_sourceRoot);1)
+					For ($i; 1; DOM Count XML attributes:C727($srcRoot); 1)
 						
-						DOM GET XML ATTRIBUTE BY INDEX:C729($Txt_sourceRoot;$Lon_i;$Txt_nameBuffer;$Txt_valueBuffer)
+						DOM GET XML ATTRIBUTE BY INDEX:C729($srcRoot; $i; $tgtName; $tgtValue)
 						
-						If (OK=1)
+						If (Bool:C1537(OK))
 							
-							DOM SET XML ATTRIBUTE:C866($Txt_targetRoot;\
-								$Txt_nameBuffer;$Txt_valueBuffer)
+							DOM SET XML ATTRIBUTE:C866($tgtRoot; \
+								$tgtName; $tgtValue)
 							
 						Else 
 							
-							$Lon_i:=MAXLONG:K35:2-1
+							break
 							
 						End if 
 					End for 
@@ -62,11 +47,11 @@ If (Asserted:C1132(xml_referenceValid ($Txt_sourceRef) & xml_referenceValid ($Tx
 		End if 
 	End if 
 	
-	If (OK=1)
+	If (Bool:C1537(OK))
 		
-		$0:=$Txt_targetRoot
+		xml_COPY_ELEMENT($srcRoot; $tgtRoot)
 		
-		xml_COPY_ELEMENT ($Txt_sourceRoot;$Txt_targetRoot)
+		return $tgtRoot
 		
 	End if 
 End if 

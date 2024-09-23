@@ -1,83 +1,78 @@
 //%attributes = {"invisible":true}
-  // ----------------------------------------------------
-  // Method : xml_COPY_ELEMENT
-  // Created 08/09/08 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
-C_TEXT:C284($1)
-C_TEXT:C284($2)
+// ----------------------------------------------------
+// Method : xml_COPY_ELEMENT
+// Created 08/09/08 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($src : Text; $tgt : Text)
 
-C_BOOLEAN:C305($Boo_OK;$Boo_stop)
-C_LONGINT:C283($Lon_i)
-C_TEXT:C284($Txt_Name;$Txt_nameBuffer;$Txt_Ref;$Txt_sourceRef;$Txt_target;$Txt_targetRef)
-C_TEXT:C284($Txt_Value;$Txt_valueBuffer)
+var $name; $node; $ref; $srcName; $srcValue; $value : Text
+var $success : Boolean
+var $i : Integer
 
-If (False:C215)
-	C_TEXT:C284(xml_COPY_ELEMENT ;$1)
-	C_TEXT:C284(xml_COPY_ELEMENT ;$2)
-End if 
-
-$Txt_sourceRef:=$1
-$Txt_targetRef:=$2
-
-If (Asserted:C1132(xml_referenceValid ($Txt_sourceRef) & xml_referenceValid ($Txt_targetRef);Get localized string:C991("error_badReference")))
+If (Asserted:C1132(xml_referenceValid($src) & xml_referenceValid($tgt); Localized string:C991("error_badReference")))
 	
-	$Txt_Ref:=DOM Get first child XML element:C723($Txt_sourceRef;$Txt_Name;$Txt_Value)
+	$ref:=DOM Get first child XML element:C723($src; $srcName; $srcValue)
 	
-	If (OK=1)
+	If (OK=0)
 		
-		Repeat 
-			
-			$Txt_target:=DOM Create XML element:C865($Txt_targetRef;$Txt_Name)
-			$Boo_OK:=(OK=1)
-			
-			If ($Boo_OK)
-				
-				If (Length:C16($Txt_Value)>0)
-					
-					DOM SET XML ELEMENT VALUE:C868($Txt_target;$Txt_Value)
-					$Boo_OK:=(OK=1)
-					
-				End if 
-				
-				If ($Boo_OK)
-					
-					For ($Lon_i;1;DOM Count XML attributes:C727($Txt_Ref);1)
-						
-						DOM GET XML ATTRIBUTE BY INDEX:C729($Txt_Ref;$Lon_i;$Txt_nameBuffer;$Txt_valueBuffer)
-						$Boo_OK:=(OK=1)
-						
-						If ($Boo_OK)
-							
-							DOM SET XML ATTRIBUTE:C866($Txt_target;\
-								$Txt_nameBuffer;$Txt_valueBuffer)
-							
-						Else 
-							
-							$Lon_i:=MAXLONG:K35:2-1
-							
-						End if 
-					End for 
-				End if 
-			End if 
-			
-			If ($Boo_OK)
-				
-				xml_COPY_ELEMENT ($Txt_Ref;$Txt_target)
-				
-			End if 
-			
-			If ($Boo_OK)
-				
-				$Txt_Ref:=DOM Get next sibling XML element:C724($Txt_Ref;$Txt_Name;$Txt_Value)
-				
-				$Boo_stop:=(OK=0)
-				OK:=1
-				
-			End if 
-		Until (Not:C34($Boo_OK))\
-			 | ($Boo_stop)
+		return 
+		
 	End if 
+	
+	Repeat 
+		
+		$node:=DOM Create XML element:C865($tgt; $srcName)
+		
+		If (Not:C34(Bool:C1537(OK)))
+			
+			break
+			
+		End if 
+		
+		$success:=Bool:C1537(OK)
+		
+		If (Length:C16($srcValue)>0)
+			
+			DOM SET XML ELEMENT VALUE:C868($node; $srcValue)
+			
+			If (Not:C34(Bool:C1537(OK)))
+				
+				break
+				
+			End if 
+		End if 
+		
+		For ($i; 1; DOM Count XML attributes:C727($ref); 1)
+			
+			DOM GET XML ATTRIBUTE BY INDEX:C729($ref; $i; $name; $value)
+			
+			If (Not:C34(Bool:C1537(OK)))
+				
+				break
+				
+			End if 
+			
+			DOM SET XML ATTRIBUTE:C866($node; \
+				$name; $value)
+			
+		End for 
+		
+		If (Not:C34(Bool:C1537(OK)))
+			
+			break
+			
+		End if 
+		
+		xml_COPY_ELEMENT($ref; $node)
+		
+		$ref:=DOM Get next sibling XML element:C724($ref; $srcName; $srcValue)
+		
+		If (Not:C34(Bool:C1537(OK)))
+			
+			OK:=1
+			
+			break
+			
+		End if 
+	Until (False:C215)
 End if 
