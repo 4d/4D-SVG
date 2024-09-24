@@ -5,67 +5,6 @@
 // ----------------------------------------------------
 
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//Document
-//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-If (False:C215)
-	
-	//SVG_SET_DEFAULT_ENCODING
-	_O_C_TEXT:C284(SVG_SET_DEFAULT_ENCODING; $1)
-	
-	//SVG_Get_default_encoding
-	_O_C_TEXT:C284(SVG_Get_default_encoding; $0)
-	
-	//SVG_CLEAR
-	_O_C_TEXT:C284(SVG_CLEAR; $1)
-	
-	//SVG_Copy
-	_O_C_TEXT:C284(SVG_Copy; $0)
-	_O_C_TEXT:C284(SVG_Copy; $1)
-	
-	//SVG_Export_to_picture
-	_O_C_PICTURE:C286(SVG_Export_to_picture; $0)
-	_O_C_TEXT:C284(SVG_Export_to_picture; $1)
-	_O_C_LONGINT:C283(SVG_Export_to_picture; $2)
-	
-	//SVG_Export_to_XML
-	_O_C_TEXT:C284(SVG_Export_to_XML; $0)
-	_O_C_TEXT:C284(SVG_Export_to_XML; $1)
-	
-	//SVG_New
-	_O_C_TEXT:C284(SVG_New; $0)
-	_O_C_REAL:C285(SVG_New; $1)
-	_O_C_REAL:C285(SVG_New; $2)
-	_O_C_TEXT:C284(SVG_New; $3)
-	_O_C_TEXT:C284(SVG_New; $4)
-	_O_C_BOOLEAN:C305(SVG_New; $5)
-	_O_C_LONGINT:C283(SVG_New; $6)
-	
-	//SVG_Open_file
-	_O_C_TEXT:C284(SVG_Open_file; $0)
-	_O_C_TEXT:C284(SVG_Open_file; $1)
-	_O_C_BOOLEAN:C305(SVG_Open_file; $2)
-	
-	//SVG_Open_picture
-	_O_C_TEXT:C284(SVG_Open_picture; $0)
-	_O_C_PICTURE:C286(SVG_Open_picture; $1)
-	
-	//SVG_SAVE_AS_PICTURE
-	_O_C_TEXT:C284(SVG_SAVE_AS_PICTURE; $1)
-	_O_C_TEXT:C284(SVG_SAVE_AS_PICTURE; $2)
-	_O_C_TEXT:C284(SVG_SAVE_AS_PICTURE; $3)
-	
-	//SVG_SAVE_AS_TEXT
-	_O_C_TEXT:C284(SVG_SAVE_AS_TEXT; $1)
-	_O_C_TEXT:C284(SVG_SAVE_AS_TEXT; $2)
-	
-	//SVG_Validate_file
-	_O_C_BOOLEAN:C305(SVG_Validate_file; $0)
-	_O_C_TEXT:C284(SVG_Validate_file; $1)
-	
-	//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-End if 
-
-//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 //Structure  & definition
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 If (False:C215)

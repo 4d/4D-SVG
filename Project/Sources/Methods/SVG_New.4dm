@@ -1,238 +1,189 @@
 //%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : SVG_New
-  // Created 16/03/06, 10:07:53
-  // Framework SVgg
-  // Author : Gérald Czwiklinski
-  // ----------------------------------------------------
-  // Modified by Vincent de Lachaux (16/04/08)
-  // 2004 -> v11
-  // ----------------------------------------------------
-  // Modified by Vincent de Lachaux (08/07/08)
-  // Added viewBox and preserveAspectRatio
-  // ----------------------------------------------------
-C_TEXT:C284($0)
-C_REAL:C285($1)
-C_REAL:C285($2)
-C_TEXT:C284($3)
-C_TEXT:C284($4)
-C_BOOLEAN:C305($5)
-C_LONGINT:C283($6)
+// ----------------------------------------------------
+// Method : SVG_New
+// Created 16/03/06, 10:07:53
+// Framework SVgg
+// Author : Gérald Czwiklinski
+// ----------------------------------------------------
+// Modified by Vincent de Lachaux (16/04/08)
+// 2004 -> v11
+// ----------------------------------------------------
+// Modified by Vincent de Lachaux (08/07/08)
+// Added viewBox and preserveAspectRatio
+// ----------------------------------------------------
+#DECLARE($width : Real; $height : Real; $title : Text; $description : Text; $viewBox : Boolean; $preserveAspectRatio : Integer) : Text
 
-C_BOOLEAN:C305($Boo_viewBox)
-C_LONGINT:C283($Lon_parameters;$Lon_preserveAspectRatio)
-C_REAL:C285($Num_height;$Num_width)
-C_TEXT:C284($kTxt_currentMethod;$Txt_buffer;$Txt_description;$Txt_metaData;$Txt_nodeReference;$Txt_rootReference)
-C_TEXT:C284($Txt_title)
+var $CURRENT_METHOD; $node; $root; $Txt_metaData : Text
 
-If (False:C215)
-	C_TEXT:C284(SVG_New ;$0)
-	C_REAL:C285(SVG_New ;$1)
-	C_REAL:C285(SVG_New ;$2)
-	C_TEXT:C284(SVG_New ;$3)
-	C_TEXT:C284(SVG_New ;$4)
-	C_BOOLEAN:C305(SVG_New ;$5)
-	C_LONGINT:C283(SVG_New ;$6)
-End if 
+Compiler_SVG
 
-Compiler_SVG 
+$CURRENT_METHOD:="SVG_New"
 
-$Lon_parameters:=Count parameters:C259
-$kTxt_currentMethod:="SVG_New"  // Nom methode courante
+Component_errorHandler("init"; $CURRENT_METHOD)
 
-If ($Lon_parameters>=2)  // Predefined width & height
+$root:=DOM Create XML Ref:C861("svg"; "http://www.w3.org/2000/svg")
+
+If (Bool:C1537(OK))
 	
-	$Num_width:=$1
-	$Num_height:=$2
-	
-	If ($Lon_parameters>=3)  // Document title
-		
-		$Txt_title:=$3
-		
-		If ($Lon_parameters>=4)  // Document description
-			
-			$Txt_description:=$4
-			
-			If ($Lon_parameters>=5)  // ViewBox
-				
-				$Boo_viewBox:=$5
-				
-				If ($Lon_parameters>=6)  // PreserveAspectRatio
-					
-					$Lon_preserveAspectRatio:=$6
-					
-				End if 
-			End if 
-		End if 
-	End if 
-End if 
-
-Component_errorHandler ("init";$kTxt_currentMethod)
-
-$Txt_rootReference:=DOM Create XML Ref:C861("svg";"http://www.w3.org/2000/svg")
-
-If (OK=1)
-	
-	DOM SET XML DECLARATION:C859($Txt_rootReference;Storage:C1525.svg.encoding;True:C214)
-	XML SET OPTIONS:C1090($Txt_rootReference;XML indentation:K45:34;2-Num:C11(Storage:C1525.svg.options ?? 5))
+	DOM SET XML DECLARATION:C859($root; Storage:C1525.svg.encoding; True:C214)
+	XML SET OPTIONS:C1090($root; XML indentation:K45:34; 2-Num:C11(Storage:C1525.svg.options ?? 5))
 	
 End if 
 
-If (OK=1)
+If (Bool:C1537(OK))\
+ && (Storage:C1525.svg.options ?? 16)
 	
-	If (Storage:C1525.svg.options ?? 16)
-		
-		  // Add the xmlns:link
-		DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-			"xmlns:xlink";"http://www.w3.org/1999/xlink")
-		
-	End if 
+	// Add the xmlns:link
+	DOM SET XML ATTRIBUTE:C866($root; \
+		"xmlns:xlink"; "http://www.w3.org/1999/xlink")
+	
 End if 
 
 Case of 
 		
-		  //______________________________________________________
-	: (OK=0)
+		//______________________________________________________
+	: (Not:C34(Bool:C1537(OK)))
 		
-		  //______________________________________________________
+		// <NOTHING MORE TO DO>
+		
+		//______________________________________________________
 	: (SVG_Lon_Error#0)\
-		 | ($Txt_rootReference="0000000000000000")
+		 | ($root="0000000000000000")
 		
 		OK:=0
 		
-		  //______________________________________________________
+		//______________________________________________________
 	Else 
 		
 		If (Not:C34(Storage:C1525.svg.options ?? 8))
 			
-			DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-				"viewport-fill";"white")
-			DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-				"viewport-fill-opacity";1)
+			DOM SET XML ATTRIBUTE:C866($root; \
+				"viewport-fill"; "white")
+			
+			DOM SET XML ATTRIBUTE:C866($root; \
+				"viewport-fill-opacity"; 1)
 			
 		End if 
 		
 		If (Storage:C1525.svg.options ?? 11)
 			
-			DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-				"shape-rendering";"crispEdges")
+			DOM SET XML ATTRIBUTE:C866($root; \
+				"shape-rendering"; "crispEdges")
 			
 		End if 
 		
-		  // Dimensions {
-		If ($Num_width>0)
+		// Mark:-Dimensions
+		If ($width>0)
 			
-			DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-				"width";String:C10($Num_width;"&xml"))
+			DOM SET XML ATTRIBUTE:C866($root; \
+				"width"; String:C10($width; "&xml"))
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-					"height";String:C10($Num_height;"&xml"))
+				DOM SET XML ATTRIBUTE:C866($root; \
+					"height"; String:C10($height; "&xml"))
 				
 			End if 
 		End if 
-		  //}
 		
-		  // ViewBox {
-		If (OK=1)\
-			 & ($Boo_viewBox)
+		// Mark:-ViewBox
+		If (Bool:C1537(OK))\
+			 && ($viewBox)
 			
-			DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-				"viewBox";"0 0 "+String:C10($Num_width;"&xml")+" "+String:C10($Num_height;"&xml"))
+			DOM SET XML ATTRIBUTE:C866($root; \
+				"viewBox"; "0 0 "+String:C10($width; "&xml")+" "+String:C10($height; "&xml"))
 			
 		End if 
-		  //}
 		
-		  // PreserveAspectRatio {
+		// Mark:-PreserveAspectRatio
 		Case of 
 				
-				  //______________________________________________________
-			: (OK=0)
+				//______________________________________________________
+			: (Not:C34(Bool:C1537(OK)))
 				
-				  //______________________________________________________
-			: ($Lon_preserveAspectRatio=0)
+				// <NOTHING MORE TO DO>
 				
-				  //______________________________________________________
-			: ($Lon_preserveAspectRatio=Scaled to fit:K6:2)
+				//______________________________________________________
+			: ($preserveAspectRatio=0)
 				
-				DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-					"preserveAspectRatio";"none")
+				//______________________________________________________
+			: ($preserveAspectRatio=Scaled to fit:K6:2)
 				
-				  //______________________________________________________
+				DOM SET XML ATTRIBUTE:C866($root; \
+					"preserveAspectRatio"; "none")
+				
+				//______________________________________________________
 			Else 
 				
-				DOM SET XML ATTRIBUTE:C866($Txt_rootReference;\
-					"preserveAspectRatio";"xMidYMid")
+				DOM SET XML ATTRIBUTE:C866($root; \
+					"preserveAspectRatio"; "xMidYMid")
 				
-				  //______________________________________________________
+				//______________________________________________________
 		End case 
-		  //}
 		
-		  // Title {
-		If (OK=1)\
-			 & (Length:C16($Txt_title)>0)
+		// Mark:-Title
+		
+		If (Bool:C1537(OK))\
+			 && (Length:C16($title)>0)
 			
-			$Txt_nodeReference:=DOM Create XML element:C865($Txt_rootReference;"/svg/title")
+			$node:=DOM Create XML element:C865($root; "/svg/title")
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				DOM SET XML ELEMENT VALUE:C868($Txt_nodeReference;$Txt_title)
+				DOM SET XML ELEMENT VALUE:C868($node; $title)
 				
 			End if 
 		End if 
-		  //}
 		
-		  // Desc {
-		If (OK=1)\
-			 & (Length:C16($Txt_description)>0)
+		// Mark:-Desc
+		If (Bool:C1537(OK))\
+			 && (Length:C16($description)>0)
 			
-			$Txt_nodeReference:=DOM Create XML element:C865($Txt_rootReference;"/svg/desc")
+			$node:=DOM Create XML element:C865($root; "/svg/desc")
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				DOM SET XML ELEMENT VALUE:C868($Txt_nodeReference;$Txt_description)
+				DOM SET XML ELEMENT VALUE:C868($node; $description)
 				
 			End if 
 		End if 
-		  //}
 		
-		  // 4D tag line {
-		If (OK=1)\
+		// Mark:-4D tag line
+		If (Bool:C1537(OK))\
 			 & (Structure file:C489#Structure file:C489(*))
 			
-			$Txt_metaData:=DOM Create XML element:C865($Txt_rootReference;"metadata";\
-				"xmlns";"http://www.4D.com/4DSVG")
+			$Txt_metaData:=DOM Create XML element:C865($root; "metadata"; \
+				"xmlns"; "http://www.4D.com/4DSVG")
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				$Txt_nodeReference:=DOM Create XML element:C865($Txt_metaData;"generator")
+				$node:=DOM Create XML element:C865($Txt_metaData; "generator")
 				
-				If (OK=1)
+				If (Bool:C1537(OK))
 					
-					DOM SET XML ELEMENT VALUE:C868($Txt_nodeReference;Storage:C1525.svg.generator)
+					DOM SET XML ELEMENT VALUE:C868($node; Storage:C1525.svg.generator)
 					
-					If (OK=1)
+					If (Bool:C1537(OK))
 						
-						$Txt_nodeReference:=DOM Create XML element:C865($Txt_metaData;"about")
+						$node:=DOM Create XML element:C865($Txt_metaData; "about")
 						
-						If (OK=1)
+						If (Bool:C1537(OK))
 							
-							DOM SET XML ELEMENT VALUE:C868($Txt_nodeReference;"4D SVG is the quintessential vector drawing tool for 4D developers.")
+							DOM SET XML ELEMENT VALUE:C868($node; "4D SVG is the quintessential vector drawing tool for 4D developers.")
 							
-							If (OK=1)
+							If (Bool:C1537(OK))
 								
-								$Txt_nodeReference:=DOM Create XML element:C865($Txt_metaData;"generation")
+								$node:=DOM Create XML element:C865($Txt_metaData; "generation")
 								
-								If (OK=1)
+								If (Bool:C1537(OK))
 									
-									XML SET OPTIONS:C1090($Txt_nodeReference;XML date encoding:K45:24;XML UTC:K45:28)
-									XML SET OPTIONS:C1090($Txt_nodeReference;XML time encoding:K45:30;XML duration:K45:33)
+									XML SET OPTIONS:C1090($node; XML date encoding:K45:24; XML UTC:K45:28)
+									XML SET OPTIONS:C1090($node; XML time encoding:K45:30; XML duration:K45:33)
 									
-									DOM SET XML ATTRIBUTE:C866($Txt_nodeReference;\
-										"system";Storage:C1525.svg.system;\
-										"date";Current date:C33;\
-										"time";Current time:C178)
+									DOM SET XML ATTRIBUTE:C866($node; \
+										"system"; Storage:C1525.svg.system; \
+										"date"; Current date:C33; \
+										"time"; Current time:C178)
 									
 								End if 
 							End if 
@@ -241,50 +192,36 @@ Case of
 				End if 
 			End if 
 		End if 
-		  //}
 		
-		  // Defs {
-		If (OK=1)
+		// Mark:-Defs
+		If (Bool:C1537(OK))
 			
-			$Txt_nodeReference:=DOM Create XML element:C865($Txt_rootReference;"/svg/defs";\
-				"id";"4D")
+			$node:=DOM Create XML element:C865($root; "/svg/defs"; \
+				"id"; "4D")
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				DOM SET XML ATTRIBUTE:C866($Txt_nodeReference;\
-					"id";"4D")
+				DOM SET XML ATTRIBUTE:C866($node; \
+					"id"; "4D")
 				
 			End if 
 		End if 
-		  //}
 		
-		  //______________________________________________________
+		//______________________________________________________
 End case 
 
-If (OK=1)
+If (Bool:C1537(OK))
 	
-	  // Store the reference {
-	Use (Storage:C1525.svg)
-		
-		If (Storage:C1525.svg.docs=Null:C1517)
-			
-			Storage:C1525.svg.docs:=New shared collection:C1527
-			
-		End if 
-		
-		Storage:C1525.svg.docs.push($Txt_rootReference)
-		
-	End use 
-	  //}
+	// Store the reference
+	pushReference($root)
 	
-	$0:=$Txt_rootReference
+	return $root
 	
 Else 
 	
-	  // Keep the error {
-	ASSERT:C1129(Component_errorHandler ("keep"))
-	  //}
+	// Keep the error
+	ASSERT:C1129(Component_errorHandler("keep"))
 	
 End if 
 
-ASSERT:C1129(Component_errorHandler ("deinit"))
+ASSERT:C1129(Component_errorHandler("deinit"))

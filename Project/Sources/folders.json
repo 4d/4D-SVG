@@ -1,20 +1,78 @@
 {
-	"_Component": {
+	"(📦 Component)": {},
+	"(00_IN_WORKS)": {},
+	"♻️ LIBRAIRIES": {
 		"groups": [
-			"Interface (THREAD-SAFE)",
-			"NOT THREAD SAFE",
-			"Private"
+			"Rgx",
+			"xml"
+		],
+		"methods": [
+			"checkGitBranch"
+		]
+	},
+	"📦 NOT THREAD SAFE": {
+		"methods": [
+			"COMPILER_Not_Thread_Safe",
+			"fallBack_Not_thread_safe",
+			"SVG_ABOUT",
+			"SVGTool_SET_VIEWER_CALLBACK",
+			"SVGTool_SHOW_IN_VIEWER",
+			"viewer_sources",
+			"xToolBox_tabCreate",
+			"xToolBox_tabHandler"
+		]
+	},
+	"🧪 unitTests": {
+		"methods": [
+			"test_arc"
+		]
+	},
+	"🧰 API": {
+		"groups": [
+			"1 - Documents",
+			"2 - Drawing",
+			"3 - Text",
+			"4 - Structure & definition",
+			"5 - Attributes",
+			"6 - Colors & gradients",
+			"7-  Filters",
+			"8 - Utilities",
+			"9 - MISCELLANEOUS"
 		],
 		"methods": [
 			"Compiler_SVG",
 			"Compiler_SVG_Public"
 		]
 	},
-	"(00_IN_WORKS)": {},
-	"00_DEV": {
+	"🚧 Dev": {
 		"methods": [
 			"00_test",
 			"testCallbackMethod"
+		]
+	},
+	"🛠️ Tools": {
+		"methods": [
+			"Component_about",
+			"Component_defaultOptions",
+			"Component_errorHandler",
+			"Component_init",
+			"Component_putError",
+			"fontReplaceArial",
+			"PREFERENCES",
+			"pushReference",
+			"setFontStyles",
+			"str_styledText",
+			"SVG_Get_string_width",
+			"svg_relativeURL",
+			"url_decode",
+			"url_encode",
+			"xToolBox_BytesToString",
+			"xToolbox_GetLastItemFromPath",
+			"xToolBox_NO_ERROR",
+			"xToolBox_RELEASE_MENU"
+		],
+		"forms": [
+			"About"
 		]
 	},
 	"1 - Documents": {
@@ -109,7 +167,7 @@
 			"SVG_Set_title"
 		]
 	},
-	"4DPop": {
+	"4️⃣ 4DPop": {
 		"methods": [
 			"_4DPopSVG",
 			"about",
@@ -198,64 +256,6 @@
 			"SVG_Get_ID"
 		]
 	},
-	"Interface (THREAD-SAFE)": {
-		"groups": [
-			"1 - Documents",
-			"2 - Drawing",
-			"3 - Text",
-			"4 - Structure & definition",
-			"5 - Attributes",
-			"6 - Colors & gradients",
-			"7-  Filters",
-			"8 - Utilities",
-			"9 - MISCELLANEOUS"
-		]
-	},
-	"lib": {
-		"groups": [
-			"Rgx",
-			"xml"
-		],
-		"methods": [
-			"checkGitBranch"
-		]
-	},
-	"NOT THREAD SAFE": {
-		"methods": [
-			"COMPILER_Not_Thread_Safe",
-			"fallBack_Not_thread_safe",
-			"SVG_ABOUT",
-			"SVGTool_SET_VIEWER_CALLBACK",
-			"SVGTool_SHOW_IN_VIEWER",
-			"viewer_sources",
-			"xToolBox_tabCreate",
-			"xToolBox_tabHandler"
-		]
-	},
-	"Private": {
-		"methods": [
-			"Component_about",
-			"Component_defaultOptions",
-			"Component_errorHandler",
-			"Component_init",
-			"Component_putError",
-			"fontReplaceArial",
-			"PREFERENCES",
-			"setFontStyles",
-			"str_styledText",
-			"SVG_Get_string_width",
-			"svg_relativeURL",
-			"url_decode",
-			"url_encode",
-			"xToolBox_BytesToString",
-			"xToolbox_GetLastItemFromPath",
-			"xToolBox_NO_ERROR",
-			"xToolBox_RELEASE_MENU"
-		],
-		"forms": [
-			"About"
-		]
-	},
 	"Rgx": {
 		"methods": [
 			"COMPILER_Rgx",
@@ -317,6 +317,7 @@
 	},
 	"trash": {
 		"groups": [
+			"(📦 Component)",
 			"(00_IN_WORKS)"
 		]
 	}

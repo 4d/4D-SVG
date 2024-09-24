@@ -1,83 +1,61 @@
 //%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : SVG_Copy
-  // Created 16/06/08 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  // Create a copy of the svg document
-  // ----------------------------------------------------
-C_TEXT:C284($0)
-C_TEXT:C284($1)
+// ----------------------------------------------------
+// Method : SVG_Copy
+// Created 16/06/08 by Vincent de Lachaux
+// ----------------------------------------------------
+// Description
+// Create a copy of the svg document
+// ----------------------------------------------------
+#DECLARE($svgObject : Text) : Text
 
-C_LONGINT:C283($Lon_parameters)
-C_TEXT:C284($Dom_new;$kTxt_currentMethod;$Txt_Buffer;$Txt_svgObject)
+var $CURRENT_METHOD; $root; $t : Text
 
-If (False:C215)
-	C_TEXT:C284(SVG_Copy ;$0)
-	C_TEXT:C284(SVG_Copy ;$1)
-End if 
+Compiler_SVG
 
-Compiler_SVG 
-
-$Lon_parameters:=Count parameters:C259
-$kTxt_currentMethod:="SVG_Copy"  //Nom methode courante
+$CURRENT_METHOD:="SVG_Copy"
 
 Case of 
 		
-		  //______________________________________________________
-	: ($Lon_parameters=0)
+		//______________________________________________________
+	: (Count parameters:C259=0)
 		
-		ASSERT:C1129(Component_putError (8850;$kTxt_currentMethod))  //Argument missing
+		ASSERT:C1129(Component_putError(8850; $CURRENT_METHOD))  // Argument missing
 		
-		  //________________________________________
-	: (Not:C34(xml_referenceValid ($1)))
+		//________________________________________
+	: (Not:C34(xml_referenceValid($svgObject)))
 		
-		ASSERT:C1129(Component_putError (8852;$kTxt_currentMethod))  //The reference is not a svg object
+		ASSERT:C1129(Component_putError(8852; $CURRENT_METHOD))  // The reference is not a svg object
 		
-		  //______________________________________________________
+		//______________________________________________________
 	Else 
 		
-		Component_errorHandler ("init";$kTxt_currentMethod)
+		Component_errorHandler("init"; $CURRENT_METHOD)
 		
-		$Txt_svgObject:=$1
+		//       ___________________
+		// / ACI0072296
+		// || Date 18/07/11
+		// ( ) Vincent de Lachaux
+		//       ___________________
+		XML SET OPTIONS:C1090($svgObject; XML indentation:K45:34; XML no indentation:K45:36)
+		//       ___________________
 		
-		  //       ___________________
-		  //  /   ACI0072296
-		  // ||   Date 18/07/11
-		  //(   ) Vincent de Lachaux
-		  //       ___________________
-		XML SET OPTIONS:C1090($Txt_svgObject;XML indentation:K45:34;XML no indentation:K45:36)
+		DOM EXPORT TO VAR:C863($svgObject; $t)
 		
-		  //       ___________________
-		
-		DOM EXPORT TO VAR:C863($Txt_svgObject;$Txt_Buffer)
-		
-		If (OK=1)
+		If (Bool:C1537(OK))
 			
-			$Dom_new:=DOM Parse XML variable:C720($Txt_Buffer)
+			$root:=DOM Parse XML variable:C720($t)
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				  // Store the reference {
-				Use (Storage:C1525.svg)
-					
-					If (Storage:C1525.svg.docs=Null:C1517)
-						
-						Storage:C1525.svg.docs:=New shared collection:C1527
-						
-					End if 
-					
-					Storage:C1525.svg.docs.push($Dom_new)
-					
-				End use 
-				  //}
-				
-				$0:=$Dom_new
+				// Store the reference
+				pushReference($root)
 				
 			End if 
 		End if 
 		
-		ASSERT:C1129(Component_errorHandler ("deinit"))
+		ASSERT:C1129(Component_errorHandler("deinit"))
 		
-		  //______________________________________________________
+		return $root
+		
+		//______________________________________________________
 End case 
