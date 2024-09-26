@@ -10,40 +10,40 @@
 If (False:C215)
 	
 	//SVG_ADD_NAME_SPACE
-	_O_C_TEXT:C284(SVG_ADD_NAMESPACE; $1)
-	_O_C_TEXT:C284(SVG_ADD_NAMESPACE; $2)
-	_O_C_TEXT:C284(SVG_ADD_NAMESPACE; $3)
+	//_O_C_TEXT(SVG_ADD_NAMESPACE; $1)
+	//_O_C_TEXT(SVG_ADD_NAMESPACE; $2)
+	//_O_C_TEXT(SVG_ADD_NAMESPACE; $3)
 	
 	//SVG_Define_clip_Path
-	_O_C_TEXT:C284(SVG_Define_clip_Path; $0)
-	_O_C_TEXT:C284(SVG_Define_clip_Path; $1)
-	_O_C_TEXT:C284(SVG_Define_clip_Path; $2)
+	//_O_C_TEXT(SVG_Define_clip_Path; $0)
+	//_O_C_TEXT(SVG_Define_clip_Path; $1)
+	//_O_C_TEXT(SVG_Define_clip_Path; $2)
 	
 	//SVG_Define_solidColor
-	_O_C_TEXT:C284(SVG_Define_solidColor; $0)
-	_O_C_TEXT:C284(SVG_Define_solidColor; $1)
-	_O_C_TEXT:C284(SVG_Define_solidColor; $2)
-	_O_C_TEXT:C284(SVG_Define_solidColor; $3)
-	_O_C_LONGINT:C283(SVG_Define_solidColor; $4)
+	//_O_C_TEXT(SVG_Define_solidColor; $0)
+	//_O_C_TEXT(SVG_Define_solidColor; $1)
+	//_O_C_TEXT(SVG_Define_solidColor; $2)
+	//_O_C_TEXT(SVG_Define_solidColor; $3)
+	//_O_C_LONGINT(SVG_Define_solidColor; $4)
 	
 	//SVG_Define_filter
-	_O_C_TEXT:C284(SVG_Define_filter; $0)
-	_O_C_TEXT:C284(SVG_Define_filter; $1)
-	_O_C_TEXT:C284(SVG_Define_filter; $2)
-	_O_C_REAL:C285(SVG_Define_filter; $3)
-	_O_C_REAL:C285(SVG_Define_filter; $4)
-	_O_C_REAL:C285(SVG_Define_filter; $5)
-	_O_C_REAL:C285(SVG_Define_filter; $6)
-	_O_C_TEXT:C284(SVG_Define_filter; $7)
-	_O_C_TEXT:C284(SVG_Define_filter; $8)
+	//_O_C_TEXT(SVG_Define_filter; $0)
+	//_O_C_TEXT(SVG_Define_filter; $1)
+	//_O_C_TEXT(SVG_Define_filter; $2)
+	//_O_C_REAL(SVG_Define_filter; $3)
+	//_O_C_REAL(SVG_Define_filter; $4)
+	//_O_C_REAL(SVG_Define_filter; $5)
+	//_O_C_REAL(SVG_Define_filter; $6)
+	//_O_C_TEXT(SVG_Define_filter; $7)
+	//_O_C_TEXT(SVG_Define_filter; $8)
 	
 	//SVG_Define_shadow
-	_O_C_TEXT:C284(SVG_Define_shadow; $0)
-	_O_C_TEXT:C284(SVG_Define_shadow; $1)
-	_O_C_TEXT:C284(SVG_Define_shadow; $2)
-	_O_C_LONGINT:C283(SVG_Define_shadow; $3)
-	_O_C_LONGINT:C283(SVG_Define_shadow; $4)
-	_O_C_LONGINT:C283(SVG_Define_shadow; $5)
+	//_O_C_TEXT(SVG_Define_shadow; $0)
+	//_O_C_TEXT(SVG_Define_shadow; $1)
+	//_O_C_TEXT(SVG_Define_shadow; $2)
+	//_O_C_LONGINT(SVG_Define_shadow; $3)
+	//_O_C_LONGINT(SVG_Define_shadow; $4)
+	//_O_C_LONGINT(SVG_Define_shadow; $5)
 	
 	//SVG_Define_gradient_l_by_arrays
 	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; $1)
@@ -823,7 +823,7 @@ If (False:C215)  //UTILITIES
 	_O_C_TEXT:C284(SVG_Find_ID; $2)
 	
 	//SVG_Get_options
-	_O_C_LONGINT:C283(SVG_Get_options; $0)
+	//_O_C_LONGINT(SVG_Get_options; $0)
 	
 	//SVG_Get_version
 	_O_C_TEXT:C284(SVG_Get_version; $0)

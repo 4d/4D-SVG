@@ -24,7 +24,8 @@
 	},
 	"🧪 unitTests": {
 		"methods": [
-			"test_arc"
+			"test_Documents",
+			"test_drawing"
 		]
 	},
 	"🧰 API": {
@@ -58,6 +59,7 @@
 			"Component_init",
 			"Component_putError",
 			"fontReplaceArial",
+			"getDefs",
 			"PREFERENCES",
 			"pushReference",
 			"setFontStyles",

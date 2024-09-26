@@ -9,4 +9,4 @@ var $root : Text
 
 $root:=Try(DOM Get root XML element:C1053($node))
 
-return (OK=1)
+return Last errors:C1799.length=0

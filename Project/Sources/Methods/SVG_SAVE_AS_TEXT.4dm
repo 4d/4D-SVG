@@ -26,38 +26,39 @@ End if
 
 If (Asserted:C1132(xml_referenceValid($svgObject); Localized string:C991("error_badReference")))
 	
-	Component_errorHandler("init"; $CURRENT_METHOD)
-	
-	// Mark:ACI0063507
-	If (Length:C16($pathname)>0)\
-		 && (Position:C15(Folder separator:K24:12; $pathname)=0)
-		
-		$pathname:=Get 4D folder:C485(Database folder:K5:14; *)+$pathname
-		
-	End if 
-	
-	// Turn_around #ACI0093875
-	// Mark:ACI0093774
-	DOM EXPORT TO VAR:C863($svgObject; $t)
-	$t:=Replace string:C233($t; " xmlns=\"\""; "")
-	$t:=DOM Parse XML variable:C720($t)
-	DOM EXPORT TO FILE:C862($t; $pathname)
-	DOM CLOSE XML:C722($t)
-	
-	If (Bool:C1537(OK))
-		
-		If (Num:C11(Storage:C1525.svg.variableDocument)>0)
-			
-			CALL WORKER:C1389(1; "fallBack_Not_thread_safe"; New object:C1471(\
-				"document"; DOCUMENT))
-			
-		End if 
-	End if 
-	
-	ASSERT:C1129(Component_errorHandler("deinit"))
-	
-Else 
-	
 	ASSERT:C1129(Component_putError(8852; $CURRENT_METHOD))  // The reference is not a svg object
 	
+	return 
+	
 End if 
+
+Component_errorHandler("init"; $CURRENT_METHOD)
+
+// Mark:ACI0063507
+If (Length:C16($pathname)>0)\
+ && (Position:C15(Folder separator:K24:12; $pathname)=0)
+	
+	$pathname:=Get 4D folder:C485(Database folder:K5:14; *)+$pathname
+	
+End if 
+
+// Turn_around #ACI0093875
+
+// Mark:ACI0093774
+DOM EXPORT TO VAR:C863($svgObject; $t)
+$t:=Replace string:C233($t; " xmlns=\"\""; "")
+$t:=DOM Parse XML variable:C720($t)
+DOM EXPORT TO FILE:C862($t; $pathname)
+DOM CLOSE XML:C722($t)
+
+If (Bool:C1537(OK))
+	
+	If (Num:C11(Storage:C1525.svg.variableDocument)>0)
+		
+		CALL WORKER:C1389(1; "fallBack_Not_thread_safe"; New object:C1471(\
+			"document"; DOCUMENT))
+		
+	End if 
+End if 
+
+ASSERT:C1129(Component_errorHandler("deinit"))

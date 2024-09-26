@@ -7,12 +7,12 @@
 // The goal of this method is to group all declarations
 // And initialisations for a good execution of the component
 // ----------------------------------------------------
-#DECLARE($Boo_init : Boolean)
+#DECLARE($init : Boolean)
 
 var SVG_Lon_Error : Integer
 var SVG_Txt_Command : Text
 
-If (($Boo_init | (Storage:C1525.svg=Null:C1517)))
+If ($init || (Storage:C1525.svg=Null:C1517))
 	
 	//    The method must return true or false in accordance with the success of initialisation.
 	// The method manages, if necessary, of the update of the stored datas according to the version number
