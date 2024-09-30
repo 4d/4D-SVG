@@ -23,7 +23,7 @@ var $Lon_x : Integer
 
 Compiler_SVG
 
-$kTxt_currentMethod:="SVG_CLEAR"  // Nom methode courante
+$kTxt_currentMethod:="SVG_CLEAR"
 
 If (Count parameters:C259>=1)
 	

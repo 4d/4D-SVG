@@ -1,77 +1,59 @@
 //%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : SVG_SET_PATTERN_UNITS
-  // Created 07/04/10 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
-  // Declarations
-C_TEXT:C284($1)
-C_TEXT:C284($2)
+// ----------------------------------------------------
+// Method : SVG_SET_PATTERN_UNITS
+// Created 07/04/10 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($svgObject : Text; $patternUnit : Text)
 
-C_LONGINT:C283($Lon_parameters)
-C_TEXT:C284($Dom_svgObject;$kTxt_currentMethod;$Txt_name;$Txt_patternUnit)
+var $CURRENT_METHOD; $name : Text
 
-If (False:C215)
-	C_TEXT:C284(SVG_SET_PATTERN_UNITS ;$1)
-	C_TEXT:C284(SVG_SET_PATTERN_UNITS ;$2)
+Compiler_SVG
+
+$CURRENT_METHOD:="SVG_SET_PATTERN_UNITS"
+
+If (Count parameters:C259<2)
+	
+	ASSERT:C1129(Component_putError(8850; $CURRENT_METHOD))  // Parameters Missing
+	
+	return 
+	
 End if 
 
-  // ----------------------------------------------------
-  // Initialisations
-Compiler_SVG 
-
-$Lon_parameters:=Count parameters:C259
-$kTxt_currentMethod:=Current method name:C684
-
-  // ----------------------------------------------------
-If ($Lon_parameters>=2)
+If (Asserted:C1132(xml_referenceValid($svgObject); Localized string:C991("error_badReference")))
 	
-	$Dom_svgObject:=$1
-	$Txt_patternUnit:=$2
+	Component_errorHandler("init"; $CURRENT_METHOD)
 	
-	If (Asserted:C1132(xml_referenceValid ($Dom_svgObject);Get localized string:C991("error_badReference")))
+	DOM GET XML ELEMENT NAME:C730($svgObject; $name)
+	
+	If ($name="pattern")
 		
-		Component_errorHandler ("init";$kTxt_currentMethod)
+		ARRAY TEXT:C222($_patternUnits; 0x0000)
+		COLLECTION TO ARRAY:C1562(Storage:C1525.svg["patternUnits"]; $_patternUnits)
 		
-		DOM GET XML ELEMENT NAME:C730($Dom_svgObject;$Txt_name)
-		
-		If ($Txt_name="pattern")
+		If (Find in array:C230($_patternUnits; $patternUnit)>0)
 			
-			ARRAY TEXT:C222($tTxt_patternUnits;0x0000)
-			COLLECTION TO ARRAY:C1562(Storage:C1525.svg["patternUnits"];$tTxt_patternUnits)
-			
-			If (Find in array:C230($tTxt_patternUnits;$Txt_patternUnit)>0)
-				
-				DOM SET XML ATTRIBUTE:C866($Dom_svgObject;\
-					"patternUnits";$Txt_patternUnit)
-				
-			Else 
-				
-				ASSERT:C1129(Component_putError (8853;$kTxt_currentMethod))  //Invalid Value for an Attribute
-				
-			End if 
-			
-			  //#ACI0091143
-			CLEAR VARIABLE:C89($tTxt_patternUnits)
+			DOM SET XML ATTRIBUTE:C866($svgObject; \
+				"patternUnits"; $patternUnit)
 			
 		Else 
 			
-			ASSERT:C1129(Component_putError (8854))  //Impossible to apply this Command for this Node
+			ASSERT:C1129(Component_putError(8853; $CURRENT_METHOD))  // Invalid Value for an Attribute
 			
 		End if 
 		
-		ASSERT:C1129(Component_errorHandler ("deinit"))
+		// #ACI0091143
+		CLEAR VARIABLE:C89($_patternUnits)
 		
 	Else 
 		
-		ASSERT:C1129(Component_putError (8852;$kTxt_currentMethod))  //The reference is not a svg object
+		ASSERT:C1129(Component_putError(8854))  // Impossible to apply this Command for this Node
 		
 	End if 
 	
+	ASSERT:C1129(Component_errorHandler("deinit"))
+	
 Else 
 	
-	ASSERT:C1129(Component_putError (8850;$kTxt_currentMethod))  //Parameters Missing
+	ASSERT:C1129(Component_putError(8852; $CURRENT_METHOD))  // The reference is not a svg object
 	
 End if 

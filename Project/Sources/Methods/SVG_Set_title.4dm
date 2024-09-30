@@ -1,90 +1,72 @@
 //%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : SVG_Set_title
-  // Created 21/07/08 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
-C_TEXT:C284($0)
-C_TEXT:C284($1)
-C_TEXT:C284($2)
+// ----------------------------------------------------
+// Method : SVG_Set_title
+// Created 21/07/08 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($svgObject : Text; $value : Text) : Text
 
-C_LONGINT:C283($Lon_parameters)
-C_TEXT:C284($Dom_node;$Dom_svgObject;$kTxt_currentMethod;$Txt_name;$Txt_value)
+var $CURRENT_METHOD; $name; $node : Text
 
-If (False:C215)
-	C_TEXT:C284(SVG_Set_title ;$0)
-	C_TEXT:C284(SVG_Set_title ;$1)
-	C_TEXT:C284(SVG_Set_title ;$2)
+Compiler_SVG
+
+$CURRENT_METHOD:="SVG_Set_title"
+
+If (Count parameters:C259<2)
+	
+	ASSERT:C1129(Component_putError(8850; $CURRENT_METHOD))  // Parameters Missing
+	
+	return 
+	
 End if 
 
-Compiler_SVG 
-
-$Lon_parameters:=Count parameters:C259
-$kTxt_currentMethod:="SVG_Set_title"  //Nom methode courante
-
-If ($Lon_parameters>=2)
+If (Asserted:C1132(xml_referenceValid($svgObject); Localized string:C991("error_badReference")))
 	
-	$Dom_svgObject:=$1
-	$Txt_value:=$2
+	Component_errorHandler("init"; $CURRENT_METHOD)
 	
-	If (Asserted:C1132(xml_referenceValid ($Dom_svgObject);Get localized string:C991("error_badReference")))
+	DOM GET XML ELEMENT NAME:C730($svgObject; $name)
+	
+	ARRAY TEXT:C222($_objects; 0x0000)
+	COLLECTION TO ARRAY:C1562(Storage:C1525.svg["Containers_or_Graphics"]; $_objects)
+	
+	If (Find in array:C230($_objects; $name)>0)
 		
-		Component_errorHandler ("init";$kTxt_currentMethod)
+		$node:=DOM Create XML element:C865($svgObject; "title")
 		
-		DOM GET XML ELEMENT NAME:C730($Dom_svgObject;$Txt_name)
-		
-		ARRAY TEXT:C222($tTxt_objects;0x0000)
-		COLLECTION TO ARRAY:C1562(Storage:C1525.svg["Containers_or_Graphics"];$tTxt_objects)
-		
-		If (Find in array:C230($tTxt_objects;$Txt_name)>0)
+		If (Bool:C1537(OK))
 			
-			$Dom_node:=DOM Create XML element:C865($Dom_svgObject;"title")
+			DOM SET XML ELEMENT VALUE:C868($node; $value)
 			
-			If (OK=1)
+			If (Bool:C1537(OK))
 				
-				DOM SET XML ELEMENT VALUE:C868($Dom_node;$Txt_value)
-				
-				If (OK=1)
+				// Set the id
+				If (Storage:C1525.svg.options ?? 1)
 					
-					  //Set the id
-					  //{
-					If (Storage:C1525.svg.options ?? 1)
-						
-						DOM SET XML ATTRIBUTE:C866($Dom_node;\
-							"id";$Dom_node)
-						
-					End if 
-					  //}
+					DOM SET XML ATTRIBUTE:C866($node; \
+						"id"; $node)
 					
-					If (OK=1)
-						
-						$0:=$Dom_node
-						
-					End if 
 				End if 
 			End if 
-			
-		Else 
-			
-			ASSERT:C1129(Component_putError (8854))  //Impossible to apply this Command for this Node
-			
 		End if 
-		
-		  //#ACI0091143
-		CLEAR VARIABLE:C89($tTxt_objects)
-		
-		ASSERT:C1129(Component_errorHandler ("deinit"))
 		
 	Else 
 		
-		ASSERT:C1129(Component_putError (8852;$kTxt_currentMethod))  //The reference is not a svg object
+		ASSERT:C1129(Component_putError(8854))  // Impossible to apply this Command for this Node
+		
+	End if 
+	
+	// #ACI0091143
+	CLEAR VARIABLE:C89($_objects)
+	
+	ASSERT:C1129(Component_errorHandler("deinit"))
+	
+	If (Bool:C1537(OK))
+		
+		return $node
 		
 	End if 
 	
 Else 
 	
-	ASSERT:C1129(Component_putError (8850;$kTxt_currentMethod))  //Parameters Missing
+	ASSERT:C1129(Component_putError(8852; $CURRENT_METHOD))  // The reference is not a svg object
 	
 End if 

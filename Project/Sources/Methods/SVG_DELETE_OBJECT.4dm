@@ -1,59 +1,41 @@
 //%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
-  // ----------------------------------------------------
-  // Method : SVG_DELETE_OBJECT
-  // Created 16/04/10 by Vincent de Lachaux
-  // ----------------------------------------------------
-  // Description
-  //
-  // ----------------------------------------------------
-  // Declarations
-C_TEXT:C284($1)
+// ----------------------------------------------------
+// Method : SVG_DELETE_OBJECT
+// Created 16/04/10 by Vincent de Lachaux
+// ----------------------------------------------------
+#DECLARE($svgObject : Text)
 
-C_LONGINT:C283($Lon_parameters)
-C_TEXT:C284($Dom_root;$kTxt_currentMethod;$Txt_svgObject)
+var $CURRENT_METHOD; $root : Text
 
-If (False:C215)
-	C_TEXT:C284(SVG_DELETE_OBJECT ;$1)
+Compiler_SVG
+
+$CURRENT_METHOD:="SVG_DELETE_OBJECT"
+
+If (Count parameters:C259<1)
+	
+	ASSERT:C1129(Component_putError(8850; $CURRENT_METHOD))  // Parameters Missing
+	
+	return 
+	
 End if 
 
-  // ----------------------------------------------------
-  // Initialisations
-
-Compiler_SVG 
-
-$Lon_parameters:=Count parameters:C259
-
-$kTxt_currentMethod:="SVG_DELETE_OBJECT"  //Nom methode courante
-
-  // ----------------------------------------------------
-
-If ($Lon_parameters>=1)
+If (Asserted:C1132(xml_referenceValid($svgObject); Localized string:C991("error_badReference")))
 	
-	$Txt_svgObject:=$1
+	Component_errorHandler("init"; $CURRENT_METHOD)
 	
-	If (Asserted:C1132(xml_referenceValid ($Txt_svgObject);Get localized string:C991("error_badReference")))
+	$root:=DOM Get root XML element:C1053($svgObject)
+	
+	If (Bool:C1537(OK))\
+		 && (xml_referenceValid($root))
 		
-		Component_errorHandler ("init";$kTxt_currentMethod)
+		DOM REMOVE XML ELEMENT:C869($svgObject)
 		
-		$Dom_root:=DOM Get root XML element:C1053($Txt_svgObject)
+	Else 
 		
-		If (OK=1)\
-			 & ($Dom_root#"0000000000000000")
-			
-			DOM REMOVE XML ELEMENT:C869($Txt_svgObject)
-			
-		Else 
-			
-			ASSERT:C1129(Component_putError (8852;$kTxt_currentMethod))  //The reference is not a svg object
-			
-		End if 
-		
-		ASSERT:C1129(Component_errorHandler ("deinit"))
+		ASSERT:C1129(Component_putError(8852; $CURRENT_METHOD))  // The reference is not a svg object
 		
 	End if 
 	
-Else 
-	
-	ASSERT:C1129(Component_putError (8850;$kTxt_currentMethod))  //Parameters Missing
+	ASSERT:C1129(Component_errorHandler("deinit"))
 	
 End if 

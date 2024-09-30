@@ -9,51 +9,6 @@
 //:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 If (False:C215)
 	
-	//SVG_ADD_NAME_SPACE
-	//_O_C_TEXT(SVG_ADD_NAMESPACE; $1)
-	//_O_C_TEXT(SVG_ADD_NAMESPACE; $2)
-	//_O_C_TEXT(SVG_ADD_NAMESPACE; $3)
-	
-	//SVG_Define_clip_Path
-	//_O_C_TEXT(SVG_Define_clip_Path; $0)
-	//_O_C_TEXT(SVG_Define_clip_Path; $1)
-	//_O_C_TEXT(SVG_Define_clip_Path; $2)
-	
-	//SVG_Define_solidColor
-	//_O_C_TEXT(SVG_Define_solidColor; $0)
-	//_O_C_TEXT(SVG_Define_solidColor; $1)
-	//_O_C_TEXT(SVG_Define_solidColor; $2)
-	//_O_C_TEXT(SVG_Define_solidColor; $3)
-	//_O_C_LONGINT(SVG_Define_solidColor; $4)
-	
-	//SVG_Define_filter
-	//_O_C_TEXT(SVG_Define_filter; $0)
-	//_O_C_TEXT(SVG_Define_filter; $1)
-	//_O_C_TEXT(SVG_Define_filter; $2)
-	//_O_C_REAL(SVG_Define_filter; $3)
-	//_O_C_REAL(SVG_Define_filter; $4)
-	//_O_C_REAL(SVG_Define_filter; $5)
-	//_O_C_REAL(SVG_Define_filter; $6)
-	//_O_C_TEXT(SVG_Define_filter; $7)
-	//_O_C_TEXT(SVG_Define_filter; $8)
-	
-	//SVG_Define_shadow
-	//_O_C_TEXT(SVG_Define_shadow; $0)
-	//_O_C_TEXT(SVG_Define_shadow; $1)
-	//_O_C_TEXT(SVG_Define_shadow; $2)
-	//_O_C_LONGINT(SVG_Define_shadow; $3)
-	//_O_C_LONGINT(SVG_Define_shadow; $4)
-	//_O_C_LONGINT(SVG_Define_shadow; $5)
-	
-	//SVG_Define_gradient_l_by_arrays
-	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; $1)
-	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; $2)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $3)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $4)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $5)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $6)
-	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; ${7})
-	
 	//SVG_Define_gradient_r_by_arrays
 	_O_C_TEXT:C284(SVG_Define_gradient_r_by_arrays; $1)
 	_O_C_TEXT:C284(SVG_Define_gradient_r_by_arrays; $2)
@@ -63,13 +18,6 @@ If (False:C215)
 	_O_C_LONGINT:C283(SVG_Define_gradient_r_by_arrays; $6)
 	_O_C_LONGINT:C283(SVG_Define_gradient_r_by_arrays; $7)
 	_O_C_TEXT:C284(SVG_Define_gradient_r_by_arrays; ${8})
-	
-	//SVG_Define_image
-	_O_C_TEXT:C284(SVG_Define_image; $0)
-	_O_C_TEXT:C284(SVG_Define_image; $1)
-	_O_C_TEXT:C284(SVG_Define_image; $2)
-	_O_C_PICTURE:C286(SVG_Define_image; $3)
-	_O_C_TEXT:C284(SVG_Define_image; $4)
 	
 	//SVG_Define_linear_gradient
 	_O_C_TEXT:C284(SVG_Define_linear_gradient; $0)
@@ -155,13 +103,6 @@ If (False:C215)
 	_O_C_REAL:C285(SVG_Define_symbol_from_file; $7)
 	_O_C_TEXT:C284(SVG_Define_symbol_from_file; $8)
 	
-	//SVG_DELETE_OBJECT
-	_O_C_TEXT:C284(SVG_DELETE_OBJECT; $1)
-	
-	//SVG_Get_root_reference
-	_O_C_TEXT:C284(SVG_Get_root_reference; $0)
-	_O_C_TEXT:C284(SVG_Get_root_reference; $1)
-	
 	//SVG_New_group
 	_O_C_TEXT:C284(SVG_New_group; $0)
 	_O_C_TEXT:C284(SVG_New_group; $1)
@@ -182,15 +123,6 @@ If (False:C215)
 	//SVG_SET_PATTERN_CONTENT_UNITS
 	_O_C_TEXT:C284(SVG_SET_PATTERN_CONTENT_UNITS; $1)
 	_O_C_TEXT:C284(SVG_SET_PATTERN_CONTENT_UNITS; $2)
-	
-	//SVG_SET_PATTERN_UNITS
-	_O_C_TEXT:C284(SVG_SET_PATTERN_UNITS; $1)
-	_O_C_TEXT:C284(SVG_SET_PATTERN_UNITS; $2)
-	
-	//SVG_Set_title
-	_O_C_TEXT:C284(SVG_Set_title; $0)
-	_O_C_TEXT:C284(SVG_Set_title; $1)
-	_O_C_TEXT:C284(SVG_Set_title; $2)
 	
 	//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 End if 

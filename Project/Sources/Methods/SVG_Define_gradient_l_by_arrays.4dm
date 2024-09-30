@@ -4,124 +4,96 @@
 // Framework SVgg
 // Author : Gérald Czwiklinski
 //-----------------------------------------------------------------------------------------------------
-_O_C_TEXT:C284($1)
-_O_C_TEXT:C284($2)
-_O_C_LONGINT:C283($3)
-_O_C_LONGINT:C283($4)
-_O_C_LONGINT:C283($5)
-_O_C_LONGINT:C283($6)
-_O_C_TEXT:C284(${7})
+#DECLARE($svgObject : Text; $id : Text; $x1 : Integer; $y1 : Integer; $x2 : Integer; $y2 : Integer;  ...  : Text)
 
-_O_C_LONGINT:C283($Lon_i; $Lon_offset; $Lon_opacity; $Lon_parameters; $Lon_step; $Lon_x)
-_O_C_LONGINT:C283($Lon_x1; $Lon_x2; $Lon_y1; $Lon_y2)
-_O_C_TEXT:C284($kTxt_currentMethod; $Txt_color; $Txt_colorName; $Txt_defsID; $Txt_gradientID; $Txt_gradientName)
-_O_C_TEXT:C284($Txt_rootReference; $Txt_Stop; $Txt_svgObject)
-
-If (False:C215)
-	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; $1)
-	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; $2)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $3)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $4)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $5)
-	_O_C_LONGINT:C283(SVG_Define_gradient_l_by_arrays; $6)
-	_O_C_TEXT:C284(SVG_Define_gradient_l_by_arrays; ${7})
-End if 
+var $color; $colorName; $CURRENT_METHOD; $defs; $node; $stop : Text
+var $countParamaters; $i; $offset; $opacity; $pos; $step : Integer
 
 Compiler_SVG
 
-$Lon_parameters:=Count parameters:C259
-$kTxt_currentMethod:=Current method name:C684
+$CURRENT_METHOD:="SVG_Define_gradient_l_by_arrays"
+$countParamaters:=Count parameters:C259
 
-If ($Lon_parameters>=6)
+If ($countParamaters<6)
 	
-	$Txt_svgObject:=$1
-	$Txt_gradientName:=$2
-	$Lon_x1:=$3
-	$Lon_y1:=$4
-	$Lon_x2:=$5
-	$Lon_y2:=$6
+	ASSERT:C1129(Component_putError(8850; $CURRENT_METHOD))  // Parameters Missing
 	
-	Component_errorHandler("init"; $kTxt_currentMethod)
+	return 
 	
-	$Txt_defsID:=getDefs($Txt_svgObject)
+End if 
+
+Component_errorHandler("init"; $CURRENT_METHOD)
+
+$defs:=getDefs($svgObject)
+
+If (Bool:C1537(OK))
 	
-	If (OK=1)
+	$node:=DOM Find XML element by ID:C1010($defs; $id)
+	
+	If (Bool:C1537(OK))  // Delete the existing gradient
 		
-		$Txt_gradientID:=DOM Find XML element by ID:C1010($Txt_defsID; $Txt_gradientName)
-		
-		If (OK=1)  //Delete the existing gradient
-			
-			DOM REMOVE XML ELEMENT:C869($Txt_gradientID)
-			
-		End if 
-		
-		//Create the gradient {
-		$Txt_gradientID:=DOM Create XML element:C865($Txt_defsID; "linearGradient"; \
-			"id"; $Txt_gradientName; \
-			"gradientUnits"; "userSpaceOnUse")
-		DOM SET XML ATTRIBUTE:C866($Txt_gradientID; \
-			"x1"; $Lon_x1; \
-			"y1"; $Lon_y1; \
-			"x2"; $Lon_x2; \
-			"y2"; $Lon_y2)
-		//}
+		DOM REMOVE XML ELEMENT:C869($node)
 		
 	End if 
 	
-	$Lon_step:=100\($Lon_parameters-7)
+	// Create the gradient
+	$node:=DOM Create XML element:C865($defs; "linearGradient"; \
+		"id"; $id; \
+		"gradientUnits"; "userSpaceOnUse")
 	
-	For ($Lon_i; 7; $Lon_parameters; 1)
-		
-		$Txt_color:=""
-		$Lon_opacity:=-1
-		
-		$Txt_color:=${$Lon_i}
-		
-		$Lon_x:=Position:C15(":"; $Txt_color)
-		
-		If ($Lon_x>0)
-			
-			$Lon_opacity:=Num:C11(Substring:C12($Txt_color; $Lon_x+1))
-			$Txt_color:=Lowercase:C14(Substring:C12($Txt_color; 1; $Lon_x-1))
-			
-		End if 
-		
-		If (Length:C16($Txt_color)>0)
-			
-			If ($Txt_colorName#"url(@")
-				
-				$Txt_colorName:=Lowercase:C14($Txt_colorName)
-				
-			End if 
-			
-			$Txt_Stop:=DOM Create XML element:C865($Txt_gradientID; "stop"; \
-				"offset"; String:C10($Lon_offset)+"%"; \
-				"stop-color"; $Txt_color)
-			
-			If ($Lon_opacity#-1)\
-				 & (OK=1)
-				
-				DOM SET XML ATTRIBUTE:C866($Txt_Stop; \
-					"stop-opacity"; $Lon_opacity)
-				
-			End if 
-		End if 
-		
-		If (OK=1)
-			
-			$Lon_offset:=$Lon_offset+$Lon_step
-			
-		Else 
-			
-			$Lon_i:=MAXLONG:K35:2-1
-			
-		End if 
-	End for 
-	
-	ASSERT:C1129(Component_errorHandler("deinit"))
-	
-Else 
-	
-	ASSERT:C1129(Component_putError(8850; $kTxt_currentMethod))  //Parameters Missing
+	DOM SET XML ATTRIBUTE:C866($node; \
+		"x1"; $x1; \
+		"y1"; $y1; \
+		"x2"; $x2; \
+		"y2"; $y2)
 	
 End if 
+
+$step:=100\($countParamaters-7)
+
+For ($i; 7; $countParamaters; 1)
+	
+	$color:=${$i}
+	$opacity:=-1
+	
+	$pos:=Position:C15(":"; $color)
+	
+	If ($pos>0)
+		
+		$opacity:=Num:C11(Substring:C12($color; $pos+1))
+		$color:=Lowercase:C14(Substring:C12($color; 1; $pos-1))
+		
+	End if 
+	
+	If (Length:C16($color)>0)
+		
+		If ($colorName#"url(@")
+			
+			$colorName:=Lowercase:C14($colorName)
+			
+		End if 
+		
+		$stop:=DOM Create XML element:C865($node; "stop"; \
+			"offset"; String:C10($offset)+"%"; \
+			"stop-color"; $color)
+		
+		If (Bool:C1537(OK)) && ($opacity#-1)
+			
+			DOM SET XML ATTRIBUTE:C866($stop; \
+				"stop-opacity"; $opacity)
+			
+		End if 
+	End if 
+	
+	If (Bool:C1537(OK))
+		
+		$offset+=$step
+		
+	Else 
+		
+		break
+		
+	End if 
+End for 
+
+ASSERT:C1129(Component_errorHandler("deinit"))
