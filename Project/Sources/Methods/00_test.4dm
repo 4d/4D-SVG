@@ -29,6 +29,15 @@ var $svg : Text:=SVG_New
 Case of 
 		
 		//______________________________________________________
+	: (True:C214)  // [BUG] https://discuss.4d.com/t/svg-open-picture-retourne-une-reference-vide-en-20r5-20r6-binary/32878
+		
+		READ PICTURE FILE:C678(File:C1566("/Volumes/Passport_500/4D Components/User Components/4D-SVG/TESTS/arc.svg").platformPath; $Pic_buffer)
+		
+		$svg:=SVG_Open_picture($Pic_buffer)
+		
+		//$svg:=SVG_Open_file(File("/Volumes/Passport_500/4D Components/User Components/4D-SVG/TESTS/arc.svg").platformPath)
+		
+		//______________________________________________________
 	: (True:C214)
 		
 		SVG_SET_OPTIONS(SVG_Get_options ?+ 2)

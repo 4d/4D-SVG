@@ -23,7 +23,7 @@ Case of
 		ASSERT:C1129(Component_putError(8850; $CURRENT_METHOD))  // Parameters Missing
 		
 		//______________________________________________________
-	: (Picture size:C356($picture)>0)
+	: (Picture size:C356($picture)=0)
 		
 		ASSERT:C1129(Component_putError(8857; $CURRENT_METHOD))  // Invalid Value for an Argument
 		
