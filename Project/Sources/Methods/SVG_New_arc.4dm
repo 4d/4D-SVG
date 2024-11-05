@@ -190,6 +190,7 @@ If ($Lon_parameters>=6)
 				$Txt_pathDatas:=$Txt_pathDatas+" A"+String:C10($Num_rayon; "&xml")+","+String:C10($Num_rayon; "&xml")
 				$Txt_pathDatas:=$Txt_pathDatas+" 0 "
 				
+				$Txt_pathDatas:=Choose:C955(($Num_stop-$Num_start)>180; $Txt_pathDatas+"1,1 "; $Txt_pathDatas+"0,1 ")
 				
 				$Txt_pathDatas:=$Txt_pathDatas+String:C10($Num_cx2; "&xml")+","+String:C10($Num_cy2; "&xml")
 				
