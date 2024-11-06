@@ -8,9 +8,9 @@
 // Modified by Vincent de Lachaux (16/06/08)
 // 2004 -> v11
 // ----------------------------------------------------
-#DECLARE($svgObject : Text; $pathname : Text)
+#DECLARE($svgObject : Text; $pathname : Text; $codec : Text)
 
-var $codec; $CURRENT_METHOD; $name; $patern; $root; $t : Text
+var $CURRENT_METHOD; $name; $patern; $root; $t : Text
 var $image : Picture
 
 Compiler_SVG
