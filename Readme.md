@@ -11,7 +11,17 @@ The XML language used for manipulating SVG pictures is particularly rich and ext
 
 This library is not intended to be exhaustive but rather to meet the most frequent needs of 4D developers. Note that additional needs can be processed with the 4D XML commands.
 
-For more details, read the [4D SVG documentation](https://doc.4d.com/4Dv19/4D/19/4D-SVG-Component.100-5461938.en.html).
+For more details
+
+- [Attributes](Documentation/Attributes.md)
+- [Colors and Gradients](Documentation/Colors%20and%20Gradients.md)
+- [Documents](Documentation/Documents.md)
+- [Drawing](Documentation/Drawing.md)
+- [Filters](Documentation/Filters.md)
+- [Structure and Definitions](Documentation/Structure%20and%20Definitions.md)
+- [Text](Documentation/Text.md)
+- [Utilities](Documentation/Utilities.md)
+- [4D SVG Constants](Documentation/4D%20SVG%20Constants.md)
 
 ## How to use
 
