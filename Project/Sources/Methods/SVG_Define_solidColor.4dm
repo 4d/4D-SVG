@@ -10,7 +10,7 @@
 // Modified by Vincent de Lachaux (16/06/08)
 // 2004 -> v11
 // ----------------------------------------------------
-#DECLARE($svgObject : Text; $ID : Text; $color : Text; $opacity : Real) : Text
+#DECLARE($svgObject : Text; $ID : Text; $color : Text; $opacity : Integer) : Text
 
 var $CURRENT_METHOD; $defs; $node : Text
 var $pos : Integer
