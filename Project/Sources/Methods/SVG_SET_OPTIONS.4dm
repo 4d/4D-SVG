@@ -5,7 +5,7 @@
 // ----------------------------------------------------
 // Description
 // SVG_SET_OPTIONS sets all of the SVG Component options using a 32-bit number, which
-// Contains bits representing the different options.
+// contains bits representing the different options.
 // ----------------------------------------------------
 #DECLARE($options : Integer)
 
@@ -17,15 +17,8 @@ End if
 
 Use (Storage:C1525.svg)
 	
-	If (Count parameters:C259>=1)
-		
-		Storage:C1525.svg.options:=$options
-		
-	Else 
-		
-		Storage:C1525.svg.options:=Component_defaultOptions
-		
-	End if 
+	Storage:C1525.svg.options:=Count parameters:C259>=1 ? $options : Component_defaultOptions
+	
 End use 
 
 // Added by Vincent de Lachaux (11/04/12)
