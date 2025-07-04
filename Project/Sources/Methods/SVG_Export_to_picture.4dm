@@ -11,7 +11,7 @@ Compiler_SVG
 
 If (Count parameters:C259>=1)
 	
-	$exportType:=$exportType#0 ? $exportType : Copy XML data source:K45:17
+	$exportType:=Count parameters:C259>=2 ? $exportType : Copy XML data source:K45:17
 	
 	If (Asserted:C1132(xml_referenceValid($svgObject); Localized string:C991("error_badReference")))
 		
