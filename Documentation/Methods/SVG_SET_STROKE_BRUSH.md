@@ -25,6 +25,6 @@ For more information about colors, please refer to the “*SVG Colors*” sectio
 
 #### See also 
 
-*SVG Colors*  
+[SVG Colors](../SVG%20Colors.md)  
 [SVG\_GET\_DEFAULT\_BRUSHES](SVG_GET_DEFAULT_BRUSHES.md)  
 [SVG\_SET\_FILL\_BRUSH](SVG_SET_FILL_BRUSH.md)  
