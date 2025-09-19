@@ -26,4 +26,4 @@ The values expected must be included between 0 and 100.
 
 #### See also 
 
-*SVG Colors*  
+[SVG Colors](../SVG%20Colors.md)  

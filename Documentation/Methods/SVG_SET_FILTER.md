@@ -21,5 +21,5 @@ See the *SVG\_Define\_filter* command.
 
 #### See also 
 
-*SVG Filters*  
+[SVG Filters](../SVG%20Filters.md)  
 [SVG\_Define\_filter](SVG%5FDefine%5Ffilter.md)  

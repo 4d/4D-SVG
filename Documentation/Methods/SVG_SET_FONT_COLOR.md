@@ -17,4 +17,4 @@ The *color* parameter contains the name of the color to be used. (For more infor
 
 #### See also 
 
-*SVG Colors*  
+[SVG Colors](../SVG%20Colors.md)  
