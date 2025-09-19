@@ -72,5 +72,5 @@ Draw a light blue rectangle with rounded ends and a blue edge (default line thic
 
 #### See also 
 
-[SVG\_New\_polygon](SVG%5FNew%5Fpolygon.md)  
-[SVG\_SET\_ROUNDING\_RECT](SVG%5FSET%5FROUNDING%5FRECT.md)  
+[SVG\_New\_polygon](SVG_New_polygon.md)  
+[SVG\_SET\_ROUNDING\_RECT](SVG_SET_ROUNDING_RECT.md)  

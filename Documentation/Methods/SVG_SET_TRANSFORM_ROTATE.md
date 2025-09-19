@@ -32,4 +32,4 @@ If the optional *x* and *y* parameters are not passed, the rotation is carried o
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_FLIP](SVG%5FSET%5FTRANSFORM%5FFLIP.md)  
+[SVG\_SET\_TRANSFORM\_FLIP](SVG_SET_TRANSFORM_FLIP.md)  

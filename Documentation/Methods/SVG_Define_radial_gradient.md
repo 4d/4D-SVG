@@ -63,4 +63,4 @@ The optional *fx* and *fy* parameters specify, in percent, the focus point of th
 #### See also 
 
 *SVG Colors*  
-[SVG\_Define\_linear\_gradient](SVG%5FDefine%5Flinear%5Fgradient.md)  
+[SVG\_Define\_linear\_gradient](SVG_Define_linear_gradient.md)  

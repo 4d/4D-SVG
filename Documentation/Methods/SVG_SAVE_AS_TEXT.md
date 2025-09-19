@@ -28,5 +28,5 @@ The **SVG\_SAVE\_AS\_TEXT** modifies the value of the variable (if any) designat
 
 #### See also 
 
-[SVG\_Export\_to\_XML](SVG%5FExport%5Fto%5FXML.md)  
-[SVG\_SET\_DOCUMENT\_VARIABLE](SVG%5FSET%5FDOCUMENT%5FVARIABLE.md)  
+[SVG\_Export\_to\_XML](SVG_Export_to_XML.md)  
+[SVG\_SET\_DOCUMENT\_VARIABLE](SVG_SET_DOCUMENT_VARIABLE.md)  

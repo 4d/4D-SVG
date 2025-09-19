@@ -25,4 +25,4 @@ Pass the value of the line thickness in *strokeWidth*. The optional *unit* param
 
 #### See also 
 
-[SVG\_SET\_STROKE\_BRUSH](SVG%5FSET%5FSTROKE%5FBRUSH.md)  
+[SVG\_SET\_STROKE\_BRUSH](SVG_SET_STROKE_BRUSH.md)  

@@ -14,4 +14,4 @@ The SVG\_Get\_default\_encoding command returns the encoding used when a new doc
 
 #### See also 
 
-[SVG\_SET\_DEFAULT\_ENCODING](SVG%5FSET%5FDEFAULT%5FENCODING.md)  
+[SVG\_SET\_DEFAULT\_ENCODING](SVG_SET_DEFAULT_ENCODING.md)  

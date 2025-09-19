@@ -28,6 +28,6 @@ The optional *exportType* parameter can be used to specify the way in which the 
 
 #### See also 
 
-[SVG\_Export\_to\_XML](SVG%5FExport%5Fto%5FXML.md)  
-[SVG\_Open\_picture](SVG%5FOpen%5Fpicture.md)  
-[SVG\_SAVE\_AS\_PICTURE](SVG%5FSAVE%5FAS%5FPICTURE.md)  
+[SVG\_Export\_to\_XML](SVG_Export_to_XML.md)  
+[SVG\_Open\_picture](SVG_Open_picture.md)  
+[SVG\_SAVE\_AS\_PICTURE](SVG_SAVE_AS_PICTURE.md)  

@@ -39,4 +39,4 @@ The *index* parameter designates a number in the 4D color palette, where colors 
 
 #### See also 
 
-[SVG\_Color\_RGB\_from\_long](SVG%5FColor%5FRGB%5Ffrom%5Flong.md)  
+[SVG\_Color\_RGB\_from\_long](SVG_Color_RGB_from_long.md)  

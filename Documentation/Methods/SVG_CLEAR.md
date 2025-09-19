@@ -18,6 +18,6 @@ If *svgObject* is not passed, the command frees all the SVG objects created usin
 
 #### See also 
 
-[SVG\_Copy](SVG%5FCopy.md)  
-[SVG\_New](SVG%5FNew.md)  
-[SVG\_Open\_file](SVG%5FOpen%5Ffile.md)  
+[SVG\_Copy](SVG_Copy.md)  
+[SVG\_New](SVG_New.md)  
+[SVG\_Open\_file](SVG_Open_file.md)  

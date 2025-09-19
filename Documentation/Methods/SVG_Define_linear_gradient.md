@@ -127,4 +127,4 @@ This example illustrates the effect of the *startColorOffset* and *endColorOffse
 #### See also 
 
 *SVG Colors*  
-[SVG\_Define\_radial\_gradient](SVG%5FDefine%5Fradial%5Fgradient.md)  
+[SVG\_Define\_radial\_gradient](SVG_Define_radial_gradient.md)  

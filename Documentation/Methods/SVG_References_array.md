@@ -17,4 +17,4 @@ SVG\_References\_array is useful when debugging. Each time an SVG document is cr
 
 #### See also 
 
-[SVG\_Is\_reference\_valid](SVG%5FIs%5Freference%5Fvalid.md)  
+[SVG\_Is\_reference\_valid](SVG_Is_reference_valid.md)  

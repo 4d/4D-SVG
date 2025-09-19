@@ -36,5 +36,5 @@ Adding the following text:
 
 #### See also 
 
-[SVG\_New\_textArea](SVG%5FNew%5FtextArea.md)  
-[SVG\_SET\_TEXTAREA\_TEXT](SVG%5FSET%5FTEXTAREA%5FTEXT.md)  
+[SVG\_New\_textArea](SVG_New_textArea.md)  
+[SVG\_SET\_TEXTAREA\_TEXT](SVG_SET_TEXTAREA_TEXT.md)  

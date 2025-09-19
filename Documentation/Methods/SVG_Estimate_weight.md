@@ -15,4 +15,4 @@ The SVG\_Estimate\_weight command returns the size in bytes of the SVG tree whos
 
 #### See also 
 
-[SVG\_Count\_elements](SVG%5FCount%5Felements.md)  
+[SVG\_Count\_elements](SVG_Count_elements.md)  

@@ -43,4 +43,4 @@ Declaration of a filter that can be used to make a shadow beneath an object:
 
 #### See also 
 
-[SVG\_SET\_FILTER](SVG%5FSET%5FFILTER.md)  
+[SVG\_SET\_FILTER](SVG_SET_FILTER.md)  

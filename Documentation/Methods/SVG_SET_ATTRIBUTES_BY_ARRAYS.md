@@ -34,5 +34,5 @@ The attributes and their values are passed using two arrays, to which *namesArra
 
 #### See also 
 
-[SVG\_GET\_ATTRIBUTES](SVG%5FGET%5FATTRIBUTES.md)  
-[SVG\_SET\_ATTRIBUTES](SVG%5FSET%5FATTRIBUTES.md)  
+[SVG\_GET\_ATTRIBUTES](SVG_GET_ATTRIBUTES.md)  
+[SVG\_SET\_ATTRIBUTES](SVG_SET_ATTRIBUTES.md)  

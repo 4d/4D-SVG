@@ -23,4 +23,4 @@ In the *alignment* parameter, you must pass one of the following values:
 
 #### See also 
 
-[SVG\_New\_textArea](SVG%5FNew%5FtextArea.md)  
+[SVG\_New\_textArea](SVG_New_textArea.md)  

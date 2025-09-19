@@ -33,4 +33,4 @@ The optional *mode* parameter can be used to indicate if the graphic must be fit
 
 #### See also 
 
-[SVG\_SET\_VIEWPORT\_FILL](SVG%5FSET%5FVIEWPORT%5FFILL.md)  
+[SVG\_SET\_VIEWPORT\_FILL](SVG_SET_VIEWPORT_FILL.md)  

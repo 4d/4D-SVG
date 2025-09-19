@@ -17,4 +17,4 @@ The *size* parameter contains the font size in points.
 
 #### See also 
 
-[SVG\_SET\_FONT\_STYLE](SVG%5FSET%5FFONT%5FSTYLE.md)  
+[SVG\_SET\_FONT\_STYLE](SVG_SET_FONT_STYLE.md)  

@@ -17,5 +17,5 @@ The line return characters are automatically replaced by "<tbreak/>" elements.
 
 #### See also 
 
-[SVG\_APPEND\_TEXT\_TO\_TEXTAREA](SVG%5FAPPEND%5FTEXT%5FTO%5FTEXTAREA.md)  
-[SVG\_New\_textArea](SVG%5FNew%5FtextArea.md)  
+[SVG\_APPEND\_TEXT\_TO\_TEXTAREA](SVG_APPEND_TEXT_TO_TEXTAREA.md)  
+[SVG\_New\_textArea](SVG_New_textArea.md)  

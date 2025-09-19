@@ -54,4 +54,4 @@ Changing a property while remaining in the same "text" element, here the size of
 
 #### See also 
 
-[SVG\_New\_text](SVG%5FNew%5Ftext.md)  
+[SVG\_New\_text](SVG_New_text.md)  

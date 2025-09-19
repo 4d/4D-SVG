@@ -22,4 +22,4 @@ See the *SVG\_Define\_filter* command.
 #### See also 
 
 *SVG Filters*  
-[SVG\_Define\_filter](SVG%5FDefine%5Ffilter.md)  
+[SVG\_Define\_filter](SVG_Define_filter.md)  

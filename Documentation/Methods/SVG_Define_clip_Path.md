@@ -24,4 +24,4 @@ Refer to the example of the *SVG\_SET\_CLIP\_PATH* command.
 
 #### See also 
 
-[SVG\_SET\_CLIP\_PATH](SVG%5FSET%5FCLIP%5FPATH.md)  
+[SVG\_SET\_CLIP\_PATH](SVG_SET_CLIP_PATH.md)  

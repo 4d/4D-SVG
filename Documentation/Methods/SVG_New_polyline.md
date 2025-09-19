@@ -39,4 +39,4 @@ Draw two triangles:
 
 #### See also 
 
-[SVG\_New\_polyline\_by\_arrays](SVG%5FNew%5Fpolyline%5Fby%5Farrays.md)  
+[SVG\_New\_polyline\_by\_arrays](SVG_New_polyline_by_arrays.md)  

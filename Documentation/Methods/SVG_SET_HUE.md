@@ -17,4 +17,4 @@ In the *hue* parameter, you pass a value between 0 and 360.
 
 #### See also 
 
-[SVG\_SET\_SATURATION](SVG%5FSET%5FSATURATION.md)  
+[SVG\_SET\_SATURATION](SVG_SET_SATURATION.md)  

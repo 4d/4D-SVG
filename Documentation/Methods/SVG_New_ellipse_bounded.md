@@ -48,4 +48,4 @@ Draw a light blue ellipse with a blue edge and a 2-point line thickness:
 
 #### See also 
 
-[SVG\_New\_ellipse](SVG%5FNew%5Fellipse.md)  
+[SVG\_New\_ellipse](SVG_New_ellipse.md)  

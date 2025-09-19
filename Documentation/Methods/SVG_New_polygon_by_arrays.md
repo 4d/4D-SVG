@@ -59,5 +59,5 @@ Draw a star (default border color and line thickness):
 
 #### See also 
 
-[SVG\_New\_polygon](SVG%5FNew%5Fpolygon.md)  
-[SVG\_New\_regular\_polygon](SVG%5FNew%5Fregular%5Fpolygon.md)  
+[SVG\_New\_polygon](SVG_New_polygon.md)  
+[SVG\_New\_regular\_polygon](SVG_New_regular_polygon.md)  

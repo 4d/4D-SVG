@@ -33,4 +33,4 @@ Refer to the description of the *SVG\_Use* command.
 
 #### See also 
 
-[SVG\_Use](SVG%5FUse.md)  
+[SVG\_Use](SVG_Use.md)  

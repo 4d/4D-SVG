@@ -66,4 +66,4 @@ See the *SVG\_SET\_OPTIONS* command.
 
 #### See also 
 
-[SVG\_SET\_OPTIONS](SVG%5FSET%5FOPTIONS.md)  
+[SVG\_SET\_OPTIONS](SVG_SET_OPTIONS.md)  

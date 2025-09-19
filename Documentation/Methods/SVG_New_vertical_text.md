@@ -56,5 +56,5 @@ The optional *rotation* parameter can be used to specify the rotation to be appl
 
 #### See also 
 
-[SVG\_New\_text](SVG%5FNew%5Ftext.md)  
-[SVG\_New\_tspan](SVG%5FNew%5Ftspan.md)  
+[SVG\_New\_text](SVG_New_text.md)  
+[SVG\_New\_tspan](SVG_New_tspan.md)  

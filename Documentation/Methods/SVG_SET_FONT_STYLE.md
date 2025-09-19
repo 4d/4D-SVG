@@ -23,4 +23,4 @@ In the *style* parameter, you must pass one of the following values or a combina
 
 #### See also 
 
-[SVG\_SET\_FONT\_SIZE](SVG%5FSET%5FFONT%5FSIZE.md)  
+[SVG\_SET\_FONT\_SIZE](SVG_SET_FONT_SIZE.md)  

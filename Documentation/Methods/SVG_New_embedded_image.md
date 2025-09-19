@@ -41,5 +41,5 @@ Embed the ‘logo4D.png’ picture located in the ‘Resources’ folder:
 
 #### See also 
 
-[SVG\_New\_image](SVG%5FNew%5Fimage.md)  
-[SVG\_Open\_picture](SVG%5FOpen%5Fpicture.md)  
+[SVG\_New\_image](SVG_New_image.md)  
+[SVG\_Open\_picture](SVG_Open_picture.md)  

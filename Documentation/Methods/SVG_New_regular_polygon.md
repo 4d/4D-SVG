@@ -58,4 +58,4 @@ Draw an octogon, the circle containing it and the trace lines:
 
 #### See also 
 
-[SVG\_New\_polygon](SVG%5FNew%5Fpolygon.md)  
+[SVG\_New\_polygon](SVG_New_polygon.md)  

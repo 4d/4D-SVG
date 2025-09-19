@@ -42,4 +42,4 @@ Method code:
 
 #### See also 
 
-[SVG\_Read\_last\_error](SVG%5FRead%5Flast%5Ferror.md)  
+[SVG\_Read\_last\_error](SVG_Read_last_error.md)  

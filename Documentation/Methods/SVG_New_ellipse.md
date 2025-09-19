@@ -48,5 +48,5 @@ Draw a light blue ellipse with a blue edge and a 2-point line thickness:
 
 #### See also 
 
-[SVG\_New\_circle](SVG%5FNew%5Fcircle.md)  
-[SVG\_New\_ellipse\_bounded](SVG%5FNew%5Fellipse%5Fbounded.md)  
+[SVG\_New\_circle](SVG_New_circle.md)  
+[SVG\_New\_ellipse\_bounded](SVG_New_ellipse_bounded.md)  

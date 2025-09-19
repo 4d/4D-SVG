@@ -59,5 +59,5 @@ Result:
 
 #### See also 
 
-[SVG\_Filter\_Blend](SVG%5FFilter%5FBlend.md)  
-[SVG\_Filter\_Blur](SVG%5FFilter%5FBlur.md)  
+[SVG\_Filter\_Blend](SVG_Filter_Blend.md)  
+[SVG\_Filter\_Blur](SVG_Filter_Blur.md)  

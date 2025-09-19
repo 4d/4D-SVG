@@ -17,5 +17,5 @@ If the element is not found, an error is generated.
 
 #### See also 
 
-[SVG\_Get\_ID](SVG%5FGet%5FID.md)  
-[SVG\_SET\_ID](SVG%5FSET%5FID.md)  
+[SVG\_Get\_ID](SVG_Get_ID.md)  
+[SVG\_SET\_ID](SVG_SET_ID.md)  

@@ -68,5 +68,5 @@ Result (blur input filter = sourceAlpha):
 
 #### See also 
 
-[SVG\_Filter\_Blur](SVG%5FFilter%5FBlur.md)  
-[SVG\_Filter\_Offset](SVG%5FFilter%5FOffset.md)  
+[SVG\_Filter\_Blur](SVG_Filter_Blur.md)  
+[SVG\_Filter\_Offset](SVG_Filter_Offset.md)  

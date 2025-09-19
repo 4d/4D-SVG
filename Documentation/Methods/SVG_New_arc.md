@@ -47,4 +47,4 @@ Draw the arc from 90° to 180° of a light blue circle with a blue edge and a 2-
 
 #### See also 
 
-[SVG\_PATH\_ARC](SVG%5FPATH%5FARC.md)  
+[SVG\_PATH\_ARC](SVG_PATH_ARC.md)  

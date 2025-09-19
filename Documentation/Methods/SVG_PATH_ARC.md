@@ -41,4 +41,4 @@ See the examples for the *SVG\_New\_path* command.
 
 #### See also 
 
-[SVG\_New\_arc](SVG%5FNew%5Farc.md)  
+[SVG\_New\_arc](SVG_New_arc.md)  

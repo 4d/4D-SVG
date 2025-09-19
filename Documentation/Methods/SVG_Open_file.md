@@ -17,6 +17,6 @@ The SVG\_Open\_file command parses (and validates with the DTD) the SVG document
 
 #### See also 
 
-[SVG\_CLEAR](SVG%5FCLEAR.md)  
-[SVG\_Copy](SVG%5FCopy.md)  
-[SVG\_New](SVG%5FNew.md)  
+[SVG\_CLEAR](SVG_CLEAR.md)  
+[SVG\_Copy](SVG_Copy.md)  
+[SVG\_New](SVG_New.md)  

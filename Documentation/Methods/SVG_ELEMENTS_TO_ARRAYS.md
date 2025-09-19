@@ -25,5 +25,5 @@ If *svgObject* is not valid or if this attribute does not exist, an error is gen
 
 #### See also 
 
-[SVG\_Count\_elements](SVG%5FCount%5Felements.md)  
-[SVG\_New\_group](SVG%5FNew%5Fgroup.md)  
+[SVG\_Count\_elements](SVG_Count_elements.md)  
+[SVG\_New\_group](SVG_New_group.md)  

@@ -28,4 +28,4 @@ The SVG\_Open\_picture command analyzes an SVG picture and returns an SVG refere
 
 #### See also 
 
-[SVG\_Export\_to\_picture](SVG%5FExport%5Fto%5Fpicture.md)  
+[SVG\_Export\_to\_picture](SVG_Export_to_picture.md)  

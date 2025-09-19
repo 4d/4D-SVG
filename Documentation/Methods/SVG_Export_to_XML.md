@@ -25,5 +25,5 @@ The SVG\_Export\_to\_XML command returns the XML text of the description of the 
 
 #### See also 
 
-[SVG\_Export\_to\_picture](SVG%5FExport%5Fto%5Fpicture.md)  
-[SVG\_SAVE\_AS\_TEXT](SVG%5FSAVE%5FAS%5FTEXT.md)  
+[SVG\_Export\_to\_picture](SVG_Export_to_picture.md)  
+[SVG\_SAVE\_AS\_TEXT](SVG_SAVE_AS_TEXT.md)  

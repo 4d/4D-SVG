@@ -130,6 +130,6 @@ Display of multi-style text:
 
 #### See also 
 
-[SVG\_New\_textArea](SVG%5FNew%5FtextArea.md)  
-[SVG\_New\_tspan](SVG%5FNew%5Ftspan.md)  
-[SVG\_New\_vertical\_text](SVG%5FNew%5Fvertical%5Ftext.md)  
+[SVG\_New\_textArea](SVG_New_textArea.md)  
+[SVG\_New\_tspan](SVG_New_tspan.md)  
+[SVG\_New\_vertical\_text](SVG_New_vertical_text.md)  

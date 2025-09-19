@@ -58,4 +58,4 @@ Specify a graphic composed of two red circles and two blue squares. Then use thi
 
 #### See also 
 
-[SVG\_Define\_symbol](SVG%5FDefine%5Fsymbol.md)  
+[SVG\_Define\_symbol](SVG_Define_symbol.md)  

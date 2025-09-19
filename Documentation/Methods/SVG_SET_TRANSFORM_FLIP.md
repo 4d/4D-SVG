@@ -38,4 +38,4 @@ Flipping of a text object:
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_SKEW](SVG%5FSET%5FTRANSFORM%5FSKEW.md)  
+[SVG\_SET\_TRANSFORM\_SKEW](SVG_SET_TRANSFORM_SKEW.md)  

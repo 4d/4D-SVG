@@ -63,4 +63,4 @@ The same image with a rectangular clip path with rounded corners:
 
 #### See also 
 
-[SVG\_Define\_clip\_path](SVG%5FDefine%5Fclip%5Fpath.md)  
+[SVG\_Define\_clip\_path](SVG_Define_clip_path.md)  

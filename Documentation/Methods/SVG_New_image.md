@@ -75,5 +75,5 @@ Here are a few examples for accessing pictures using relative URLs:
 
 #### See also 
 
-[SVG\_New\_embedded\_image](SVG%5FNew%5Fembedded%5Fimage.md)  
-[SVG\_Open\_picture](SVG%5FOpen%5Fpicture.md)  
+[SVG\_New\_embedded\_image](SVG_New_embedded_image.md)  
+[SVG\_Open\_picture](SVG_Open_picture.md)  

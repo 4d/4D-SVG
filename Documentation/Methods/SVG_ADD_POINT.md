@@ -22,6 +22,6 @@ See the examples for the *SVG\_New\_polyline* command.
 
 #### See also 
 
-[SVG\_New\_path](SVG%5FNew%5Fpath.md)  
-[SVG\_New\_polygon](SVG%5FNew%5Fpolygon.md)  
-[SVG\_New\_polyline](SVG%5FNew%5Fpolyline.md)  
+[SVG\_New\_path](SVG_New_path.md)  
+[SVG\_New\_polygon](SVG_New_polygon.md)  
+[SVG\_New\_polyline](SVG_New_polyline.md)  

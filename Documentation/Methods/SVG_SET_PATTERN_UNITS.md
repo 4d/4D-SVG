@@ -19,4 +19,4 @@ The *sysCoord* parameter specifies the name of the system to be used. It must be
 
 #### See also 
 
-[SVG\_SET\_PATTERN\_CONTENT\_UNITS](SVG%5FSET%5FPATTERN%5FCONTENT%5FUNITS.md)  
+[SVG\_SET\_PATTERN\_CONTENT\_UNITS](SVG_SET_PATTERN_CONTENT_UNITS.md)  

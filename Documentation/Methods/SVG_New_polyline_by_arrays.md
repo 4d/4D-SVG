@@ -77,4 +77,4 @@ Draw a line diagram:
 
 #### See also 
 
-[SVG\_New\_polyline](SVG%5FNew%5Fpolyline.md)  
+[SVG\_New\_polyline](SVG_New_polyline.md)  

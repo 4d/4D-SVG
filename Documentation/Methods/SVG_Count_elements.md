@@ -15,5 +15,5 @@ The SVG\_Count\_elements command returns the number of graphic objects contains 
 
 #### See also 
 
-[SVG\_ELEMENTS\_TO\_ARRAYS](SVG%5FELEMENTS%5FTO%5FARRAYS.md)  
-[SVG\_New\_group](SVG%5FNew%5Fgroup.md)  
+[SVG\_ELEMENTS\_TO\_ARRAYS](SVG_ELEMENTS_TO_ARRAYS.md)  
+[SVG\_New\_group](SVG_New_group.md)  

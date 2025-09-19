@@ -67,5 +67,5 @@ Result (input = sourceAlpha):
 
 #### See also 
 
-[SVG\_Filter\_Blend](SVG%5FFilter%5FBlend.md)  
-[SVG\_Filter\_Offset](SVG%5FFilter%5FOffset.md)  
+[SVG\_Filter\_Blend](SVG_Filter_Blend.md)  
+[SVG\_Filter\_Offset](SVG_Filter_Offset.md)  

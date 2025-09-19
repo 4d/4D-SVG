@@ -22,4 +22,4 @@ The SVG\_Color\_grey command returns a string expressing a gray color having a *
 
 #### See also 
 
-[SVG\_Color\_RGB\_from\_long](SVG%5FColor%5FRGB%5Ffrom%5Flong.md)  
+[SVG\_Color\_RGB\_from\_long](SVG_Color_RGB_from_long.md)  

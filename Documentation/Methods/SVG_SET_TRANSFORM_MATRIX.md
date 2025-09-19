@@ -34,4 +34,4 @@ This type of transformation can be used to combine transformations like, for exa
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_ROTATE](SVG%5FSET%5FTRANSFORM%5FROTATE.md)  
+[SVG\_SET\_TRANSFORM\_ROTATE](SVG_SET_TRANSFORM_ROTATE.md)  

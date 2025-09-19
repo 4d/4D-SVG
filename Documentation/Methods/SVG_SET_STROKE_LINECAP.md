@@ -25,4 +25,4 @@ If the *mode* parameter contains any other value, an error is generated.
 
 #### See also 
 
-[SVG\_SET\_STROKE\_LINEJOIN](SVG%5FSET%5FSTROKE%5FLINEJOIN.md)  
+[SVG\_SET\_STROKE\_LINEJOIN](SVG_SET_STROKE_LINEJOIN.md)  

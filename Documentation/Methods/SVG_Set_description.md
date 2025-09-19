@@ -28,4 +28,4 @@ A description is often used to insert a comment or explanatory text in the SVG c
 
 #### See also 
 
-[SVG\_Set\_title](SVG%5FSet%5Ftitle.md)  
+[SVG\_Set\_title](SVG_Set_title.md)  

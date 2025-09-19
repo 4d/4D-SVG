@@ -15,4 +15,4 @@ The SVG\_Is\_reference\_valid command returns *True* if the reference passed in 
 
 #### See also 
 
-[SVG\_References\_array](SVG%5FReferences%5Farray.md)  
+[SVG\_References\_array](SVG_References_array.md)  

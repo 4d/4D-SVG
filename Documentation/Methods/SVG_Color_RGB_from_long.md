@@ -40,5 +40,5 @@ The optional *format* parameter can be used to specify the desired format for th
 
 #### See also 
 
-[SVG\_Color\_from\_index](SVG%5FColor%5Ffrom%5Findex.md)  
-[SVG\_Color\_grey](SVG%5FColor%5Fgrey.md)  
+[SVG\_Color\_from\_index](SVG_Color_from_index.md)  
+[SVG\_Color\_grey](SVG_Color_grey.md)  

@@ -17,4 +17,4 @@ In the *saturation* parameter, you pass a value between 0 and 100
 
 #### See also 
 
-[SVG\_SET\_HUE](SVG%5FSET%5FHUE.md)  
+[SVG\_SET\_HUE](SVG_SET_HUE.md)  

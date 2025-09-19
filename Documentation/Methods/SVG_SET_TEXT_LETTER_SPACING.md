@@ -49,4 +49,4 @@ Examples of spacing variations:
 
 #### See also 
 
-[SVG\_SET\_TEXT\_KERNING](SVG%5FSET%5FTEXT%5FKERNING.md)  
+[SVG\_SET\_TEXT\_KERNING](SVG_SET_TEXT_KERNING.md)  

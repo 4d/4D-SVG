@@ -32,5 +32,5 @@ The **SVG\_SAVE\_AS\_PICTURE** modifies the value of the variable (if any) desig
 
 #### See also 
 
-[SVG\_Export\_to\_picture](SVG%5FExport%5Fto%5Fpicture.md)  
-[SVG\_SET\_DOCUMENT\_VARIABLE](SVG%5FSET%5FDOCUMENT%5FVARIABLE.md)  
+[SVG\_Export\_to\_picture](SVG_Export_to_picture.md)  
+[SVG\_SET\_DOCUMENT\_VARIABLE](SVG_SET_DOCUMENT_VARIABLE.md)  

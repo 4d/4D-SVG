@@ -50,4 +50,4 @@ Examples of kerning variations:
 
 #### See also 
 
-[SVG\_SET\_TEXT\_LETTER\_SPACING](SVG%5FSET%5FTEXT%5FLETTER%5FSPACING.md)  
+[SVG\_SET\_TEXT\_LETTER\_SPACING](SVG_SET_TEXT_LETTER_SPACING.md)  

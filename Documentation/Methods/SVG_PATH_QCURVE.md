@@ -24,4 +24,4 @@ See the examples of the *SVG\_New\_path* command.
 
 #### See also 
 
-[SVG\_PATH\_CURVE](SVG%5FPATH%5FCURVE.md)  
+[SVG\_PATH\_CURVE](SVG_PATH_CURVE.md)  

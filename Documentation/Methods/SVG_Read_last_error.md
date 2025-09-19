@@ -90,4 +90,4 @@ This method can be used as follows:
 
 #### See also 
 
-[SVG\_Set\_error\_handler](SVG%5FSet%5Ferror%5Fhandler.md)  
+[SVG\_Set\_error\_handler](SVG_Set_error_handler.md)  

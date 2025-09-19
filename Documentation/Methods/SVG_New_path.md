@@ -137,5 +137,5 @@ Quadratic Bezier curve:
 
 #### See also 
 
-[SVG\_PATH\_CLOSE](SVG%5FPATH%5FCLOSE.md)  
-[SVG\_PATH\_LINE\_TO](SVG%5FPATH%5FLINE%5FTO.md)  
+[SVG\_PATH\_CLOSE](SVG_PATH_CLOSE.md)  
+[SVG\_PATH\_LINE\_TO](SVG_PATH_LINE_TO.md)  

@@ -36,5 +36,5 @@ Draw a blue line that is 3 pixels thick:
 
 #### See also 
 
-[SVG\_New\_polyline](SVG%5FNew%5Fpolyline.md)  
-[SVG\_PATH\_LINE\_TO](SVG%5FPATH%5FLINE%5FTO.md)  
+[SVG\_New\_polyline](SVG_New_polyline.md)  
+[SVG\_PATH\_LINE\_TO](SVG_PATH_LINE_TO.md)  

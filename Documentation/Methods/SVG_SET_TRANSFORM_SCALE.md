@@ -30,4 +30,4 @@ If the *scaleY* parameter is provided, the object is enlarged (value >1) or redu
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_MATRIX](SVG%5FSET%5FTRANSFORM%5FMATRIX.md)  
+[SVG\_SET\_TRANSFORM\_MATRIX](SVG_SET_TRANSFORM_MATRIX.md)  

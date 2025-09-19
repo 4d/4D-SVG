@@ -27,5 +27,5 @@ The command returns a 32-character string ([SVG\_Ref](# "Unique ID of an SVG fil
 
 #### See also 
 
-[SVG\_CLEAR](SVG%5FCLEAR.md)  
-[SVG\_New](SVG%5FNew.md)  
+[SVG\_CLEAR](SVG_CLEAR.md)  
+[SVG\_New](SVG_New.md)  

@@ -33,4 +33,4 @@ If the *y* parameter is provided, the object will be moved vertically for the nu
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_ROTATE](SVG%5FSET%5FTRANSFORM%5FROTATE.md)  
+[SVG\_SET\_TRANSFORM\_ROTATE](SVG_SET_TRANSFORM_ROTATE.md)  

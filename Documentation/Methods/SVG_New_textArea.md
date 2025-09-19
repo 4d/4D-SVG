@@ -105,7 +105,7 @@ Display of multi-style text:
 
 #### See also 
 
-[SVG\_APPEND\_TEXT\_TO\_TEXTAREA](SVG%5FAPPEND%5FTEXT%5FTO%5FTEXTAREA.md)  
-[SVG\_New\_text](SVG%5FNew%5Ftext.md)  
-[SVG\_New\_vertical\_text](SVG%5FNew%5Fvertical%5Ftext.md)  
-[SVG\_SET\_TEXTAREA\_TEXT](SVG%5FSET%5FTEXTAREA%5FTEXT.md)  
+[SVG\_APPEND\_TEXT\_TO\_TEXTAREA](SVG_APPEND_TEXT_TO_TEXTAREA.md)  
+[SVG\_New\_text](SVG_New_text.md)  
+[SVG\_New\_vertical\_text](SVG_New_vertical_text.md)  
+[SVG\_SET\_TEXTAREA\_TEXT](SVG_SET_TEXTAREA_TEXT.md)  

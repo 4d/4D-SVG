@@ -35,4 +35,4 @@ Refer to the example of the *SVG\_SET\_MARKER* command.
 
 #### See also 
 
-[SVG\_SET\_MARKER](SVG%5FSET%5FMARKER.md)  
+[SVG\_SET\_MARKER](SVG_SET_MARKER.md)  

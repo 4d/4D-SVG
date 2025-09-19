@@ -18,4 +18,4 @@ See the examples for the *SVG\_New\_path* command.
 
 #### See also 
 
-[SVG\_New\_path](SVG%5FNew%5Fpath.md)  
+[SVG\_New\_path](SVG_New_path.md)  
