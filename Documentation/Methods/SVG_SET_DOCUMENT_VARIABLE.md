@@ -1,1 +1,22 @@
-<!-- SVG_SET_DOCUMENT_VARIABLE ( Param_1 ) -> Param_1 (Pointer)-->## Description **SVG\_SET\_DOCUMENT\_VARIABLE** (Pointer)Allows to record a pointer to the variable of the host database that will be updated after a call to **SVG\_SAVE\_AS\_PICTURE** or **SVG\_SAVE\_AS\_TEXT** You can call this method only once per session (in an init method for example) Pass a variable's pointer as a parameter (typically the Document variable) which will be updated after each call to the command **SVG\_SAVE\_AS\_PICTURE** or **SVG\_SAVE\_AS\_TEXT** Pass a nil pointer if you want to stop the link
+# SVG_SET_DOCUMENT_VARIABLE
+
+>**SVG_SET_DOCUMENT_VARIABLE** ( *pointer* )
+
+| Parameter | Type |  | Description |
+| --- | --- | --- | --- |
+| pointer | Pointer | &#x1F852; | Pointer to variable to set |
+
+
+
+#### Description 
+
+The **SVG\_SET\_DOCUMENT\_VARIABLE** method sets a pointer to the variable of the host database that is updated after each call to *SVG\_SAVE\_AS\_PICTURE* or *SVG\_SAVE\_AS\_TEXT*. You must call this method only once per session (in an initialization method, for instance).
+
+In the *pointer* parameter, you pass a pointer to the variable whose value you want to follow (usually the **Document** system variable).
+
+You can pass a Nil pointer in the *pointer* parameter to remove the link.
+
+#### See also 
+
+[SVG\_SAVE\_AS\_PICTURE](SVG%5FSAVE%5FAS%5FPICTURE.md)  
+[SVG\_SAVE\_AS\_TEXT](SVG%5FSAVE%5FAS%5FTEXT.md)  

@@ -1,1 +1,28 @@
-﻿<!-- SVG_SET_STROKE_WIDTH ( objectID ; strokeWidth ; unit ) -> objectID (Text) -> strokeWidth (Real) -> unit (Text)-->## Description **SVG\_SET\_STROKE\_WIDTH** ( svgObject ; strokeWidth {; unit} )
+# SVG_SET_STROKE_WIDTH
+
+>**SVG_SET_STROKE_WIDTH** ( *svgObject* ; *strokeWidth* {; *unit*} )
+
+| Parameter | Type |  | Description |
+| --- | --- | --- | --- |
+| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
+| strokeWidth | Real | &#x1F852; | Line thickness |
+| unit | String | &#x1F852; | Unit of measurement |
+
+
+
+#### Description 
+
+The SVG\_SET\_STROKE\_WIDTH command can be used to set the thickness of lines for the SVG object having the *svgObject* reference. If this attribute already exists, its value is replaced by the value passed in the parameter.
+
+Pass the value of the line thickness in *strokeWidth*. The optional *unit* parameter can be used to specify the unit to be used. You can pass one of the following values: px, pt, pc, cm, mm, in, em, ex or %. If the *unit* parameter is omitted, the*strokeWidth* parameter is expected in the user coordinate system
+
+#### Example 
+
+```4d
+ $svg :=SVG_New
+ SVG_SET_STROKE_WIDTH(SVG_New_rect($svg;10;10;200;200;0;0;"black";"white";2);10)
+```
+
+#### See also 
+
+[SVG\_SET\_STROKE\_BRUSH](SVG%5FSET%5FSTROKE%5FBRUSH.md)  

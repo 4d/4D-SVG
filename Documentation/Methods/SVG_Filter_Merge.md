@@ -1,1 +1,0 @@
-﻿<!-- nodeReference := SVG_Filter_Merge ( parentReference ; Param_2 ; … ; N ) -> parentReference (Text) -> Param_2 ; … ; N (Text) <- nodeReference (Text)-->## Description
