@@ -22,4 +22,4 @@ The optional *opacity* parameter can be used to specify the value of the percent
 
 #### See also 
 
-*SVG Colors*  
+[SVG Colors](../SVG%20Colors.md)   

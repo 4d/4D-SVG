@@ -1,0 +1,8 @@
+{
+    "filters": [
+        {
+            "from": "Documentation/(.*?)\\.md",
+            "to": "https://github.com/4d/4D-SVG/blob/main/Documentation/$1.md"
+        }
+    ]
+}
