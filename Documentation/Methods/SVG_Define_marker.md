@@ -4,14 +4,14 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of symbol |
-| x | Longint | &#x1F852; | Coordinate on X axis of reference point |
-| y | Longint | &#x1F852; | Coordinate on Y axis of reference point |
-| width | Longint | &#x1F852; | Width of marker |
-| height | Longint | &#x1F852; | Height of marker |
-| orientation | Longint | &#x1F852; | Orientation of marker |
-| Function result | SVG_Ref | &#x1F850; | Reference of marker |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of symbol |
+| x | Longint | &#8594; | Coordinate on X axis of reference point |
+| y | Longint | &#8594; | Coordinate on Y axis of reference point |
+| width | Longint | &#8594; | Width of marker |
+| height | Longint | &#8594; | Height of marker |
+| orientation | Longint | &#8594; | Orientation of marker |
+| Function result | SVG_Ref | &#8592; | Reference of marker |
 
 
 
@@ -35,4 +35,4 @@ Refer to the example of the *SVG\_SET\_MARKER* command.
 
 #### See also 
 
-[SVG\_SET\_MARKER](SVG%5FSET%5FMARKER.md)  
+[SVG\_SET\_MARKER](SVG_SET_MARKER.md)  

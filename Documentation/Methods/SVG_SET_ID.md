@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| id | String | &#x1F852; | ID to assign to object |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| id | String | &#8594; | ID to assign to object |
 
 
 
@@ -25,5 +25,5 @@ The object id is used to reference an object. This reference will then be recove
 
 #### See also 
 
-[SVG\_Find\_ID](SVG%5FFind%5FID.md)  
-[SVG\_Get\_ID](SVG%5FGet%5FID.md)  
+[SVG\_Find\_ID](SVG_Find_ID.md)  
+[SVG\_Get\_ID](SVG_Get_ID.md)  

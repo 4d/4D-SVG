@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| refsArrayPointer | Pointer | &#x1F852; | Alpha array of document references |
-| Function result | Longint | &#x1F850; | Number of references |
+| refsArrayPointer | Pointer | &#8594; | Alpha array of document references |
+| Function result | Longint | &#8592; | Number of references |
 
 
 
@@ -17,4 +17,4 @@ SVG\_References\_array is useful when debugging. Each time an SVG document is cr
 
 #### See also 
 
-[SVG\_Is\_reference\_valid](SVG%5FIs%5Freference%5Fvalid.md)  
+[SVG\_Is\_reference\_valid](SVG_Is_reference_valid.md)  

@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| filterRef | SVG_Ref | &#x1F852; | Reference of filter |
-| picture | String | &#x1F852; | Picture source |
-| backgroundPict | String | &#x1F852; | Background picture source |
-| mode | String | &#x1F852; | Mixing mode |
-| name | String | &#x1F852; | Target of filter primitive |
-| Function result | SVG_Ref | &#x1F850; | Reference of primitive |
+| filterRef | SVG_Ref | &#8594; | Reference of filter |
+| picture | String | &#8594; | Picture source |
+| backgroundPict | String | &#8594; | Background picture source |
+| mode | String | &#8594; | Mixing mode |
+| name | String | &#8594; | Target of filter primitive |
+| Function result | SVG_Ref | &#8592; | Reference of primitive |
 
 
 
@@ -68,5 +68,5 @@ Result (blur input filter = sourceAlpha):
 
 #### See also 
 
-[SVG\_Filter\_Blur](SVG%5FFilter%5FBlur.md)  
-[SVG\_Filter\_Offset](SVG%5FFilter%5FOffset.md)  
+[SVG\_Filter\_Blur](SVG_Filter_Blur.md)  
+[SVG\_Filter\_Offset](SVG_Filter_Offset.md)  

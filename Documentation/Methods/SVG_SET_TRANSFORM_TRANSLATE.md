@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| x | Longint | &#x1F852; | Coordinate on X axis |
-| y | Longint | &#x1F852; | Coordinate on Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| x | Longint | &#8594; | Coordinate on X axis |
+| y | Longint | &#8594; | Coordinate on Y axis |
 
 
 
@@ -33,4 +33,4 @@ If the *y* parameter is provided, the object will be moved vertically for the nu
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_ROTATE](SVG%5FSET%5FTRANSFORM%5FROTATE.md)  
+[SVG\_SET\_TRANSFORM\_ROTATE](SVG_SET_TRANSFORM_ROTATE.md)  

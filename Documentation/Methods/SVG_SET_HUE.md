@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| hue | Longint | &#x1F852; | Hue value |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| hue | Longint | &#8594; | Hue value |
 
 
 
@@ -17,4 +17,4 @@ In the *hue* parameter, you pass a value between 0 and 360.
 
 #### See also 
 
-[SVG\_SET\_SATURATION](SVG%5FSET%5FSATURATION.md)  
+[SVG\_SET\_SATURATION](SVG_SET_SATURATION.md)  

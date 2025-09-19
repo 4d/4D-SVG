@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| mode | String | &#x1F852; | Rendering mode |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| mode | String | &#8594; | Rendering mode |
 
 
 
@@ -25,4 +25,4 @@ If the *mode* parameter contains any other value, an error is generated.
 
 #### See also 
 
-[SVG\_SET\_STROKE\_LINEJOIN](SVG%5FSET%5FSTROKE%5FLINEJOIN.md)  
+[SVG\_SET\_STROKE\_LINEJOIN](SVG_SET_STROKE_LINEJOIN.md)  

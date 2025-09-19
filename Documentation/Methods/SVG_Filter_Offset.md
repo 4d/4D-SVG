@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| filterRef | SVG_Ref | &#x1F852; | Reference of filter |
-| dx | Longint | &#x1F852; | Offset on X axis |
-| dy | Longint | &#x1F852; | Offset on Y axis |
-| input | String | &#x1F852; | Source of filter primitive |
-| name | String | &#x1F852; | Target of filter primitive |
-| Function result | SVG_Ref | &#x1F850; | Reference of primitive |
+| filterRef | SVG_Ref | &#8594; | Reference of filter |
+| dx | Longint | &#8594; | Offset on X axis |
+| dy | Longint | &#8594; | Offset on Y axis |
+| input | String | &#8594; | Source of filter primitive |
+| name | String | &#8594; | Target of filter primitive |
+| Function result | SVG_Ref | &#8592; | Reference of primitive |
 
 
 
@@ -59,5 +59,5 @@ Result:
 
 #### See also 
 
-[SVG\_Filter\_Blend](SVG%5FFilter%5FBlend.md)  
-[SVG\_Filter\_Blur](SVG%5FFilter%5FBlur.md)  
+[SVG\_Filter\_Blend](SVG_Filter_Blend.md)  
+[SVG\_Filter\_Blur](SVG_Filter_Blur.md)  

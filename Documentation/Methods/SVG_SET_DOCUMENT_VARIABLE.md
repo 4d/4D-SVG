@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| pointer | Pointer | &#x1F852; | Pointer to variable to set |
+| pointer | Pointer | &#8594; | Pointer to variable to set |
 
 
 
@@ -18,5 +18,5 @@ You can pass a Nil pointer in the *pointer* parameter to remove the link.
 
 #### See also 
 
-[SVG\_SAVE\_AS\_PICTURE](SVG%5FSAVE%5FAS%5FPICTURE.md)  
-[SVG\_SAVE\_AS\_TEXT](SVG%5FSAVE%5FAS%5FTEXT.md)  
+[SVG\_SAVE\_AS\_PICTURE](SVG_SAVE_AS_PICTURE.md)  
+[SVG\_SAVE\_AS\_TEXT](SVG_SAVE_AS_TEXT.md)  

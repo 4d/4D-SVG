@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| Function result | Longint | &#x1F850; | Options |
+| Function result | Longint | &#8592; | Options |
 
 
 
@@ -66,4 +66,4 @@ See the *SVG\_SET\_OPTIONS* command.
 
 #### See also 
 
-[SVG\_SET\_OPTIONS](SVG%5FSET%5FOPTIONS.md)  
+[SVG\_SET\_OPTIONS](SVG_SET_OPTIONS.md)  

@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| path | String | &#x1F852; | Pathname of SVG document to validate |
-| Function result | Boolean | &#x1F850; | True if the document corresponds to the DTD |
+| path | String | &#8594; | Pathname of SVG document to validate |
+| Function result | Boolean | &#8592; | True if the document corresponds to the DTD |
 
 
 

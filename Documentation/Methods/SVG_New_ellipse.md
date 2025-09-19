@@ -4,15 +4,15 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| x | Longint | &#x1F852; | Coordinate on center X axis of ellipse |
-| y | Longint | &#x1F852; | Coordinate on center Y axis of ellipse |
-| xRadius | Longint | &#x1F852; | Radius on X axis |
-| yRadius | Longint | &#x1F852; | Radius on Y axis |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of ellipse |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| x | Longint | &#8594; | Coordinate on center X axis of ellipse |
+| y | Longint | &#8594; | Coordinate on center Y axis of ellipse |
+| xRadius | Longint | &#8594; | Radius on X axis |
+| yRadius | Longint | &#8594; | Radius on Y axis |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of ellipse |
 
 
 
@@ -48,5 +48,5 @@ Draw a light blue ellipse with a blue edge and a 2-point line thickness:
 
 #### See also 
 
-[SVG\_New\_circle](SVG%5FNew%5Fcircle.md)  
-[SVG\_New\_ellipse\_bounded](SVG%5FNew%5Fellipse%5Fbounded.md)  
+[SVG\_New\_circle](SVG_New_circle.md)  
+[SVG\_New\_ellipse\_bounded](SVG_New_ellipse_bounded.md)  

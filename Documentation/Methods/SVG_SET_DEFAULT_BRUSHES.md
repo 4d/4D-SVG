@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| line | String | &#x1F852; | Color |
-| background | String | &#x1F852; | Color |
+| line | String | &#8594; | Color |
+| background | String | &#8594; | Color |
 
 
 
@@ -43,5 +43,5 @@ Like Mondrian…
 
 #### See also 
 
-[SVG\_GET\_DEFAULT\_BRUSHES](SVG%5FGET%5FDEFAULT%5FBRUSHES.md)  
-[SVG\_SET\_STROKE\_BRUSH](SVG%5FSET%5FSTROKE%5FBRUSH.md)  
+[SVG\_GET\_DEFAULT\_BRUSHES](SVG_GET_DEFAULT_BRUSHES.md)  
+[SVG\_SET\_STROKE\_BRUSH](SVG_SET_STROKE_BRUSH.md)  

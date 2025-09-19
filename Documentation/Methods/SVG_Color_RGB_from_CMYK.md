@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| cyan | Longint | &#x1F852; | Cyan value |
-| magenta | Longint | &#x1F852; | Magenta value |
-| yellow | Longint | &#x1F852; | Yellow value |
-| black | Longint | &#x1F852; | Black value |
-| format | Longint | &#x1F852; | Color format |
-| Function result | Text | &#x1F850; | Color string |
+| cyan | Longint | &#8594; | Cyan value |
+| magenta | Longint | &#8594; | Magenta value |
+| yellow | Longint | &#8594; | Yellow value |
+| black | Longint | &#8594; | Black value |
+| format | Longint | &#8594; | Color format |
+| Function result | Text | &#8592; | Color string |
 
 
 

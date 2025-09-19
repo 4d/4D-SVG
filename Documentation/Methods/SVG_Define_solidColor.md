@@ -4,11 +4,11 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Color name |
-| color | String | &#x1F852; | Color expression |
-| opacity | Longint | &#x1F852; | Opacity |
-| Function result | SVG_Ref | &#x1F850; | Color reference |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Color name |
+| color | String | &#8594; | Color expression |
+| opacity | Longint | &#8594; | Opacity |
+| Function result | SVG_Ref | &#8592; | Color reference |
 
 
 

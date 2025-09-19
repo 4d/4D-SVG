@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG document |
-| Function result | Real | &#x1F850; | Size in bytes of SVG document |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG document |
+| Function result | Real | &#8592; | Size in bytes of SVG document |
 
 
 
@@ -15,4 +15,4 @@ The SVG\_Estimate\_weight command returns the size in bytes of the SVG tree whos
 
 #### See also 
 
-[SVG\_Count\_elements](SVG%5FCount%5Felements.md)  
+[SVG\_Count\_elements](SVG_Count_elements.md)  

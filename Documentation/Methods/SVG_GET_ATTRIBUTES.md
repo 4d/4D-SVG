@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG reference |
-| namesArrayPointer | Pointer | &#x1F852; | Alpha array of attribute names |
-| valuesArrayPointer | Pointer | &#x1F852; | Alpha array of attribute values |
+| svgObject | SVG_Ref | &#8594; | SVG reference |
+| namesArrayPointer | Pointer | &#8594; | Alpha array of attribute names |
+| valuesArrayPointer | Pointer | &#8594; | Alpha array of attribute values |
 
 
 
@@ -16,5 +16,5 @@ The SVG\_GET\_ATTRIBUTES command fills the arrays pointed to by *namesArrayPoint
 
 #### See also 
 
-[SVG\_SET\_ATTRIBUTES](SVG%5FSET%5FATTRIBUTES.md)  
-[SVG\_SET\_ATTRIBUTES\_BY\_ARRAYS](SVG%5FSET%5FATTRIBUTES%5FBY%5FARRAYS.md)  
+[SVG\_SET\_ATTRIBUTES](SVG_SET_ATTRIBUTES.md)  
+[SVG\_SET\_ATTRIBUTES\_BY\_ARRAYS](SVG_SET_ATTRIBUTES_BY_ARRAYS.md)  

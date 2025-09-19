@@ -4,11 +4,11 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| controlX | Longint | &#x1F852; | Coordinate on X axis of control point |
-| controlY | Longint | &#x1F852; | Coordinate on Y axis of control point |
-| x | Longint | &#x1F852; | Coordinate on X axis of destination point |
-| y | Longint | &#x1F852; | Coordinate on Y axis of destination point |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| controlX | Longint | &#8594; | Coordinate on X axis of control point |
+| controlY | Longint | &#8594; | Coordinate on Y axis of control point |
+| x | Longint | &#8594; | Coordinate on X axis of destination point |
+| y | Longint | &#8594; | Coordinate on Y axis of destination point |
 
 
 
@@ -24,4 +24,4 @@ See the examples of the *SVG\_New\_path* command.
 
 #### See also 
 
-[SVG\_PATH\_CURVE](SVG%5FPATH%5FCURVE.md)  
+[SVG\_PATH\_CURVE](SVG_PATH_CURVE.md)  

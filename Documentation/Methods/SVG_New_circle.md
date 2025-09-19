@@ -4,14 +4,14 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| x | Longint | &#x1F852; | Coordinate on center X axis |
-| y | Longint | &#x1F852; | Coordinate on center Y axis |
-| radius | Longint | &#x1F852; | Radius of circle |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of circle |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| x | Longint | &#8594; | Coordinate on center X axis |
+| y | Longint | &#8594; | Coordinate on center Y axis |
+| radius | Longint | &#8594; | Radius of circle |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of circle |
 
 
 
@@ -47,4 +47,4 @@ Draw a light blue circle with a blue edge and a 2-point link thickness:
 
 #### See also 
 
-[SVG\_New\_ellipse](SVG%5FNew%5Fellipse.md)  
+[SVG\_New\_ellipse](SVG_New_ellipse.md)  

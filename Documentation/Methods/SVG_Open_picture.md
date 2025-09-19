@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| picture | Picture | &#x1F852; | 4D picture field or variable |
-| Function result | SVG_Ref | &#x1F850; | Reference of SVG document |
+| picture | Picture | &#8594; | 4D picture field or variable |
+| Function result | SVG_Ref | &#8592; | Reference of SVG document |
 
 
 
@@ -28,4 +28,4 @@ The SVG\_Open\_picture command analyzes an SVG picture and returns an SVG refere
 
 #### See also 
 
-[SVG\_Export\_to\_picture](SVG%5FExport%5Fto%5Fpicture.md)  
+[SVG\_Export\_to\_picture](SVG_Export_to_picture.md)  

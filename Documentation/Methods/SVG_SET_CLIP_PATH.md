@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| clipPathID | Text | &#x1F852; | Name of clip path |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| clipPathID | Text | &#8594; | Name of clip path |
 
 
 
@@ -63,4 +63,4 @@ The same image with a rectangular clip path with rounded corners:
 
 #### See also 
 
-[SVG\_Define\_clip\_path](SVG%5FDefine%5Fclip%5Fpath.md)  
+[SVG\_Define\_clip\_path](SVG_Define_clip_path.md)  

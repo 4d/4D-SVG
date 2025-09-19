@@ -4,15 +4,15 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| patternID | Text | &#x1F852; | Name of pattern |
-| width | Longint | &#x1F852; | Width of pattern |
-| height | Longint | &#x1F852; | Height of pattern |
-| x | Longint | &#x1F852; | Position X of pattern |
-| y | Longint | &#x1F852; | Position Y of pattern |
-| unit | Text | &#x1F852; | Unit of lengths and positions |
-| viewBox | Text | &#x1F852; | Viewbox rectangle |
-| Function result | SVG_Ref | &#x1F850; | Reference of pattern |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| patternID | Text | &#8594; | Name of pattern |
+| width | Longint | &#8594; | Width of pattern |
+| height | Longint | &#8594; | Height of pattern |
+| x | Longint | &#8594; | Position X of pattern |
+| y | Longint | &#8594; | Position Y of pattern |
+| unit | Text | &#8594; | Unit of lengths and positions |
+| viewBox | Text | &#8594; | Viewbox rectangle |
+| Function result | SVG_Ref | &#8592; | Reference of pattern |
 
 
 

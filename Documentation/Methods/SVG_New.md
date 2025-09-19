@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| width | Longint | &#x1F852; | Document width |
-| height | Longint | &#x1F852; | Document height |
-| title | String | &#x1F852; | Document title |
-| description | String | &#x1F852; | Description |
-| rectangle | Boolean | &#x1F852; | Set viewbox |
-| display | Integer | &#x1F852; | Picture display format |
-| Function result | SVG_Ref | &#x1F850; | SVG object reference |
+| width | Longint | &#8594; | Document width |
+| height | Longint | &#8594; | Document height |
+| title | String | &#8594; | Document title |
+| description | String | &#8594; | Description |
+| rectangle | Boolean | &#8594; | Set viewbox |
+| display | Integer | &#8594; | Picture display format |
+| Function result | SVG_Ref | &#8592; | SVG object reference |
 
 
 
@@ -42,6 +42,6 @@ The command returns a 32-character string ([SVG\_Ref](# "Unique ID of an SVG fil
 
 #### See also 
 
-[SVG\_CLEAR](SVG%5FCLEAR.md)  
-[SVG\_Copy](SVG%5FCopy.md)  
-[SVG\_Open\_file](SVG%5FOpen%5Ffile.md)  
+[SVG\_CLEAR](SVG_CLEAR.md)  
+[SVG\_Copy](SVG_Copy.md)  
+[SVG\_Open\_file](SVG_Open_file.md)  

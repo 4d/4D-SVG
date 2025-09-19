@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| scaleX | Real | &#x1F852; | Value on X axis |
-| scaleY | Real | &#x1F852; | Value on Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| scaleX | Real | &#8594; | Value on X axis |
+| scaleY | Real | &#8594; | Value on Y axis |
 
 
 
@@ -30,4 +30,4 @@ If the *scaleY* parameter is provided, the object is enlarged (value >1) or redu
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_MATRIX](SVG%5FSET%5FTRANSFORM%5FMATRIX.md)  
+[SVG\_SET\_TRANSFORM\_MATRIX](SVG_SET_TRANSFORM_MATRIX.md)  

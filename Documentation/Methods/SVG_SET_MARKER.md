@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| id | String | &#x1F852; | Name of marker |
-| position | String | &#x1F852; | Position of marker |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| id | String | &#8594; | Name of marker |
+| position | String | &#8594; | Position of marker |
 
 
 
@@ -98,4 +98,4 @@ Draw a diagram with different markers at the beginning and end:
 
 #### See also 
 
-[SVG\_Define\_marker](SVG%5FDefine%5Fmarker.md)  
+[SVG\_Define\_marker](SVG_Define_marker.md)  

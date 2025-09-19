@@ -4,15 +4,15 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of symbol |
-| frameX | Longint | &#x1F852; | Coordinate on X axis |
-| frameY | Longint | &#x1F852; | Coordinate on Y axis |
-| frameWidth | Longint | &#x1F852; | Width of target rectangle |
-| frameHeight | Longint | &#x1F852; | Height of target rectangle |
-| frameUnit | String | &#x1F852; | Coordinate system of frame |
-| filterUnit | String | &#x1F852; | Filter system of values |
-| Function result | SVG_Ref | &#x1F850; | Reference of filter |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of symbol |
+| frameX | Longint | &#8594; | Coordinate on X axis |
+| frameY | Longint | &#8594; | Coordinate on Y axis |
+| frameWidth | Longint | &#8594; | Width of target rectangle |
+| frameHeight | Longint | &#8594; | Height of target rectangle |
+| frameUnit | String | &#8594; | Coordinate system of frame |
+| filterUnit | String | &#8594; | Filter system of values |
+| Function result | SVG_Ref | &#8592; | Reference of filter |
 
 
 
@@ -64,7 +64,7 @@ Result:
 
 #### See also 
 
-[SVG\_Filter\_Blend](SVG%5FFilter%5FBlend.md)  
-[SVG\_Filter\_Blur](SVG%5FFilter%5FBlur.md)  
-[SVG\_Filter\_Offset](SVG%5FFilter%5FOffset.md)  
-[SVG\_SET\_FILTER](SVG%5FSET%5FFILTER.md)  
+[SVG\_Filter\_Blend](SVG_Filter_Blend.md)  
+[SVG\_Filter\_Blur](SVG_Filter_Blur.md)  
+[SVG\_Filter\_Offset](SVG_Filter_Offset.md)  
+[SVG\_SET\_FILTER](SVG_SET_FILTER.md)  

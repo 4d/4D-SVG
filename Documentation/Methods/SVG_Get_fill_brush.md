@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| Function result | Text | &#x1F850; | Fill color |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| Function result | Text | &#8592; | Fill color |
 
 
 

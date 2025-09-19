@@ -4,11 +4,11 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of group |
-| url | String | &#x1F852; | External link |
-| target | String | &#x1F852; | Target of link |
-| Function result | SVG_Ref | &#x1F850; | Reference of group |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of group |
+| url | String | &#8594; | External link |
+| target | String | &#8594; | Target of link |
+| Function result | SVG_Ref | &#8592; | Reference of group |
 
 
 

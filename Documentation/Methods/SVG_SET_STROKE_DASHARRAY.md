@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| dash | Real | &#x1F852; | Length of first dash |
-| value | Longint | &#x1F852; | Length of spaces and dashes |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| dash | Real | &#8594; | Length of first dash |
+| value | Longint | &#8594; | Length of spaces and dashes |
 
 
 

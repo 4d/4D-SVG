@@ -4,19 +4,19 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of gradient |
-| startColor | String | &#x1F852; | Start color |
-| endColor | String | &#x1F852; | End color |
-| rotation | Integer | &#x1F852; | Rotation of gradient vector |
-| spreadMethod | Text | &#x1F852; | Gradient spread method (pad, reflect or repeat) |
-| x1 | Real | &#x1F852; | x1 coordinate of gradient vector (If omitted = 0) |
-| y1 | Real | &#x1F852; | y1 coordinate of gradient vector (If omitted = 1) |
-| x2 | Real | &#x1F852; | x2 coordinate of gradient vector (If omitted = 0) |
-| y2 | Real | &#x1F852; | y2 coordinate of gradient vector (If omitted = 1) |
-| startColorOffset | Real | &#x1F852; | Percentage value of offset for start color |
-| endColorOffset | Real | &#x1F852; | Percentage value of offset for end color |
-| Function result | String | &#x1F850; | Reference of gradient |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of gradient |
+| startColor | String | &#8594; | Start color |
+| endColor | String | &#8594; | End color |
+| rotation | Integer | &#8594; | Rotation of gradient vector |
+| spreadMethod | Text | &#8594; | Gradient spread method (pad, reflect or repeat) |
+| x1 | Real | &#8594; | x1 coordinate of gradient vector (If omitted = 0) |
+| y1 | Real | &#8594; | y1 coordinate of gradient vector (If omitted = 1) |
+| x2 | Real | &#8594; | x2 coordinate of gradient vector (If omitted = 0) |
+| y2 | Real | &#8594; | y2 coordinate of gradient vector (If omitted = 1) |
+| startColorOffset | Real | &#8594; | Percentage value of offset for start color |
+| endColorOffset | Real | &#8594; | Percentage value of offset for end color |
+| Function result | String | &#8592; | Reference of gradient |
 
 
 
@@ -127,4 +127,4 @@ This example illustrates the effect of the *startColorOffset* and *endColorOffse
 #### See also 
 
 [SVG Colors](../SVG%20Colors.md)  
-[SVG\_Define\_radial\_gradient](SVG%5FDefine%5Fradial%5Fgradient.md)  
+[SVG\_Define\_radial\_gradient](SVG_Define_radial_gradient.md)  

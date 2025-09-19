@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| encoding | String | &#x1F852; | Character set |
+| encoding | String | &#8594; | Character set |
 
 
 
@@ -16,4 +16,4 @@ If the *encoding* parameter is omitted, the command reestablishes the default ch
 
 #### See also 
 
-[SVG\_Get\_default\_encoding](SVG%5FGet%5Fdefault%5Fencoding.md)  
+[SVG\_Get\_default\_encoding](SVG_Get_default_encoding.md)  

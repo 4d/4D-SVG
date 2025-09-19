@@ -4,11 +4,11 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| style | Text | &#x1F852; | Definition of style OR Pathname of file to use |
-| type | Text | &#x1F852; | Type of content |
-| media | Text | &#x1F852; | Media descriptor |
-| Function result | SVG_Ref | &#x1F850; | Reference of style |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| style | Text | &#8594; | Definition of style OR Pathname of file to use |
+| type | Text | &#8594; | Type of content |
+| media | Text | &#8594; | Media descriptor |
+| Function result | SVG_Ref | &#8592; | Reference of style |
 
 
 

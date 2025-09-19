@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| value | Real | &#x1F852; | Grey value |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| value | Real | &#8594; | Grey value |
 
 
 

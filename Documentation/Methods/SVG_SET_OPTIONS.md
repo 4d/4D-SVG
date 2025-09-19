@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| options | Longint | &#x1F852; | 4D SVG component options |
+| options | Longint | &#8594; | 4D SVG component options |
 
 
 
@@ -65,4 +65,4 @@ is displayed as "abc def"
 
 #### See also 
 
-[SVG\_Get\_options](SVG%5FGet%5Foptions.md)  
+[SVG\_Get\_options](SVG_Get_options.md)  

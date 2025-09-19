@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| classNames | Pointer | &#x1F852; | Pointer to array of class names |
-| Function result | Text | &#x1F850; | Class name(s) |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| classNames | Pointer | &#8594; | Pointer to array of class names |
+| Function result | Text | &#8592; | Class name(s) |
 
 
 

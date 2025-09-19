@@ -4,14 +4,14 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| startX | Longint | &#x1F852; | Horizontal start position |
-| startY | Longint | &#x1F852; | Vertical start position |
-| endX | Longint | &#x1F852; | Horizontal end position |
-| endY | Longint | &#x1F852; | Vertical end position |
-| color | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of line |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| startX | Longint | &#8594; | Horizontal start position |
+| startY | Longint | &#8594; | Vertical start position |
+| endX | Longint | &#8594; | Horizontal end position |
+| endY | Longint | &#8594; | Vertical end position |
+| color | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of line |
 
 
 
@@ -36,5 +36,5 @@ Draw a blue line that is 3 pixels thick:
 
 #### See also 
 
-[SVG\_New\_polyline](SVG%5FNew%5Fpolyline.md)  
-[SVG\_PATH\_LINE\_TO](SVG%5FPATH%5FLINE%5FTO.md)  
+[SVG\_New\_polyline](SVG_New_polyline.md)  
+[SVG\_PATH\_LINE\_TO](SVG_PATH_LINE_TO.md)  

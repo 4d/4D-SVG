@@ -4,10 +4,10 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| width | Longint | &#x1F852; | Dimension on the X axis |
-| height | Longint | &#x1F852; | Dimension on the Y axis |
-| unit | String | &#x1F852; | Unit of measurement |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| width | Longint | &#8594; | Dimension on the X axis |
+| height | Longint | &#8594; | Dimension on the Y axis |
+| unit | String | &#8594; | Unit of measurement |
 
 
 

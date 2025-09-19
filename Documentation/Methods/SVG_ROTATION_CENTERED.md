@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| angle | Real | &#x1F852; | Angle of rotation |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| angle | Real | &#8594; | Angle of rotation |
 
 
 

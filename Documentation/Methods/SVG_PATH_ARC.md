@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of path element |
-| xRadius | Longint | &#x1F852; | Radius of ellipse on X axis |
-| yRadius | Longint | &#x1F852; | Radius of ellipse on Y axis |
-| x | Longint | &#x1F852; | Coordinate on X axis of destination point |
-| y | Longint | &#x1F852; | Coordinate on Y axis of destination point |
-| rotation | Longint | &#x1F852; | Value of rotation |
-| arcpath | Longint | &#x1F852; | Sets the way the arc will be drawn |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of path element |
+| xRadius | Longint | &#8594; | Radius of ellipse on X axis |
+| yRadius | Longint | &#8594; | Radius of ellipse on Y axis |
+| x | Longint | &#8594; | Coordinate on X axis of destination point |
+| y | Longint | &#8594; | Coordinate on Y axis of destination point |
+| rotation | Longint | &#8594; | Value of rotation |
+| arcpath | Longint | &#8594; | Sets the way the arc will be drawn |
 
 
 
@@ -41,4 +41,4 @@ See the examples for the *SVG\_New\_path* command.
 
 #### See also 
 
-[SVG\_New\_arc](SVG%5FNew%5Farc.md)  
+[SVG\_New\_arc](SVG_New_arc.md)  

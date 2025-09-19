@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| x | Real | &#x1F852; | X position of viewbox |
-| y | Real | &#x1F852; | Y position of viewbox |
-| width | Real | &#x1F852; | Width of viewbox |
-| height | Real | &#x1F852; | Height of viewbox |
-| mode | Text | &#x1F852; | Adjustment to viewbox |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| x | Real | &#8594; | X position of viewbox |
+| y | Real | &#8594; | Y position of viewbox |
+| width | Real | &#8594; | Width of viewbox |
+| height | Real | &#8594; | Height of viewbox |
+| mode | Text | &#8594; | Adjustment to viewbox |
 
 
 
@@ -33,4 +33,4 @@ The optional *mode* parameter can be used to indicate if the graphic must be fit
 
 #### See also 
 
-[SVG\_SET\_VIEWPORT\_FILL](SVG%5FSET%5FVIEWPORT%5FFILL.md)  
+[SVG\_SET\_VIEWPORT\_FILL](SVG_SET_VIEWPORT_FILL.md)  

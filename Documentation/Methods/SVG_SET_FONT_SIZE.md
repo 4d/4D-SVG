@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| size | Integer | &#x1F852; | Size of characters in points |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| size | Integer | &#8594; | Size of characters in points |
 
 
 
@@ -17,4 +17,4 @@ The *size* parameter contains the font size in points.
 
 #### See also 
 
-[SVG\_SET\_FONT\_STYLE](SVG%5FSET%5FFONT%5FSTYLE.md)  
+[SVG\_SET\_FONT\_STYLE](SVG_SET_FONT_STYLE.md)  

@@ -4,10 +4,10 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | Alpha | &#x1F852; | SVG reference |
-| refsArrayPointer | Pointer | &#x1F852; | String array of object references |
-| typesArrayPointer | Pointer | &#x1F852; | String array of object types |
-| namesArrayPointer | Pointer | &#x1F852; | String array of object IDs |
+| svgObject | Alpha | &#8594; | SVG reference |
+| refsArrayPointer | Pointer | &#8594; | String array of object references |
+| typesArrayPointer | Pointer | &#8594; | String array of object types |
+| namesArrayPointer | Pointer | &#8594; | String array of object IDs |
 
 
 
@@ -25,5 +25,5 @@ If *svgObject* is not valid or if this attribute does not exist, an error is gen
 
 #### See also 
 
-[SVG\_Count\_elements](SVG%5FCount%5Felements.md)  
-[SVG\_New\_group](SVG%5FNew%5Fgroup.md)  
+[SVG\_Count\_elements](SVG_Count_elements.md)  
+[SVG\_New\_group](SVG_New_group.md)  

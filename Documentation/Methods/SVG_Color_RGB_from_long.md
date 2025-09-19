@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| color | Longint | &#x1F852; | Value of color |
-| format | Integer | &#x1F852; | Format of color |
-| Function result | String | &#x1F850; | Color string |
+| color | Longint | &#8594; | Value of color |
+| format | Integer | &#8594; | Format of color |
+| Function result | String | &#8592; | Color string |
 
 
 
@@ -40,5 +40,5 @@ The optional *format* parameter can be used to specify the desired format for th
 
 #### See also 
 
-[SVG\_Color\_from\_index](SVG%5FColor%5Ffrom%5Findex.md)  
-[SVG\_Color\_grey](SVG%5FColor%5Fgrey.md)  
+[SVG\_Color\_from\_index](SVG_Color_from_index.md)  
+[SVG\_Color\_grey](SVG_Color_grey.md)  

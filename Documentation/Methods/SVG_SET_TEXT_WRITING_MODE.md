@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of text element |
-| writingMode | Text | &#x1F852; | Direction of writing |
+| svgObject | SVG_Ref | &#8594; | Reference of text element |
+| writingMode | Text | &#8594; | Direction of writing |
 
 
 

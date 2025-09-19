@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| color | String | &#x1F852; | Color expression |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| color | String | &#8594; | Color expression |
 
 
 
@@ -26,5 +26,5 @@ For more information about colors, please refer to the “*SVG Colors*” sectio
 #### See also 
 
 [SVG Colors](../SVG%20Colors.md)  
-[SVG\_GET\_DEFAULT\_BRUSHES](SVG%5FGET%5FDEFAULT%5FBRUSHES.md)  
-[SVG\_SET\_FILL\_BRUSH](SVG%5FSET%5FFILL%5FBRUSH.md)  
+[SVG\_GET\_DEFAULT\_BRUSHES](SVG_GET_DEFAULT_BRUSHES.md)  
+[SVG\_SET\_FILL\_BRUSH](SVG_SET_FILL_BRUSH.md)  

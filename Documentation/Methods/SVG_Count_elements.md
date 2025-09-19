@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG reference |
-| Function result | Longint | &#x1F850; | Number of objects |
+| svgObject | SVG_Ref | &#8594; | SVG reference |
+| Function result | Longint | &#8592; | Number of objects |
 
 
 
@@ -15,5 +15,5 @@ The SVG\_Count\_elements command returns the number of graphic objects contains 
 
 #### See also 
 
-[SVG\_ELEMENTS\_TO\_ARRAYS](SVG%5FELEMENTS%5FTO%5FARRAYS.md)  
-[SVG\_New\_group](SVG%5FNew%5Fgroup.md)  
+[SVG\_ELEMENTS\_TO\_ARRAYS](SVG_ELEMENTS_TO_ARRAYS.md)  
+[SVG\_New\_group](SVG_New_group.md)  

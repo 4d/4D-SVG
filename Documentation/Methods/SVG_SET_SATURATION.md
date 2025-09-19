@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| saturation | Longint | &#x1F852; | Saturation value |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| saturation | Longint | &#8594; | Saturation value |
 
 
 
@@ -17,4 +17,4 @@ In the *saturation* parameter, you pass a value between 0 and 100
 
 #### See also 
 
-[SVG\_SET\_HUE](SVG%5FSET%5FHUE.md)  
+[SVG\_SET\_HUE](SVG_SET_HUE.md)  

@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| clipPathID | Text | &#x1F852; | Name of clip path |
-| Function result | SVG_Ref | &#x1F850; | Reference of clip path |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| clipPathID | Text | &#8594; | Name of clip path |
+| Function result | SVG_Ref | &#8592; | Reference of clip path |
 
 
 
@@ -24,4 +24,4 @@ Refer to the example of the *SVG\_SET\_CLIP\_PATH* command.
 
 #### See also 
 
-[SVG\_SET\_CLIP\_PATH](SVG%5FSET%5FCLIP%5FPATH.md)  
+[SVG\_SET\_CLIP\_PATH](SVG_SET_CLIP_PATH.md)  

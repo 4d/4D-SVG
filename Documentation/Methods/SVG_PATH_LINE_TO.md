@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| x | Longint | &#x1F852; | Coordinate on X axis of new point(s) |
-| y | Longint | &#x1F852; | Coordinate on Y axis of new point(s) |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| x | Longint | &#8594; | Coordinate on X axis of new point(s) |
+| y | Longint | &#8594; | Coordinate on Y axis of new point(s) |
 
 
 
@@ -26,4 +26,4 @@ See the examples for the *SVG\_New\_path* command
 
 #### See also 
 
-[SVG\_New\_path](SVG%5FNew%5Fpath.md)  
+[SVG\_New\_path](SVG_New_path.md)  

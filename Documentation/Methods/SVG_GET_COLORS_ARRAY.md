@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| colorNamesArrayPointer | Pointer | &#x1F852; | Pointer to array receiving color names |
+| colorNamesArrayPointer | Pointer | &#8594; | Pointer to array receiving color names |
 
 
 

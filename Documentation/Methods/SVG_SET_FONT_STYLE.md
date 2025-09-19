@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| style | Integer | &#x1F852; | Style of characters |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| style | Integer | &#8594; | Style of characters |
 
 
 
@@ -23,4 +23,4 @@ In the *style* parameter, you must pass one of the following values or a combina
 
 #### See also 
 
-[SVG\_SET\_FONT\_SIZE](SVG%5FSET%5FFONT%5FSIZE.md)  
+[SVG\_SET\_FONT\_SIZE](SVG_SET_FONT_SIZE.md)  

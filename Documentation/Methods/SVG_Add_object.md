@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| targetSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| sourceSVGObject | SVG_Ref | &#x1F852; | Reference of object to be added |
-| Function result | SVG_Ref | &#x1F850; | Reference of SVG object |
+| targetSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| sourceSVGObject | SVG_Ref | &#8594; | Reference of object to be added |
+| Function result | SVG_Ref | &#8592; | Reference of SVG object |
 
 
 

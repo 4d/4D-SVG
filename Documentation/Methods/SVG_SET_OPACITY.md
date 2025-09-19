@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| background | Longint | &#x1F852; | Opacity (%) |
-| line | Longint | &#x1F852; | Opacity (%) |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| background | Longint | &#8594; | Opacity (%) |
+| line | Longint | &#8594; | Opacity (%) |
 
 
 

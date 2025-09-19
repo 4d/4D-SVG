@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| mode | String | &#x1F852; | Rendering mode |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| mode | String | &#8594; | Rendering mode |
 
 
 
@@ -24,5 +24,5 @@ If the *mode* parameter contains any other value, an error is generated.
 
 #### See also 
 
-[SVG\_SET\_ROUNDING\_RECT](SVG%5FSET%5FROUNDING%5FRECT.md)  
-[SVG\_SET\_STROKE\_LINECAP](SVG%5FSET%5FSTROKE%5FLINECAP.md)  
+[SVG\_SET\_ROUNDING\_RECT](SVG_SET_ROUNDING_RECT.md)  
+[SVG\_SET\_STROKE\_LINECAP](SVG_SET_STROKE_LINECAP.md)  

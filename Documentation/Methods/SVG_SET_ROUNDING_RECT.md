@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| roundedX | Longint | &#x1F852; | Radius on X axis |
-| roundedY | Longint | &#x1F852; | Radius on Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| roundedX | Longint | &#8594; | Radius on X axis |
+| roundedY | Longint | &#8594; | Radius on Y axis |
 
 
 
@@ -26,5 +26,5 @@ The values are expected in the user coordinate system.
 
 #### See also 
 
-[SVG\_New\_rect](SVG%5FNew%5Frect.md)  
-[SVG\_SET\_STROKE\_LINEJOIN](SVG%5FSET%5FSTROKE%5FLINEJOIN.md)  
+[SVG\_New\_rect](SVG_New_rect.md)  
+[SVG\_SET\_STROKE\_LINEJOIN](SVG_SET_STROKE_LINEJOIN.md)  

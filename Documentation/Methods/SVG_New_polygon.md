@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| points | String | &#x1F852; | Path |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of polygon |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| points | String | &#8594; | Path |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of polygon |
 
 
 
@@ -25,6 +25,6 @@ The optional *strokeWidth* parameter contains the size of the pen expressed in p
 
 #### See also 
 
-[SVG\_New\_polygon\_by\_arrays](SVG%5FNew%5Fpolygon%5Fby%5Farrays.md)  
-[SVG\_New\_rect](SVG%5FNew%5Frect.md)  
-[SVG\_New\_regular\_polygon](SVG%5FNew%5Fregular%5Fpolygon.md)  
+[SVG\_New\_polygon\_by\_arrays](SVG_New_polygon_by_arrays.md)  
+[SVG\_New\_rect](SVG_New_rect.md)  
+[SVG\_New\_regular\_polygon](SVG_New_regular_polygon.md)  

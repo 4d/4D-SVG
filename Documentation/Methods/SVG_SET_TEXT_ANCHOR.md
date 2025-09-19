@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| alignment | Integer | &#x1F852; | Alignment |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| alignment | Integer | &#8594; | Alignment |
 
 
 
@@ -23,4 +23,4 @@ In the *alignment* parameter, you must pass one of the following values:
 
 #### See also 
 
-[SVG\_New\_textArea](SVG%5FNew%5FtextArea.md)  
+[SVG\_New\_textArea](SVG_New_textArea.md)  

@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| xArrayPointer | Pointer | &#x1F852; | Coordinates on X axis of points |
-| yArrayPointer | Pointer | &#x1F852; | Coordinates on Y axis of points |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of polygon |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| xArrayPointer | Pointer | &#8594; | Coordinates on X axis of points |
+| yArrayPointer | Pointer | &#8594; | Coordinates on Y axis of points |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of polygon |
 
 
 
@@ -59,5 +59,5 @@ Draw a star (default border color and line thickness):
 
 #### See also 
 
-[SVG\_New\_polygon](SVG%5FNew%5Fpolygon.md)  
-[SVG\_New\_regular\_polygon](SVG%5FNew%5Fregular%5Fpolygon.md)  
+[SVG\_New\_polygon](SVG_New_polygon.md)  
+[SVG\_New\_regular\_polygon](SVG_New_regular_polygon.md)  

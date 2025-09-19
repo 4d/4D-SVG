@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| horizontal | Boolean | &#x1F852; | Horizontal flip |
-| vertical | Boolean | &#x1F852; | Vertical flip |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| horizontal | Boolean | &#8594; | Horizontal flip |
+| vertical | Boolean | &#8594; | Vertical flip |
 
 
 
@@ -38,4 +38,4 @@ Flipping of a text object:
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_SKEW](SVG%5FSET%5FTRANSFORM%5FSKEW.md)  
+[SVG\_SET\_TRANSFORM\_SKEW](SVG_SET_TRANSFORM_SKEW.md)  

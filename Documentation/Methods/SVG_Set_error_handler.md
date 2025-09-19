@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| method | String | &#x1F852; | Name of method to install |
-| Function result | String | &#x1F850; | Name of method previously installed |
+| method | String | &#8594; | Name of method to install |
+| Function result | String | &#8592; | Name of method previously installed |
 
 
 
@@ -42,4 +42,4 @@ Method code:
 
 #### See also 
 
-[SVG\_Read\_last\_error](SVG%5FRead%5Flast%5Ferror.md)  
+[SVG\_Read\_last\_error](SVG_Read_last_error.md)  

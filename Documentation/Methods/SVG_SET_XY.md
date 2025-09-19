@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| x | Longint | &#x1F852; | Coordinate on X axis |
-| y | Longint | &#x1F852; | Coordinate on Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| x | Longint | &#8594; | Coordinate on X axis |
+| y | Longint | &#8594; | Coordinate on Y axis |
 
 
 

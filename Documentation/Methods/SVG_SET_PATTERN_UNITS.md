@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| patternObject | SVG_Ref | &#x1F852; | Reference of pattern to modify |
-| sysCoord | Text | &#x1F852; | System of coordinates to be used |
+| patternObject | SVG_Ref | &#8594; | Reference of pattern to modify |
+| sysCoord | Text | &#8594; | System of coordinates to be used |
 
 
 
@@ -19,4 +19,4 @@ The *sysCoord* parameter specifies the name of the system to be used. It must be
 
 #### See also 
 
-[SVG\_SET\_PATTERN\_CONTENT\_UNITS](SVG%5FSET%5FPATTERN%5FCONTENT%5FUNITS.md)  
+[SVG\_SET\_PATTERN\_CONTENT\_UNITS](SVG_SET_PATTERN_CONTENT_UNITS.md)  

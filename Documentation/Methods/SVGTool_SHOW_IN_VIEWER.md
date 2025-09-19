@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of picture to be displayed |
-| sources | String | &#x1F852; | Opens viewer directly on the source page |
+| svgObject | SVG_Ref | &#8594; | Reference of picture to be displayed |
+| sources | String | &#8594; | Opens viewer directly on the source page |
 
 
 

@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| class | Text | &#x1F852; | Name of class |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| class | Text | &#8594; | Name of class |
 
 
 

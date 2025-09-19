@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of filter |
-| deviation | Longint | &#x1F852; | Value of shadow dispersion |
-| offsetX | Longint | &#x1F852; | Offset on X axis |
-| offsetY | Longint | &#x1F852; | Offset on Y axis |
-| Function result | SVG_Ref | &#x1F850; | Reference of filter |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of filter |
+| deviation | Longint | &#8594; | Value of shadow dispersion |
+| offsetX | Longint | &#8594; | Offset on X axis |
+| offsetY | Longint | &#8594; | Offset on Y axis |
+| Function result | SVG_Ref | &#8592; | Reference of filter |
 
 
 
@@ -43,4 +43,4 @@ Declaration of a filter that can be used to make a shadow beneath an object:
 
 #### See also 
 
-[SVG\_SET\_FILTER](SVG%5FSET%5FFILTER.md)  
+[SVG\_SET\_FILTER](SVG_SET_FILTER.md)  

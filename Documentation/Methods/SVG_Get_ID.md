@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| Function result | String | &#x1F850; | Name of element |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| Function result | String | &#8592; | Name of element |
 
 
 
@@ -15,5 +15,5 @@ The SVG\_Get\_ID command returns the value of the 'id' attribute of the element 
 
 #### See also 
 
-[SVG\_Find\_ID](SVG%5FFind%5FID.md)  
-[SVG\_SET\_ID](SVG%5FSET%5FID.md)  
+[SVG\_Find\_ID](SVG_Find_ID.md)  
+[SVG\_SET\_ID](SVG_SET_ID.md)  

@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| namesArrayPointer | Pointer | &#x1F852; | Names of attributes |
-| valuesArrayPointer | Pointer | &#x1F852; | Synchronized values of attributes |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| namesArrayPointer | Pointer | &#8594; | Names of attributes |
+| valuesArrayPointer | Pointer | &#8594; | Synchronized values of attributes |
 
 
 
@@ -34,5 +34,5 @@ The attributes and their values are passed using two arrays, to which *namesArra
 
 #### See also 
 
-[SVG\_GET\_ATTRIBUTES](SVG%5FGET%5FATTRIBUTES.md)  
-[SVG\_SET\_ATTRIBUTES](SVG%5FSET%5FATTRIBUTES.md)  
+[SVG\_GET\_ATTRIBUTES](SVG_GET_ATTRIBUTES.md)  
+[SVG\_SET\_ATTRIBUTES](SVG_SET_ATTRIBUTES.md)  

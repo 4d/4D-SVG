@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| horizontal | Longint | &#x1F852; | Value of incline along X axis |
-| vertical | Longint | &#x1F852; | Value of incline along Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| horizontal | Longint | &#8594; | Value of incline along X axis |
+| vertical | Longint | &#8594; | Value of incline along Y axis |
 
 
 
@@ -36,4 +36,4 @@ If the value of the *vertical* parameter is not null, the object will be incline
 
 #### See also 
 
-[SVG\_SET\_TRANSFORM\_FLIP](SVG%5FSET%5FTRANSFORM%5FFLIP.md)  
+[SVG\_SET\_TRANSFORM\_FLIP](SVG_SET_TRANSFORM_FLIP.md)  

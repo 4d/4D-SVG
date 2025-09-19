@@ -4,11 +4,11 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| hue | Longint | &#x1F852; | Hue value |
-| luminosity | Longint | &#x1F852; | Luminosity value |
-| saturation | Longint | &#x1F852; | Saturation value |
-| format | Longint | &#x1F852; | Color format |
-| Function result | Text | &#x1F850; | Color string |
+| hue | Longint | &#8594; | Hue value |
+| luminosity | Longint | &#8594; | Luminosity value |
+| saturation | Longint | &#8594; | Saturation value |
+| format | Longint | &#8594; | Color format |
+| Function result | Text | &#8592; | Color string |
 
 
 
