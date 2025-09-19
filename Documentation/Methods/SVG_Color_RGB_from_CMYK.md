@@ -1,1 +1,29 @@
-﻿<!-- color := SVG_Color_RGB_from_CMYK ( C ; M ; Y ; K ; type ) -> C (Long Integer) -  0 - 100% -> M (Long Integer) -  0 - 100% -> Y (Long Integer) -  0 - 100% -> K (Long Integer) -  0 - 100% -> type (Long Integer) - {format} [1 (default) rgb(r,g,b); 2 #rgb; 3 #rrggbb; 4 rgb(r%, g%, b%)] <- color (Text)-->## Description **SVG\_Color\_RGB\_from\_CMYK** ( cyan ; magenta ; yellow ; black {; format} ) -&gt; Function result <br/><br/>The **SVG\_Color\_RGB\_from\_CMYK** command returns a string expressing the color corresponding to the four color parameters, cyan, magenta, yellow and black, passed as arguments. <br/>The string returned is in the form "RGB(red,greeen,blue)" by default, the syntax recognized by SVG rendering engines.<br/>
+# SVG_Color_RGB_from_CMYK
+
+>**SVG_Color_RGB_from_CMYK** ( *cyan* ; *magenta* ; *yellow* ; *black* {; *format*} ) -> Function result
+
+| Parameter | Type |  | Description |
+| --- | --- | --- | --- |
+| cyan | Longint | &#x1F852; | Cyan value |
+| magenta | Longint | &#x1F852; | Magenta value |
+| yellow | Longint | &#x1F852; | Yellow value |
+| black | Longint | &#x1F852; | Black value |
+| format | Longint | &#x1F852; | Color format |
+| Function result | Text | &#x1F850; | Color string |
+
+
+
+#### Description 
+
+The SVG\_Color\_RGB\_from\_CMYK command returns a string expressing the color corresponding to the four color parameters, *cyan*, *magenta*, *yellow* and *black*, passed as arguments. The string returned is in the form "RGB(red,greeen,blue)" by default, the syntax recognized by SVG rendering engines.
+
+*cyan*, *magenta*, *yellow* and *black* are longints included between 0 and 100%. 
+
+The optional *format* parameter is used to specify the desired format for the color string returned. The values are:  
+
+| **Value**   | **Format**      |
+| ----------- | --------------- |
+| 1 (default) | rgb(r,g,b)      |
+| 2           | #rgb            |
+| 3           | #rrggbb         |
+| 4           | rgb(r%, g%, b%) |

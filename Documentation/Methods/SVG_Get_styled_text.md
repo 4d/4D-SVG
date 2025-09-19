@@ -1,1 +1,0 @@
-﻿<!-- styledText := SVG_Get_styled_text ( svgObject ; data ) -> svgObject (Text) -> data (Boolean) <- styledText (Text)-->## Description

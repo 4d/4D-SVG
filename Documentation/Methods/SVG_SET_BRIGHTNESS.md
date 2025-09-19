@@ -1,8 +1,20 @@
-<!-- <span style="font-family:sans-serif;color:gray;"><span style="font-family:sans-serif;color:gray;font-weight:bold;font-style:italic">SVG_SET_BRIGHTNESS</span> ( svgObject ; Param_2 ; … ; N ) -&gt; svgObject (Text) -&gt; Param_2 ; … ; N (Real)</span>-->## DescriptionSets the brightness of an image or a container* 2 parameters : $2 is the brightness factor to apply: < 1 for darken; > 1 for brighten* 4 parameters : $2, $3 and $4 are used as values to define the matrix
+# SVG_SET_BRIGHTNESS
 
-|1|2|3|4|5|
-|---|---|---|---|---|
-|$1|0|0|0|0|
-|0|$2|0|0|0|
-|0|0|$3|0|0|
-|0|0|0|1|0|
+>**SVG_SET_BRIGHTNESS** ( *svgObject* ; *brightness* {; *brightness2* ; *brightness3*} )
+
+| Parameter | Type |  | Description |
+| --- | --- | --- | --- |
+| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
+| brightness | Real | &#x1F852; | Values between 0 and 1 to darken; > 1 to brighten, applied globally or only to red component |
+| brightness2 | Real | &#x1F852; | Brightness value for green component |
+| brightness3 | Real | &#x1F852; | Brightness value for blue component |
+
+
+
+#### Description 
+
+The **SVG\_SET\_BRIGHTNESS** command sets the brightness for an SVG image or container whose reference is passed in the *svgObject* parameter.
+
+In the *brightness* parameter, you pass either a value between 0 and 1 to darken the brightness, or a value greater than 1 to brighten it. When you pass a single *brightness* parameter, the brightness factor is applied globally to the object. 
+
+Alternatively, you can pass two additional (optional) *brightness2* and *brightness3* parameters, in which case each brightness value is applied to a separate part of the color component, i.e. *brightness* is applied to the "R" (red) part, *brightness2* is applied to the "G" (green) part and *brightness3* is applied to the "B" (blue) part.
