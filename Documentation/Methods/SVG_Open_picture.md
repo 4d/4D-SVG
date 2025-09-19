@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| picture | Picture | &#x1F852; | 4D picture field or variable |
-| Function result | SVG_Ref | &#x1F850; | Reference of SVG document |
+| picture | Picture | &#8594; | 4D picture field or variable |
+| Function result | SVG_Ref | &#8592; | Reference of SVG document |
 
 
 

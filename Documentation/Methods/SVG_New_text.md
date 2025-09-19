@@ -4,19 +4,19 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| text | Text | &#x1F852; | Text to insert |
-| x | Real | &#x1F852; | Coordinate on X axis |
-| y | Real | &#x1F852; | Coordinate on Y axis |
-| font &#124; styleDef | Text | &#x1F852; | Font name or Style definition |
-| size | Longint | &#x1F852; | Size of characters in points |
-| style | Longint | &#x1F852; | Style of characters |
-| alignment | Longint | &#x1F852; | Alignment |
-| color | String | &#x1F852; | Text color |
-| rotation | Real | &#x1F852; | Angle of rotation of text |
-| lineSpacing | Real | &#x1F852; | Line spacing in points |
-| stretching | Real | &#x1F852; | Horizontal stretch factor |
-| Function result | SVG_Ref | &#x1F850; | Reference of SVG text object |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| text | Text | &#8594; | Text to insert |
+| x | Real | &#8594; | Coordinate on X axis |
+| y | Real | &#8594; | Coordinate on Y axis |
+| font &#124; styleDef | Text | &#8594; | Font name or Style definition |
+| size | Longint | &#8594; | Size of characters in points |
+| style | Longint | &#8594; | Style of characters |
+| alignment | Longint | &#8594; | Alignment |
+| color | String | &#8594; | Text color |
+| rotation | Real | &#8594; | Angle of rotation of text |
+| lineSpacing | Real | &#8594; | Line spacing in points |
+| stretching | Real | &#8594; | Horizontal stretch factor |
+| Function result | SVG_Ref | &#8592; | Reference of SVG text object |
 
 
 

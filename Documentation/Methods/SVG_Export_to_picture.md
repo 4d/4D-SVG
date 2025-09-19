@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| exportType | Longint | &#x1F852; | 0 = Do not store data source 1 (default) = Copy data source 2 = Own data source |
-| Function result | Picture | &#x1F850; | Picture rendered by SVG engine |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| exportType | Longint | &#8594; | 0 = Do not store data source 1 (default) = Copy data source 2 = Own data source |
+| Function result | Picture | &#8592; | Picture rendered by SVG engine |
 
 
 

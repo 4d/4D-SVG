@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| picture | Picture | &#x1F852; | Picture to be embedded |
-| x | Longint | &#x1F852; | Coordinate on X axis of upper left corner |
-| y | Longint | &#x1F852; | Coordinate on Y axis of upper left corner |
-| codec | Text | &#x1F852; | Codec to use |
-| Function result | SVG_Ref | &#x1F850; | SVG object reference |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| picture | Picture | &#8594; | Picture to be embedded |
+| x | Longint | &#8594; | Coordinate on X axis of upper left corner |
+| y | Longint | &#8594; | Coordinate on Y axis of upper left corner |
+| codec | Text | &#8594; | Codec to use |
+| Function result | SVG_Ref | &#8592; | SVG object reference |
 
 
 

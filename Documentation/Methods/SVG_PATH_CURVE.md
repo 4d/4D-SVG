@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| controlStartX | Longint | &#x1F852; | Coordinate on X axis of control point |
-| controlStartY | Longint | &#x1F852; | Coordinate on Y axis of control point |
-| controlEndX | Longint | &#x1F852; | Coordinate on X axis of control point |
-| controlEndY | Longint | &#x1F852; | Coordinate on Y axis of control point |
-| x | Longint | &#x1F852; | Coordinate on X axis of destination point |
-| y | Longint | &#x1F852; | Coordinate on Y axis of destination point |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| controlStartX | Longint | &#8594; | Coordinate on X axis of control point |
+| controlStartY | Longint | &#8594; | Coordinate on Y axis of control point |
+| controlEndX | Longint | &#8594; | Coordinate on X axis of control point |
+| controlEndY | Longint | &#8594; | Coordinate on Y axis of control point |
+| x | Longint | &#8594; | Coordinate on X axis of destination point |
+| y | Longint | &#8594; | Coordinate on Y axis of destination point |
 
 
 

@@ -4,10 +4,10 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| brightness | Real | &#x1F852; | Values between 0 and 1 to darken; > 1 to brighten, applied globally or only to red component |
-| brightness2 | Real | &#x1F852; | Brightness value for green component |
-| brightness3 | Real | &#x1F852; | Brightness value for blue component |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| brightness | Real | &#8594; | Values between 0 and 1 to darken; > 1 to brighten, applied globally or only to red component |
+| brightness2 | Real | &#8594; | Brightness value for green component |
+| brightness3 | Real | &#8594; | Brightness value for blue component |
 
 
 

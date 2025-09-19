@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| xArrayPointer | Pointer | &#x1F852; | Coordinates on X axis of points |
-| yArrayPointer | Pointer | &#x1F852; | Coordinates on Y axis of points |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of line |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| xArrayPointer | Pointer | &#8594; | Coordinates on X axis of points |
+| yArrayPointer | Pointer | &#8594; | Coordinates on Y axis of points |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of line |
 
 
 

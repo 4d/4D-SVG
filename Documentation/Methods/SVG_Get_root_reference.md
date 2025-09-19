@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| Function result | SVG_Ref | &#x1F850; | Root SVG element |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| Function result | SVG_Ref | &#8592; | Root SVG element |
 
 
 

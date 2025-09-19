@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| colorName | Text | &#x1F852; | SVG color name |
-| rgbComponent | Text | &#x1F852; | "R", "G" or "B" to indicate color component |
-| Function result | Longint | &#x1F850; | Returns color value |
+| colorName | Text | &#8594; | SVG color name |
+| rgbComponent | Text | &#8594; | "R", "G" or "B" to indicate color component |
+| Function result | Longint | &#8592; | Returns color value |
 
 
 

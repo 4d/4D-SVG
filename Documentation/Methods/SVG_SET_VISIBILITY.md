@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| hide | Boolean | &#x1F852; | True = Show, False = Hide |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| hide | Boolean | &#8594; | True = Show, False = Hide |
 
 
 

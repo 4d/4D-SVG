@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| Function result | Boolean | &#x1F850; | True if reference belongs to an SVG element |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| Function result | Boolean | &#8592; | True if reference belongs to an SVG element |
 
 
 

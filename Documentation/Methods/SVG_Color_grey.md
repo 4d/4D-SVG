@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| percentage | Integer | &#x1F852; | Intensity of gray |
-| Function result | String | &#x1F850; | Color string |
+| percentage | Integer | &#8594; | Intensity of gray |
+| Function result | String | &#8592; | Color string |
 
 
 

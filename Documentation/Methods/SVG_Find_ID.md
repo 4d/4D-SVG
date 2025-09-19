@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG object |
-| name | String | &#x1F852; | ID of SVG element |
-| Function result | SVG_Ref | &#x1F850; | Reference of element |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG object |
+| name | String | &#8594; | ID of SVG element |
+| Function result | SVG_Ref | &#8592; | Reference of element |
 
 
 

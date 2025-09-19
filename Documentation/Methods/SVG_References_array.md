@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| refsArrayPointer | Pointer | &#x1F852; | Alpha array of document references |
-| Function result | Longint | &#x1F850; | Number of references |
+| refsArrayPointer | Pointer | &#8594; | Alpha array of document references |
+| Function result | Longint | &#8592; | Number of references |
 
 
 

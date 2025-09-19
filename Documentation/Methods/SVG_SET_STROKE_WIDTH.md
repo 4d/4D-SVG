@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| unit | String | &#x1F852; | Unit of measurement |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| strokeWidth | Real | &#8594; | Line thickness |
+| unit | String | &#8594; | Unit of measurement |
 
 
 

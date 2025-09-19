@@ -4,17 +4,17 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| text | Text | &#x1F852; | Text to insert |
-| x | Longint | &#x1F852; | Coordinate on X axis |
-| y | Longint | &#x1F852; | Coordinate on Y axis |
-| textWidth | Longint | &#x1F852; | Width of text area |
-| textHeight | Longint | &#x1F852; | Height of text area |
-| font &#124; styleDef | Text | &#x1F852; | Font name or Style definition |
-| size | Integer | &#x1F852; | Size of characters in points |
-| style | Integer | &#x1F852; | Style of characters |
-| alignment | Integer | &#x1F852; | Alignment |
-| Function result | SVG_Ref | &#x1F850; | Reference of SVG text object |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| text | Text | &#8594; | Text to insert |
+| x | Longint | &#8594; | Coordinate on X axis |
+| y | Longint | &#8594; | Coordinate on Y axis |
+| textWidth | Longint | &#8594; | Width of text area |
+| textHeight | Longint | &#8594; | Height of text area |
+| font &#124; styleDef | Text | &#8594; | Font name or Style definition |
+| size | Integer | &#8594; | Size of characters in points |
+| style | Integer | &#8594; | Style of characters |
+| alignment | Integer | &#8594; | Alignment |
+| Function result | SVG_Ref | &#8592; | Reference of SVG text object |
 
 
 

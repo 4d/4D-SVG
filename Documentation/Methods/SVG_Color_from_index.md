@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| index | Longint | &#x1F852; | Number of color |
-| Function result | Text field | &#x1F850; | Color designated by index |
+| index | Longint | &#8594; | Number of color |
+| Function result | Text field | &#8592; | Color designated by index |
 
 
 

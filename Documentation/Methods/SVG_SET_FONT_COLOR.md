@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| color | String | &#x1F852; | Text color |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| color | String | &#8594; | Text color |
 
 
 

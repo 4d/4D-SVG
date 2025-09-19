@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| methodName | Text | &#x1F852; | Name of 4D project method |
+| methodName | Text | &#8594; | Name of 4D project method |
 
 
 

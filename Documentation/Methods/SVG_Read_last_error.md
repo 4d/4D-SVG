@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| Function result | Longint | &#x1F850; | Number of last error |
+| Function result | Longint | &#8592; | Number of last error |
 
 
 

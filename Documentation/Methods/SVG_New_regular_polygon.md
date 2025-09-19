@@ -4,15 +4,15 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| width | Longint | &#x1F852; | Diameter of surrounding circle |
-| number | Longint | &#x1F852; | Number of sides |
-| x | Longint | &#x1F852; | Coordinate on center X axis |
-| y | Longint | &#x1F852; | Coordinate on center Y axis |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of polygon |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| width | Longint | &#8594; | Diameter of surrounding circle |
+| number | Longint | &#8594; | Number of sides |
+| x | Longint | &#8594; | Coordinate on center X axis |
+| y | Longint | &#8594; | Coordinate on center Y axis |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of polygon |
 
 
 

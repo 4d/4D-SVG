@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| namesArrayPointer | Pointer | &#x1F852; | Names of attributes |
-| valuesArrayPointer | Pointer | &#x1F852; | Synchronized values of attributes |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| namesArrayPointer | Pointer | &#8594; | Names of attributes |
+| valuesArrayPointer | Pointer | &#8594; | Synchronized values of attributes |
 
 
 

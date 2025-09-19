@@ -4,16 +4,16 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| x | Longint | &#x1F852; | Coordinate on center X axis |
-| y | Longint | &#x1F852; | Coordinate on center Y axis |
-| radius | Longint | &#x1F852; | Radius of circle |
-| start | Longint | &#x1F852; | Value in degrees of start of arc |
-| end | Longint | &#x1F852; | Value in degrees of end of arc |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of arc |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| x | Longint | &#8594; | Coordinate on center X axis |
+| y | Longint | &#8594; | Coordinate on center Y axis |
+| radius | Longint | &#8594; | Radius of circle |
+| start | Longint | &#8594; | Value in degrees of start of arc |
+| end | Longint | &#8594; | Value in degrees of end of arc |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of arc |
 
 
 

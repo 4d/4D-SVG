@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| Function result | Text | &#x1F850; | XML text of SVG document |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| Function result | Text | &#8592; | XML text of SVG document |
 
 
 

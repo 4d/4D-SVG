@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| a | Longint | &#x1F852; | Element a of transform matrix |
-| b | Longint | &#x1F852; | Element b of transform matrix |
-| c | Longint | &#x1F852; | Element c of transform matrix |
-| d | Longint | &#x1F852; | Element d of transform matrix |
-| e | Longint | &#x1F852; | Element e of transform matrix |
-| f | Longint | &#x1F852; | Element f of transform matrix |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| a | Longint | &#8594; | Element a of transform matrix |
+| b | Longint | &#8594; | Element b of transform matrix |
+| c | Longint | &#8594; | Element c of transform matrix |
+| d | Longint | &#8594; | Element d of transform matrix |
+| e | Longint | &#8594; | Element e of transform matrix |
+| f | Longint | &#8594; | Element f of transform matrix |
 
 
 

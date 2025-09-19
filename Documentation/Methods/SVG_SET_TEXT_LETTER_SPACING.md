@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of text element |
-| spacing | Real | &#x1F852; | Letter spacing |
-| unit | Text | &#x1F852; | Unit of value |
+| svgObject | SVG_Ref | &#8594; | Reference of text element |
+| spacing | Real | &#8594; | Letter spacing |
+| unit | Text | &#8594; | Unit of value |
 
 
 

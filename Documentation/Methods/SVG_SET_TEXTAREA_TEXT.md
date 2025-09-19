@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of text element |
-| theText | Text | &#x1F852; | Text to set |
+| svgObject | SVG_Ref | &#8594; | Reference of text element |
+| theText | Text | &#8594; | Text to set |
 
 
 

@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| comment | Text | &#x1F852; | Text to be added as a comment |
-| Function result | SVG_Ref | &#x1F850; | Reference of comment |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| comment | Text | &#8594; | Text to be added as a comment |
+| Function result | SVG_Ref | &#8592; | Reference of comment |
 
 
 

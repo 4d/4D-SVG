@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG document |
-| Function result | Real | &#x1F850; | Size in bytes of SVG document |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG document |
+| Function result | Real | &#8592; | Size in bytes of SVG document |
 
 
 

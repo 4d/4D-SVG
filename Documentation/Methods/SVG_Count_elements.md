@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG reference |
-| Function result | Longint | &#x1F850; | Number of objects |
+| svgObject | SVG_Ref | &#8594; | SVG reference |
+| Function result | Longint | &#8592; | Number of objects |
 
 
 

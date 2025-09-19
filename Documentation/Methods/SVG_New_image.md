@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| url | String | &#x1F852; | Address of picture |
-| x | Longint | &#x1F852; | Coordinate on X axis of upper left corner |
-| y | Longint | &#x1F852; | Coordinate on Y axis of upper left corner |
-| width | Longint | &#x1F852; | Width of picture |
-| height | Longint | &#x1F852; | Height of picture |
-| Function result | SVG_Ref | &#x1F850; | SVG object reference |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| url | String | &#8594; | Address of picture |
+| x | Longint | &#8594; | Coordinate on X axis of upper left corner |
+| y | Longint | &#8594; | Coordinate on Y axis of upper left corner |
+| width | Longint | &#8594; | Width of picture |
+| height | Longint | &#8594; | Height of picture |
+| Function result | SVG_Ref | &#8592; | SVG object reference |
 
 
 

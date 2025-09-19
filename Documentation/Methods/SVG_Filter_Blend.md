@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| filterRef | SVG_Ref | &#x1F852; | Reference of filter |
-| picture | String | &#x1F852; | Picture source |
-| backgroundPict | String | &#x1F852; | Background picture source |
-| mode | String | &#x1F852; | Mixing mode |
-| name | String | &#x1F852; | Target of filter primitive |
-| Function result | SVG_Ref | &#x1F850; | Reference of primitive |
+| filterRef | SVG_Ref | &#8594; | Reference of filter |
+| picture | String | &#8594; | Picture source |
+| backgroundPict | String | &#8594; | Background picture source |
+| mode | String | &#8594; | Mixing mode |
+| name | String | &#8594; | Target of filter primitive |
+| Function result | SVG_Ref | &#8592; | Reference of primitive |
 
 
 

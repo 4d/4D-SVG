@@ -4,10 +4,10 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | Alpha | &#x1F852; | SVG reference |
-| refsArrayPointer | Pointer | &#x1F852; | String array of object references |
-| typesArrayPointer | Pointer | &#x1F852; | String array of object types |
-| namesArrayPointer | Pointer | &#x1F852; | String array of object IDs |
+| svgObject | Alpha | &#8594; | SVG reference |
+| refsArrayPointer | Pointer | &#8594; | String array of object references |
+| typesArrayPointer | Pointer | &#8594; | String array of object types |
+| namesArrayPointer | Pointer | &#8594; | String array of object IDs |
 
 
 

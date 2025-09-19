@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| document | String | &#x1F852; | Document name or Full pathname of document |
-| codec | String | &#x1F852; | Picture codec ID |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| document | String | &#8594; | Document name or Full pathname of document |
+| codec | String | &#8594; | Picture codec ID |
 
 
 

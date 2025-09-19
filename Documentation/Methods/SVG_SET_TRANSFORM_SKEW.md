@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| horizontal | Longint | &#x1F852; | Value of incline along X axis |
-| vertical | Longint | &#x1F852; | Value of incline along Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| horizontal | Longint | &#8594; | Value of incline along X axis |
+| vertical | Longint | &#8594; | Value of incline along Y axis |
 
 
 

@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| pointer | Pointer | &#x1F852; | Pointer to variable to set |
+| pointer | Pointer | &#8594; | Pointer to variable to set |
 
 
 

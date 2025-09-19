@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| Function result | Text | &#x1F850; | Character set |
+| Function result | Text | &#8592; | Character set |
 
 
 

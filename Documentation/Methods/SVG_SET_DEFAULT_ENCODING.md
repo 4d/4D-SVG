@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| encoding | String | &#x1F852; | Character set |
+| encoding | String | &#8594; | Character set |
 
 
 

@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| width | Longint | &#x1F852; | Document width |
-| height | Longint | &#x1F852; | Document height |
-| title | String | &#x1F852; | Document title |
-| description | String | &#x1F852; | Description |
-| rectangle | Boolean | &#x1F852; | Set viewbox |
-| display | Integer | &#x1F852; | Picture display format |
-| Function result | SVG_Ref | &#x1F850; | SVG object reference |
+| width | Longint | &#8594; | Document width |
+| height | Longint | &#8594; | Document height |
+| title | String | &#8594; | Document title |
+| description | String | &#8594; | Description |
+| rectangle | Boolean | &#8594; | Set viewbox |
+| display | Integer | &#8594; | Picture display format |
+| Function result | SVG_Ref | &#8592; | SVG object reference |
 
 
 

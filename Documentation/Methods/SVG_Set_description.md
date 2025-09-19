@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| description | String | &#x1F852; | Text of comments |
-| Function result | SVG_Ref | &#x1F850; | Reference of description |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| description | String | &#8594; | Text of comments |
+| Function result | SVG_Ref | &#8592; | Reference of description |
 
 
 

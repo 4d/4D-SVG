@@ -4,17 +4,17 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| x | Longint | &#x1F852; | X of upper left corner |
-| y | Longint | &#x1F852; | Y of upper left corner |
-| width | Longint | &#x1F852; | Width of rectangle |
-| height | Longint | &#x1F852; | Height of rectangle |
-| roundedX | Longint | &#x1F852; | Horizontal curve |
-| roundedY | Longint | &#x1F852; | Vertical curve |
-| foregroundColor | String | &#x1F852; | Color or gradient name |
-| backgroundColor | String | &#x1F852; | Color or gradient name |
-| strokeWidth | Real | &#x1F852; | Line thickness |
-| Function result | SVG_Ref | &#x1F850; | Reference of rectangle |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| x | Longint | &#8594; | X of upper left corner |
+| y | Longint | &#8594; | Y of upper left corner |
+| width | Longint | &#8594; | Width of rectangle |
+| height | Longint | &#8594; | Height of rectangle |
+| roundedX | Longint | &#8594; | Horizontal curve |
+| roundedY | Longint | &#8594; | Vertical curve |
+| foregroundColor | String | &#8594; | Color or gradient name |
+| backgroundColor | String | &#8594; | Color or gradient name |
+| strokeWidth | Real | &#8594; | Line thickness |
+| Function result | SVG_Ref | &#8592; | Reference of rectangle |
 
 
 

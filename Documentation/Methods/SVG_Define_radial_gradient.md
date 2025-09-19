@@ -4,16 +4,16 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of gradient |
-| startColor | String | &#x1F852; | Start color |
-| endColor | String | &#x1F852; | End color |
-| cx | Integer | &#x1F852; | Coordinate on X axis of center of endColor |
-| cy | Integer | &#x1F852; | Coordinate on Y axis of center of endColor |
-| r | Integer | &#x1F852; | Radius of endColor |
-| fx | Integer | &#x1F852; | Coordinate on X axis of center of startColor |
-| fy | Integer | &#x1F852; | Coordinate on Y axis of center of startColor |
-| Function result | String | &#x1F850; | Reference of gradient |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of gradient |
+| startColor | String | &#8594; | Start color |
+| endColor | String | &#8594; | End color |
+| cx | Integer | &#8594; | Coordinate on X axis of center of endColor |
+| cy | Integer | &#8594; | Coordinate on Y axis of center of endColor |
+| r | Integer | &#8594; | Radius of endColor |
+| fx | Integer | &#8594; | Coordinate on X axis of center of startColor |
+| fy | Integer | &#8594; | Coordinate on Y axis of center of startColor |
+| Function result | String | &#8592; | Reference of gradient |
 
 
 

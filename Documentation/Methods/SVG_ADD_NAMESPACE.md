@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| prefix | Text | &#x1F852; | Prefix of namespace |
-| URI | Text | &#x1F852; | URI of namespace |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| prefix | Text | &#8594; | Prefix of namespace |
+| URI | Text | &#8594; | URI of namespace |
 
 
 

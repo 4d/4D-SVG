@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObj | SVG_Ref | &#x1F852; | Reference of SVG element |
-| vectorEffect | String | &#x1F852; | "non-scaling-stroke", "none", "inherit" |
+| svgObj | SVG_Ref | &#8594; | Reference of SVG element |
+| vectorEffect | String | &#8594; | "non-scaling-stroke", "none", "inherit" |
 
 
 

@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of path |
-| x | Longint | &#x1F852; | Coordinate on X axis |
-| y | Longint | &#x1F852; | Coordinate on Y axis |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of path |
+| x | Longint | &#8594; | Coordinate on X axis |
+| y | Longint | &#8594; | Coordinate on Y axis |
 
 
 

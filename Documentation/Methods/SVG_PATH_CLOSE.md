@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of path |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of path |
 
 
 

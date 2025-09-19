@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| mode | String | &#x1F852; | Rendering mode |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| mode | String | &#8594; | Rendering mode |
 
 
 

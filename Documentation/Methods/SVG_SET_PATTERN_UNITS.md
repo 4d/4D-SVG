@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| patternObject | SVG_Ref | &#x1F852; | Reference of pattern to modify |
-| sysCoord | Text | &#x1F852; | System of coordinates to be used |
+| patternObject | SVG_Ref | &#8594; | Reference of pattern to modify |
+| sysCoord | Text | &#8594; | System of coordinates to be used |
 
 
 

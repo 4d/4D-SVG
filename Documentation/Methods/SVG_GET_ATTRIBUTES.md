@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG reference |
-| namesArrayPointer | Pointer | &#x1F852; | Alpha array of attribute names |
-| valuesArrayPointer | Pointer | &#x1F852; | Alpha array of attribute values |
+| svgObject | SVG_Ref | &#8594; | SVG reference |
+| namesArrayPointer | Pointer | &#8594; | Alpha array of attribute names |
+| valuesArrayPointer | Pointer | &#8594; | Alpha array of attribute values |
 
 
 

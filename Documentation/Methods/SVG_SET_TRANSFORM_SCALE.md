@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| scaleX | Real | &#x1F852; | Value on X axis |
-| scaleY | Real | &#x1F852; | Value on Y axis |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| scaleX | Real | &#8594; | Value on X axis |
+| scaleY | Real | &#8594; | Value on Y axis |
 
 
 

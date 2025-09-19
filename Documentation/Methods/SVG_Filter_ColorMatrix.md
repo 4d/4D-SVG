@@ -4,12 +4,12 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| in | Text | &#x1F852; | Identifies input for the given filter primitive |
-| result | Text | &#x1F852; | Provides a reference for the output result of a filter |
-| type | Text | &#x1F852; | Indicates the type of matrix operation |
-| values | Text | &#x1F852; | Numeric values for the transformation matrix |
-| Function result | SVG_Ref | &#x1F850; | Reference for SVG object with new color values |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| in | Text | &#8594; | Identifies input for the given filter primitive |
+| result | Text | &#8594; | Provides a reference for the output result of a filter |
+| type | Text | &#8594; | Indicates the type of matrix operation |
+| values | Text | &#8594; | Numeric values for the transformation matrix |
+| Function result | SVG_Ref | &#8592; | Reference for SVG object with new color values |
 
 
 

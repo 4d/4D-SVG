@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| attributeName | String | &#x1F852; | Name of attribute to set |
-| attributeValue | String | &#x1F852; | Value of attribute |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| attributeName | String | &#8594; | Name of attribute to set |
+| attributeValue | String | &#8594; | Value of attribute |
 
 
 

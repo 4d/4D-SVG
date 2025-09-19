@@ -4,14 +4,14 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObjec | SVG_Ref | &#x1F852; | Reference of parent element |
-| id | String | &#x1F852; | Name of symbol |
-| x | Longint | &#x1F852; | X position of viewbox |
-| y | Longint | &#x1F852; | Y position of viewbox |
-| width | Longint | &#x1F852; | Width of viewbox |
-| height | Longint | &#x1F852; | Height of viewbox |
-| mode | String | &#x1F852; | Adjustment to viewbox |
-| Function result | SVG_Ref | &#x1F850; | SVG object reference |
+| parentSVGObjec | SVG_Ref | &#8594; | Reference of parent element |
+| id | String | &#8594; | Name of symbol |
+| x | Longint | &#8594; | X position of viewbox |
+| y | Longint | &#8594; | Y position of viewbox |
+| width | Longint | &#8594; | Width of viewbox |
+| height | Longint | &#8594; | Height of viewbox |
+| mode | String | &#8594; | Adjustment to viewbox |
+| Function result | SVG_Ref | &#8592; | SVG object reference |
 
 
 

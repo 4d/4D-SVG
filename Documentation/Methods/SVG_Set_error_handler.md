@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| method | String | &#x1F852; | Name of method to install |
-| Function result | String | &#x1F850; | Name of method previously installed |
+| method | String | &#8594; | Name of method to install |
+| Function result | String | &#8592; | Name of method previously installed |
 
 
 

@@ -4,9 +4,9 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| color | Longint | &#x1F852; | Value of color |
-| format | Integer | &#x1F852; | Format of color |
-| Function result | String | &#x1F850; | Color string |
+| color | Longint | &#8594; | Value of color |
+| format | Integer | &#8594; | Format of color |
+| Function result | String | &#8592; | Color string |
 
 
 

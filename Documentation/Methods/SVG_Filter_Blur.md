@@ -4,11 +4,11 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| filterRef | SVG_Ref | &#x1F852; | Reference of filter |
-| deviation | Real | &#x1F852; | Standard deviation for blur operation |
-| input | String | &#x1F852; | Source of filter primitive |
-| name | String | &#x1F852; | Target of filter primitive |
-| Function result | SVG_Ref | &#x1F850; | Reference of primitive |
+| filterRef | SVG_Ref | &#8594; | Reference of filter |
+| deviation | Real | &#8594; | Standard deviation for blur operation |
+| input | String | &#8594; | Source of filter primitive |
+| name | String | &#8594; | Target of filter primitive |
+| Function result | SVG_Ref | &#8592; | Reference of primitive |
 
 
 

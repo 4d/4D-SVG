@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| id | String | &#x1F852; | Name of filter |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| id | String | &#8594; | Name of filter |
 
 
 

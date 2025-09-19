@@ -4,10 +4,10 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| angle | Longint | &#x1F852; | Angle of rotation |
-| x | Longint | &#x1F852; | Coordinate on X axis of center of rotation |
-| y | Longint | &#x1F852; | Coordinate on Y axis of center of rotation |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| angle | Longint | &#8594; | Angle of rotation |
+| x | Longint | &#8594; | Coordinate on X axis of center of rotation |
+| y | Longint | &#8594; | Coordinate on Y axis of center of rotation |
 
 
 

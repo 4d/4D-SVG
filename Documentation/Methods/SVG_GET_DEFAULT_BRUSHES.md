@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| line | Pointer | &#x1F852; | Alpha variable |
-| background | Pointer | &#x1F852; | Alpha variable |
+| line | Pointer | &#8594; | Alpha variable |
+| background | Pointer | &#8594; | Alpha variable |
 
 
 

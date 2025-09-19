@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| line | String | &#x1F852; | Color |
-| background | String | &#x1F852; | Color |
+| line | String | &#8594; | Color |
+| background | String | &#8594; | Color |
 
 
 

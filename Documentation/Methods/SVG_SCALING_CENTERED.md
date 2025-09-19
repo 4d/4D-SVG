@@ -4,10 +4,10 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| scale | Real | &#x1F852; | Scale value |
-| x | Real | &#x1F852; | X axis |
-| y | Real | &#x1F852; | Y axis |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| scale | Real | &#8594; | Scale value |
+| x | Real | &#8594; | X axis |
+| y | Real | &#8594; | Y axis |
 
 
 

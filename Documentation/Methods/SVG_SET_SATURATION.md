@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| saturation | Longint | &#x1F852; | Saturation value |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| saturation | Longint | &#8594; | Saturation value |
 
 
 

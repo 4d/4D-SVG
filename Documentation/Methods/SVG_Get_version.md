@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| Function result | String | &#x1F850; | Version number |
+| Function result | String | &#8592; | Version number |
 
 
 

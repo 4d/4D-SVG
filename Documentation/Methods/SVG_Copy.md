@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG objec to copy |
-| Function result | SVG_Ref | &#x1F850; | Reference of new SVG object |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG objec to copy |
+| Function result | SVG_Ref | &#8592; | Reference of new SVG object |
 
 
 

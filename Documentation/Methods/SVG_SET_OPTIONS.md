@@ -4,7 +4,7 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| options | Longint | &#x1F852; | 4D SVG component options |
+| options | Longint | &#8594; | 4D SVG component options |
 
 
 

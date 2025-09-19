@@ -4,17 +4,17 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| parentSVGObject | SVG_Ref | &#x1F852; | Reference of parent element |
-| text | Text | &#x1F852; | Text to insert |
-| x | Longint | &#x1F852; | Coordinate on X axis |
-| y | Longint | &#x1F852; | Coordinate on Y axis |
-| font | String | &#x1F852; | Font name |
-| size | Integer | &#x1F852; | Size of characters in points |
-| style | Integer | &#x1F852; | Style of characters |
-| alignment | Integer | &#x1F852; | Alignment |
-| color | String | &#x1F852; | Text color |
-| rotation | Longint | &#x1F852; | Angle of rotation of text |
-| Function result | SVG_Ref | &#x1F850; | Reference of SVG text object |
+| parentSVGObject | SVG_Ref | &#8594; | Reference of parent element |
+| text | Text | &#8594; | Text to insert |
+| x | Longint | &#8594; | Coordinate on X axis |
+| y | Longint | &#8594; | Coordinate on Y axis |
+| font | String | &#8594; | Font name |
+| size | Integer | &#8594; | Size of characters in points |
+| style | Integer | &#8594; | Style of characters |
+| alignment | Integer | &#8594; | Alignment |
+| color | String | &#8594; | Text color |
+| rotation | Longint | &#8594; | Angle of rotation of text |
+| Function result | SVG_Ref | &#8592; | Reference of SVG text object |
 
 
 

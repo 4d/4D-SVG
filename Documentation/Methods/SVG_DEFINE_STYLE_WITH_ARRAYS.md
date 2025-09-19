@@ -4,13 +4,13 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| namesArrayPointer | Pointer | &#x1F852; | Pointer to array of style names |
-| valuesArrayPointer | Pointer | &#x1F852; | Pointer to array of style values |
-| className | Text | &#x1F852; | CSS class name |
-| type | Text | &#x1F852; | Type of contents |
-| media | Text | &#x1F852; | Media descriptor |
-| title | Text | &#x1F852; | Style name |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| namesArrayPointer | Pointer | &#8594; | Pointer to array of style names |
+| valuesArrayPointer | Pointer | &#8594; | Pointer to array of style values |
+| className | Text | &#8594; | CSS class name |
+| type | Text | &#8594; | Type of contents |
+| media | Text | &#8594; | Media descriptor |
+| title | Text | &#8594; | Style name |
 
 
 

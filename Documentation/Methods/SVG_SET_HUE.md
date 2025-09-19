@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | SVG object reference |
-| hue | Longint | &#x1F852; | Hue value |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| hue | Longint | &#8594; | Hue value |
 
 
 

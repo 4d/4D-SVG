@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| path | String | &#x1F852; | Pathname of SVG document to open |
-| Function result | SVG_Ref | &#x1F850; | Document reference |
+| path | String | &#8594; | Pathname of SVG document to open |
+| Function result | SVG_Ref | &#8592; | Document reference |
 
 
 

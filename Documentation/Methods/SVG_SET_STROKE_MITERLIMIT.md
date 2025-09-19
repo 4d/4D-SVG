@@ -4,8 +4,8 @@
 
 | Parameter | Type |  | Description |
 | --- | --- | --- | --- |
-| svgObject | SVG_Ref | &#x1F852; | Reference of SVG element |
-| join | Longint | &#x1F852; | Value of join |
+| svgObject | SVG_Ref | &#8594; | Reference of SVG element |
+| join | Longint | &#8594; | Value of join |
 
 
 
