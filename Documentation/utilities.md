@@ -23,4 +23,4 @@
 - [SVG_New_group](Methods/SVG_New_group.md)
 - [SVG_SET_ID](Methods/SVG_SET_ID.md)
 
-- [Development tools](Development%20tools.md)
+- [Development tools](development-tools.md)

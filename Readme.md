@@ -9,10 +9,31 @@ SVG (Scalable Vector Graphics) is a two-dimensional vector graphics file format 
 
 The XML language used for manipulating SVG pictures is particularly rich and extensive. In order to make getting started easier, `4D` provides the `4D SVG` component, which includes numerous commands that can be used to create and manipulate common graphic objects.
 
-This library is not intended to be exhaustive but rather to meet the most frequent needs of 4D developers. Note that additional needs can be processed with the 4D XML commands.
+This library is not intended to be exhaustive but rather to meet the most frequent needs of 4D developers. Note that additional needs can be processed with the [4D XML commands](https://developer.4d.com/docs/commands/theme/XML-DOM).
 
-For more details, read the [4D SVG documentation](https://doc.4d.com/4Dv19/4D/19/4D-SVG-Component.100-5461938.en.html).
+## Table of contents
 
-## How to use
+- [**Syntax Details**](Documentation/syntax-details.md) - How to use the 4D SVG component commands
+- [**Development Tools**](Documentation/development-tools.md) - How to use the 4D SVG component commands
 
-You will find all the information on the [4D blog](https://blog.4d.com/news-flash-4d-components-available-on-github/).
+### Commands
+
+- [**Attributes**](Documentation/attributes.md)
+- [**Colors and Gradients**](Documentation/colors-and-gradients.md)
+- [**Documents**](Documentation/documents.md)
+- [**Drawing**](Documentation/drawing.md)
+- [**Filters**](Documentation/filters.md)
+- [**Structure and Definitions**](Documentation/structure-and-definitions.md)
+- [**Text**](Documentation/text.md)
+- [**Utilities**](Documentation/utilities.md)
+
+### Constants
+
+- [**SVG Colors (Names)**](Documentation/svg-colors-names.md)
+- [**SVG Colors (RGB)**](Documentation/svg-colors-rgb.md)
+
+### References
+
+- [SVG Specification](http://www.w3.org/TR/SVG12/)
+- [4D SVG documentation on doc.4d.com](https://doc.4d.com/4Dv20/4D/20/4D-SVG-Component.300-6342815.en.html).
+

@@ -150,5 +150,5 @@
 
 ## See also
 
- [SVG Colors (Names)](SVG%20Colors%20(Names).md)
+ [SVG Colors (Names)](svg-colors-names.md)
  [SVG Colors](SVG%20Colors.md)
