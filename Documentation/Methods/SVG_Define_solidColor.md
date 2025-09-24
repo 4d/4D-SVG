@@ -38,4 +38,4 @@ The color set in this way will be associated with the fill or stroke paint by pa
 
 #### See also 
 
-[SVG Colors](../SVG%20Colors.md)  
+[SVG Colors](../colors-and-gradients.md)  
