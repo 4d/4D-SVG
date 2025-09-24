@@ -152,5 +152,5 @@
 
 ## See also
 
- [SVG Colors (RGB)](SVG%20Colors%20(RGB).md)
+ [SVG Colors (RGB)](svg-colors-rgb.md)
  [SVG Colors](SVG%20Colors.md)
