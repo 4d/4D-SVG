@@ -23,7 +23,7 @@ The following code:
 ```4d
 C_TEXT($comment)  
 $comment:="Modified on "+String(Current date)  
-$ref:= SVG\_Post\_comment ($svg; $comment )
+$ref:= SVG_Post_comment ($svg; $comment )
 ```
 .. adds the following to the $svg SVG object:
 
