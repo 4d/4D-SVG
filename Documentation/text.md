@@ -1,0 +1,18 @@
+# Text
+
+- [SVG_APPEND_TEXT_TO_TEXTAREA](Methods/SVG_APPEND_TEXT_TO_TEXTAREA.md)
+- [SVG_Get_text](Methods/SVG_Get_text.md)
+- [SVG_New_text](Methods/SVG_New_text.md)
+- [SVG_New_textArea](Methods/SVG_New_textArea.md)
+- [SVG_New_tspan](Methods/SVG_New_tspan.md)
+- [SVG_New_vertical_text](Methods/SVG_New_vertical_text.md)
+- [SVG_SET_FONT_COLOR](Methods/SVG_SET_FONT_COLOR.md)
+- [SVG_SET_FONT_FAMILY](Methods/SVG_SET_FONT_FAMILY.md)
+- [SVG_SET_FONT_SIZE](Methods/SVG_SET_FONT_SIZE.md)
+- [SVG_SET_FONT_STYLE](Methods/SVG_SET_FONT_STYLE.md)
+- [SVG_SET_TEXT_ANCHOR](Methods/SVG_SET_TEXT_ANCHOR.md)
+- [SVG_SET_TEXT_KERNING](Methods/SVG_SET_TEXT_KERNING.md)
+- [SVG_SET_TEXT_LETTER_SPACING](Methods/SVG_SET_TEXT_LETTER_SPACING.md)
+- [SVG_SET_TEXT_RENDERING](Methods/SVG_SET_TEXT_RENDERING.md)
+- [SVG_SET_TEXT_WRITING_MODE](Methods/SVG_SET_TEXT_WRITING_MODE.md)
+- [SVG_SET_TEXTAREA_TEXT](Methods/SVG_SET_TEXTAREA_TEXT.md)
