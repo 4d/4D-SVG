@@ -13,8 +13,8 @@ This library is not intended to be exhaustive but rather to meet the most freque
 
 ## Table of contents
 
-- [**Syntax Details**](Documentation/syntax-details.md) - How to use the 4D SVG component commands
-- [**Development Tools**](Documentation/development-tools.md) - How to use the 4D SVG component commands
+- [**Syntax Details**](Documentation/syntax-details.md) 
+- [**Development Tools**](Documentation/development-tools.md) 
 
 ### Commands
 
