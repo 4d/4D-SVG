@@ -11,6 +11,21 @@
 // ----------------------------------------------------
 #DECLARE($parent : Text; $image : Picture; $left : Real; $top : Real; $codec : Text) : Text
 
+If (False:C215)
+	C_TEXT:C284(SVG_New_embedded_image; $1)
+	C_PICTURE:C286(SVG_New_embedded_image; $2)
+	C_REAL:C285(SVG_New_embedded_image; $3)
+	C_REAL:C285(SVG_New_embedded_image; $4)
+	C_TEXT:C284(SVG_New_embedded_image; $5)
+	C_TEXT:C284(SVG_New_embedded_image; $0)
+End if 
+
+var $height; $width : Real
+var $encoded; $node; $t : Text
+var $success : Boolean
+var $index : Integer
+var $x : Blob
+
 Compiler_SVG
 
 If (Count parameters:C259>=2)
@@ -27,8 +42,7 @@ If (Count parameters:C259>=2)
 			
 			$codec:=$codecs{1}
 			
-			var $t : Text
-			For each ($t; [\
+			For each ($t; New collection:C1472(\
 				".heic"; \
 				".svg"; \
 				".png"; \
@@ -37,10 +51,9 @@ If (Count parameters:C259>=2)
 				".gif"; \
 				".bmp"; \
 				".pdf"; \
-				".emf"; \
-				".4DMemoryBitmap"])
+				".emf"))
 				
-				var $index:=Find in array:C230($codecs; $t)
+				$index:=Find in array:C230($codecs; $t)
 				
 				If ($index>0)
 					
@@ -68,7 +81,6 @@ If (Count parameters:C259>=2)
 			End case 
 			
 		Else 
-			
 			$codec:=".png"  // Default is .png
 			
 		End if 
@@ -81,20 +93,17 @@ Else
 	
 End if 
 
-If (Asserted:C1132(xml_referenceValid($parent); Localized string:C991("error_badReference")))
+If (Asserted:C1132(xml_referenceValid($parent); Get localized string:C991("error_badReference")))
 	
 	Component_errorHandler("init"; Current method name:C684)
 	
 	// #26-3-2015
 	// #ACI0088208 - if picture is empty, PICTURE TO BLOB sets OK to 0
-	var $height; $width : Real
-	var $encoded : Text
 	If (Picture size:C356($image)>0)
 		
 		PICTURE PROPERTIES:C457($image; $width; $height)
 		
 		// Encode in base64
-		var $x : Blob
 		PICTURE TO BLOB:C692($image; $x; $codec)
 		$success:=Bool:C1537(OK)
 		
@@ -110,7 +119,7 @@ If (Asserted:C1132(xml_referenceValid($parent); Localized string:C991("error_bad
 		
 	Else 
 		
-		var $success:=True:C214  // Yes, we return an image node reference even if the image is empty (#ACI0103090)
+		$success:=True:C214  // Yes, we return an image node reference even if the image is empty (#ACI0103090)
 		
 	End if 
 	
@@ -127,7 +136,7 @@ If (Asserted:C1132(xml_referenceValid($parent); Localized string:C991("error_bad
 			$codec:=$codec=".svg" ? "svg+xml" : Replace string:C233($codec; "."; "")
 			
 			// Put the encoded image
-			var $node:=DOM Create XML element:C865($parent; "image"; \
+			$node:=DOM Create XML element:C865($parent; "image"; \
 				"xlink:href"; "data:image/"+$codec+";base64,"+$encoded; \
 				"x"; $left; \
 				"y"; $top; \
