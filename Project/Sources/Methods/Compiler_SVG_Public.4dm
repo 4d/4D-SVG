@@ -185,14 +185,6 @@ If (False:C215)
 	C_TEXT:C284(SVG_New_ellipse_bounded; $7)
 	C_REAL:C285(SVG_New_ellipse_bounded; $8)
 	
-	//SVG_New_embedded_image
-	C_TEXT:C284(SVG_New_embedded_image; $0)
-	C_TEXT:C284(SVG_New_embedded_image; $1)
-	C_PICTURE:C286(SVG_New_embedded_image; $2)
-	C_REAL:C285(SVG_New_embedded_image; $3)
-	C_REAL:C285(SVG_New_embedded_image; $4)
-	C_TEXT:C284(SVG_New_embedded_image; $5)
-	
 	//SVG_New_image
 	C_TEXT:C284(SVG_New_image; $0)
 	C_TEXT:C284(SVG_New_image; $1)
