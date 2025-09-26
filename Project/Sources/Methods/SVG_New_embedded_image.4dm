@@ -11,27 +11,18 @@
 // ----------------------------------------------------
 #DECLARE($parent : Text; $image : Picture; $left : Real; $top : Real; $codec : Text) : Text
 
-If (False:C215)
-	C_TEXT:C284(SVG_New_embedded_image; $1)
-	C_PICTURE:C286(SVG_New_embedded_image; $2)
-	C_REAL:C285(SVG_New_embedded_image; $3)
-	C_REAL:C285(SVG_New_embedded_image; $4)
-	C_TEXT:C284(SVG_New_embedded_image; $5)
-	C_TEXT:C284(SVG_New_embedded_image; $0)
-End if 
-
 var $height; $width : Real
-var $encoded; $node; $t : Text
+var $encoded; $node : Text
 var $success : Boolean
 var $index : Integer
 var $x : Blob
 
 Compiler_SVG
 
+$left:=$left=-1 ? 0 : $left
+$top:=$top=-1 ? 0 : $top
+
 If (Count parameters:C259>=2)
-	
-	$left:=$left=-1 ? 0 : $left
-	$top:=$top=-1 ? 0 : $top
 	
 	If (Length:C16($codec)=0)
 		
@@ -42,7 +33,9 @@ If (Count parameters:C259>=2)
 			
 			$codec:=$codecs{1}
 			
-			For each ($t; New collection:C1472(\
+			var $embeddedCodec : Text
+			
+			For each ($embeddedCodec; [\
 				".heic"; \
 				".svg"; \
 				".png"; \
@@ -51,9 +44,9 @@ If (Count parameters:C259>=2)
 				".gif"; \
 				".bmp"; \
 				".pdf"; \
-				".emf"))
+				".emf"])
 				
-				$index:=Find in array:C230($codecs; $t)
+				$index:=Find in array:C230($codecs; $embeddedCodec)
 				
 				If ($index>0)
 					
@@ -65,22 +58,25 @@ If (Count parameters:C259>=2)
 			
 			Case of 
 					
-					//…………………………………………………………………………………
+					// …………………………………………………………………………………
 				: (Length:C16($codec)=0)
 					
 					$codec:=".png"
 					
-					//…………………………………………………………………………………
-				: ($codec=".4DMetaPict") | ($codec=".dng")
+					// …………………………………………………………………………………
+				: ($codec=".4DMetaPict")\
+					 || ($codec=".dng")\
+					 || /*file.getIcon() on Windows*/($codec=".4DMemoryBitmap")
 					
 					CONVERT PICTURE:C1002($image; ".png")
 					TRANSFORM PICTURE:C988($image; Transparency:K61:11; 0x00FFFFFF)
 					$codec:=".png"
 					
-					//…………………………………………………………………………………
+					// …………………………………………………………………………………
 			End case 
 			
 		Else 
+			
 			$codec:=".png"  // Default is .png
 			
 		End if 
@@ -93,7 +89,7 @@ Else
 	
 End if 
 
-If (Asserted:C1132(xml_referenceValid($parent); Get localized string:C991("error_badReference")))
+If (Asserted:C1132(xml_referenceValid($parent); Localized string:C991("error_badReference")))
 	
 	Component_errorHandler("init"; Current method name:C684)
 	
