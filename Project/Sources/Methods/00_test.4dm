@@ -29,6 +29,13 @@ var $svg : Text:=SVG_New
 Case of 
 		
 		//______________________________________________________
+	: (True:C214)
+		
+		var $icon:=File:C1566("/RESOURCES/colors.json").getIcon(256)
+		SVG_New_embedded_image($svg; $icon)
+		SVG_SET_OPACITY($svg; 60; 0)
+		
+		//______________________________________________________
 	: (True:C214)  // [BUG] https://discuss.4d.com/t/svg-open-picture-retourne-une-reference-vide-en-20r5-20r6-binary/32878
 		
 		READ PICTURE FILE:C678(File:C1566("/Volumes/Passport_500/4D Components/User Components/4D-SVG/TESTS/arc.svg").platformPath; $Pic_buffer)
