@@ -51,7 +51,8 @@ If (Count parameters:C259>=2)
 				".gif"; \
 				".bmp"; \
 				".pdf"; \
-				".emf"))
+				".emf"; \
+				".4DMemoryBitmap"))
 				
 				$index:=Find in array:C230($codecs; $t)
 				
@@ -93,7 +94,7 @@ Else
 	
 End if 
 
-If (Asserted:C1132(xml_referenceValid($parent); Get localized string:C991("error_badReference")))
+If (Asserted:C1132(xml_referenceValid($parent); Localized string:C991("error_badReference")))
 	
 	Component_errorHandler("init"; Current method name:C684)
 	
