@@ -25,7 +25,7 @@ The color palette displays the name and a sample of each color specified in the 
 
 ![](images/pict193232.en.png)
 
-You can use this palette to insert an SVG color reference by drag and drop into the 4D Method editor. The color is inserted as a string that includes the rate of opacity, if any (for example "lavender:30" for the color lavendar with an opacity of 30%). For more information about color references, please refer to the [SVG Colors](SVG%20Colors.md) section.  
+You can use this palette to insert an SVG color reference by drag and drop into the 4D Method editor. The color is inserted as a string that includes the rate of opacity, if any (for example "lavender:30" for the color lavendar with an opacity of 30%). For more information about color references, please refer to the [SVG Colors](colors-and-gradients.md) section.  
 You can also drag and drop a color into the 4D Form editor. This creates a square of color in the form of a static SVG picture.
 
 To display the color palette, just execute the SVGTool_Display_colors method.

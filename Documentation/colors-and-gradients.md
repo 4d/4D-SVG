@@ -19,7 +19,7 @@ A color can be expressed in one of the following forms:
 * "Color" keyword format  
     SVG accepts an extensive list of color name keywords, for example "red".
 
-The list of keywords, as well as their RGB equivalents, can be found in: [SVG Colors (Names)](SVG%20Colors%20(Names).md) and [SVG Colors (RGB)](SVG%20Colors%20(RGB).md). You can also view this list and insert the color values directly via the 4D SVG Color palette. For more information, please refer to [Development tools](Development%20tools.md).
+The list of keywords, as well as their RGB equivalents, can be found in: [SVG Colors (Names)](svg-colors-names.md) and [SVG Colors (RGB)](svg-colors-rgb.md). You can also view this list and insert the color values directly via the 4D SVG Color palette. For more information, please refer to [Development tools](development-tools.md).
 
 ### None  
 
@@ -35,9 +35,7 @@ Gradients are progressive transitions of color along a vector. These gradients a
 
 Similarly, it is possible to set a custom color associated with an opacity using the [SVG_Define_solidColor](Methods/SVG_Define_solidColor.md)  command.
 
-## See also
-
-- [Development tools](Development%20tools.md)
+## Commands
 
 - [SVG_Color_from_index](Methods/SVG_Color_from_index.md)
 - [SVG_Color_grey](Methods/SVG_Color_grey.md)
@@ -53,12 +51,14 @@ Similarly, it is possible to set a custom color associated with an opacity using
 - [SVG_SET_DEFAULT_BRUSHES](Methods/SVG_SET_DEFAULT_BRUSHES.md)
 - [SVG_SET_HUE](Methods/SVG_SET_HUE.md)
 - [SVG_SET_SATURATION](Methods/SVG_SET_SATURATION.md)
-- [Development tools](Methods/Development%20tools.md)
+- [Development tools](Methods/development-tools.md)
 - [SVG_Define_linear_gradient](Methods/SVG_Define_linear_gradient.md)
 - [SVG_Define_radial_gradient](Methods/SVG_Define_radial_gradient.md)
 - [SVG_Define_solidColor](Methods/SVG_Define_solidColor.md)
 - [SVG_SET_OPACITY](Methods/SVG_SET_OPACITY.md)
 - [SVG_SET_STROKE_BRUSH](Methods/SVG_SET_STROKE_BRUSH.md)
 
-- [SVG Colors (Names)](SVG%20Colors%20(Names).md)
-- [SVG Colors (RGB)](SVG%20Colors%20(RGB).md)
+## Constants
+
+- [SVG Colors (Names)](svg-colors-names.md)
+- [SVG Colors (RGB)](svg-colors-rgb.md)

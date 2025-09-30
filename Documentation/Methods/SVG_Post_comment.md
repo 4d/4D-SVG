@@ -20,10 +20,13 @@ The method returns the SVG reference of the comment.
 
 The following code:
 
-\[#code4D\]C\_TEXT($comment)  
+```4d
+C_TEXT($comment)  
 $comment:="Modified on "+String(Current date)  
-$ref:= SVG\_Post\_comment ($svg; $comment )
-
+$ref:= SVG_Post_comment ($svg; $comment )
+```
 .. adds the following to the $svg SVG object:
 
- <!--Modified on 12/12/2011-->\[#/codeXML\]
+```xml
+ <!--Modified on 12/12/2025-->
+```
