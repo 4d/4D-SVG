@@ -1,8 +1,3 @@
-[![language](https://img.shields.io/static/v1?label=language&message=4d&color=blue)](https://developer.4d.com/)
-[![language](https://img.shields.io/github/languages/top/4d/4D-SVG.svg)](https://developer.4d.com/)
-![code-size](https://img.shields.io/github/languages/code-size/4d/4D-SVG.svg)
-[![license](https://img.shields.io/github/license/4d/4D-SVG)](LICENSE)
-
 # 4D SVG
 
 SVG (Scalable Vector Graphics) is a two-dimensional vector graphics file format based on XML. [4D](https://us.4d.com/4d-development) includes an integrated rendering engine that can be used to display SVG files.
