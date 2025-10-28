@@ -1,0 +1,29 @@
+# SVG_Export_to_XML
+
+>**SVG_Export_to_XML** ( *svgObject* ) -> Function result
+
+| Parameter | Type |  | Description |
+| --- | --- | --- | --- |
+| svgObject | SVG_Ref | &#8594; | SVG object reference |
+| Function result | Text | &#8592; | XML text of SVG document |
+
+
+
+#### Description 
+
+The SVG\_Export\_to\_XML command returns the XML text of the description of the SVG structure referenced by *svgObject*.
+
+#### Example 
+
+```4d
+ svgRef:=SVG_New(500;200;“ Test component ”)
+ ...
+ MyText:=SVG_Export_to_XML(svgRef)
+ 
+ SVG_CLEAR(svgRef)
+```
+
+#### See also 
+
+[SVG\_Export\_to\_picture](SVG_Export_to_picture.md)  
+[SVG\_SAVE\_AS\_TEXT](SVG_SAVE_AS_TEXT.md)  
