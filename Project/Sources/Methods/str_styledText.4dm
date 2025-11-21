@@ -16,4 +16,4 @@ If (Length:C16($in)=0)
 	
 End if 
 
-return Match regex:C1019("(?i-ms)<span [^>]*>"; $in; 1)
+return Match regex:C1019("(?mi-s)<span[^>]*>"; $in; 1)

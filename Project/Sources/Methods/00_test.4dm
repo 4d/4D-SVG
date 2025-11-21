@@ -27,6 +27,80 @@ var $svg : Text:=SVG_New
 
 // $Txt_pathDatas:=Choose:C955(($Num_stop-$Num_start)>180;$Txt_pathDatas+"1,1 ";$Txt_pathDatas+"0,1 ")
 Case of 
+		//________________________________________
+	: (True:C214)  // ACI0093459
+		
+		$t:="<span>bold & underline</span>"
+		$Dom_text:=SVG_New_textArea($svg; $t; 10; 30)
+		
+		$t:="bold & underline"
+		$Dom_text:=SVG_New_text($svg; $t; 10; 60)
+		
+		//________________________________________
+	: (True:C214)
+		
+		//Display outlines using 'rect' element
+		$Dom_rect:=SVG_New_rect($svg; 10; 10; 500; 200; 0; 0; "blue:50"; "none")
+		
+		//Creating the text
+		$Dom_text:=SVG_New_textArea($svg; "It is today, "; 10; 30; 500; 200; "'Arial'"; 36; 0; 3)
+		
+		//Adding the date and 2 CR
+		SVG_APPEND_TEXT_TO_TEXTAREA($Dom_text; String:C10(Current date:C33)+"\r\r")
+		
+		//Lastly, adding the current time
+		SVG_APPEND_TEXT_TO_TEXTAREA($Dom_text; "and it was exactly "+String:C10(Current time:C178))
+		
+		//________________________________________
+	: (True:C214)
+		
+		$Dom_pattern:=SVG_Define_pattern($svg; "MyPattern"; 100; 100; 0; 0; ""; "0 0 10 10")
+		$Dom_path:=SVG_New_path($Dom_pattern; 0; 0)
+		
+		SVG_PATH_MOVE_TO($Dom_path; 0; 0)
+		SVG_PATH_LINE_TO($Dom_path; 7; 0)
+		SVG_PATH_LINE_TO($Dom_path; 3.5; 7)
+		SVG_PATH_CLOSE($Dom_path)
+		SVG_SET_FILL_BRUSH($Dom_path; "red")
+		SVG_SET_STROKE_BRUSH($Dom_path; "blue")
+		
+		//Drawing an ellipse filled with the pattern
+		var $Dom_ellipse:=SVG_New_ellipse($svg; 400; 200; 350; 150; "black"; "url(#MyPattern)"; 5)
+		
+		//______________________________________________________
+	: (True:C214)  // SVG_SET_HUE with style
+		
+		$Dom_filter:=SVG_Define_filter($svg; "hue_360")
+		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "360")
+		$Dom_filter:=SVG_Define_filter($svg; "hue_300")
+		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "300")
+		$Dom_filter:=SVG_Define_filter($svg; "hue_240")
+		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "240")
+		$Dom_filter:=SVG_Define_filter($svg; "hue_180")
+		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "180")
+		$Dom_filter:=SVG_Define_filter($svg; "hue_120")
+		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "120")
+		$Dom_filter:=SVG_Define_filter($svg; "hue_60")
+		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "60")
+		
+		SVG_Define_style($svg; "#pict_1{filter:url(#hue_360);}")
+		SVG_Define_style($svg; "#pict_2{filter:url(#hue_300);}")
+		SVG_Define_style($svg; "#pict_3{filter:url(#hue_240);}")
+		SVG_Define_style($svg; "#pict_4{filter:url(#hue_180);}")
+		SVG_Define_style($svg; "#pict_5{filter:url(#hue_120);}")
+		SVG_Define_style($svg; "#pict_6{filter:url(#hue_60);}")
+		
+		$Dom_symbol:=SVG_Define_symbol($svg; "mona")
+		SVG_New_image($Dom_symbol; "#dev/mona.jpg")
+		
+		For ($i; 0; 5; 1)
+			
+			$Dom_node:=SVG_Use($svg; "mona")
+			
+			SVG_SET_ID($Dom_node; "pict_"+String:C10($i+1))
+			SVG_SET_TRANSFORM_TRANSLATE($Dom_node; 160*$i; 50*$i)
+			
+		End for 
 		
 		//______________________________________________________
 	: (True:C214)
@@ -321,40 +395,7 @@ Case of
 		// Draw a rectangle
 		$Dom_rect:=SVG_New_rect($g; 25; 30; 320; 240; 10; 10; ""; "")
 		
-		//______________________________________________________
-	: (True:C214)  // SVG_SET_HUE with style
 		
-		$Dom_filter:=SVG_Define_filter($svg; "hue_360")
-		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "360")
-		$Dom_filter:=SVG_Define_filter($svg; "hue_300")
-		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "300")
-		$Dom_filter:=SVG_Define_filter($svg; "hue_240")
-		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "240")
-		$Dom_filter:=SVG_Define_filter($svg; "hue_180")
-		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "180")
-		$Dom_filter:=SVG_Define_filter($svg; "hue_120")
-		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "120")
-		$Dom_filter:=SVG_Define_filter($svg; "hue_60")
-		$Dom_node:=SVG_Filter_ColorMatrix($Dom_filter; "SourceGraphic"; ""; "hueRotate"; "60")
-		
-		SVG_Define_style($svg; "#pict_1{filter:url(#hue_360);}")
-		SVG_Define_style($svg; "#pict_2{filter:url(#hue_300);}")
-		SVG_Define_style($svg; "#pict_3{filter:url(#hue_240);}")
-		SVG_Define_style($svg; "#pict_4{filter:url(#hue_180);}")
-		SVG_Define_style($svg; "#pict_5{filter:url(#hue_120);}")
-		SVG_Define_style($svg; "#pict_6{filter:url(#hue_60);}")
-		
-		$Dom_symbol:=SVG_Define_symbol($svg; "mona")
-		SVG_New_image($Dom_symbol; "#dev/mona.jpg")
-		
-		For ($i; 0; 5; 1)
-			
-			$Dom_node:=SVG_Use($svg; "mona")
-			
-			SVG_SET_ID($Dom_node; "pict_"+String:C10($i+1))
-			SVG_SET_TRANSFORM_TRANSLATE($Dom_node; 160*$i; 50*$i)
-			
-		End for 
 		
 		//________________________________________
 		
