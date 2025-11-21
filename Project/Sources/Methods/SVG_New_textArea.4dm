@@ -117,22 +117,26 @@ If ($Lon_parameters>=2)
 		End if 
 	End if 
 	
-	If (Asserted:C1132(xml_referenceValid($Dom_svgObject); Get localized string:C991("error_badReference")))
+	If (Asserted:C1132(xml_referenceValid($Dom_svgObject); Localized string:C991("error_badReference")))
 		
 		Component_errorHandler("init"; $kTxt_currentMethod)
 		
-		//#ACI0099523
+		//mark:CI0099523
 		$Txt_text:=Replace string:C233($Txt_text; "\r\n"; "\r")
 		
-		//#ACI0093459
+		// MARK: ACI0093459
 		//If (Position("<SPAN ";$Txt_text)>0)  //Styled text
 		If (str_styledText($Txt_text))  //Styled text
+			
+			// MARK: ACI0106033
+			$Txt_text:=Replace string:C233($Txt_text; "&"; "&amp;")
 			
 			$Txt_Buffer:=Replace string:C233($Txt_text; "<SPAN"; "<tspan")
 			$Txt_Buffer:=Replace string:C233($Txt_Buffer; "</SPAN>"; "</tspan>")
 			$Txt_Buffer:=Replace string:C233($Txt_Buffer; "STYLE="; "style=")
 			$Txt_Buffer:=Replace string:C233($Txt_Buffer; "color:"; "fill:")
 			$Txt_Buffer:=Replace string:C233($Txt_Buffer; "<BR/>"; "<tbreak/>")
+			
 			$Txt_Buffer:="<svg xmlns='http://www.w3.org/2000/svg'><textArea>"+$Txt_Buffer+"</textArea></svg>"
 			
 			$Dom_buffer:=DOM Parse XML variable:C720($Txt_Buffer)
@@ -154,7 +158,7 @@ If ($Lon_parameters>=2)
 		Else 
 			
 			// 25-1-2017 - Encode special characters
-			// #ACI0097138
+			// MARK: ACI0097138
 			//$Txt_text:=xml_Escape_characters ($Txt_text)
 			
 			$Dom_svgReference:=DOM Create XML element:C865($Dom_svgObject; "textArea")
