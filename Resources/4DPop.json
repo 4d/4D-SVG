@@ -1,6 +1,6 @@
 {
   "name": ":xliff:syntaxPaletteTitle",
-  "media": "4DPop.png",
+  "media": "logo.svg",
   "handler": "_4DPopSVG",
   "default": "viewer",
   "popup": true,
