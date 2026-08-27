@@ -4,7 +4,7 @@
 			<auto_comment activated="false" use_template="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29jb2FydGY5NDlcY29jb2FzdWJy dGYzNTAKe1xmb250dGJsXGYwXGZuaWxcZmNoYXJzZXQwIEx1Y2lkYUdyYW5k ZTt9CntcY29sb3J0Ymw7XHJlZDI1NVxncmVlbjI1NVxibHVlMjU1O1xyZWQw XGdyZWVuMFxibHVlMDt9ClxwYXJkXHR4NTYwXHR4MTEyMFx0eDE2ODBcdHgy MjQwXHR4MjgwMFx0eDMzNjBcdHgzOTIwXHR4NDQ4MFx0eDUwNDBcdHg1NjAw XHR4NjE2MFx0eDY3MjBccGFyZGlybmF0dXJhbAoKXGYwXGZzMjQgXGNmMiBc Cl9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19f X19fX19fX19fX19fX19fXApNb2RpZmllZCAjRCAjSCBieSAjTlwKfQ=="/>
 			<mover always_display_dialog="2"/>                </general>
 		<compiler>
-			<options AMD64_support="true" compilation_path="3" fat_binary="true" symbol_file="true" target="all"/>
+			<options AMD64_support="true" compilation_path="3" fat_binary="true" symbol_file="true" syntax_file="true" target="all"/>
 			<method_suffix arrays="" interprocess_arrays="" interprocess_variables="" methods="" variables=""/>
 			<typage default_for_button="2"/>                      </compiler>
 		<interface>
