@@ -16,286 +16,286 @@
          <note>\r, \t and \n are meta-characters.</note>
       </header>
       <body>
-         <group id="79" resname="StandardMenus">
-            <trans-unit id="5" resname="CommonMenuEdit">
+         <group resname="StandardMenus">
+            <trans-unit id="1" resname="CommonMenuEdit">
                <source>Edit</source>
                <target>Édition</target>
             </trans-unit>
-            <trans-unit id="1" resname="CommonMenuFile">
+            <trans-unit id="2" resname="CommonMenuFile">
                <source>File</source>
                <target>Fichier</target>
             </trans-unit>
-            <trans-unit id="2" resname="CommonMenuQuit">
+            <trans-unit id="3" resname="CommonMenuQuit">
                <source>Quit</source>
                <target>Quitter</target>
             </trans-unit>
          </group>
          <group resname="Messages">
-            <trans-unit id="mess_02" resname="WarningDeleteFileOrFolder">
+            <trans-unit id="4" resname="WarningDeleteFileOrFolder">
                <source>Do you really want to delete "{ItemName}" element?</source>
                <target>Voulez-vous vraiment supprimer l’élément "{ItemName}" ?</target>
             </trans-unit>
-            <trans-unit id="mess_03" resname="WarningDeleteSelectedItems">
+            <trans-unit id="5" resname="WarningDeleteSelectedItems">
                <source>Do you really want to delete the selected elements?</source>
                <target>Voulez-vous vraiment supprimer les éléments sélectionnés ?</target>
             </trans-unit>
-            <trans-unit id="mess_01" resname="WarningReplaceFileOrFolder">
+            <trans-unit id="6" resname="WarningReplaceFileOrFolder">
                <source>An item named "{ItemName}" already exists in this location. Do you want to replace it with the one you're moving?</source>
                <target>Un élément intitulé "{ItemName}" existe déjà à cet emplacement. Souhaitez-vous le remplacer par l'élément que vous déplacez ?</target>
             </trans-unit>
          </group>
          <group resname="CommonStyles">
-            <trans-unit id="5" resname="CommonBold">
+            <trans-unit id="7" resname="CommonBold">
                <source>Bold</source>
                <target>Gras</target>
             </trans-unit>
-            <trans-unit id="4" resname="CommonItalic">
+            <trans-unit id="8" resname="CommonItalic">
                <source>Italic</source>
                <target>Italique</target>
             </trans-unit>
-            <trans-unit id="1" resname="CommonSize">
+            <trans-unit id="9" resname="CommonSize">
                <source>Size</source>
                <target>Taille</target>
             </trans-unit>
-            <trans-unit id="2" resname="CommonStyle">
+            <trans-unit id="10" resname="CommonStyle">
                <source>Style</source>
                <target>Style</target>
             </trans-unit>
-            <trans-unit id="3" resname="CommonUnderline">
+            <trans-unit id="11" resname="CommonUnderline">
                <source>Underline</source>
                <target>Souligné</target>
             </trans-unit>
          </group>
-         <group id="131" resname="StandardMenusItems">
-            <trans-unit id="23" resname="CommonMenuItemClear">
+         <group resname="StandardMenusItems">
+            <trans-unit id="12" resname="CommonMenuItemClear">
                <source>Clear</source>
                <target>Effacer</target>
             </trans-unit>
-            <trans-unit id="21" resname="CommonMenuItemCopy">
+            <trans-unit id="13" resname="CommonMenuItemCopy">
                <source>Copy</source>
                <target>Copier</target>
             </trans-unit>
-            <trans-unit id="20" resname="CommonMenuItemCut">
+            <trans-unit id="14" resname="CommonMenuItemCut">
                <source>Cut</source>
                <target>Couper</target>
             </trans-unit>
-            <trans-unit id="48" resname="CommonMenuItemDesign">
+            <trans-unit id="15" resname="CommonMenuItemDesign">
                <source>Return to Design mode</source>
                <target>Retour au mode Développement</target>
             </trans-unit>
-            <trans-unit id="22" resname="CommonMenuItemPaste">
+            <trans-unit id="16" resname="CommonMenuItemPaste">
                <source>Paste</source>
                <target>Coller</target>
             </trans-unit>
-            <trans-unit id="30" resname="CommonMenuItemQuit">
+            <trans-unit id="17" resname="CommonMenuItemQuit">
                <source>Quit</source>
                <target>Quitter</target>
             </trans-unit>
-            <trans-unit id="24" resname="CommonMenuItemSelectAll">
+            <trans-unit id="18" resname="CommonMenuItemSelectAll">
                <source>Select All</source>
                <target>Tout sélectionner</target>
             </trans-unit>
-            <trans-unit id="25" resname="CommonMenuItemShowClipboard">
+            <trans-unit id="19" resname="CommonMenuItemShowClipboard">
                <source>Show Clipboard</source>
                <target>Afficher le Presse-papiers</target>
             </trans-unit>
-            <trans-unit id="18" resname="CommonMenuItemUndo">
+            <trans-unit id="20" resname="CommonMenuItemUndo">
                <source>Undo</source>
                <target>Annuler Édition</target>
             </trans-unit>
-            <trans-unit id="6" resname="CommonMenuMode">
+            <trans-unit id="21" resname="CommonMenuMode">
                <source>Mode</source>
                <target>Mode</target>
             </trans-unit>
-            <trans-unit id="49" resname="MenuEditorNewBar">
+            <trans-unit id="22" resname="MenuEditorNewBar">
                <source>Menu Bar #</source>
                <target>Barre #</target>
             </trans-unit>
-            <trans-unit id="29" resname="ObsoleteModeCreatedMenu">
+            <trans-unit id="23" resname="ObsoleteModeCreatedMenu">
                <source>Custom Menus</source>
                <target>Menus créés</target>
             </trans-unit>
-            <trans-unit id="27" resname="ObsoleteModeDesign">
+            <trans-unit id="24" resname="ObsoleteModeDesign">
                <source>Design</source>
                <target>Structure</target>
             </trans-unit>
-            <trans-unit id="28" resname="ObsoleteModeUser">
+            <trans-unit id="25" resname="ObsoleteModeUser">
                <source>User</source>
                <target>Utilisation</target>
             </trans-unit>
          </group>
-         <group id="1000" resname="StandardButtons">
-            <trans-unit id="5" resname="CommonAdd">
+         <group resname="StandardButtons">
+            <trans-unit id="26" resname="CommonAdd">
                <source>Add</source>
                <target>Ajouter</target>
             </trans-unit>
-            <trans-unit id="10" resname="CommonApply">
+            <trans-unit id="27" resname="CommonApply">
                <source>Apply</source>
                <target>Appliquer</target>
             </trans-unit>
-            <trans-unit id="15" resname="CommonBack">
+            <trans-unit id="28" resname="CommonBack">
                <source>&lt; Back</source>
                <target>&lt; Précédent</target>
             </trans-unit>
-            <trans-unit id="2" resname="CommonCancel">
+            <trans-unit id="29" resname="CommonCancel">
                <source>Cancel</source>
                <target>Annuler</target>
             </trans-unit>
-            <trans-unit id="23" resname="CommonClose">
+            <trans-unit id="30" resname="CommonClose">
                <source>Close</source>
                <target>Fermer</target>
             </trans-unit>
-            <trans-unit id="25" resname="CommonCollapseAll">
+            <trans-unit id="31" resname="CommonCollapseAll">
                <source>Collapse all</source>
                <target>Contracter tout</target>
             </trans-unit>
-            <trans-unit id="17" resname="CommonCreate">
+            <trans-unit id="32" resname="CommonCreate">
                <source>Create</source>
                <target>Créer</target>
             </trans-unit>
-            <trans-unit id="6" resname="CommonDelete">
+            <trans-unit id="33" resname="CommonDelete">
                <source>Delete</source>
                <target>Supprimer</target>
             </trans-unit>
-            <trans-unit id="9" resname="CommonDone">
+            <trans-unit id="34" resname="CommonDone">
                <source>Done</source>
                <target>Fermer</target>
             </trans-unit>
-            <trans-unit id="59" resname="CommonDontSaveDial">
+            <trans-unit id="35" resname="CommonDontSaveDial">
                <source>Don't Save</source>
                <target>Ne pas enregistrer</target>
             </trans-unit>
-            <trans-unit id="45" resname="CommonDuplicate">
+            <trans-unit id="36" resname="CommonDuplicate">
                <source>Duplicate</source>
                <target>Dupliquer</target>
             </trans-unit>
-            <trans-unit id="7" resname="CommonEdit">
+            <trans-unit id="37" resname="CommonEdit">
                <source>Edit</source>
                <target>Modifier</target>
             </trans-unit>
-            <trans-unit id="24" resname="CommonExpandAll">
+            <trans-unit id="38" resname="CommonExpandAll">
                <source>Expand all</source>
                <target>Déployer tout</target>
             </trans-unit>
-            <trans-unit id="18" resname="CommonExportDial">
+            <trans-unit id="39" resname="CommonExportDial">
                <source>Export...</source>
                <target>Exporter...</target>
             </trans-unit>
-            <trans-unit id="11" resname="CommonLoadDial">
+            <trans-unit id="40" resname="CommonLoadDial">
                <source>Load...</source>
                <target>Charger...</target>
             </trans-unit>
-            <trans-unit id="16" resname="CommonNext">
+            <trans-unit id="41" resname="CommonNext">
                <source>Next &gt;</source>
                <target>Suivant &gt;</target>
             </trans-unit>
-            <trans-unit id="27" resname="CommonNo">
+            <trans-unit id="42" resname="CommonNo">
                <source>No</source>
                <target>Non</target>
             </trans-unit>
-            <trans-unit id="1" resname="CommonOK">
+            <trans-unit id="43" resname="CommonOK">
                <source>OK</source>
                <target>OK</target>
             </trans-unit>
-            <trans-unit id="22" resname="CommonOpen">
+            <trans-unit id="44" resname="CommonOpen">
                <source>Open</source>
                <target>Ouvrir</target>
             </trans-unit>
-            <trans-unit id="13" resname="CommonOrderBy">
+            <trans-unit id="45" resname="CommonOrderBy">
                <source>Order by</source>
                <target>Trier</target>
             </trans-unit>
-            <trans-unit id="19" resname="CommonPreview">
+            <trans-unit id="46" resname="CommonPreview">
                <source>Preview</source>
                <target>Prévisualisation</target>
             </trans-unit>
-            <trans-unit id="65" resname="CommonPrint">
+            <trans-unit id="47" resname="CommonPrint">
                <source>Print</source>
                <target>Imprimer</target>
             </trans-unit>
-            <trans-unit id="4" resname="CommonQuit">
+            <trans-unit id="48" resname="CommonQuit">
                <source>Quit</source>
                <target>Quitter</target>
             </trans-unit>
-            <trans-unit id="20" resname="CommonRemove">
+            <trans-unit id="49" resname="CommonRemove">
                <source>Remove</source>
                <target>Retirer</target>
             </trans-unit>
-            <trans-unit id="46" resname="CommonRename">
+            <trans-unit id="50" resname="CommonRename">
                <source>Rename</source>
                <target>Renommer</target>
             </trans-unit>
-            <trans-unit id="92" resname="CommonRestart">
+            <trans-unit id="51" resname="CommonRestart">
                <source>Restart</source>
                <target>Redémarrer</target>
             </trans-unit>
-            <trans-unit id="3" resname="CommonRetry">
+            <trans-unit id="52" resname="CommonRetry">
                <source>Retry</source>
                <target>Recommencer</target>
             </trans-unit>
-            <trans-unit id="12" resname="CommonSaveDial">
+            <trans-unit id="53" resname="CommonSaveDial">
                <source>Save...</source>
                <target>Enregistrer...</target>
             </trans-unit>
-            <trans-unit id="57" resname="CommonSelect">
+            <trans-unit id="54" resname="CommonSelect">
                <source>Select...</source>
                <target>Sélectionner...</target>
             </trans-unit>
-            <trans-unit id="58" resname="CommonStop">
+            <trans-unit id="55" resname="CommonStop">
                <source>Stop</source>
                <target>Arrêt</target>
             </trans-unit>
-            <trans-unit id="14" resname="CommonUse">
+            <trans-unit id="56" resname="CommonUse">
                <source>Use</source>
                <target>Utiliser</target>
             </trans-unit>
-            <trans-unit id="26" resname="CommonYes">
+            <trans-unit id="57" resname="CommonYes">
                <source>Yes</source>
                <target>Oui</target>
             </trans-unit>
          </group>
          <group resname="Labels">
-            <trans-unit id="47" resname="CopyPath">
+            <trans-unit id="58" resname="CopyPath">
                <source>Copy the path</source>
                <target>Copier le chemin</target>
             </trans-unit>
-            <trans-unit id="43" resname="FileInVolume">
+            <trans-unit id="59" resname="FileInVolume">
                <source>"{file}" in volume "{volume}"</source>
                <target>"{file}" dans le volume "{volume}"</target>
             </trans-unit>
-            <trans-unit id="48" resname="MessageLabel">
+            <trans-unit id="60" resname="MessageLabel">
                <source>Message:</source>
                <target>Message :</target>
             </trans-unit>
-            <trans-unit id="44" resname="ShowOnDisk">
+            <trans-unit id="61" resname="ShowOnDisk">
                <source>Show on disk</source>
                <target>Montrer sur le disque</target>
             </trans-unit>
          </group>
          <group resname="Characters">
-            <trans-unit id="51" resname="CommonApostrophe">
+            <trans-unit id="62" resname="CommonApostrophe">
                <source>'</source>
                <target>'</target>
             </trans-unit>
-            <trans-unit id="49" resname="CommonEllipse">
+            <trans-unit id="63" resname="CommonEllipse">
                <source>…</source>
                <target>…</target>
             </trans-unit>
-            <trans-unit id="50" resname="CommonQuote">
+            <trans-unit id="64" resname="CommonQuote">
                <source>"</source>
                <target>"</target>
             </trans-unit>
          </group>
-         <group id="01" resname="BYTE_Unity_Display">
-            <trans-unit id="1" resname="Byte_Unity_Abbreviation">
+         <group resname="BYTE_Unity_Display">
+            <trans-unit id="65" resname="Byte_Unity_Abbreviation">
                <source>B</source>
                <target>o</target>
             </trans-unit>
-            <trans-unit id="3" resname="Byte_Unity_Plural">
+            <trans-unit id="66" resname="Byte_Unity_Plural">
                <source>Bytes</source>
                <target>octets</target>
             </trans-unit>
-            <trans-unit id="2" resname="Byte_Unity_Singular">
+            <trans-unit id="67" resname="Byte_Unity_Singular">
                <source>Byte</source>
                <target>octet</target>
             </trans-unit>
