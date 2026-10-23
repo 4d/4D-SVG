@@ -25,7 +25,8 @@
 	"🧪 unitTests": {
 		"methods": [
 			"test_Documents",
-			"test_drawing"
+			"test_drawing",
+			"test_solidColor"
 		]
 	},
 	"🧰 API": {

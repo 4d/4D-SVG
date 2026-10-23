@@ -14,8 +14,9 @@
 
 var $CURRENT_METHOD; $defs; $node : Text
 var $pos : Integer
+var $normalizedOpacity : Real
 
-$opacity:=$opacity#0 ? $opacity/100 : 0
+$normalizedOpacity:=$opacity/100
 
 Compiler_SVG
 
@@ -53,7 +54,7 @@ If (Bool:C1537(OK))
 		
 		If ($pos>0)
 			
-			$opacity:=Num:C11(Substring:C12($color; $pos+1))/100
+			$normalizedOpacity:=Num:C11(Substring:C12($color; $pos+1))/100
 			$color:=Substring:C12($color; 1; $pos-1)
 			
 		End if 
@@ -68,10 +69,10 @@ If (Bool:C1537(OK))
 			"solid-color"; $color)
 		
 		If (Bool:C1537(OK))\
-			 && ($opacity#0)
+			 && ($normalizedOpacity#0)
 			
 			DOM SET XML ATTRIBUTE:C866($node; \
-				"solid-opacity"; $opacity)
+				"solid-opacity"; $normalizedOpacity)
 			
 		End if 
 	End if 
